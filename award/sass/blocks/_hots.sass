@@ -1,0 +1,113 @@
+.hots
+    &--margin-bottom
+        margin-bottom: 96px
+    &__title
+        font-weight: 600
+        font-size: 48px
+        color: $black-color
+        margin-bottom: 40px
+    &__products
+        display: flex
+        gap: 24px
+        max-width: 1031px
+        margin: 0 auto
+        position: relative
+        &-card
+            display: flex
+            flex-direction: column
+            width: 188px
+            height: 466px
+            &-img
+                position: relative
+                display: flex
+                align-items: center
+                justify-content: center
+                box-shadow: 0 1px 2px 0 rgba(93, 60, 30, 0.1), 0 2px 10px 0 rgba(93, 60, 30, 0.05)
+                background: #fff
+                border-radius: 16px
+                width: 188px
+                height: 192px
+                margin-bottom: 24px
+            &-image
+                max-width: 168px
+            &-favorite
+                position: absolute
+                cursor: pointer
+                top: 4.5px
+                right: 4.5px
+                width: 22px
+                height: 22px
+                &:hover
+                    opacity: 0.75
+            &-price
+                display: flex
+                justify-content: space-between
+                margin-bottom: 16px
+                min-height: 52px
+                &-current
+                    font-weight: 500
+                    font-size: 24px
+                    line-height: 1.2
+                    color: $black-color
+                    margin-bottom: 4px
+                &-old
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 1.2
+                    text-decoration: line-through
+                    color: $gray-color
+                    min-height: 19px
+                &-discount
+                    display: flex
+                    border-radius: 6px
+                    width: 44px
+                    height: 44px
+                    background: $light-red-color
+                    color: $white-color
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 1.2
+                    align-items: center
+                    justify-content: center
+            &-weight
+                font-weight: 500
+                font-size: 16px
+                line-height: 1.2
+                color: $black-color
+                margin-bottom: 16px
+                min-height: 19px
+            &-title
+                font-weight: 400
+                font-size: 20px
+                line-height: 1.2
+                color: $black-color
+                overflow: hidden
+                display: -webkit-box
+                -webkit-line-clamp: 3
+                -webkit-box-orient: vertical
+                margin-bottom: 24px
+            &-button
+                background: $green-color
+                border: 3px solid $green-color
+                border-radius: 8px
+                padding: 16px 10px
+                font-weight: 500
+                font-size: 16px
+                line-height: 1.2
+                color: $white-color
+                &:hover
+                    border: 3px solid $green-color
+                    background: $white-color
+                    transition: background 0.25s
+                    color: $green-color
+    &__nav-button
+        z-index: 1
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        &--next
+            right: -95px
+        &--prev
+            left: -95px
+        &:hover
+            opacity: 0.75

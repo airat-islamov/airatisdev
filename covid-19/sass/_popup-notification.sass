@@ -1,0 +1,120 @@
+.popup-notification
+  position: fixed
+  width: 350px
+  max-width: 90%
+  padding: 25px
+  border-radius: 5px
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2)
+  opacity: 0 //Элемент полностью прозрачный (невидимый)
+  transition: 1s //Скорость перехода состояния элемента
+  animation: show 1s 1 //Указываем название анимации, её время и количество повторов
+  animation-fill-mode: forwards //Чтобы элемент оставался в конечном состоянии анимации
+  animation-delay: 1s //Задержка перед началом */
+  z-index: 999
+  &--author
+    bottom: 10px
+    left: 10px
+  &--cookies
+    bottom: 10px
+    left: 10px
+  &__container
+    position: relative
+  &__title
+    margin: 0
+    padding-bottom: 10px
+    font-size: 18px
+    font-weight: bold
+    text-align: left
+    color: #fff
+  &__text
+    font-size: 15px
+    text-align: left
+    &--author
+      color: #d6e7fe
+    &--cookies
+      color: #fef2f1
+    &-link
+      color: inherit
+      font-weight: bold
+      &:hover
+        color: #fff
+        text-decoration: none
+  &__link
+    font-size: 15px
+    margin-right: 20px
+    &:hover
+      color: #fff
+    &--author
+      color: #99b8f5
+      &:active
+        color: #99b8f5
+    &--cookies
+      color: #ffc9c5
+      &:active
+        color: #ffc9c5
+
+  &__button-up-close
+    display: inline-flex
+    position: absolute
+    right: -9px
+    top: -10px
+    background-color: transparent
+    border: none
+    cursor: pointer
+    width: 30px
+    height: 30px
+    transition: all 0.2s linear
+    opacity: 0.5
+    padding: 0
+    &:hover
+      opacity: 1
+    &:active
+      opacity: 0.5
+      transition: none
+  &__icon-up-close
+    width: 30px
+    height: 30px
+
+  &__button-down-close
+    padding: 10px 20px
+    border: none
+    border-radius: 5px
+    font-size: 15px
+    font-weight: bold
+    text-align: right
+    cursor: pointer
+    &--author
+      background-color: #fff
+      color: #3763e3
+      &:hover
+        background-color: #2d56d1
+        color: #fff
+      &:active
+        background-color: #2345ab
+    &--cookies
+      background-color: #fff
+      color: #f44336
+      &:hover
+        background-color: #f44336
+        color: #fff
+      &:active
+        background-color: #ca524a
+
+#popup-notification
+  &__author
+    display: none
+    background-color: #3466ff
+  &__cookies
+    display: none
+    background-color: #f6655a
+#popup-notification__author.show-author
+  display: flex
+#popup-notification__cookies.show-cookies
+  display: flex
+
+@keyframes show
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1

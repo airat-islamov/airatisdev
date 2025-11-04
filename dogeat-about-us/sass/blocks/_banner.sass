@@ -1,0 +1,38 @@
+.banner
+  margin-bottom: 53px
+  &__wrapper
+    display: grid
+    grid-template: 155px 155px / 1fr 1fr
+    background-color: $light
+    min-height: 310px
+    grid-template-areas: "banner__title banner__img" "banner__list banner__img"
+    border-radius: 10px
+  &__title
+    max-width: 477px
+    grid-area: banner__title
+    font-family: 'Inter'
+    font-style: normal
+    color: $title-text
+    margin: 18px 0 0 34px
+  &__text-h3
+    font-weight: 700
+    font-size: 64px
+    margin: 0
+  &__text-h4
+    font-weight: 700
+    font-size: 31px
+    margin: 3px 0 0 5px
+  &__list
+    max-width: 477px
+    grid-area: banner__list
+    margin: 10px 0 0 77px
+    &-text
+      list-style-image: url(../img/banner/check-mark.svg)
+      margin: 0
+      padding: 0
+      &__li
+        padding: 0 0 15px 13px
+  &__img
+    grid-area: banner__img
+    align-self: center
+    justify-self: end

@@ -1,0 +1,97 @@
+.about-company
+    &__logo
+        display: flex
+        flex-direction: column
+        align-items: center
+        &--margin-bottom
+            margin-bottom: 24px
+        &-image
+            width: 228px
+            height: 54px
+            &--margin-bottom
+                margin-bottom: 40px
+        &-text
+            font-weight: 400
+            font-size: 24px
+            line-height: 1.2
+            color: $black-color
+            text-align: center
+    &__slider
+        &--margin-bottom
+            margin-bottom: 40px
+        &-image
+            cursor: pointer
+            margin-bottom: 24px
+        &-img
+            min-height: 332px
+            object-fit: cover
+            object-position: bottom
+
+        &-navigation
+            display: flex
+            width: 112px
+            gap: 16px
+            margin: 0 auto
+            &-item
+                width: 16px
+                height: 16px
+                background: $light-grey-color
+                border-radius: 50%
+                &:hover
+                    background: $red-color
+                    transition: background 0.25s
+                &--active
+                    background: $red-color
+
+    &__description
+        &--margin-bottom
+            margin-bottom: 64px
+        &-text
+            font-weight: 400
+            font-size: 20px
+            line-height: 1.6
+            color: #202020
+            padding: 0
+            margin-top: 0
+            &:last-child
+                margin-bottom: 0
+    &__advantages
+        &--margin-bottom
+            margin-bottom: 64px
+        &-wrapper
+            display: flex
+            max-width: 910px
+            gap: 81px
+            flex-wrap: wrap
+            margin: 0 auto
+            justify-content: center
+        &-item
+            display: flex
+            max-width: 246px
+            align-items: center
+            flex-direction: column
+            min-height: 235px
+            &-icon
+                max-width: 97px
+                max-height: 96px
+                margin-bottom: 16px
+            &-description
+                display: flex
+                align-items: center
+                flex-direction: column
+            &-title
+                font-weight: 700
+                font-size: 24px
+                line-height: 1.2
+                text-align: center
+                color: $red-color
+                margin-bottom: 8px
+                min-height: 57px
+                &--width
+                    max-width: 230px
+            &-text
+                font-weight: 400
+                font-size: 16px
+                line-height: 1.2
+                text-align: center
+                color: $black-color

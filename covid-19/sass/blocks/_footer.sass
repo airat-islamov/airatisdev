@@ -1,0 +1,85 @@
+.footer
+  position: relative
+  overflow: hidden
+  &__container
+    position: relative
+  &__overlay
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: -1
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFF8F8 75%, #fff8f8 100%)
+  &__img
+    position: absolute
+    right: -415px
+    bottom: 65px
+    z-index: -1
+  &__navbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-mb
+      margin-bottom: 43px
+  &__menu
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    max-width: 900px
+  &__link
+    position: relative
+    text-decoration: none
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 28px
+    padding-bottom: 15px
+    color: $footer-color
+    &:not(:first-child)
+      margin-left: 60px
+    &:hover
+      color: $button-bg-color
+      &:after
+        position: absolute
+        display: block
+        content: ''
+        width: 6px
+        height: 6px
+        border-radius: 50%
+        background-color: $button-bg-color
+        right: 50%
+        transform: translateX(50%)
+        margin-top: 9px
+  &__social
+    margin: 0
+    &-item
+      display: inline
+      list-style: none
+      &:not(:first-child)
+        margin-left: 40px
+  &__copy
+    display: flex
+    justify-content: center
+    margin-bottom: 20px
+    font-size: 20px
+    color: $footer-color
+  &__author
+    color: $footer-color
+    font-weight: bold
+    &:hover
+      color: $button-bg-color
+
+.social-img
+  &-facebook
+    width: 11px
+    height: 21px
+  &-youtube
+    width: 23px
+    height: 16px
+  &-vimeo
+    width: 21px
+    height: 18px
+  &-twitter
+    width: 20px
+    height: 16px

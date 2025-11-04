@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Что такое Covid-19?</title>
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="img/favicon/favicon.svg" />
+    <link rel="mask-icon" href="img/favicon/mask-icon.svg" color="#000000" />
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+
+      href="fonts/Roboto-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <!-- Стили сайта -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Стили слайдера Swiper -->
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <!-- Стили модальных окон SweetAlert2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Стили animate (https://animate.style/) -->
+  </head>
+  <body>
+    <div class="header-overlay"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header__navbar">
+          <a href="#" class="logo">
+            <img
+              class="logo__image"
+              src="img/header/logo.svg"
+              alt="Icon: Logo"
+            />
+          </a>
+          <button class="mobile-icon">
+            <span class="mobile-icon__top"></span>
+            <span class="mobile-icon__center"></span>
+            <span class="mobile-icon__bottom"></span>
+          </button>
+          <nav class="navbar">
+            <ul class="menu">
+              <li class="menu__list">
+                <a href="#overview" class="menu__link">Что это?</a>
+              </li>
+              <li class="menu__list">
+                <a href="#contagion" class="menu__link"
+                  >Как распространяется?</a
+                >
+              </li>
+              <li class="menu__list">
+                <a href="#symptoms" class="menu__link">Какие симптомы?</a>
+              </li>
+              <li class="menu__list">
+                <span class="menu__arrow"></span>
+                <a href="#prevention" class="menu__link menu__sub-links"
+                  >Как защититься?</a
+                >
+                <div class="menu__sub-list">
+                  <ul class="menu__sub-wrapper">
+                    <li class="menu__sub-item menu__sub-item--hidden">
+                      <a href="#prevention" class="menu__sub-link"
+                        >Как защититься?</a
+                      >
+                    </li>
+                    <li class="menu__sub-item">
+                      <a href="#step-mask" class="menu__sub-link"
+                        >Носите маски</a
+                      >
+                    </li>
+                    <li class="menu__sub-item">
+                      <a href="#step-hands" class="menu__sub-link"
+                        >Мойте чаще руки</a
+                      >
+                    </li>
+                    <li class="menu__sub-item">
+                      <a href="#step-napkins" class="menu__sub-link"
+                        >Используйте салфетки</a
+                      >
+                    </li>
+                    <li class="menu__sub-item">
+                      <a href="#step-contacts" class="menu__sub-link"
+                        >Избегайте контактов</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <!-- /.menu -->
+            <button class="feedback-button">Обратная связь</button>
+          </nav>
+          <!-- /.navbar -->
+        </div>
+        <!-- /.header__navbar -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <section class="covid-about">
+      <div class="container covid-about__container">
+        <div class="covid-about__content">
+          <h3 class="subtitle covid-about__subtitle">Внимание COVID-19!</h3>
+          <h2 class="title covid-about__title">
+            Оставайтесь дома, чтобы остановить короновирус
+          </h2>
+          <p class="text">
+            Специального лекарства для профилактики или лечения болезни
+            коронавируса (COVID-19) нет.
+          </p>
+          <a
+            href="/docs/covid-19.pdf"
+            target="_blank"
+            class="button covid-about__button"
+            >Подробнее</a
+          >
+        </div>
+        <!-- /.covid-about__content -->
+        <img
+          src="img/covid-about/covid-stay-at-home.svg"
+          alt="COVID-19 Alert"
+          class="covid-about__img"
+        />
+      </div>
+      <!-- /.container -->
+    </section>
+    <section id="overview" class="coronavirus">
+      <div class="container coronavirus__container">
+        <img
+          src="img/coronavirus/сoronavirus.svg"
+          alt="Coronavirus"
+          class="coronavirus__img"
+        />
+        <div class="coronavirus__content">
+          <h3 class="subtitle">Что такое Covid-19</h3>
+          <h2 class="title">Короновирус</h2>
+          <p class="text coronavirus__text">
+            Коронавирус - является одним из разновидностей вирусов. В мире
+            существует множество различных видов вирусов. Некоторые из них могут
+            вызывать различные болезни. Так недавно обнаруженный тип вируса
+            COVID-19 вызвал вспышку респираторных заболевании по всему земному
+            шару.
+          </p>
+          <a
+            href="//стопкоронавирус.рф"
+            target="_blank"
+            class="button coronavirus__button"
+            >Подробнее</a
+          >
+        </div>
+        <!-- /.coronavirus__content -->
+        <img
+          src="img/coronavirus/pink-big-сoronavirus.svg"
+          alt="Coronavirus"
+          class="coronavirus__img-pink-big-virus"
+        />
+      </div>
+      <!-- /.container coronavirus__container -->
+    </section>
+    <section id="contagion" class="contagion">
+      <div class="container">
+        <div class="description">
+          <img
+            src="img/contagion/pink-small-сoronavirus.svg"
+            alt="Coronavirus"
+            class="description__img-small-virus"
+          />
+          <h3 class="subtitle">Covid-19</h3>
+          <h2 class="title">Болезнь</h2>
+          <p class="contagion__text">
+            Коронавирус - является одним из разновидностей вирусов. Им можно
+            заразится через:
+          </p>
+        </div>
+        <!-- /.description -->
+      </div>
+      <!-- /.container -->
+      <div class="contagion__cards contagion__cards--media">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="card swiper-slide">
+              <img
+                src="img/contagion/air-transmission.svg"
+                alt="Air Transmission"
+                class="card__img card__img--transmission"
+              />
+              <h3 class="card__title">Воздух</h3>
+              <p class="card__text">
+                Старайтесь избегать контакта с простуженными и больными людьми
+              </p>
+            </div>
+            <!-- /.contagion__card -->
+            <div class="card swiper-slide">
+              <img
+                src="img/contagion/human-contacts.svg"
+                alt="Human Contacts"
+                class="card__img card__img--contacts"
+              />
+              <h3 class="card__title">Рукопожатия</h3>
+              <p class="card__text">
+                Мытье рук - один из самых простых способов защиты
+              </p>
+            </div>
+            <!-- /.contagion__card -->
+            <div class="card swiper-slide">
+              <img
+                src="img/contagion/containted-objects.svg"
+                alt="Containted Objects"
+                class="card__img card__img--objects"
+              />
+              <h3 class="card__title">Предметы</h3>
+              <p class="card__text">
+                Пользуйтесь перчатками прежде чем брать в руки чужие вещи.
+              </p>
+            </div>
+            <!-- /.contagion__card -->
+          </div>
+          <!-- /.swiper-wrapper -->
+        </div>
+        <!-- /.swiper -->
+        <button
+          class="slider-button slider-button--prev"
+          title="Предыдущий"
+        ></button>
+        <button
+          class="slider-button slider-button--next"
+          title="Следующий"
+        ></button>
+      </div>
+      <!-- /.contagion__cards -->
+    </section>
+    <section id="symptoms" class="symptomps">
+      <div class="container symptomps__container">
+        <img
+          src="img/symptomps/symptomp-left-leave.svg"
+          alt="Coronavirus"
+          class="symptomps__left-leave"
+        />
+        <img
+          src="img/symptomps/symptomp-right-leave.svg"
+          alt="Coronavirus"
+          class="symptomps__right-leave"
+        />
+        <div class="description symptomps__description">
+          <h3 class="subtitle">Covid-19</h3>
+          <h2 class="title symptomps__title">Симптомы</h2>
+          <p class="text symptomps__text">
+            Коронавирус - является довольно опасным вирусам, так как он имеет
+            симптомы, схожие с обычными вирусами. К ним относятся такие симптомы
+            как:
+          </p>
+        </div>
+        <!-- /.description -->
+        <div class="symptomps__illustration">
+          <img
+            src="img/symptomps/covid-19-symptoms.svg"
+            alt="Covid-19 Symptomps"
+            class="symptomps__img"
+          />
+        </div>
+        <!-- /.symptomps__illustration -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <section id="prevention" class="what-to-do">
+      <div class="container what-to-do__container">
+        <img
+          src="img/what-to-do/what-to-do-left-virus.svg"
+          alt="Coronavirus"
+          class="what-to-do__left-virus"
+        />
+        <img
+          src="img/what-to-do/what-to-do-right-virus.svg"
+          alt="Coronavirus"
+          class="what-to-do__right-virus"
+        />
+        <div class="description what-to-do__description">
+          <h3 class="subtitle">Covid-19</h3>
+          <h2 class="title what-to-do__title">Как защититься</h2>
+          <p class="text what-to-do__text">
+            Каких-либо специальных методов защиты от коронавируса не существует,
+            есть только общие рекомендации защиты от респираторных заболевании:
+          </p>
+        </div>
+        <!-- /.description -->
+        <div id="step-mask" class="what-to-do__steps">
+          <div class="what-to-do__steps-content">
+            <div class="what-to-do__steps-number">01</div>
+            <div class="what-to-do__steps-text-content">
+              <h4 class="title what-to-do__steps-title">Носите маски</h4>
+              <p class="text what-to-do__steps-text">
+                Щеки, рот и нос закрывайте медицинской маской. Маска должна
+                тщательно закрепляться, плотно закрывать рот и нос, не оставляя
+                зазоров.Старайтесь не касаться поверхностей маски при ее снятии.
+              </p>
+            </div>
+          </div>
+          <!-- /.what-to-do__steps-content -->
+          <img
+            src="img/what-to-do/mask.svg"
+            alt=""
+            class="what-to-do__img what-to-do__img-mask"
+          />
+        </div>
+        <!-- /.what-to-do__steps -->
+        <div id="step-hands" class="what-to-do__steps">
+          <img
+            src="img/what-to-do/hands.svg"
+            alt=""
+            class="what-to-do__img what-to-do__img-hands"
+          />
+          <div class="what-to-do__steps-content">
+            <div class="what-to-do__steps-number">02</div>
+            <div class="what-to-do__steps-text-content">
+              <h4 class="title what-to-do__steps-title">Мойте чаще руки</h4>
+              <p class="text what-to-do__steps-text">
+                Часто мойте руки с мылом (после кашля, чихания, возвращения с
+                улицы, после контактов с упаковками из магазинов, перед
+                приготовлением пищи). Не трогайте немытыми руками лицо, рот, нос
+                и глаза - так вирус может попасть в ваш организм.
+              </p>
+            </div>
+          </div>
+          <!-- /.what-to-do__steps-content -->
+        </div>
+        <!-- /.what-to-do__steps -->
+        <div id="step-napkins" class="what-to-do__steps">
+          <div class="what-to-do__steps-content">
+            <div class="what-to-do__steps-number">03</div>
+            <div class="what-to-do__steps-text-content">
+              <h4 class="title what-to-do__steps-title">
+                Используйте салфетки
+              </h4>
+              <p class="text what-to-do__steps-text">
+                При кашле и чихании прикрывайте рот и нос одноразовой салфеткой,
+                и выбрасывайте ее сразу после использования. Протирайте влажными
+                салфетками предметы, которые были с вами в общественных местах и
+                в транспорте.
+              </p>
+            </div>
+          </div>
+          <!-- /.what-to-do__steps-content -->
+          <img
+            src="img/what-to-do/cloth.svg"
+            alt=""
+            class="what-to-do__img what-to-do__img-cloth"
+          />
+        </div>
+        <!-- /.what-to-do__steps -->
+        <div id="step-contacts" class="what-to-do__steps">
+          <img
+            src="img/what-to-do/contacts.svg"
+            alt=""
+            class="what-to-do__img what-to-do__img-contacts"
+          />
+          <div class="what-to-do__steps-content">
+            <div class="what-to-do__steps-number">04</div>
+            <div class="what-to-do__steps-text-content">
+              <h4 class="title what-to-do__steps-title">Избегайте контактов</h4>
+              <p class="text what-to-do__steps-text">
+                Избегайте людных мест и контактов с больными людьми. Попросите
+                близких или сотрудников социальной службы помочь с оплатой
+                коммунальных услуг, приобретением товаров дистанционно.
+              </p>
+            </div>
+          </div>
+          <!-- /.what-to-do__steps-content -->
+        </div>
+        <!-- /.what-to-do__steps -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <footer class="footer">
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__wrapper">
+            <h2 class="subscribe__title">Хотите такой же сайт?</h2>
+            <h2 class="subscribe__title subscribe__title--subtitle">
+              Подпишитесь
+            </h2>
+
+            <!-- SendPulse Simple Subscription Form -->
+            <form
+              class="subscribe-form"
+              action="//login.sendpulse.com/forms/simple/u/eyJ1c2VyX2lkIjo3OTI0NTIwLCJhZGRyZXNzX2Jvb2tfaWQiOjEzNTQ3NywibGFuZyI6InJ1In0="
+              method="post"
+              target="_blank"
+            >
+              <input
+                class="subscribe-form__input"
+                type="email"
+                placeholder="coronovirus@gmail.com"
+                name="email"
+                required
+              />
+              <input type="hidden" name="sender" value="mail@9270334411.ru" />
+              <button class="subscribe-form__button">Подписаться</button>
+            </form>
+            <!-- SendPulse Simple Subscription Form -->
+          </div>
+          <!-- /.subscribe__wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <div class="footer__overlay"></div>
+      <div class="container footer__container">
+        <div class="footer__navbar footer__navbar-mb">
+          <a href="#" class="logo">
+            <img
+              class="logo__image"
+              src="img/footer/footer-logo.svg"
+              alt="Icon: Logo"
+            />
+          </a>
+          <nav class="footer__menu">
+            <a href="#overview" class="footer__link">Что это?</a>
+            <a href="#contagion" class="footer__link">Как распространяется?</a>
+            <a href="#symptoms" class="footer__link">Какие симптомы?</a>
+            <a href="#prevention" class="footer__link">Как защититься?</a>
+          </nav>
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a href="//facebook.com"
+                ><img
+                  src="img/footer/facebook.svg"
+                  alt="Facebook"
+                  class="social-img social-img-facebook"
+              /></a>
+            </li>
+            <li class="footer__social-item">
+              <a href="//youtube.com"
+                ><img
+                  src="img/footer/youtube.svg"
+                  alt="YouTube"
+                  class="social-img social-img-youtube"
+              /></a>
+            </li>
+            <li class="footer__social-item">
+              <a href="//vimeo.com">
+                <img
+                  src="img/footer/vimeo.svg"
+                  alt="Vimeo"
+                  class="social-img social-img-vimeo"
+              /></a>
+            </li>
+            <li class="footer__social-item">
+              <a href="//twitter.com">
+                <img
+                  src="img/footer/twitter.svg"
+                  alt="Twitter"
+                  class="social-img social-img-twitter"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.footer-navbar -->
+        <img
+          src="img/footer/footer-сoronavirus.svg"
+          alt="Coronavirus"
+          class="footer__img"
+        />
+        <div class="footer__copy">
+          2022 @ Дизайн&nbsp;
+          <a
+            href="//dribbble.com/shots/10847300-Corona-Virus-Covid-19-Landing-Page"
+            class="footer__author"
+            target="_blank"
+          >
+            Shamima Nasrin
+          </a>
+          , верстка&nbsp;
+          <a href="//9270334411.ru" class="footer__author" target="_blank">
+            Airat Islamov
+          </a>
+        </div>
+        <!-- /.footer__copy -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- Скрипт всплывающего окна про автора сайта -->
+    <div
+      id="popup-notification__author"
+      class="popup-notification popup-notification--author"
+    >
+      <div class="popup-notification__container">
+        <p class="popup-notification__title">Кто автор сайта?</p>
+        <p class="popup-notification__text popup-notification__text--author">
+          Дизайн разработал
+          <a
+            href="//dribbble.com/shots/10847300-Corona-Virus-Covid-19-Landing-Page"
+            target="_blank"
+            class="popup-notification__text-link"
+          >
+            Shamima Nasrin</a
+          >, сверстал сайт
+          <a
+            href="//9270334411.ru"
+            target="_blank"
+            class="popup-notification__text-link"
+          >
+            Airat Islamov</a
+          >.
+        </p>
+        <button
+          class="popup-notification__button-up-close popup-notification__button-up-close--author-up-close"
+          title="Закрыть"
+        >
+          <img
+            src="img/popup-notification/close.png"
+            class="popup-notification__icon-up-close"
+            alt="Закрыть"
+            title="Закрыть"
+          />
+        </button>
+        <a
+          class="popup-notification__link popup-notification__link--author"
+          href="//9270334411.ru"
+          >Подробнее</a
+        >
+        <button
+          class="popup-notification__button-down-close popup-notification__button-down-close--author"
+          title="Закрыть"
+        >
+          Закрыть
+        </button>
+      </div>
+    </div>
+    <!-- Скрипт всплывающего окна про автора сайта -->
+
+    <!-- Скрипт всплывающего окна про cookie -->
+    <div
+      id="popup-notification__cookies"
+      class="popup-notification popup-notification--cookies"
+    >
+      <div class="popup-notification__container">
+        <p class="popup-notification__title">Мы следим за вами</p>
+        <p class="popup-notification__text popup-notification__text--cookies">
+          Оставаясь на сайте, вы даете согласие на обработку cookie и
+          персональных данных. Если вы не хотите, чтобы данные обрабатывались,
+          покиньте сайт.
+        </p>
+        <button
+          class="popup-notification__button-up-close popup-notification__button-up-close--cookies"
+          title="Закрыть"
+        >
+          <img
+            src="img/popup-notification/close.png"
+            class="popup-notification__icon-up-close"
+            alt="Закрыть"
+            title="Закрыть"
+          />
+        </button>
+        <a
+          class="popup-notification__link popup-notification__link--cookies"
+          href="//9270334411.ru/cookie-using.html"
+          target="_blank"
+          >Подробнее</a
+        >
+        <button
+          class="popup-notification__button-down-close popup-notification__button-down-close--cookies"
+          title="Закрыть"
+        >
+          Закрыть
+        </button>
+      </div>
+    </div>
+    <!-- Скрипт всплывающего окна про cookie -->
+
+    <!-- Стрелка вверх -->
+    <button
+      title="Наверх"
+      class="scroll-to-top scroll-to-top--button scroll-to-top--hidden"
+    >
+      <img
+        src="img/scroll-to-top/up-arrow.png"
+        alt="Наверх"
+        title="Наверх"
+        class="scroll-to-top__img"
+      />
+    </button>
+    <!-- Стрелка вверх -->
+
+    <script src="js/mobile-menu.js"></script>
+    <!-- Скрипт вызова мобильного меню -->
+    <script src="js/popup-notofication.js"></script>
+    <!-- Скрипт всплывающего окна -->
+    <script src="js/scroll-to-top.js"></script>
+    <!-- Скрипт кнопки наверх -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Скрипт слайдера Swiper -->
+    <script src="js/swiper-init.js"></script>
+    <!-- Скрипт запуска и настроек слайдера Swiper -->
+    <script src="js/sweetalert2.min.js"></script>
+    <!-- Скрипт модальных окон SweetAlert2 -->
+    <script src="js/sweetalert2-init.js"></script>
+    <!-- Скрипт запуска и настроек модальных окон SweetAlert2 -->
+  </body>
+</html>

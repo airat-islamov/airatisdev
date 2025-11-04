@@ -1,0 +1,42 @@
+.cat-and-dog
+  &__cat, &__dog
+    width: 369px
+    height: 254px
+    position: relative
+    overflow: hidden
+  &__description
+    max-width: 200px
+    padding: 30px 0 0 45px
+  &__container
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    gap: 20px
+  &__wrapper
+    position: relative
+    overflow: hidden
+  &__title
+    font-weight: 500
+    font-size: 30px
+    line-height: 1
+    letter-spacing: -0.02em
+    text-transform: uppercase
+    color: $gray-color
+  &__foods
+    position: absolute
+    z-index: -1
+    top: 0px
+    right: 0px
+    &--dog
+      top: 0px
+      right: 9px
+  &__background-image
+    position: absolute
+    right: 0px
+    bottom: -3px
+    z-index: -3
+    &--dog
+      right: 0px
+      bottom: -3px
+    &--tablet, &--mobile
+      display: none

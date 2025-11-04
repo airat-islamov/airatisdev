@@ -1,0 +1,83 @@
+body
+  margin: 0
+
+.wrapper
+  & *
+    box-sizing: border-box
+    color: $black-color
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif
+
+.container
+  max-width: 1296px
+  padding: 0 24px
+  margin: 0 auto
+
+.img-css-clear // Обнуляем стили, чтобы изображения отображались без отступов
+  width: 100%
+  border: 0
+  padding: 0
+  margin: 0
+  position: relative
+  vertical-align: bottom
+
+.btn-css-clear
+  color: inherit
+  border: none
+  padding: 0
+  font: inherit
+  cursor: pointer
+  outline: inherit
+  background: inherit
+#myBtn
+  display: none
+#dots
+  display: none
+
+.title
+  font-weight: 600
+  font-size: 48px
+  color: $red-color
+  margin-bottom: 24px
+  &--center
+    text-align: center
+
+.main-button
+  display: flex
+  justify-content: center
+  &--margin-bottom
+    margin-bottom: 64px
+  &__btn
+    border-radius: 8px
+    padding: 16px 88.5px
+    background: $green-color
+    border: 4px solid $green-color
+    color: $white-color
+    font-weight: 400
+    font-size: 24px
+    line-height: 1.2
+    &:hover
+      border: 4px solid $green-color
+      background: $white-color
+      transition: background 0.25s
+      color: $green-color
+
+@media (max-width: 768px)
+  .title
+    font-size: 36px
+
+  .main-button
+    &__btn
+      padding: 16px 48px
+    &__text
+      font-size: 20px
+
+@media (max-width: 480px)
+  .title
+    font-size: 24px
+    text-align: center
+  .main-button
+    &__btn
+      width: 100%
+      padding: 16px 0
+    &__text
+      font-size: 16px

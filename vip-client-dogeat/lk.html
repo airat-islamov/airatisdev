@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Личный кабинет — DogEat</title>
+  <style>
+    :root{
+      --bg:#F7F3EA;
+      --card:#FFFFFF;
+      --text:#2B2B2B;
+      --muted:#777777;
+      --brand:#78B54E;
+      --brand-600:#5A9837;
+      --danger:#D93025;
+      --accent:#E7B84B;
+      --border:#E6E2D9;
+      --badge:#F2F0E8;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,'Segoe UI',Roboto,Ubuntu,'Helvetica Neue',Arial}
+    a{color:#7A4B17;text-decoration:underline;text-decoration-style:dotted}
+    a:hover{text-decoration-style:solid}
+    .breadcrumb{max-width:1180px;margin:16px auto 0;padding:0 16px;color:var(--muted);font-size:14px}
+    .lk{max-width:1180px;margin:8px auto 40px;padding:0 16px}
+    .lk-nav{display:flex;gap:24px;align-items:center;padding:12px 0 6px;border-bottom:8px solid #E7EED9;background:linear-gradient(to bottom, #EAF5D9 0, #EAF5D9 12px, transparent 12px)}
+    .lk-nav a{color:#7A4B17;font-weight:600}
+    .grid{display:grid;gap:16px}
+    .grid-2{grid-template-columns:2fr 1fr}
+    @media (max-width:960px){.grid-2{grid-template-columns:1fr}}
+    .card{background:#FFFFFF;border:1px solid var(--border);border-radius:12px;box-shadow:0 1px 0 rgba(0,0,0,.02);padding:16px}
+    .card + .card{margin-top:12px}
+    .card-header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:12px}
+    .card-title{margin:0;font-size:20px;font-weight:700}
+    .muted{color:var(--muted)}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}
+    .btn-primary{background:var(--brand);color:#fff}
+    .btn-primary:hover{background:var(--brand-600)}
+    .btn-ghost{background:transparent;color:var(--brand);border:1px solid var(--brand)}
+    .btn-ghost:hover{background:#EFF7E9}
+    .badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-size:12px;background:var(--badge);border:1px solid var(--border)}
+    .badge-vip{background:linear-gradient(180deg,#FFF6D8,#F7E1A1);border-color:#E8D28A}
+    .badge-danger{background:#FCE9E7;border-color:#F6C5C0;color:#A5281F}
+    .vip-card{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:start}
+    .vip-key{font-size:14px;color:var(--muted)}
+    .vip-value{font-size:18px;font-weight:800}
+    .vip-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:8px}
+    @media (max-width:720px){.vip-grid{grid-template-columns:1fr}}
+    .help{font-size:13px;color:var(--muted)}
+    .order{display:flex;flex-direction:column;gap:10px}
+    .order-head{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .order-title{font-size:18px;font-weight:800;margin:0}
+    .order-row{display:flex;gap:24px;flex-wrap:wrap;color:var(--muted)}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:#FAFAFA}
+    .price{font-size:22px;font-weight:900}
+    .price-old{color:var(--muted);text-decoration:line-through;margin-left:10px}
+    .kicker{font-size:14px}
+    .kicker strong{font-weight:900}
+    .side .card{position:sticky;top:12px}
+    ul.clean{list-style:none;padding:0;margin:0;display:flex;gap:12px;flex-wrap:wrap}
+    .kv{display:grid;grid-template-columns:auto 1fr;gap:4px 10px}
+    .kv dt{color:var(--muted)}
+    .kv dd{margin:0;font-weight:700}
+    .note{font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <nav class="breadcrumb" aria-label="Хлебные крошки">
+    Главная > <strong>Личный кабинет</strong>
+  </nav>
+  <div class="lk">
+    <nav class="lk-nav" aria-label="Навигация личного кабинета">
+      <a href="#">Личный кабинет</a>
+      <a href="#">Заказы</a>
+      <a href="#">Избранное</a>
+      <a href="#">Адреса</a>
+      <a href="#">Настройки</a>
+      <a href="#">Выход</a>
+    </nav>
+    <div class="grid grid-2" style="margin-top:16px">
+      <main class="main">
+        <section class="card" aria-labelledby="vip-card-title">
+          <div class="card-header">
+            <h2 class="card-title" id="vip-card-title">Мой статус и цены</h2>
+            <span class="badge badge-vip" aria-label="Статус VIP">
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="#7A5A1B" d="m7 10 5-5 5 5 4-3v11H3V7l4 3z"/></svg>
+              VIP активен
+            </span>
+          </div>
+          <div class="vip-card">
+            <div>
+              <div class="vip-grid">
+                <div><div class="vip-key">Ваша персональная скидка</div><div class="vip-value">−10%</div></div>
+                <div><div class="vip-key">Экономия за 90 дней</div><div class="vip-value">2 450 ₽</div></div>
+                <div><div class="vip-key">Статус истекает</div><div class="vip-value">12.12.2025</div></div>
+              </div>
+              <p class="help" style="margin:8px 0 0">VIP не суммируется с акциями. Мы всегда показываем <strong>самую выгодную цену</strong>. Исключения: Vet-линейки, промо-упаковки.</p>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px;min-width:220px">
+              <button class="btn btn-primary" type="button">Продлить VIP</button>
+              <button class="btn btn-ghost" type="button">Автозаказ — VIP без перерыва</button>
+            </div>
+          </div>
+        </section>
+        <section class="card order" aria-labelledby="last-order-title">
+          <div class="card-header" style="margin-bottom:4px">
+            <h2 class="card-title" id="last-order-title">Ваш последний заказ</h2>
+            <a href="#" class="kicker" aria-label="Повторить заказ этой позиции">↻ Повторить заказ</a>
+          </div>
+          <div class="order-head">
+            <span class="badge badge-danger" aria-label="Статус заказа: отменён">✖ Отменён</span>
+            <h3 class="order-title">Заказ № НФ‑3215664 от 30.10.2025</h3>
+          </div>
+          <div class="order-row">
+            <div>Адрес доставки: <strong>121357, Москва, Кременчугская ул., д. 2, кв. 1</strong></div>
+          </div>
+          <div class="order-row">
+            <span class="pill" aria-label="Способ доставки">🚚 Курьером · 0 ₽</span>
+            <span class="pill" aria-label="Способ оплаты">💳 Оплата наличными — <span class="muted">уточняется</span></span>
+          </div>
+          <div class="card" style="background:#FAFBF7;border-style:dashed">
+            <div class="kicker">С учётом вашего <strong>VIP</strong> сейчас корзина по этому заказу вышла бы на: <span class="price">4 488 ₽</span> <span class="price-old">5 100 ₽</span></div>
+            <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
+              <button class="btn btn-primary">Повторить заказ с VIP</button>
+              <button class="btn btn-ghost">Показать состав заказа</button>
+            </div>
+          </div>
+        </section>
+        <section class="card" aria-labelledby="fav-title">
+          <div class="card-header">
+            <h2 class="card-title" id="fav-title">Избранное — ваша выгода</h2>
+            <a href="#" class="kicker">Перейти ко всем спискам</a>
+          </div>
+          <ul class="clean">
+            <li class="card" style="min-width:260px">
+              <div class="muted">JUST DOG, 12 кг</div>
+              <div style="display:flex;align-items:baseline;gap:10px;margin-top:4px">
+                <div class="price">4 488 ₽</div>
+                <div class="price-old">5 100 ₽</div>
+              </div>
+              <div class="help">Экономия с VIP: 612 ₽</div>
+              <div style="margin-top:8px"><button class="btn btn-primary">В корзину</button></div>
+            </li>
+            <li class="card" style="min-width:260px">
+              <div class="muted">Savory, 10 кг</div>
+              <div style="display:flex;align-items:baseline;gap:10px;margin-top:4px">
+                <div class="price">2 990 ₽</div>
+                <div class="price-old">3 290 ₽</div>
+              </div>
+              <div class="help">Экономия с VIP: 300 ₽</div>
+              <div style="margin-top:8px"><button class="btn btn-primary">В корзину</button></div>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <aside class="side">
+        <section class="card" aria-labelledby="address-title">
+          <div class="card-header">
+            <h2 class="card-title" id="address-title">Адрес доставки по умолчанию</h2>
+            <a href="#" class="kicker">Редактировать</a>
+          </div>
+          <p style="margin:0 0 6px">г Москва, ул Кременчугская, 2</p>
+          <p class="help" style="margin:0">VIP: бесплатная доставка от 1 999 ₽</p>
+        </section>
+        <section class="card" aria-labelledby="vip-settings-title">
+          <div class="card-header">
+            <h2 class="card-title" id="vip-settings-title">Напоминания VIP</h2>
+          </div>
+          <dl class="kv">
+            <dt>Напомнить за 7 дней:</dt><dd>включено</dd>
+            <dt>Письма с персональными ценами:</dt><dd>включено</dd>
+          </dl>
+          <div style="margin-top:10px">
+            <button class="btn btn-ghost">Изменить настройки</button>
+          </div>
+          <p class="note" style="margin-top:12px">Как считается экономия: сравниваем вашу VIP‑цену и цену для неавторизованного покупателя (без промокодов).</p>
+        </section>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>

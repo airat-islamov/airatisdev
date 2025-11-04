@@ -1,0 +1,77 @@
+.history
+  &__wrapper
+    display: grid
+    grid-template: repeat(3, min-content) / repeat(5, 20%)
+    grid-template-areas: "history__info__1 history__info__2 history__info__3 history__info__4 history__info__5" "history__line__1 history__line__2 history__line__2 history__line__3 history__line__3" "history__data__1 history__data__2 history__data__3 history__data__4 history__data__5"
+    align-items: center
+  &__info
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    color: $text-color
+    margin-bottom: 30px
+    max-width: 172px
+    margin: 0 10px 30px 10px
+    justify-self: center
+    &__1
+      grid-area: history__info__1
+    &__2
+      grid-area: history__info__2
+    &__3
+      grid-area: history__info__3
+    &__4
+      grid-area: history__info__4
+    &__5
+      grid-area: history__info__5
+  &__line
+    grid-area: history__line
+    margin-bottom: 30px
+    width: 100%
+    height: 9px
+    background-color: $line-color
+    &__1
+      grid-area: history__line__1
+      width: 50%
+      justify-self: end
+    &__2
+      grid-area: history__line__2
+    &__3
+      grid-area: history__line__3
+      background: linear-gradient(to right, #CDC1B1, #f2eee3)
+  &__data
+    position: relative
+    justify-self: center
+    text-align: center
+    max-width: 152px
+    margin: 0 10px 30px 10px
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 700
+    font-size: 40px
+    line-height: 48px
+    color: $title-text
+    &:before      
+      display: block
+      position: absolute
+      color: #000
+      content: url('../img/history/data-icon.svg')
+      width: 27px
+      height: 27px
+      top: -60px
+      right: 35px
+    &__1
+      grid-area: history__data__1
+    &__2
+      grid-area: history__data__2
+    &__3
+      grid-area: history__data__3
+    &__4
+      grid-area: history__data__4
+    &__5
+      grid-area: history__data__5
+      max-width: 189px
+      &:before
+        content: none

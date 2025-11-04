@@ -1,0 +1,158 @@
+.header
+  position: relative
+  &-overlay
+    position: absolute
+    height: 1060px
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: -1
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #FFF8F8 75%, #fff8f8 100%)
+  &__navbar
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    padding-top: 33px
+    padding-bottom: 33px
+.logo
+  &__image
+    width: 191px
+    height: 63px
+.navbar
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+.mobile-icon
+  opacity: 0
+.menu
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-end
+  align-items: center
+  max-width: 700px
+  padding-left: 0
+  padding-right: 0
+  margin: 0
+  &__list
+    position: relative
+    list-style: none
+    padding-bottom: 15px
+    &:not(:first-child)
+      margin-left: 40px
+  &__arrow
+    display: none
+  &__sub
+    &-list
+      position: absolute
+      top: 100%
+      right: -30%
+      background: #ffe1e1
+      box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.1)
+      min-width: 220px
+      border-radius: 10px
+      font-size: 17px
+      line-height: 22px
+      z-index: 1
+      transform: translate(0px, 10%)
+      opacity: 0
+      visibility: hidden
+      pointer-events: none
+      transition: all 0.3s ease 0s
+    &-wrapper
+      position: relative
+      list-style: none
+      padding: 15px
+      margin: 0
+      &::before
+        content: ""
+        position: absolute
+        border: 15px solid transparent
+        border-bottom: 15px solid #ffe1e1
+        transform: translate(80px, -43px)
+    &-item
+      &:not(:last-child)
+        padding-bottom: 10px
+      &--hidden
+        display: none
+    &-link
+      color: #c63f3b
+      text-decoration: none
+      &:hover
+        color: #ff504a
+        text-decoration: underline
+        text-decoration-style: dashed
+        text-underline-offset: 5px
+        text-decoration-thickness: 1px
+  &__link
+    position: relative
+    text-decoration: none
+    font-style: normal
+    font-weight: normal
+    font-size: 17px
+    line-height: 22px
+    color: #035755
+    &:hover
+      color: $button-bg-color
+      &:after
+        position: absolute
+        display: block
+        content: ''
+        width: 6px
+        height: 6px
+        border-radius: 50%
+        background-color: $button-bg-color
+        right: 50%
+        transform: translateX(50%)
+        margin-top: 9px
+.feedback-button
+  font-family: Roboto, Arial, Helvetica, sans-serif
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 22px
+  color: #FF383D
+  text-decoration: none
+  border: 2px solid $button-bg-color
+  border-radius: 46px
+  padding: 15px 45px
+  margin: 0 0 15px 40px
+  cursor: pointer
+  background-color: transparent
+  &:hover
+    color: #035755
+    border-color: #035755
+
+.pc > .menu__list:hover .menu__sub-list
+  opacity: 1
+  transform: translate(0px, 0px)
+  visibility: visible
+  pointer-events: all
+
+.touch
+  & > li
+    display: flex
+    align-items: center
+  & .menu
+    &__arrow
+      display: block
+      width: 0
+      height: 0
+      margin: 0 6px 0 0
+      transition: transform 0.3s ease 0s
+      border-left: 8px solid transparent
+      border-right: 8px solid transparent
+      border-top: 13px solid #FF383D
+    &__sub-item--hidden
+      display: block
+
+  & > .active-arrow
+    & .menu
+      &__sub-list
+        opacity: 1
+        transform: translate(0px, 0px)
+        visibility: visible
+        pointer-events: all
+      &__arrow
+        transform: rotate(-180deg)

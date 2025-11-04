@@ -1,0 +1,45 @@
+.vet-food
+  &__wrapper
+    position: relative
+    min-height: 280px
+    overflow: hidden
+  &__description
+    max-width: 260px
+    margin: 31px 0 0 115px
+  &__title
+    font-weight: 700
+    font-size: 45px
+    line-height: 1
+    text-transform: uppercase
+    color: $red-color
+    margin-bottom: 19px
+  &__subtitle
+    font-weight: 500
+    font-size: 30px
+    line-height: 1
+    letter-spacing: -0.02em
+    text-transform: uppercase
+    color: $gray-color
+    &-wrapper
+      display: flex
+      gap: 17px
+    &-redline
+      display: inline-block
+      background: $red-color
+      height: 22px
+      width: 3px
+      margin-right: 5px
+  &__image
+    display: flex
+    position: absolute
+    z-index: -1
+    top: 18px
+    right: 96px
+  &__background-image
+    position: absolute
+    z-index: -2
+    &--desktop
+      top: -335px
+      right: -51px
+    &--tablet
+      display: none

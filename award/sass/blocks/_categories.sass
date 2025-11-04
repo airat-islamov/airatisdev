@@ -1,0 +1,47 @@
+.categories
+  &__container
+    position: relative
+    max-width: 1296px
+    padding: 0 24px
+    margin: 0 auto
+  &__wrapper
+    display: flex
+    gap: 24px
+    &--margin-bottom
+      margin-bottom: 64px
+  &__card
+    display: flex
+    flex-direction: column
+    align-items: center
+    background: $light-grey-color
+    height: 294px
+    border-radius: 64px
+    width: 294px
+    cursor: pointer
+    &:hover
+      opacity: 0.75
+    &--extra
+      display: none
+  &__icon
+    display: flex
+    width: 180px
+    height: 162px
+    margin-top: 38px
+    margin-bottom: 38px
+  &__title
+    font-weight: 400
+    font-size: 18px
+    line-height: 1.2
+    text-align: center
+    color: $red-color
+  &__button
+    z-index: 1
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    &--next
+      right: 9px
+    &--prev
+      left: 9px
+    &:hover
+      opacity: 0.75

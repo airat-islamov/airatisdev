@@ -1,0 +1,1273 @@
+body {
+  margin: 0;
+}
+
+.JUSTDOG-wrapper {
+  overflow: hidden;
+}
+.JUSTDOG-wrapper * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.JUSTDOG-container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.JUSTDOG-img-css-clear {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  vertical-align: bottom;
+}
+
+.JUSTDOG-btn-css-clear {
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  background: inherit;
+}
+
+.JUSTDOG-lazy {
+  background-image: none !important;
+}
+
+.JUSTDOG-about__wrapper {
+  position: relative;
+  min-height: 900px;
+  background-color: #E7E8EA;
+  background-image: -Webkit-image-set(url(../img/about/background-1x.webp) 1x, url(../img/about/background-2x.webp) 2x);
+  background-repeat: no-repeat;
+}
+.JUSTDOG-about__wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(255, 255, 255, 0)), to(#E7E8EA));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, #E7E8EA 100%);
+  pointer-events: none;
+}
+.JUSTDOG-about__vegetables-pieces-left-up {
+  display: none;
+  z-index: 1;
+}
+.JUSTDOG-about__vegetables-pieces-left-down {
+  position: absolute;
+  top: 639px;
+  left: 0;
+  width: 118px;
+  height: 294px;
+  background-image: -Webkit-image-set(url(../img/about/chicken_veggi_ch-left-1x.webp) 1x, url(../img/about/chicken_veggi_ch-left-2x.webp) 2x);
+  background-position: top left;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.JUSTDOG-about__vegetables-pieces-right {
+  position: absolute;
+  top: 561px;
+  right: 0;
+  width: 119px;
+  height: 355px;
+  background-image: -Webkit-image-set(url(../img/about/chicken_veggi_ch-right-1x.webp) 1x, url(../img/about/chicken_veggi_ch-right-2x.webp) 2x);
+  background-position: top right;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.JUSTDOG-about__logotip {
+  position: absolute;
+  width: 368px;
+  height: 295px;
+  top: 49px;
+  left: 93px;
+}
+.JUSTDOG-about__logotip-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 537px;
+  height: 535px;
+}
+.JUSTDOG-about__meat-percentage-sticker {
+  position: absolute;
+  width: 117px;
+  height: 168px;
+  left: 551px;
+  top: 0;
+}
+.JUSTDOG-about__number-one {
+  position: absolute;
+  width: 193px;
+  top: 35px;
+  right: 35px;
+}
+.JUSTDOG-about__title {
+  display: none;
+}
+.JUSTDOG-about__description {
+  position: absolute;
+  top: 411px;
+  left: 0;
+  width: 568px;
+  min-height: 308px;
+  background-image: -Webkit-image-set(url(../img/about/plashka_rab-1x.webp) 1x, url(../img/about/plashka_rab-2x.webp) 2x);
+  background-position: top right;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.JUSTDOG-about__description-premium-sticker {
+  position: absolute;
+  width: 250px;
+  top: 169px;
+  left: 408px;
+  z-index: 2;
+}
+.JUSTDOG-about__description-text {
+  font-family: "Geologica";
+  text-transform: uppercase;
+  color: #ECEFDF;
+  font-size: 27px;
+}
+.JUSTDOG-about__description-pretitle {
+  font-weight: 300;
+  margin: 23px 0 0 43px;
+}
+.JUSTDOG-about__description-title {
+  font-weight: 500;
+  font-size: 80px;
+  margin: 34px 0 0 39px;
+}
+.JUSTDOG-about__description-subtitle {
+  font-weight: 300;
+  line-height: 116%;
+  margin: 20px 0 0 43px;
+  max-width: 330px;
+}
+.JUSTDOG-about__description-line {
+  border: 1.43px solid #ECEFDF;
+  width: 372px;
+  height: 0px;
+  margin: 5px 0 0 44px;
+}
+
+.JUSTDOG-content-wrapper {
+  background-color: #E7E8EA;
+}
+.JUSTDOG-content__description-text {
+  font-family: "Geologica";
+  text-transform: uppercase;
+  color: #1E1E1E;
+}
+.JUSTDOG-content__description-title {
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 112%;
+  letter-spacing: 2.3px;
+  margin-bottom: 11px;
+}
+.JUSTDOG-content__description-title-ls {
+  letter-spacing: 0.5px;
+  margin-bottom: 6.5px;
+  margin-top: 0.4px;
+}
+.JUSTDOG-content__description-title-desktop {
+  margin-left: 1px;
+}
+.JUSTDOG-content__description-title-mob {
+  display: none;
+}
+.JUSTDOG-content__description-line {
+  border: 1px solid #1E1E1E;
+  height: 0px;
+}
+.JUSTDOG-content__description-subtitle {
+  font-weight: 300;
+  font-size: 27px;
+  line-height: 122%;
+  margin-bottom: 42px;
+}
+.JUSTDOG-content__description-subtitle-mobile, .JUSTDOG-content__description-subtitle-mob {
+  display: none;
+}
+.JUSTDOG-content__description-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+}
+.JUSTDOG-content__description-item-hand {
+  width: 140px;
+  margin-right: 68px;
+}
+.JUSTDOG-content__description-item-microscope {
+  width: 175px;
+  margin-right: 34px;
+}
+.JUSTDOG-content__description-item-atom {
+  width: 147px;
+}
+.JUSTDOG-content__description-item-brain {
+  width: 156px;
+  margin-right: 52px;
+}
+.JUSTDOG-content__description-item-bones {
+  width: 126px;
+  margin-right: 81px;
+}
+.JUSTDOG-content__description-item-dna {
+  width: 145px;
+}
+.JUSTDOG-content__description-item-regen {
+  width: 130px;
+  margin-right: 78px;
+  margin-top: 51px;
+}
+.JUSTDOG-content__description-item-hair {
+  width: 126px;
+  margin-right: 81px;
+  margin-top: 51px;
+}
+.JUSTDOG-content__description-item-skin {
+  width: 126px;
+  margin-top: 51px;
+}
+.JUSTDOG-content__description-item-liver {
+  width: 178px;
+  margin-right: 151px;
+  margin-bottom: 56px;
+}
+.JUSTDOG-content__description-item-scales {
+  width: 183px;
+  margin-bottom: 56px;
+}
+.JUSTDOG-content__description-item-fitness {
+  width: 248px;
+  margin-right: 80px;
+}
+.JUSTDOG-content__description-item-kidneys {
+  width: 286px;
+}
+.JUSTDOG-content__description-item-icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 16px;
+  width: 126px;
+  height: 117px;
+  background: #FFFFFF;
+  margin-bottom: 25px;
+}
+.JUSTDOG-content__description-item-icon-wrapper-regen {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.JUSTDOG-content__description-item-icon-hand {
+  width: 95px;
+  height: 96px;
+}
+.JUSTDOG-content__description-item-icon-microscope {
+  width: 73px;
+  height: 95px;
+}
+.JUSTDOG-content__description-item-icon-atom {
+  width: 89px;
+  height: 89px;
+}
+.JUSTDOG-content__description-item-icon-brain {
+  width: 101px;
+  height: 100px;
+}
+.JUSTDOG-content__description-item-icon-bones {
+  width: 96px;
+  height: 103px;
+}
+.JUSTDOG-content__description-item-icon-dna {
+  width: 93px;
+  height: 92px;
+}
+.JUSTDOG-content__description-item-icon-regen {
+  width: 116px;
+  height: 104px;
+}
+.JUSTDOG-content__description-item-icon-hair {
+  width: 92px;
+  height: 94px;
+}
+.JUSTDOG-content__description-item-icon-skin {
+  width: 104px;
+  height: 93px;
+}
+.JUSTDOG-content__description-item-icon-liver {
+  width: 90px;
+  height: 90px;
+}
+.JUSTDOG-content__description-item-icon-scales {
+  width: 84px;
+  height: 94px;
+}
+.JUSTDOG-content__description-item-icon-fitness {
+  width: 94px;
+  height: 94px;
+}
+.JUSTDOG-content__description-item-icon-kidneys {
+  width: 101px;
+  height: 90px;
+}
+.JUSTDOG-content__description-item-icon-text {
+  font-family: "Geologica";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #1E1E1E;
+}
+.JUSTDOG-content__description-key-advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.JUSTDOG-content__recipe-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(#E7E8EA), to(#fff));
+  background: linear-gradient(to bottom, #E7E8EA, #fff);
+  position: relative;
+  min-height: 643px;
+}
+.JUSTDOG-content__recipe-description {
+  max-width: 570px;
+  position: absolute;
+  top: -32px;
+  left: 43px;
+  z-index: 1;
+}
+.JUSTDOG-content__recipe-description-line {
+  max-width: 547px;
+  margin-bottom: 15px;
+}
+.JUSTDOG-content__recipe-image {
+  max-width: 727px;
+}
+.JUSTDOG-content__recipe-image-shadow {
+  display: none;
+}
+.JUSTDOG-content__recipe-image-preserves {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  width: 727px;
+  height: 511px;
+  background-image: -Webkit-image-set(url(../img/recipe/can_rab-1x.webp) 1x, url(../img/recipe/can_rab-2x.webp) 2x);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.JUSTDOG-content__recipe-image-preserves-vegetables {
+  position: absolute;
+  top: 330px;
+  right: 0px;
+  width: 324px;
+  height: 309px;
+  background-image: -Webkit-image-set(url(../img/recipe/chick_pile-1x.webp) 1x, url(../img/recipe/chick_pile-2x.webp) 2x);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.JUSTDOG-content__recipe-image-preserves-vegetables-right {
+  position: absolute;
+  top: 41px;
+  right: 0px;
+  width: 182px;
+  height: 304px;
+  background-image: -Webkit-image-set(url(../img/recipe/carrot_chick_pum-1x.webp) 1x, url(../img/recipe/carrot_chick_pum-2x.webp) 2x);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.JUSTDOG-content__recipe-image-sticker {
+  position: absolute;
+  top: -80px;
+  right: 340px;
+  width: 271px;
+  height: 229px;
+  background-image: -Webkit-image-set(url(../img/recipe/natural_rab-1x.webp) 1x, url(../img/recipe/natural_rab-2x.webp) 2x);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.JUSTDOG-content__korm-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-height: 800px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#E7E8EA));
+  background: linear-gradient(to bottom, #fff, #E7E8EA);
+}
+.JUSTDOG-content__korm-image {
+  position: absolute;
+  top: -168px;
+  left: 0;
+  width: 647px;
+  height: 1000px;
+  background-image: -Webkit-image-set(url(../img/korm/veggies-1x.webp) 1x, url(../img/korm/veggies-2x.webp) 2x);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.JUSTDOG-content__korm-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 570px;
+  margin-right: 34px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.JUSTDOG-content__korm-description-text {
+  text-align: right;
+}
+.JUSTDOG-content__korm-description-title {
+  margin-right: -5px;
+  margin-bottom: 14px;
+}
+.JUSTDOG-content__korm-description-line {
+  margin-bottom: 12px;
+  width: 466px;
+}
+.JUSTDOG-content__korm-description-subtitle {
+  margin-bottom: 47px;
+}
+.JUSTDOG-content__korm-description-key-advantages {
+  max-width: 560px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.JUSTDOG-content__formula-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E7E8EA), color-stop(50%, #ffffff), to(#E7E8EA));
+  background: linear-gradient(to bottom, #E7E8EA 0%, #ffffff 50%, #E7E8EA 100%);
+}
+.JUSTDOG-content__formula-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 615px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 8px 0 0 44px;
+}
+.JUSTDOG-content__formula-description-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 694px;
+  height: 624px;
+  z-index: 1;
+}
+.JUSTDOG-content__formula-description-top {
+  z-index: 2;
+}
+.JUSTDOG-content__formula-description-title {
+  letter-spacing: 2.8px;
+}
+.JUSTDOG-content__formula-description-title-mobile {
+  display: none;
+}
+.JUSTDOG-content__formula-description-line {
+  max-width: 471px;
+  margin-bottom: 14px;
+}
+.JUSTDOG-content__formula-description-line-mobile {
+  display: none;
+}
+.JUSTDOG-content__formula-description-subtitle-margin {
+  margin-bottom: 23px;
+}
+.JUSTDOG-content__formula-description-subtitle-fs24 {
+  font-size: 24px;
+  line-height: 118%;
+  margin-left: -1px;
+  margin-bottom: 4px;
+}
+.JUSTDOG-content__formula-description-subtitle-fs20 {
+  font-size: 20px;
+  line-height: 114%;
+  text-transform: none;
+  letter-spacing: 0.15px;
+  margin-left: -1px;
+}
+.JUSTDOG-content__formula-description-key-advantages {
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 2;
+}
+.JUSTDOG-content__formula-description-key-advantages-shadow {
+  position: absolute;
+  top: 0;
+  left: -45px;
+  width: 740px;
+  height: 625px;
+}
+.JUSTDOG-content__formula-image {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 716px;
+  height: 738px;
+  background-image: -Webkit-image-set(url(../img/formula/chick_pile-1x.webp) 1x, url(../img/formula/chick_pile-2x.webp) 2x);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.JUSTDOG-content__dog-wrapper {
+  background-color: #E7E8EA;
+  min-height: 1050px;
+  position: relative;
+}
+.JUSTDOG-content__dog-vitamin {
+  position: absolute;
+  top: -49px;
+  right: 0;
+  width: 551px;
+  height: 965px;
+  background-image: -Webkit-image-set(url(../img/dog/vitamin-1x.webp) 1x, url(../img/dog/vitamin-2x.webp) 2x);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.JUSTDOG-content__dog-animal {
+  position: absolute;
+  top: -178px;
+  left: 0;
+  width: 1220px;
+  height: 1380px;
+  background-image: -Webkit-image-set(url(../img/dog/animal-1x.webp) 1x, url(../img/dog/animal-2x.webp) 2x);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.JUSTDOG-content__dog-animal::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(100%, #E7E8EA), color-stop(80%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(to top, #E7E8EA 100%, rgba(255, 255, 255, 0) 80%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.JUSTDOG-content__footer-wrapper {
+  position: relative;
+  margin-top: -56px;
+  background-image: -Webkit-image-set(url(../img/footer/background-footer-1x.webp) 1x, url(../img/footer/background-footer-2x.webp) 2x);
+  background-position: top left;
+  background-repeat: no-repeat;
+  min-height: 1030px;
+}
+.JUSTDOG-content__footer-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(100%, #E7E8EA), color-stop(80%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(to top, #E7E8EA 100%, rgba(255, 255, 255, 0) 80%);
+  pointer-events: none;
+  z-index: -1;
+}
+.JUSTDOG-content__footer-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 43.5px;
+  margin-top: 49px;
+}
+.JUSTDOG-content__footer-description-block-left {
+  max-width: 511px;
+}
+.JUSTDOG-content__footer-description-block-right {
+  margin-top: 5px;
+  margin-left: 96px;
+}
+.JUSTDOG-content__footer-text {
+  max-width: 560px;
+  text-transform: none;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 114%;
+  letter-spacing: 0.15px;
+}
+.JUSTDOG-content__footer-title {
+  letter-spacing: 2.7px;
+}
+.JUSTDOG-content__footer-line {
+  max-width: 470px;
+  margin-bottom: 13px;
+}
+.JUSTDOG-content__footer-logo {
+  position: absolute;
+  top: 718px;
+  left: 38.7%;
+  width: 306px;
+  height: 244px;
+}
+
+@media (max-width: 1170px) {
+  .JUSTDOG-content__recipe-image-preserves {
+    top: 3px;
+    right: -130px;
+    width: 516px;
+    height: 327px;
+    background-image: -Webkit-image-set(url(../img/recipe/can_rab-mob-1x.webp) 1x, url(../img/recipe/can_rab-mob-2x.webp) 2x);
+  }
+  .JUSTDOG-content__recipe-image-preserves-vegetables {
+    top: 180px;
+    right: 133px;
+    width: 223px;
+    height: 187px;
+    background-image: -Webkit-image-set(url(../img/recipe/chick_pile-mob-1x.webp) 1x, url(../img/recipe/chick_pile-mob-2x.webp) 2x);
+  }
+  .JUSTDOG-content__recipe-image-preserves-vegetables-right {
+    display: none;
+  }
+  .JUSTDOG-content__recipe-image-sticker {
+    top: -71px;
+    right: 171px;
+    width: 194px;
+    height: 162px;
+    background-image: -Webkit-image-set(url(../img/recipe/natural_rab-mob-1x.webp) 1x, url(../img/recipe/natural_rab-mob-2x.webp) 2x);
+  }
+  .JUSTDOG-content__korm-image {
+    top: 15px;
+    width: 400px;
+    height: 618px;
+    background-image: -Webkit-image-set(url(../img/korm/veggies-tablet-1x.webp) 1x, url(../img/korm/veggies-tablet-2x.webp) 2x);
+  }
+}
+@media (max-width: 1024px) {
+  .JUSTDOG-about__vegetables-pieces-left-up {
+    display: block;
+    position: absolute;
+    top: 505px;
+    left: 0;
+    width: 86px;
+    height: 162px;
+    background-image: -Webkit-image-set(url(../img/about/chicken_veggi_ch-left-up-mob-1x.webp) 1x, url(../img/about/chicken_veggi_ch-left-up-mob-2x.webp) 2x);
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+  .JUSTDOG-about__vegetables-pieces-left-down {
+    z-index: 1;
+    top: 755px;
+    left: 0;
+    width: 146px;
+    height: 134px;
+    background-image: -Webkit-image-set(url(../img/about/chicken_veggi_ch-left-down-mob-1x.webp) 1x, url(../img/about/chicken_veggi_ch-left-down-mob-2x.webp) 2x);
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+  .JUSTDOG-about__vegetables-pieces-right {
+    z-index: 1;
+    top: 668px;
+    right: 0;
+    width: 192px;
+    height: 326px;
+    background-image: -Webkit-image-set(url(../img/about/chicken_veggi_ch-right-mob-1x.webp) 1x, url(../img/about/chicken_veggi_ch-right-mob-2x.webp) 2x);
+    background-position: top right;
+  }
+  .JUSTDOG-about__logotip {
+    width: 154px;
+    height: 123px;
+    top: 36px;
+    left: 53px;
+  }
+  .JUSTDOG-about__logotip-shadow {
+    display: none;
+  }
+  .JUSTDOG-about__meat-percentage-sticker {
+    display: none;
+  }
+  .JUSTDOG-about__number-one {
+    width: 99px;
+    height: 113px;
+    right: 16px;
+  }
+  .JUSTDOG-about__description {
+    top: 645px;
+    width: 290px;
+    min-height: 156px;
+    background-image: -Webkit-image-set(url(../img/about/plashka-mob-1x.webp) 1x, url(../img/about/plashka-mob-2x.webp) 2x);
+  }
+  .JUSTDOG-about__description-premium-sticker {
+    width: 129px;
+    height: 121px;
+    left: 227px;
+    top: 79px;
+  }
+  .JUSTDOG-about__description-text {
+    max-width: 295px;
+    font-size: 13px;
+  }
+  .JUSTDOG-about__description-pretitle {
+    letter-spacing: 0.039em;
+    margin: 12px 0 0 25px;
+  }
+  .JUSTDOG-about__description-title {
+    letter-spacing: 0.011em;
+    font-size: 40px;
+    margin: 18px 0 0 23px;
+  }
+  .JUSTDOG-about__description-line {
+    border: 0.73px solid #ecefdf;
+    width: 188px;
+    margin: 3px 0 0 26px;
+  }
+  .JUSTDOG-about__description-subtitle {
+    max-width: 170px;
+    letter-spacing: 0.035em;
+    margin: 11px 0 0 25px;
+  }
+  .JUSTDOG-about__title {
+    display: block;
+    position: absolute;
+    top: 199px;
+    left: 19px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 102%;
+    letter-spacing: -0.01em;
+  }
+  .JUSTDOG-content__description-title {
+    font-size: 28px;
+    line-height: 113%;
+    margin-bottom: 6px;
+  }
+  .JUSTDOG-content__description-title-desktop {
+    display: none;
+  }
+  .JUSTDOG-content__description-title-mob {
+    display: block;
+  }
+  .JUSTDOG-content__description-subtitle {
+    font-size: 16px;
+    margin-bottom: 26px;
+  }
+  .JUSTDOG-content__description-subtitle-desktop {
+    display: none;
+  }
+  .JUSTDOG-content__description-subtitle-mob {
+    display: block;
+    line-height: 125%;
+    margin-bottom: 27px;
+  }
+  .JUSTDOG-content__description-item-hand {
+    width: 79px;
+    margin-right: 36px;
+  }
+  .JUSTDOG-content__description-item-microscope {
+    width: 100px;
+    margin-right: 17px;
+  }
+  .JUSTDOG-content__description-item-atom {
+    width: 82px;
+  }
+  .JUSTDOG-content__description-item-brain {
+    width: 94px;
+    margin-right: 21px;
+  }
+  .JUSTDOG-content__description-item-bones {
+    width: 72px;
+    margin-right: 42px;
+  }
+  .JUSTDOG-content__description-item-dna {
+    width: 83px;
+  }
+  .JUSTDOG-content__description-item-regen {
+    width: 74px;
+    margin-right: 39px;
+    margin-top: 36px;
+  }
+  .JUSTDOG-content__description-item-hair {
+    width: 72px;
+    margin-right: 43px;
+    margin-top: 36px;
+  }
+  .JUSTDOG-content__description-item-skin {
+    width: 72px;
+    margin-top: 36px;
+  }
+  .JUSTDOG-content__description-item-liver {
+    width: 94px;
+    margin-right: 21px;
+    margin-bottom: 30px;
+  }
+  .JUSTDOG-content__description-item-scales {
+    width: 110px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .JUSTDOG-content__description-item-fitness {
+    width: 82px;
+    margin-right: 33px;
+  }
+  .JUSTDOG-content__description-item-kidneys {
+    width: 76px;
+    margin-right: 0;
+  }
+  .JUSTDOG-content__description-item-icon-wrapper {
+    border-radius: 9px;
+    width: 71px;
+    height: 66px;
+    margin-bottom: 14px;
+  }
+  .JUSTDOG-content__description-item-icon-hand {
+    width: 54px;
+    height: 54px;
+  }
+  .JUSTDOG-content__description-item-icon-microscope {
+    width: 41px;
+    height: 54px;
+  }
+  .JUSTDOG-content__description-item-icon-atom {
+    width: 51px;
+    height: 50px;
+  }
+  .JUSTDOG-content__description-item-icon-brain {
+    width: 52px;
+    height: 52px;
+  }
+  .JUSTDOG-content__description-item-icon-bones {
+    width: 50px;
+    height: 52px;
+  }
+  .JUSTDOG-content__description-item-icon-dna {
+    width: 53px;
+    height: 52px;
+  }
+  .JUSTDOG-content__description-item-icon-regen {
+    width: 62px;
+    height: 55px;
+  }
+  .JUSTDOG-content__description-item-icon-hair {
+    width: 54px;
+    height: 54px;
+  }
+  .JUSTDOG-content__description-item-icon-skin {
+    width: 58px;
+    height: 52px;
+  }
+  .JUSTDOG-content__description-item-icon-liver {
+    width: 50px;
+    height: 51px;
+  }
+  .JUSTDOG-content__description-item-icon-scales {
+    width: 45px;
+    height: 50px;
+  }
+  .JUSTDOG-content__description-item-icon-fitness {
+    width: 50px;
+    height: 49px;
+  }
+  .JUSTDOG-content__description-item-icon-kidneys {
+    width: 50px;
+    height: 45px;
+  }
+  .JUSTDOG-content__description-item-icon-text {
+    font-size: 11px;
+  }
+  .JUSTDOG-content__recipe-wrapper {
+    min-height: 367px;
+  }
+  .JUSTDOG-content__recipe-description {
+    max-width: 300px;
+    top: -23px;
+    left: 18px;
+  }
+  .JUSTDOG-content__recipe-description-line {
+    border: 0.9px solid #1E1E1E;
+    width: 224px;
+    margin-bottom: 7px;
+  }
+  .JUSTDOG-content__recipe-image-preserves-vegetables-right {
+    display: none;
+  }
+  .JUSTDOG-content__korm-wrapper {
+    min-height: 470px;
+  }
+  .JUSTDOG-content__korm-description {
+    max-width: 315px;
+  }
+  .JUSTDOG-content__korm-description-line {
+    width: 285px;
+  }
+  .JUSTDOG-content__korm-image {
+    top: -145px;
+  }
+  .JUSTDOG-content__formula-description {
+    min-height: 700px;
+    max-width: 410px;
+  }
+  .JUSTDOG-content__formula-description-key-advantages {
+    max-width: 250px;
+  }
+  .JUSTDOG-content__formula-description-key-advantages-shadow {
+    display: none;
+  }
+  .JUSTDOG-content__formula-image {
+    top: 200px;
+    width: 399px;
+    height: 412px;
+    background-image: -Webkit-image-set(url(../img/formula/chick_pile-tablet-1x.webp) 1x, url(../img/formula/chick_pile-tablet-2x.webp) 2x);
+  }
+  .JUSTDOG-content__dog-vitamin {
+    top: -49px;
+    right: 0;
+    width: 284px;
+    height: 767px;
+    background-image: -Webkit-image-set(url(../img/dog/vitamin-mob-1x.webp) 1x, url(../img/dog/vitamin-mob-2x.webp) 2x);
+  }
+}
+@media (max-width: 768px) {
+  .JUSTDOG-content__recipe-wrapper {
+    min-height: 703px;
+  }
+  .JUSTDOG-content__recipe-image-preserves {
+    top: 335.7px;
+    right: auto;
+    left: -16.4px;
+  }
+  .JUSTDOG-content__recipe-image-preserves-vegetables {
+    top: 517px;
+    right: auto;
+    left: 19px;
+  }
+  .JUSTDOG-content__recipe-image-sticker {
+    top: 261px;
+    right: auto;
+    left: 10px;
+  }
+  .JUSTDOG-content__description-subtitle {
+    max-width: 326px;
+    line-height: 114%;
+  }
+  .JUSTDOG-content__description-subtitle-mobile {
+    display: block;
+    line-height: 128%;
+    letter-spacing: 0px;
+  }
+  .JUSTDOG-content__description-subtitle-mob {
+    line-height: 125%;
+  }
+  .JUSTDOG-content__description-item-icon-text {
+    letter-spacing: 0.3px;
+  }
+  .JUSTDOG-content__description-item-brain {
+    margin-right: 21px;
+  }
+  .JUSTDOG-content__description-item-bones {
+    margin-right: 0;
+  }
+  .JUSTDOG-content__description-item-dna {
+    margin-top: 31px;
+    margin-right: 32px;
+  }
+  .JUSTDOG-content__description-item-regen {
+    margin-right: 0;
+    margin-top: 31px;
+  }
+  .JUSTDOG-content__description-item-hair {
+    margin-right: 43px;
+    margin-top: 44px;
+  }
+  .JUSTDOG-content__description-item-skin {
+    margin-top: 44px;
+  }
+  .JUSTDOG-content__korm-wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .JUSTDOG-content__korm-description {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 266px;
+    margin-right: 0;
+    margin-left: 18px;
+    z-index: 1;
+  }
+  .JUSTDOG-content__korm-description-title {
+    letter-spacing: 0.5px;
+    margin-bottom: 6.8px;
+  }
+  .JUSTDOG-content__korm-description-line {
+    border: 0.9px solid #1E1E1E;
+    width: 224px;
+  }
+  .JUSTDOG-content__korm-description-subtitle {
+    line-height: 124%;
+    margin-bottom: 34px;
+    margin-top: -3px;
+  }
+  .JUSTDOG-content__korm-description-text {
+    text-align: left;
+  }
+  .JUSTDOG-content__korm-description-key-advantages {
+    max-width: 197px;
+  }
+  .JUSTDOG-content__korm-image {
+    width: 182px;
+    height: 437px;
+    top: 139px;
+    right: 0;
+    left: auto;
+    background-image: -Webkit-image-set(url(../img/korm/veggies-mob-1x.webp) 1x, url(../img/korm/veggies-mob-2x.webp) 2x);
+  }
+  .JUSTDOG-content__formula-description {
+    margin-top: 6px;
+    margin-left: 20px;
+  }
+  .JUSTDOG-content__formula-description-line {
+    margin-bottom: 8px;
+    max-width: 224px;
+    border: 0.9px solid #1E1E1E;
+    margin-left: -2px;
+  }
+  .JUSTDOG-content__formula-description-line-mobile {
+    display: block;
+  }
+  .JUSTDOG-content__formula-description-title {
+    margin-top: 51.5px;
+    letter-spacing: 0.4px;
+  }
+  .JUSTDOG-content__formula-description-title-mobile {
+    display: block;
+    margin-bottom: 7.3px;
+    margin-left: -2px;
+  }
+  .JUSTDOG-content__formula-description-title-second {
+    margin-bottom: 7px;
+    margin-left: -2px;
+  }
+  .JUSTDOG-content__formula-description-subtitle-second {
+    margin: 9px 0 33px -2px;
+    letter-spacing: 0px;
+    line-height: 124%;
+  }
+  .JUSTDOG-content__formula-description-subtitle-second-mob {
+    display: none;
+  }
+  .JUSTDOG-content__formula-description-subtitle-mobile {
+    display: block;
+    line-height: 131%;
+    letter-spacing: 0.5px;
+    margin-bottom: 610px;
+  }
+  .JUSTDOG-content__formula-description-shadow {
+    display: none;
+  }
+  .JUSTDOG-content__formula-image {
+    right: auto;
+    left: -306px;
+    top: 309px;
+    width: 807px;
+    height: 540px;
+    background-image: -Webkit-image-set(url(../img/formula/chick_pile-mob-1x.webp) 1x, url(../img/formula/chick_pile-mob-2x.webp) 2x);
+  }
+  .JUSTDOG-content__dog-wrapper {
+    min-height: 855px;
+  }
+  .JUSTDOG-content__dog-animal {
+    top: 28px;
+    left: 0;
+    width: 624px;
+    height: 518px;
+    background-image: -Webkit-image-set(url(../img/dog/animal-tablet-1x.webp) 1x, url(../img/dog/animal-tablet-2x.webp) 2x);
+  }
+  .JUSTDOG-content__footer-wrapper {
+    min-height: 1030px;
+  }
+  .JUSTDOG-content__footer-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 276px;
+    margin-left: 16.5px;
+    margin-top: -65px;
+  }
+  .JUSTDOG-content__footer-description-block-left {
+    max-width: 100%;
+  }
+  .JUSTDOG-content__footer-description-block-right {
+    margin-left: 0;
+  }
+  .JUSTDOG-content__footer-title {
+    letter-spacing: 0.4px;
+    margin-bottom: 6.5px;
+  }
+  .JUSTDOG-content__footer-line {
+    max-width: 224px;
+    margin-bottom: 9px;
+    margin-left: 1px;
+  }
+  .JUSTDOG-content__footer-subtitle {
+    line-height: 123%;
+  }
+  .JUSTDOG-content__footer-text {
+    font-size: 17px;
+    line-height: 122%;
+    letter-spacing: 0px;
+  }
+  .JUSTDOG-content__footer-logo {
+    width: 141px;
+    height: 113px;
+  }
+}
+@media (max-width: 580px) {
+  .JUSTDOG-wrapper {
+    background-image: none;
+  }
+  .JUSTDOG-about__wrapper {
+    background-image: -Webkit-image-set(url(../img/about/background-tablet-1x.webp) 1x, url(../img/about/background-tablet-2x.webp) 2x);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .JUSTDOG-content__dog-wrapper {
+    min-height: 680px;
+  }
+  .JUSTDOG-content__dog-vitamin {
+    top: -236px;
+    z-index: 1;
+  }
+}
+@media (max-width: 430px) {
+  .JUSTDOG-content__footer-wrapper {
+    min-height: 1128px;
+    margin-top: -195px;
+    background-image: -Webkit-image-set(url(../img/footer/background-footer-tablet-1x.webp) 1x, url(../img/footer/background-footer-tablet-2x.webp) 2x);
+    background-position: center;
+  }
+  .JUSTDOG-content__footer-description {
+    margin-top: 93px;
+  }
+  .JUSTDOG-content__footer-logo {
+    top: 969px;
+    left: 31.2%;
+  }
+}
+@media (max-width: 375px) {
+  .JUSTDOG-wrapper {
+    background-image: none;
+  }
+  .JUSTDOG-about__wrapper {
+    background-image: -Webkit-image-set(url(../img/about/background-mob-1x.webp) 1x, url(../img/about/background-mob-2x.webp) 2x);
+    background-repeat: no-repeat;
+  }
+  .JUSTDOG-content__description-item-icon-text {
+    line-height: 133%;
+  }
+  .JUSTDOG-content__recipe-image-shadow {
+    display: block;
+    position: absolute;
+    top: 336px;
+    right: 0;
+    width: 375px;
+    height: 366px;
+  }
+  .JUSTDOG-content__formula-description-key-advantages {
+    margin-left: -2px;
+  }
+  .JUSTDOG-content__dog-wrapper {
+    min-height: 580px;
+  }
+  .JUSTDOG-content__dog-animal {
+    top: 31.5px;
+    width: 375px;
+    height: 514px;
+    background-image: -Webkit-image-set(url(../img/dog/animal-mob-1x.webp) 1x, url(../img/dog/animal-mob-2x.webp) 2x);
+  }
+  .JUSTDOG-content__footer-wrapper {
+    min-height: 1170px;
+    margin-top: -195px;
+    background-image: -Webkit-image-set(url(../img/footer/background-footer-mob-1x.webp) 1x, url(../img/footer/background-footer-mob-2x.webp) 2x);
+  }
+  .JUSTDOG-content__footer-description {
+    margin-top: 193px;
+  }
+  .JUSTDOG-content__footer-logo {
+    top: 1039px;
+    left: 31.2%;
+  }
+}
+@media (max-width: 360px) {
+  .JUSTDOG-about__logotip {
+    left: 15px;
+  }
+  .JUSTDOG-about__number-one {
+    right: 12px;
+  }
+  .JUSTDOG-about__title {
+    left: 15px;
+  }
+  .JUSTDOG-about__description-premium-sticker {
+    left: 170px;
+    top: 110px;
+  }
+  .JUSTDOG-content__description-subtitle {
+    font-size: 15px;
+  }
+  .JUSTDOG-content__description-item-hand {
+    margin-right: 20px;
+  }
+  .JUSTDOG-content__description-item-microscope {
+    margin-right: 0px;
+  }
+  .JUSTDOG-content__recipe-image-preserves-vegetables {
+    right: 80px;
+  }
+  .JUSTDOG-content__recipe-image-sticker {
+    right: 111px;
+  }
+  .JUSTDOG-content__korm-image {
+    right: -50px;
+  }
+  .JUSTDOG-content__formula-description-title {
+    font-size: 24px;
+  }
+  .JUSTDOG-content__dog-vitamin {
+    right: -30px;
+  }
+}/*# sourceMappingURL=style.css.map */

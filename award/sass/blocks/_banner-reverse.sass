@@ -1,0 +1,51 @@
+.banner-reverse
+  &__wrapper
+    display: flex
+    justify-content: flex-end
+    position: relative
+    height: 322px
+    overflow: hidden
+    &--margin-bottom
+      margin-bottom: 24px
+  &__description
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    padding: 50px 50px 0 0
+    &-wrapper
+      display: flex
+      justify-content: flex-end
+      position: relative
+      z-index: 1
+      background: $red-color
+      width: 450px
+    &-border-img
+      z-index: 2
+      position: absolute
+      right: 450px
+      height: 322px
+  &__img
+    position: absolute
+    left: 0
+    height: 100%
+    object-fit: none
+    object-position: right
+  &__text
+    margin: 0 0 64px 0
+    max-width: 380px
+    font-weight: 500
+    font-size: 48px
+    line-height: 0.9
+    color: $white-color
+    text-align: right
+  &__button
+    border: 1px solid $white-color
+    border-radius: 50px
+    padding: 24px 44px
+    ont-weight: 400
+    font-size: 24px
+    line-height: 1.2
+    color: $white-color
+    &:hover
+      backdrop-filter: blur(4px)
+      background: rgba(255, 255, 255, 0.1)

@@ -1,0 +1,13 @@
+{
+  "name": "Что такое Covid-19?",
+  "short_name": "Covid-19",
+  "icons": [
+    {
+      "src": "img/favicon/google-touch-icon.png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "fullscreen"
+}

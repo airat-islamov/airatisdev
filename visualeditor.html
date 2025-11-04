@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Визуальный редактор от Татарина</title>
+    <script src="ckeditor/ckeditor.js"></script>
+    <style>
+      body {
+        background: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <textarea name="editor1" id="editor1" rows="10" cols="80"> </textarea>
+      <script>
+        CKEDITOR.replace("editor1");
+      </script>
+    </form>
+  </body>
+</html>

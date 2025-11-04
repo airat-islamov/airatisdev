@@ -1,0 +1,67 @@
+.diet
+  &__special, &__specific
+    width: 569px
+    height: 500px
+    position: relative
+  &__red-line
+    position: absolute
+    z-index: -2
+    &--left
+      top: 84px
+      left: 0px
+    &--right
+      top: 0px
+      right: 0px
+      &--tablet, &--mobile
+        display: none
+  &__description
+    max-width: 490px
+    padding: 41px 0 0 115px
+  &__container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 25px
+  &__wrapper
+    position: relative
+    overflow: hidden
+  &__title
+    font-weight: 700
+    font-size: 36px
+    line-height: 1
+    text-transform: uppercase
+    color: $red-color
+    margin-bottom: 19px
+    &--white-background
+      display: inline-block
+      color: $red-color
+      background: $white
+      padding-right: 9px
+  &__subtitle
+    font-weight: 500
+    font-size: 30px
+    line-height: 1
+    letter-spacing: -0.02em
+    text-transform: uppercase
+    color: $gray-color
+    &-wrapper
+      display: flex
+      gap: 17px
+    &-redline
+      display: inline-block
+      background: $red-color
+      height: 22px
+      width: 3px
+      margin-right: 5px
+  &__foods
+    position: absolute
+    z-index: -1
+    top: 214px
+    right: 36px
+  &__background-image
+    position: absolute
+    right: 0
+    bottom: -3px
+    z-index: -3
+    &--tablet, &--mobile
+      display: none

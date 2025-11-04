@@ -1,0 +1,74 @@
+.royal-canin-block
+  &__wrapper
+    position: relative
+    padding-bottom: 34px
+    overflow: hidden
+  &__red-line
+    position: absolute
+    z-index: -2
+    &--left
+      top: 205px
+      left: 0px
+      &--tablet, &--mobile
+        display: none
+    &--right
+      top: 0px
+      right: 132px
+      &--tablet, &--mobile
+        display: none
+  &__logo
+    max-width: 197px
+    margin: 0 auto
+    padding-top: 11.53px
+  &__description
+    max-width: 400px
+    margin: 24.26px 0 0 114.97px
+  &__subtitle
+    font-weight: 500
+    font-size: 30px
+    line-height: 1
+    letter-spacing: -0.02em
+    text-transform: uppercase
+    &--gray
+      color: $gray-color
+    &--red
+      color: $red-color
+    &__for-every-steps
+      display: flex
+      align-items: center
+      max-width: 203px
+      max-height: 60px
+      margin: 10px 0px 16px 153px
+      &__left-line
+        display: inline-block
+        background: $red-color
+        height: 52px
+        width: 4px
+        margin-right: 10px
+  &__title
+    &--main
+      font-weight: 700
+      font-size: 64px
+      line-height: 1
+      color: $red-color
+      text-transform: uppercase
+    &--white-background
+      display: inline-block
+      background: #fff
+      padding-right: 10px
+  &__aminals-image
+    position: absolute
+    z-index: -1
+    &__cat
+      top: 58px
+      right: 341px
+    &__dog
+      top: 157px
+      right: 86px
+  &__background-image
+    position: absolute
+    right: 0
+    bottom: -3px
+    z-index: -3
+    &--tablet, &--mobile
+      display: none

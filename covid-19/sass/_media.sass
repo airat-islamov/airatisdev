@@ -1,0 +1,312 @@
+@media (max-width: 1650px)
+  .description
+    margin-bottom: 50px
+  .contagion
+    &__cards
+      width: 1200px
+      &:before
+        top: 405px
+  .card
+    min-height: 500px
+    padding: 55px 52px
+    &__title
+      font-size: 30px
+      margin-top: 32px
+    &__text
+      font-size: 16px
+  .what-to-do
+    &__left-virus, &__right-virus
+      display: none
+
+@media (max-width: 1550px)
+  .container
+    max-width: 1300px
+  .contagion
+    &__cards
+      width: 1100px
+      &:before
+        top: 385px
+@media (max-width: 1380px)
+  .coronavirus
+    &__img-pink-big-virus
+      display: none
+    &__img
+      height: 800px
+      left: -200px
+      top: 8px
+  .container
+    max-width: 95%
+  .covid-about
+    &__container
+      min-height: 715px
+  .covid-about
+    &__content
+      margin-top: 100px
+    &__img
+      width: 1020px
+      height: 700px
+  .contagion
+    &__cards
+      width: 850px
+      &:before
+        top: 375px
+  .symptomps
+    margin-bottom: 100px
+    &__left-leave, &__right-leave
+      display: none
+
+  .footer
+    &__link
+      font-size: 18px
+      &:not(:first-child)
+        margin-left: 30px
+@media (max-width: 1280px)
+  .menu
+    max-width: 560px
+    &__link
+      font-size: 15px
+    &__list
+      &:not(:first-child)
+        margin-left: 20px
+  .feedback-button
+    font-size: 15px
+    padding: 10px 25px
+    margin-left: 20px
+  .covid-about
+    &__content
+      margin-top: 150px
+    &__img
+      height: 550px
+    &__container
+      min-height: 580px
+  .coronavirus
+    &__container
+      padding-top: 150px
+    &__img
+      height: 700px
+      left: -200px
+      top: 8px
+    &__content
+      max-width: 55%
+  .contagion
+    padding-top: 30px
+    &__cards
+      width: 850px
+      &:before
+        top: 370px
+  .what-to-do
+    &__img
+      width: 450px
+  .footer
+    &__menu
+      max-width: 500px
+    &__link
+      font-size: 16px
+      &:not(:first-child)
+        margin-left: 10px
+    &__social
+      padding-left: 0
+      &-item
+        &:not(:first-child)
+          margin-left: 20px
+@media (max-width: 1024px)
+  .header
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    height: 50px
+    background-color: #fff8f8
+    z-index: 101
+    &__navbar
+      padding-top: 5px
+      padding-bottom: 5px
+  .logo
+    &__image
+      width: 124px
+      height: 40px
+  .navbar
+    display: none
+  .menu
+    &__link
+      font-size: 20px
+    &__list
+      &:not(:first-child)
+        margin-left: 0px
+    &__sub-list
+      right: -15%
+  .feedback-button
+    margin: 10px 0 0 0
+    font-size: 20px
+  .covid-about
+    margin-top: 50px
+    &__content
+      text-align: center
+      align-items: center
+      max-width: 100%
+      margin-top: 50px
+    &__img
+      display: none
+
+    &__container
+      min-height: 400px
+
+  .coronavirus
+    &__container
+      padding-top: 100px
+    &__img
+      display: none
+    &__content
+      text-align: center
+      max-width: 100%
+  .contagion
+    &__cards
+      width: 415px
+      &:before
+        top: 375px
+  .card
+    width: 415px
+    min-height: 300px
+    padding: 55px
+
+  .what-to-do
+    &__img
+      width: 300px
+
+  .subscribe-form
+    width: 650px
+
+  .subscribe
+    margin-bottom: 75px
+
+  .footer
+    &__navbar, &__img
+      display: none
+
+  .mobile
+    &-menu
+      display: flex
+      flex-direction: column
+      align-items: center
+      position: fixed
+      top: 50px
+      left: 0
+      width: 100%
+      height: calc(100% - 50px)
+      background: #fff3f3
+      padding: 20px
+      z-index: 100
+      overflow: auto
+      &-list
+        flex-direction: column
+        align-items: center
+    &-icon
+      opacity: 1
+      display: flex
+      width: 30px
+      height: 30px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: transparent
+      cursor: pointer
+      &__top,&__center,&__bottom
+        width: 30px
+        height: 3px
+        background-color: $text-color
+        transition: all 0.3s ease 0s
+  .active-mobile-menu-button
+    position: relative
+    & .mobile-icon
+      &__top
+        position: absolute
+        top: 44%
+        transform: rotate(45deg) translate(0px, 50%)
+      &__center
+        display: none
+      &__bottom
+        position: absolute
+        top: 50%
+        transform: rotate(-45deg) translate(0px, -50%)
+
+@media (max-width: 768px)
+  .contagion
+    &__cards
+      width: 250px
+      &:before
+        top: 285px
+  .card
+    width: 250px
+    min-height: 300px
+    padding: 20px
+  .slider-button
+    &--next
+      right: -70px
+    &--prev
+      left: -70px
+  .what-to-do
+    &__img
+      display: none
+  .subscribe
+    &__title
+      font-size: 40px
+  .subscribe-form
+    width: 100%
+    height: 60px
+    &__input
+      font-size: 18px
+      padding: 14px 190px 14px 14px
+    &__button
+      font-size: 20px
+      top: 12px
+      right: 12px
+      padding: 6px 20px
+  .footer
+    &__copy
+      font-size: 17px
+@media (max-width: 480px)
+  .scroll-to-top
+    &--button
+      bottom: 50px
+      right: 25px
+  .subtitle
+    font-size: 25px
+  .covid-about
+    &__title
+      font-size: 40px
+      line-height: 48px
+  .text
+    font-size: 18px
+    line-height: 150%
+    margin-bottom: 30px
+  .coronavirus
+    &__container
+      padding-top: 50px
+      padding-bottom: 50px
+  .contagion
+    padding-bottom: 80px
+    &__text
+      line-height: 30px
+      margin-top: 20px
+    &__cards
+      width: 250px
+      &:before
+        content: none
+  .symptomps
+    margin-bottom: 50px
+    &__title
+      margin-bottom: 20px
+  .what-to-do
+    &__title
+      margin-bottom: 10px
+    &__steps-number
+      margin-right: 20px
+    &__steps-title
+      font-size: 40px
+    &__description
+      margin-bottom: 20px
+  .footer
+    &__copy
+      font-size: 13px

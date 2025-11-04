@@ -1,0 +1,57 @@
+.slides
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    margin-bottom: 100px
+.slide
+  display: flex
+  flex-direction: column
+  align-items: center
+  max-width: 385px
+  width: 100%
+  min-height: 398px
+  background: $light
+  border-radius: 10px
+  padding: 20px
+  &__title
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 600
+    font-size: 20px
+    text-align: center
+    margin: 0 0 20px 0
+  &__content
+    position: relative
+    padding-top: 50px
+    min-width: 0
+    max-width: 345px
+    width: 100%
+    min-height: 283px
+    background: $bg-color
+    border-radius: 10px
+    overflow: hidden
+  &__wrapper
+    display: flex
+    justify-content: center
+    padding: 23px
+    min-width: 0
+    cursor: pointer
+
+  .slider-button
+    position: absolute
+    top: 15px
+    z-index: 99
+    width: 11px
+    height: 19px
+    border: none
+    background: red
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-color: transparent
+    &--next
+      right: 25px
+      background-image: url(../img/slides/arrow-next.svg)
+    &--prev
+      left: 25px
+      background-image: url(../img/slides/arrow-prev.svg)

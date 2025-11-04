@@ -1,0 +1,87 @@
+.help
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    margin-bottom: 20px
+    border-radius: 10px
+    padding: 50px 45px
+    align-items: flex-start
+    &__cat
+      min-width: 350px
+      min-height: 202px
+    &__dog
+      min-width: 325px
+      min-height: 218px
+  &__content
+    display: flex
+    flex-direction: column
+    max-width: 305px
+    min-height: 180px
+    &__title
+      font-family: 'Inter'
+      font-style: normal
+      font-weight: 600
+      font-size: 20px
+      margin-top: 0
+    &__text
+      font-family: 'Inter'
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+  &__banner
+    position: relative
+    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.25))
+    border-radius: 10px
+    &__cat
+      width: 254px
+      height: 203px
+      background: no-repeat bottom 0px right 0/cover url("../img/help/cat.jpg")
+    &__dog
+      width: 177px
+      height: 144px
+      background: no-repeat bottom 0px right 0/cover url("../img/help/dog.jpg")
+  &__popap
+    display: block
+    position: absolute
+    min-height: 89px
+    border-radius: 10px
+    background: $title-text
+    padding: 12px 12px 12px 20px
+    &--cat
+      top: -25px
+      right: -95px
+      max-width: 246px
+    &--dog
+      top: -25px
+      right: -145px
+      max-width: 225px
+    &__text
+      font-family: 'Inter'
+      font-style: normal
+      font-weight: 700
+      text-transform: uppercase
+      margin: 0
+    &__title
+      color: $light
+      font-size: 30px
+    &__subtitle
+      color: rgba(255, 255, 255, 0.5)
+      font-size: 24px
+    &__logo
+      position: relative
+      filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.25))
+      border-radius: 10px
+      object-fit: cover
+      background-color: $light
+      &--cat
+        width: 128px
+        height: 80px
+        top: 110px
+        right: -210px
+        background: no-repeat center/cover url("../img/help/cat-logo.jpg")
+      &--dog
+        width: 211px
+        height: 67px
+        top: 125px
+        right: -130px
+        background: no-repeat center/cover url("../img/help/dog-logo.jpg")

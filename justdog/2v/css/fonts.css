@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Geologica"), url("../fonts/Geologica-Light.woff2") format("woff2"), url("../fonts/Geologica-Light.woff") format("woff"), url("../fonts/Geologica-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Geologica"), url("../fonts/Geologica-Regular.woff2") format("woff2"), url("../fonts/Geologica-Regular.woff") format("woff"), url("../fonts/Geologica-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Geologica"), url("../fonts/Geologica-Medium.woff2") format("woff2"), url("../fonts/Geologica-Medium.woff") format("woff"), url("../fonts/Geologica-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Geologica"), url("../fonts/Geologica-Bold.woff2") format("woff2"), url("../fonts/Geologica-Bold.woff") format("woff"), url("../fonts/Geologica-Bold.ttf") format("truetype");
+}/*# sourceMappingURL=fonts.css.map */

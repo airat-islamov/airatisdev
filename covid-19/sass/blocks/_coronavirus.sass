@@ -1,0 +1,39 @@
+.coronavirus
+  overflow: hidden
+  &__container
+    display: flex
+    position: relative
+    justify-content: flex-end
+    align-items: center
+    padding-top: 200px
+    padding-bottom: 95px
+  &__img
+    position: absolute
+    left: -235px
+    top: -100px
+    z-index: -1
+  &__img-pink-big-virus
+    position: absolute
+    bottom: 0
+    right: -375px
+    z-index: -1
+  &__content
+    max-width: 650px
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 44px
+    margin-bottom: 37px
+  &__button
+    background: $button-bg-hover-color
+    color: $button-bg-color
+    padding: 22px 50px
+    border-radius: 65px
+    font-size: 19px
+    &:hover
+      background-color: $button-bg-color
+      color: $light
+    &:active
+      background-color: $text-color
+      color: $light

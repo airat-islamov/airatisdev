@@ -1,0 +1,46 @@
+.banner
+  &__wrapper
+    display: flex
+    position: relative
+    height: 322px
+    overflow: hidden
+    &--margin-bottom
+      margin-bottom: 24px
+  &__description
+    padding: 50px 0 0 50px
+    &-wrapper
+      display: flex
+      justify-content: space-between
+      position: relative
+      z-index: 1
+      background: $red-color
+      width: 450px
+    &-border-img
+      z-index: 2
+      position: absolute
+      right: -37px
+      height: 322px
+  &__img
+    position: absolute
+    right: 0
+    height: 100%
+    object-fit: none
+    object-position: right
+  &__text
+    margin: 0 0 64px 0
+    max-width: 350px
+    font-weight: 500
+    font-size: 48px
+    line-height: 0.9
+    color: $white-color
+  &__button
+    border: 1px solid $white-color
+    border-radius: 50px
+    padding: 24px 44px
+    ont-weight: 400
+    font-size: 24px
+    line-height: 1.2
+    color: $white-color
+    &:hover
+      backdrop-filter: blur(4px)
+      background: rgba(255, 255, 255, 0.1)

@@ -1,0 +1,19 @@
+@mixin geologica-font($weight, $filename) {
+  @font-face {
+    font-family: "Geologica";
+    font-style: normal;
+    font-weight: #{$weight};
+    font-display: swap;
+    src:
+      local("Geologica"),
+      url("../fonts/Geologica-#{$filename}.woff2") format("woff2"),
+      url("../fonts/Geologica-#{$filename}.woff") format("woff"),
+      url("../fonts/Geologica-#{$filename}.ttf") format("truetype");
+  }
+}
+
+// Использование
+@include geologica-font(300, 'Light');
+@include geologica-font(400, 'Regular');
+@include geologica-font(500, 'Medium');
+@include geologica-font(700, 'Bold');

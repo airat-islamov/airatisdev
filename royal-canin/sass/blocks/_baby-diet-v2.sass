@@ -1,0 +1,57 @@
+.baby-diet-v2
+  &__cat, &__dog
+    width: 573px
+    height: 222px
+    position: relative
+    overflow: hidden
+  &__description
+    max-width: 114px
+    padding: 30px 0 0 131px
+  &__container
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    gap: 20px
+  &__wrapper
+    position: relative
+    overflow: hidden
+  &__subtitle
+    font-weight: 500
+    font-size: 23px
+    line-height: 1
+    letter-spacing: -0.02em
+    text-transform: uppercase
+    &--margin
+      margin-bottom: -2px
+    &--gray
+      color: $gray-color
+    &--red
+      color: $red-color
+    &__for-every-steps
+      display: flex
+      align-items: center
+      width: 114px
+      &__left-line
+        display: inline-block
+        background: $red-color
+        height: 40px
+        width: 3px
+        margin-right: 7px
+  &__foods
+    position: absolute
+    z-index: -1
+    top: 0px
+    right: 118px
+    &--dog
+      top: 32px
+      right: 63px
+  &__background-image
+    position: absolute
+    right: -140px
+    bottom: -176px
+    z-index: -3
+    &--dog
+      right: 0px
+      bottom: -3px
+    &--mobile
+      display: none

@@ -1,0 +1,153 @@
+@media (max-width: 1260px)
+  .banner
+    &__image
+      height: 250px
+  .help
+    &__wrapper
+      padding: 0 20px 0 0
+      margin-top: 70px
+  .slides
+    &__wrapper
+      flex-wrap: wrap
+      justify-content: center
+  .slide
+    margin: 10px
+
+@media (max-width: 990px)
+  body
+    font-family: 'Inter', sans-serif
+    color: $text-color
+    background: url("../img/mobile-bg.jpg") no-repeat center top $bg-color
+    padding-top: 130px
+
+  .nothing
+    display: none
+
+  .banner
+    &__wrapper
+      display: grid
+      grid-template: repeat(3, min-content) / 1fr
+      grid-template-areas: "banner__title" "banner__img" "banner__list"
+      justify-content: center
+      min-height: 500px
+      border-radius: 10px
+      max-width: 500px
+      margin: 0 auto
+    &__title
+      margin: 13px 0 0 0
+      justify-self: center
+    &__text-h4
+      margin-bottom: 25px
+    &__list
+      justify-self: center
+      margin: 10px 0 15px 50px
+    &__img
+      justify-self: center
+      margin-bottom: 25px
+
+  .history
+    &__wrapper
+      display: grid
+      grid-template: repeat(5, min-content) / 9px 200px
+      grid-template-areas: "history__line__1 history__data__1" "history__line__1 history__info__1" "history__line__2 history__data__2" "history__line__2 history__info__2" "history__line__2 history__data__3" "history__line__2 history__info__3" "history__line__2 history__data__4" "history__line__2 history__info__4" "history__line__3 history__data__5" "history__line__3 history__info__5"
+      align-items: center
+      justify-content: center
+    &__line
+      margin-bottom: 0
+      width: 9px
+      height: 100%
+      justify-self: center
+      &__1
+        height: 90%
+        align-self: end
+      &__2
+      &__3
+        height: 50%
+        align-self: self-start
+        background: linear-gradient(to bottom, #CDC1B1, #f2eee3)
+    &__data
+      margin: 0
+      &:before
+        left: -70px
+        top: 0px
+      &__1
+        &:before
+          left: -66px
+
+  .three-advantages
+    &__wrapper
+      flex-direction: column
+      align-items: center
+    &__cart
+      margin: 0 0 20px 0
+      &--no-margin
+        margin: 0
+
+  .about-us
+    &__wrapper
+      flex-direction: column
+      align-items: center
+      padding: 20px
+      max-width: 385px
+      margin: 0 auto 20px auto
+    &__cart
+      background: $bg-color
+      padding: 15px
+      width: 100%
+      max-width: 100%
+      border-radius: 10px
+      margin-bottom: 20px
+      &--no-margin
+        margin: 0
+    &__title
+      max-width: 100%
+    &__number
+      margin: 15px 0 15px 0
+
+  .help
+    &__wrapper
+      flex-direction: column
+      align-items: flex-start
+      max-width: 385px
+      margin: 0 auto 20px auto
+      &__cat
+        margin: 20px 0 45px 0
+    &__banner
+      &__cat
+        width: 232px
+    &__popap
+      &--cat
+        top: -18px
+        right: -113px
+      &--dog
+        right: -160px
+        width: 234px
+        padding: 12px 27px
+      &__logo
+        &--cat
+          top: 100px
+        &--dog
+          top: 105px
+
+  .slides
+    &__wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+  .slide
+    margin: 0 0 20px 0
+
+@media (max-width: 550px)
+  .banner
+    &__title
+      max-width: 300px
+    &__text-h3
+      font-weight: 700
+      font-size: 40px
+      margin-left: 7px
+    &__text-h4
+      font-weight: 700
+      font-size: 24px
+      margin-left: 7px
+    &__image
+      height: 200px

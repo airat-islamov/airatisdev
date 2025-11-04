@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VIP — персональные цены | DogEat</title>
+  <style>
+    :root{
+      --bg:#F7F3EA;
+      --card:#FFFFFF;
+      --text:#2B2B2B;
+      --muted:#777777;
+      --brand:#78B54E;
+      --brand-600:#5A9837;
+      --accent:#E7B84B;
+      --danger:#D93025;
+      --border:#E6E2D9;
+      --badge:#F2F0E8;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,'Segoe UI',Roboto,Ubuntu,'Helvetica Neue',Arial}
+    a{color:#7A4B17;text-decoration:underline;text-decoration-style:dotted}
+    a:hover{text-decoration-style:solid}
+    .wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+    .breadcrumb{max-width:1180px;margin:16px auto 0;padding:0 16px;color:var(--muted);font-size:14px}
+    .hero{margin:8px auto 24px}
+    .card{background:#FFFFFF;border:1px solid var(--border);border-radius:14px;padding:18px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
+    .card + .card{margin-top:12px}
+    .title{margin:0 0 8px;font-size:30px;line-height:1.2}
+    .subtitle{margin:0;color:var(--muted)}
+    .badge{display:inline-flex;gap:8px;align-items:center;padding:6px 12px;border-radius:999px;background:linear-gradient(180deg,#FFF6D8,#F7E1A1);border:1px solid #E8D28A;font-weight:700}
+    .grid{display:grid;gap:16px}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    @media (max-width:960px){.grid-3,.grid-2{grid-template-columns:1fr}}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:10px;padding:12px 16px;font-weight:800;cursor:pointer}
+    .btn-primary{background:var(--brand);color:#fff}
+    .btn-primary:hover{background:var(--brand-600)}
+    .btn-ghost{background:transparent;color:var(--brand);border:1px solid var(--brand)}
+    .section-title{margin:0 0 8px;font-size:22px}
+    .muted{color:var(--muted)}
+    .kv{display:grid;grid-template-columns:auto 1fr;gap:6px 12px}
+    .kv dt{color:var(--muted)}
+    .kv dd{margin:0;font-weight:800}
+    .calc{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media (max-width:840px){.calc{grid-template-columns:1fr}}
+    .price-card{padding:14px;border-radius:12px;border:1px dashed var(--border);background:#FAFBF7}
+    .price-row{display:flex;align-items:baseline;gap:10px}
+    .price{font-size:28px;font-weight:900}
+    .price-old{text-decoration:line-through;color:var(--muted)}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:#FAFAFA;font-size:14px}
+    details{border:1px solid var(--border);border-radius:12px;padding:10px 12px;background:#FFF}
+    details + details{margin-top:8px}
+    summary{cursor:pointer;font-weight:700}
+    .note{font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <nav class="breadcrumb">Главная > <strong>VIP</strong></nav>
+  <header class="wrap hero">
+    <section class="card" aria-labelledby="hero-title">
+      <div style="display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap">
+        <div>
+          <h1 id="hero-title" class="title">VIP — персональные цены на корма и аксессуары</h1>
+          <p class="subtitle">Всегда показываем <strong>самую выгодную цену</strong>. Скидки между собой не суммируются.</p>
+          <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
+            <button class="btn btn-primary">Войти / Стать VIP</button>
+            <button class="btn btn-ghost">Посмотреть товары с наибольшей выгодой</button>
+          </div>
+        </div>
+        <span class="badge" aria-label="Иконка VIP">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#7A5A1B" d="m7 10 5-5 5 5 4-3v11H3V7l4 3z"/></svg>
+          Персональные цены VIP
+        </span>
+      </div>
+    </section>
+  </header>
+  <main class="wrap" style="display:grid;gap:16px;margin-bottom:40px">
+    <section class="card" aria-labelledby="getvip-title">
+      <h2 id="getvip-title" class="section-title">Как получить VIP</h2>
+      <p class="muted" style="margin-top:0">Выберите удобный способ. При выполнении условия статус продлевается автоматически.</p>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3 style="margin:0 0 6px">Оборот за 90 дней</h3>
+          <p class="muted" style="margin:0">Совокупные покупки за 90 дней от <strong>15 000 ₽</strong> — VIP на 90 дней. Дальше продлевается покупками.</p>
+        </article>
+        <article class="card">
+          <h3 style="margin:0 0 6px">Автозаказ</h3>
+          <p class="muted" style="margin:0">Есть активный автозаказ — VIP действует без перерыва. Пропустили — грейс 30 дней.</p>
+        </article>
+        <article class="card">
+          <h3 style="margin:0 0 6px">Быстрый старт</h3>
+          <p class="muted" style="margin:0">Регистрация + первый заказ от <strong>2 500 ₽</strong> — VIP на 30 дней, чтобы попробовать выгоду.</p>
+        </article>
+      </div>
+    </section>
+    <section class="card" aria-labelledby="price-title">
+      <h2 id="price-title" class="section-title">Как работает цена</h2>
+      <div class="calc">
+        <div class="price-card">
+          <div class="muted" style="margin-bottom:6px">Пример на мешке 12 кг</div>
+          <div class="price-row"><div class="price">4 488 ₽</div><div class="price-old">5 100 ₽</div></div>
+          <ul style="margin:10px 0 0;padding-left:18px">
+            <li>Базовая цена: 5 100 ₽</li>
+            <li>Акция «для всех»: −10% → 4 590 ₽</li>
+            <li>Для авторизованных: −8% → 4 692 ₽</li>
+            <li><strong>VIP: −12% → 4 488 ₽ (лучшая цена)</strong></li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <dl class="kv">
+            <dt>Всегда одна цена к оплате</dt><dd>Показываем самую выгодную; скидки не суммируются</dd>
+            <dt>Промокоды</dt><dd>По умолчанию не суммируются; некоторые — поверх до общего потолка</dd>
+            <dt>Округление</dt><dd>До 1 рубля после вычисления цены</dd>
+            <dt>Возвраты</dt><dd>Накопления по отменённым заказам пересчитываются</dd>
+          </dl>
+        </div>
+      </div>
+      <p class="note" style="margin:10px 0 0">Цифры приведены для примера. Фактические проценты и исключения могут отличаться.</p>
+    </section>
+    <section class="card" aria-labelledby="ex-title">
+      <h2 id="ex-title" class="section-title">Где не действует VIP</h2>
+      <ul style="margin:0;padding-left:18px">
+        <li>Отдельные ветлинейки и лечебные диеты</li>
+        <li>Промо-упаковки и наборы со спецценой</li>
+        <li>Товары с пометкой «Акция», если промо-цена уже выгоднее</li>
+      </ul>
+      <p class="note" style="margin:8px 0 0">Список может обновляться. Актуальные исключения выводим в карточке товара.</p>
+    </section>
+    <section class="card" aria-labelledby="term-title">
+      <h2 id="term-title" class="section-title">Срок и продление</h2>
+      <div class="grid grid-3">
+        <div class="card"><strong>Старт</strong><br><span class="muted">Получаете VIP по одному из условий</span></div>
+        <div class="card"><strong>Действие</strong><br><span class="muted">Обычно 30–90 дней, видно в личном кабинете</span></div>
+        <div class="card"><strong>Продление</strong><br><span class="muted">Каждая новая покупка/активный автозаказ продлевают статус</span></div>
+      </div>
+    </section>
+    <section class="card" aria-labelledby="faq-title">
+      <h2 id="faq-title" class="section-title">FAQ — коротко</h2>
+      <details open><summary>VIP суммируется с акциями и «для авторизованных»?</summary><div class="muted">Нет. Мы всегда применяем одну, самую выгодную для вас цену.</div></details>
+      <details><summary>Где посмотреть мою VIP-скидку и срок?</summary><div class="muted">В личном кабинете в карточке «Мой статус». Там же дата окончания и ваша экономия.</div></details>
+      <details><summary>Почему на товар X VIP не сработал?</summary><div class="muted">Вероятно, на нём промо-цена выгоднее или товар в списке исключений. Мы честно показываем лучшую цену.</div></details>
+      <details><summary>Что с возвратами?</summary><div class="muted">Если заказ отменён, накопления по нему не учитываются, статус/срок могут быть пересчитаны.</div></details>
+      <details><summary>Можно оплатить промокодом и по VIP?</summary><div class="muted">Обычно нет. Исключения указываем на промокоде. Действует общий верхний потолок выгоды.</div></details>
+      <details><summary>Как продлить VIP без заморочек?</summary><div class="muted">Подключите автозаказ — статус будет активен, пока он действует (есть грейс-период).</div></details>
+    </section>
+    <section class="card" aria-labelledby="legal-title">
+      <h2 id="legal-title" class="section-title">Правила и обновления</h2>
+      <div class="kv">
+        <dt>Публичная оферта</dt><dd><a href="#">Смотреть документ</a></dd>
+        <dt>Политика акций</dt><dd><a href="#">Смотреть документ</a></dd>
+        <dt>Дата обновления</dt><dd>01.11.2025</dd>
+      </div>
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn btn-primary">Войти / Стать VIP</button>
+        <button class="btn btn-ghost">Перейти в личный кабинет</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

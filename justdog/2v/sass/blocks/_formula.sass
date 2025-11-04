@@ -1,0 +1,82 @@
+.JUSTDOG
+
+  &-content
+
+    &__formula
+
+      &-wrapper
+        position: relative
+        display: flex
+        justify-content: flex-end
+        flex-direction: column
+        background: linear-gradient(to bottom, $background-color 0%, #ffffff 50%, $background-color 100%)
+
+      &-description
+        display: flex
+        max-width: 615px
+        flex-direction: column
+        margin: 8px 0 0 44px
+
+        &-shadow
+          position: absolute
+          top: 0
+          left: 0
+          width: 694px
+          height: 624px
+          z-index: 1
+
+        &-top
+          z-index: 2
+
+        &-title
+          letter-spacing: 2.8px
+
+          &-mobile
+            display: none
+
+        &-line
+          max-width: 471px
+          margin-bottom: 14px
+
+          &-mobile
+            display: none
+
+        &-subtitle
+
+          &-margin
+            margin-bottom: 23px
+
+          &-fs24
+            font-size: 24px
+            line-height: 118%
+            margin-left: -1px
+            margin-bottom: 4px
+
+          &-fs20
+            font-size: 20px
+            line-height: 114%
+            text-transform: none
+            letter-spacing: 0.15px
+            margin-left: -1px
+
+        &-key-advantages
+          position: relative
+          flex-wrap: wrap
+          z-index: 2
+
+          &-shadow
+            position: absolute
+            top: 0
+            left: -45px
+            width: 740px
+            height: 625px
+
+      &-image
+        position: absolute
+        top: 70px
+        right: 0
+        width: 716px
+        height: 738px
+        background-image: -Webkit-image-set(url(../img/formula/chick_pile-1x.webp) 1x, url(../img/formula/chick_pile-2x.webp) 2x)
+        background-position: top right
+        background-repeat: no-repeat
