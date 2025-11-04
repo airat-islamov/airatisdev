@@ -5,165 +5,33 @@
 */.DS_Store
 .AppleDouble
 .LSOverride
-Icon^M
-._*
 .Spotlight-V100
 .Trashes
 .fseventsd
 .apdisk
-# Quarantine attributes (occasionally appear after downloads)
 *.qlgenerator
 *.dylib
 
 # ------------------------------
-# Node.js / JavaScript ecosystem
-# ------------------------------
-node_modules/
-# lockfiles обычно КОММИТЯТ для воспроизводимости.
-# Если в конкретном проекте принято не коммитить lock, раскомментируй нужную строку ниже.
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
-
-# Дебаг-логи менеджеров пакетов
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-# Сборочные артефакты/кэши
-dist/
-build/
-.out/
-
-# TypeScript
-*.tsbuildinfo
-
-# ------------------------------
-# React / Next.js / Vite / Turborepo / Storybook / Parcel
-# ------------------------------
-.next/
-out/
-.vercel/
-.vite/
-.turbo/
-.parcel-cache/
-storybook-static/
-
-# ------------------------------
-# Nuxt / Vue (на случай проектов на Vue/Nuxt)
-# ------------------------------
-.nuxt/
-# Nuxt build output
-.nitro/
-# VuePress / VitePress
-.vuepress/dist/
-.vitepress/dist/
-
-# ------------------------------
-# Gatsby
-# ------------------------------
-.cache/
-public/
-
-# ------------------------------
-# Testing (Cypress / Playwright / Jest / NYC)
-# ------------------------------
-# Cypress
-cypress/screenshots/
-cypress/videos/
-cypress/downloads/
-# Playwright
-playwright-report/
-test-results/
-# Jest / NYC
-coverage/
-.nyc_output/
-
-# ------------------------------
-# Linters / Formatters caches
-# ------------------------------
-.eslintcache
-.stylelintcache
-.prettier-cache
-
-# ------------------------------
-# Editors / IDEs
-# ------------------------------
-# VS Code: по умолчанию игнорим всё, но оставляем возможность
-# закоммитить рекомендованные настройки/расширения, если они есть.
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
-!.vscode/tasks.json
-!.vscode/launch.json
-
-# JetBrains (WebStorm/IDEA)
-.idea/
-# Иногда полезно оставить .idea/codeStyles — раскомментируй при необходимости:
-# !.idea/codeStyles/
-# !.idea/inspectionProfiles/
-
-# MacOS swap/backup времянки редакторов
-*~
-*.swp
-*.swo
-*.swn
-*.tmp
-*.orig
-
-# ------------------------------
-# Env/Secrets (универсально для JS/Next/Strapi и др.)
+# Env/Secrets
 # ------------------------------
 .env
 .env.*
 !.env.example
 !.env.local.example
-# Если в проекте есть шаблоны .env.<env>.example — оставь их незатронутыми:
 !.env.*.example
-
-# ------------------------------
-# Strapi (локальные артефакты проекта CMS)
-# ------------------------------
-# Папка загрузок Strapi (в dev обычно не коммитят; в проде используют S3/Cloudinary).
-public/uploads/
-# Временные и сборочные папки Strapi
-.tmp/
-.strapi/
-exports/
 
 # ------------------------------
 # Logs / PIDs
 # ------------------------------
-logs/
 *.log
 *.log.*
-pids/
 *.pid
 *.pid.lock
 *.seed
 
 # ------------------------------
-# Misc
+# Misc caches
 # ------------------------------
-# Сторонние CLI кэши
 .cache/
-# Parcel кэш продублирован выше, но на всякий случай
 .cache-loader/
-
-# Если используешь Docker и генерируешь локальные артефакты — добавь при необходимости:
-# docker-data/
-# .docker/
-
-# Если используешь Storybook v8 с билдом в другой папке — укажи её:
-# .out-storybook/
-
-# ------------------------------
-# Monorepo (pnpm/yarn workspaces) — на всякий случай
-# ------------------------------
-**/node_modules/
-packages/*/dist/
-apps/*/dist/
-packages/*/.turbo/
-apps/*/.turbo/
