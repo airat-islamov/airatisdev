@@ -1,0 +1,2498 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just Dog</title>
+    <!-- Шрифты сайта -->
+    <link rel="stylesheet" href="css/fonts.min.css" />
+    <!-- Шрифты сайта -->
+    <!-- Стили сайта -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/mix-flavors.css" />
+    <!-- Стили сайта -->
+  </head>
+  <body style="margin: 0">
+    <div class="JD">
+      <section class="JD-hero JD-margin-bottom">
+        <div class="JD-container">
+          <div class="JD-hero__wrapper">
+            <picture class="JD-img JD-hero__background-image">
+              <!-- Мобильные устройства: до 370px -->
+              <source
+                media="(max-width: 370px)"
+                srcset="
+                  ./img/hero/backgroud-mob-1x.webp 1x,
+                  ./img/hero/backgroud-mob-2x.webp 2x
+                "
+              />
+              <!-- Десктопы: от 371px -->
+              <source
+                media="(min-width: 371px)"
+                srcset="
+                  ./img/hero/backgroud-1x.webp 1x,
+                  ./img/hero/backgroud-2x.webp 2x
+                "
+              />
+
+              <!-- Fallback -->
+              <img
+                src="./img/hero/backgroud-1x.webp"
+                alt="Фоновое изображение"
+                loading="lazy"
+                decoding="async"
+                width="1200"
+                height="400"
+                class="JD-hero__background-img"
+              />
+            </picture>
+
+            <picture class="JD-img JD-hero__logo-image">
+              <!-- Мобильные устройства: до 370px -->
+              <source
+                media="(max-width: 370px)"
+                srcset="
+                  ./img/hero/logo-mob-1x.webp 1x,
+                  ./img/hero/logo-mob-2x.webp 2x
+                "
+              />
+              <!-- Десктопы: от 371px -->
+              <source
+                media="(min-width: 371px)"
+                srcset="./img/hero/logo-1x.webp 1x, ./img/hero/logo-2x.webp 2x"
+              />
+
+              <!-- Fallback -->
+              <img
+                src="./img/hero/logo-1x.webp"
+                alt="Логотип"
+                loading="lazy"
+                decoding="async"
+                width="157"
+                height="129"
+                class="JD-hero__logo-img"
+              />
+            </picture>
+
+            <picture class="JD-img JD-hero__pieces-chicken-meat-image">
+              <source
+                srcset="
+                  ./img/hero/pieces-chicken-meat-1x.webp 1x,
+                  ./img/hero/pieces-chicken-meat-2x.webp 2x
+                "
+              />
+              <!-- Fallback -->
+              <img
+                src="./img/hero/pieces-chicken-meat-1x.webp"
+                alt="Логотип"
+                loading="lazy"
+                decoding="async"
+                width="280"
+                height="120"
+              />
+            </picture>
+
+            <picture class="JD-img JD-hero__pieces-meat-image">
+              <source
+                srcset="
+                  ./img/hero/pieces-meat-1x.webp 1x,
+                  ./img/hero/pieces-meat-2x.webp 2x
+                "
+              />
+              <!-- Fallback -->
+              <img
+                src="./img/hero/pieces-meat-1x.webp"
+                alt="Логотип"
+                loading="lazy"
+                decoding="async"
+                width="92"
+                height="88"
+                class="JD-hero__pieces-meat-img"
+              />
+            </picture>
+
+            <picture class="JD-img JD-hero__pieces-chicken-image">
+              <source
+                srcset="
+                  ./img/hero/pieces-chicken-1x.webp 1x,
+                  ./img/hero/pieces-chicken-2x.webp 2x
+                "
+              />
+              <!-- Fallback -->
+              <img
+                src="./img/hero/pieces-chicken-1x.webp"
+                alt="Логотип"
+                loading="lazy"
+                decoding="async"
+                width="86"
+                height="79"
+                class="JD-hero__pieces-chicken-img"
+              />
+            </picture>
+
+            <picture class="JD-img JD-hero__products-image">
+              <!-- Мобильные устройства: до 991px -->
+              <source
+                media="(max-width: 991px)"
+                srcset="
+                  ./img/hero/products-mob-1x.webp 1x,
+                  ./img/hero/products-mob-2x.webp 2x
+                "
+              />
+              <!-- Десктопы: от 992px -->
+              <source
+                media="(min-width: 992px)"
+                srcset="
+                  ./img/hero/products-1x.webp 1x,
+                  ./img/hero/products-2x.webp 2x
+                "
+              />
+
+              <!-- Fallback -->
+              <img
+                src="./img/hero/products-1x.webp"
+                alt="Логотип"
+                loading="lazy"
+                decoding="async"
+                width="593"
+                height="338"
+                class="JD-hero__products-img"
+              />
+            </picture>
+
+            <div class="JD-hero__lines">
+              <a
+                href="https://www.dogeat.ru/catalog/just-dog/holistic/"
+                class="JD-btn JD-hero__line JD-hero__line--holistic"
+              >
+                Holistic&nbsp;Line
+              </a>
+              <a
+                href="https://www.dogeat.ru/catalog/just-dog/low-grain/"
+                class="JD-btn JD-hero__line JD-hero__line--dry"
+              >
+                Dry&nbsp;Line
+              </a>
+              <a
+                href="https://www.dogeat.ru/catalog/just-dog/vet/"
+                class="JD-btn JD-hero__line JD-hero__line--vet"
+              >
+                Vet&nbsp;line
+              </a>
+            </div>
+
+            <div class="JD-hero__text">
+              <p class="JD-hero__subtitle">Для&nbsp;собак,&nbsp;стремящихся</p>
+              <h3 class="JD-hero__title">К&nbsp;долголетию</h3>
+              <button
+                class="JD-btn JD-hero__cta JD-line__cta"
+                type="button"
+                onclick="showHidden('hiddenBlock')"
+              >
+                Подробнее о линейке
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="hiddenBlock" style="display: none">
+        <section
+          class="JD-mix-flavors JD-margin-bottom"
+          aria-labelledby="JD-mix-flavors-title"
+        >
+          <div class="JD-container">
+            <div class="JD-mix-flavors__wrapper">
+              <picture class="JD-img JD-mix-flavors__logo">
+                <source
+                  media="(max-width: 991px)"
+                  srcset="
+                    ./img/mix-flavors/logo-mob-1x.avif 1x,
+                    ./img/mix-flavors/logo-mob-2x.avif 2x
+                  "
+                />
+                <img
+                  class="JD-mix-flavors__layer-img"
+                  srcset="
+                    ./img/mix-flavors/logo-1x.avif 1x,
+                    ./img/mix-flavors/logo-2x.avif 2x
+                  "
+                  src="./img/mix-flavors/logo-1x.avif"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  width="164"
+                  height="164"
+                />
+              </picture>
+
+              <picture class="JD-img JD-mix-flavors__products">
+                <img
+                  class="JD-mix-flavors__layer-img"
+                  srcset="
+                    ./img/mix-flavors/products-1x.avif 1x,
+                    ./img/mix-flavors/products-2x.avif 2x
+                  "
+                  src="./img/mix-flavors/products-1x.avif"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  width="400"
+                  height="342"
+                />
+              </picture>
+
+              <div class="JD-mix-flavors__content">
+                <p class="JD-mix-flavors__lead">
+                  Два вида мяса<br />
+                  и&nbsp;артишок!
+                </p>
+                <h2 class="JD-mix-flavors__title" id="JD-mix-flavors-title">
+                  Новые<br />
+                  микс-<br />
+                  вкусы
+                </h2>
+                <picture class="JD-img JD-mix-flavors__signature">
+                  <source
+                    media="(max-width: 991px)"
+                    srcset="./img/mix-flavors/signature-mobile.svg"
+                  />
+                  <img
+                    class="JD-mix-flavors__signature-img"
+                    src="./img/mix-flavors/signature-desktop.svg"
+                    alt="Just do eat!"
+                    loading="lazy"
+                    decoding="async"
+                    width="168"
+                    height="42"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="JD-line JD-line--holistic JD-margin-bottom">
+          <div class="JD-container">
+            <div class="JD-line__tag JD-tag">Holistic&nbsp;Line</div>
+            <div class="JD-line__wrapper">
+              <div class="JD-line__content">
+                <h3 class="JD-line__title">
+                  Holistic line&nbsp;- влажный&nbsp;корм
+                </h3>
+                <p class="JD-line__lead">
+                  <span class="JD-line__lead-accent"
+                    >Не менее 71% мяса, без сои, ГМО и усилителей вкуса.</span
+                  >
+                  Только мясо, овощи, ягоды и натуральные добавки.
+                  Противовоспалительная, антиоксидантная и микробиотическая
+                  защита в самой основе корма
+                </p>
+
+                <div class="JD-line__chips">
+                  <div class="JD-line__chip">
+                    <picture class="JD-img JD-line__chip-icon">
+                      <source
+                        srcset="
+                          ./img/holistic/for-adult-dogs-1x.webp 1x,
+                          ./img/holistic/for-adult-dogs-2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="JD-line__chip-img"
+                        src="./img/holistic/for-adult-dogs-1x.webp"
+                        alt="Для взрослых собак"
+                        loading="lazy"
+                        decoding="async"
+                        width="86"
+                        height="39"
+                      />
+                    </picture>
+                    <div class="JD-line__chip-text">
+                      <strong class="JD-line__chip-title"
+                        >For adult dogs</strong
+                      >
+                      <span class="JD-line__chip-subtitle"
+                        >для взрослых собак</span
+                      >
+                    </div>
+                  </div>
+                  <div class="JD-line__chip">
+                    <picture class="JD-img JD-line__chip-icon">
+                      <source
+                        srcset="
+                          ./img/holistic/all-breads-1x.webp 1x,
+                          ./img/holistic/all-breads-2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="JD-line__chip-img"
+                        src="./img/holistic/all-breads-1x.webp"
+                        alt="Все породы"
+                        loading="lazy"
+                        decoding="async"
+                        width="122"
+                        height="39"
+                      />
+                    </picture>
+                    <div class="JD-line__chip-text">
+                      <strong class="JD-line__chip-title">All breeds</strong>
+                      <span class="JD-line__chip-subtitle">все породы</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="JD-line__benefits">
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/holistic/obesity-1x.webp 1x,
+                            ./img/holistic/obesity-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/holistic/obesity-1x.webp"
+                          alt="Предотвращает ожирение"
+                          loading="lazy"
+                          decoding="async"
+                          width="35"
+                          height="39"
+                        />
+                      </picture>
+                    </div>
+                    <span>Предотвращает<br />ожирение</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/holistic/liver-1x.webp 1x,
+                            ./img/holistic/liver-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/holistic/liver-1x.webp"
+                          alt="Поддержание работы печени"
+                          loading="lazy"
+                          decoding="async"
+                          width="37"
+                          height="37"
+                        />
+                      </picture>
+                    </div>
+                    <span>Поддержание<br />работы печени</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/holistic/urinary-1x.webp 1x,
+                            ./img/holistic/urinary-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/holistic/urinary-1x.webp"
+                          alt="Предупреждение мочекаменной болезни"
+                          loading="lazy"
+                          decoding="async"
+                          width="41"
+                          height="36"
+                        />
+                      </picture>
+                    </div>
+                    <span>Предупреждение<br />мочекаменной<br />болезни</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/holistic/fitness-1x.webp 1x,
+                            ./img/holistic/fitness-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/holistic/fitness-1x.webp"
+                          alt="Укрепление физической формы"
+                          loading="lazy"
+                          decoding="async"
+                          width="37"
+                          height="37"
+                        />
+                      </picture>
+                    </div>
+                    <span>Укрепление<br />физической<br />формы</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/holistic/cognition-1x.webp 1x,
+                            ./img/holistic/cognition-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/holistic/cognition-1x.webp"
+                          alt="Улучшение когнитивных функций"
+                          loading="lazy"
+                          decoding="async"
+                          width="40"
+                          height="41"
+                        />
+                      </picture>
+                    </div>
+                    <span>Улучшение<br />когнитивных<br />функций</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/holistic/joints-1x.webp 1x,
+                            ./img/holistic/joints-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/holistic/joints-1x.webp"
+                          alt="Защита суставов"
+                          loading="lazy"
+                          decoding="async"
+                          width="31"
+                          height="40"
+                        />
+                      </picture>
+                    </div>
+                    <span>Защита<br />суставов</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/holistic/regeneration-1x.webp 1x,
+                            ./img/holistic/regeneration-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/holistic/regeneration-1x.webp"
+                          alt="Регенерация тканей"
+                          loading="lazy"
+                          decoding="async"
+                          width="37"
+                          height="40"
+                        />
+                      </picture>
+                    </div>
+                    <span>Регенерация<br />тканей</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/holistic/coat-1x.webp 1x,
+                            ./img/holistic/coat-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/holistic/coat-1x.webp"
+                          alt="Сияющая шерсть"
+                          loading="lazy"
+                          decoding="async"
+                          width="36"
+                          height="36"
+                        />
+                      </picture>
+                    </div>
+                    <span>Сияющая<br />шерсть</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/holistic/immunity-1x.webp 1x,
+                            ./img/holistic/immunity-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/holistic/immunity-1x.webp"
+                          alt="Крепкий иммунитет"
+                          loading="lazy"
+                          decoding="async"
+                          width="42"
+                          height="37"
+                        />
+                      </picture>
+                    </div>
+                    <span>Крепкий<br />иммунитет</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/holistic/skin-1x.webp 1x,
+                            ./img/holistic/skin-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/holistic/skin-1x.webp"
+                          alt="Здоровая кожа"
+                          loading="lazy"
+                          decoding="async"
+                          width="38"
+                          height="34"
+                        />
+                      </picture>
+                    </div>
+                    <span>Здоровая<br />кожа</span>
+                  </div>
+                </div>
+
+                <a
+                  href="https://www.dogeat.ru/catalog/just-dog/holistic/"
+                  class="JD-btn JD-line__cta"
+                >
+                  Смотреть товары
+                </a>
+              </div>
+
+              <picture class="JD-img JD-line__products-image">
+                <source
+                  srcset="
+                    ./img/holistic/products-mob-1x.webp 1x,
+                    ./img/holistic/products-mob-2x.webp 2x
+                  "
+                  media="(max-width: 370px)"
+                />
+                <source
+                  srcset="
+                    ./img/holistic/products-1x.webp 1x,
+                    ./img/holistic/products-2x.webp 2x
+                  "
+                />
+                <img
+                  src="./img/holistic/products-1x.webp"
+                  alt="Ассортимент продукции"
+                  loading="lazy"
+                  decoding="async"
+                  width="426"
+                  height="651"
+                  class="JD-line__products-img"
+                />
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="JD-line JD-line--dry JD-margin-bottom">
+          <div class="JD-container">
+            <div class="JD-line__tag JD-tag">Dry&nbsp;Line</div>
+            <div class="JD-line__wrapper">
+              <div class="JD-line__content">
+                <h3 class="JD-line__title">Dry line - сухие корма</h3>
+                <p class="JD-line__lead">
+                  В основе каждого рациона — отборное мясо, злаки, овощи, фрукты
+                  и ягоды, дополненные функциональными добавками для здоровья
+                  суставов, пищеварения и иммунитета.
+                </p>
+
+                <div class="JD-line__chips">
+                  <div class="JD-line__chip">
+                    <picture class="JD-img JD-line__chip-icon">
+                      <source
+                        srcset="
+                          ./img/holistic/for-adult-dogs-1x.webp 1x,
+                          ./img/holistic/for-adult-dogs-2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="JD-line__chip-img"
+                        src="./img/holistic/for-adult-dogs-1x.webp"
+                        alt="Для взрослых собак"
+                        loading="lazy"
+                        decoding="async"
+                        width="86"
+                        height="39"
+                      />
+                    </picture>
+                    <div class="JD-line__chip-text">
+                      <strong class="JD-line__chip-title"
+                        >For adult dogs</strong
+                      >
+                      <span class="JD-line__lead-accent JD-line__chip-subtitle"
+                        >для взрослых собак</span
+                      >
+                    </div>
+                  </div>
+                  <div class="JD-line__chip">
+                    <picture class="JD-img JD-line__chip-icon">
+                      <source
+                        srcset="
+                          ./img/holistic/all-breads-1x.webp 1x,
+                          ./img/holistic/all-breads-2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="JD-line__chip-img"
+                        src="./img/holistic/all-breads-1x.webp"
+                        alt="Все породы"
+                        loading="lazy"
+                        decoding="async"
+                        width="122"
+                        height="39"
+                      />
+                    </picture>
+                    <div class="JD-line__chip-text">
+                      <strong class="JD-line__chip-title">All breeds</strong>
+                      <span class="JD-line__chip-subtitle">все породы</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="JD-line__benefits">
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/dry/longevity-1x.webp 1x,
+                            ./img/dry/longevity-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/dry/longevity-1x.webp"
+                          alt="Долголетие на новом уровне"
+                          loading="lazy"
+                          decoding="async"
+                          width="40"
+                          height="41"
+                        />
+                      </picture>
+                    </div>
+                    <span>Долголетие на<br />новом уровне</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/dry/research-1x.webp 1x,
+                            ./img/dry/research-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/dry/research-1x.webp"
+                          alt="5+ лет научных исследований"
+                          loading="lazy"
+                          decoding="async"
+                          width="31"
+                          height="40"
+                        />
+                      </picture>
+                    </div>
+                    <span>5+ лет научных<br />исследований</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/dry/composition-1x.webp 1x,
+                            ./img/dry/composition-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/dry/composition-1x.webp"
+                          alt="Уникальный состав"
+                          loading="lazy"
+                          decoding="async"
+                          width="40"
+                          height="40"
+                        />
+                      </picture>
+                    </div>
+                    <span>Уникальный<br />состав</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/dry/digestion-1x.webp 1x,
+                            ./img/dry/digestion-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/dry/digestion-1x.webp"
+                          alt="Забота о пищеварении"
+                          loading="lazy"
+                          decoding="async"
+                          width="31"
+                          height="40"
+                        />
+                      </picture>
+                    </div>
+                    <span>Забота о<br />пищеварении</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/dry/joints-1x.webp 1x,
+                            ./img/dry/joints-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/dry/joints-1x.webp"
+                          alt="Мощная защита суставов"
+                          loading="lazy"
+                          decoding="async"
+                          width="40"
+                          height="44"
+                        />
+                      </picture>
+                    </div>
+                    <span>Мощная защита<br />суставов</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/dry/regeneration-1x.webp 1x,
+                            ./img/dry/regeneration-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/dry/regeneration-1x.webp"
+                          alt="Регенерация тканей"
+                          loading="lazy"
+                          decoding="async"
+                          width="40"
+                          height="40"
+                        />
+                      </picture>
+                    </div>
+                    <span>Регенерация<br />тканей</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/dry/immunity-1x.webp 1x,
+                            ./img/dry/immunity-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/dry/immunity-1x.webp"
+                          alt="Крепкий иммунитет"
+                          loading="lazy"
+                          decoding="async"
+                          width="40"
+                          height="36"
+                        />
+                      </picture>
+                    </div>
+                    <span>Крепкий<br />иммунитет</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/dry/coat-1x.webp 1x,
+                            ./img/dry/coat-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/dry/coat-1x.webp"
+                          alt="Сияющая шерсть"
+                          loading="lazy"
+                          decoding="async"
+                          width="40"
+                          height="40"
+                        />
+                      </picture>
+                    </div>
+                    <span>Сияющая<br />шерсть</span>
+                  </div>
+                  <div class="JD-line__benefit">
+                    <div class="JD-line__benefit-icon">
+                      <picture class="JD-img">
+                        <source
+                          srcset="
+                            ./img/dry/skin-1x.webp 1x,
+                            ./img/dry/skin-2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="JD-line__benefit-icon-img"
+                          src="./img/dry/skin-1x.webp"
+                          alt="Здоровая кожа"
+                          loading="lazy"
+                          decoding="async"
+                          width="40"
+                          height="36"
+                        />
+                      </picture>
+                    </div>
+                    <span>Здоровая<br />кожа</span>
+                  </div>
+                </div>
+
+                <a
+                  href="https://www.dogeat.ru/catalog/just-dog/low-grain/"
+                  class="JD-btn JD-line__cta"
+                >
+                  Смотреть товары
+                </a>
+              </div>
+
+              <picture class="JD-img JD-line__products-image">
+                <source
+                  srcset="
+                    ./img/dry/products-mob-1x.webp 1x,
+                    ./img/dry/products-mob-2x.webp 2x
+                  "
+                  media="(max-width: 370px)"
+                />
+                <source
+                  srcset="
+                    ./img/dry/products-1x.webp 1x,
+                    ./img/dry/products-2x.webp 2x
+                  "
+                />
+                <img
+                  src="./img/dry/products-1x.webp"
+                  alt="Ассортимент продукции"
+                  loading="lazy"
+                  decoding="async"
+                  width="426"
+                  height="631"
+                  class="JD-line__products-img"
+                />
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="JD-vet JD-margin-bottom">
+          <div class="JD-container">
+            <div class="JD-line__tag JD-vet__tag JD-tag">Vet&nbsp;Line</div>
+            <div class="JD-line__wrapper">
+              <div class="JD-line__content JD-vet__content">
+                <h3 class="JD-line__title">Vet line - ветеринарные корма</h3>
+                <p class="JD-line__lead JD-vet__lead">
+                  Для питомцев с особыми потребностями: поддержка пищеварения,
+                  печени, иммунитета. Натуральный состав, высокое содержание
+                  мяса, работающие добавки.
+                </p>
+
+                <div class="JD-vet__categories">
+                  <div class="JD-vet__category">
+                    <div class="JD-vet__category-info">
+                      <h3 class="JD-vet__category-title">Hepatic +</h3>
+                      <p class="JD-vet__category-text">
+                        Профилактика болезней печени для собак
+                      </p>
+                    </div>
+                    <div class="JD-line__benefits JD-vet__benefits">
+                      <div class="JD-line__benefit">
+                        <div class="JD-line__benefit-icon">
+                          <picture class="JD-img">
+                            <source
+                              srcset="
+                                ./img/vet/liver-support-1x.webp 1x,
+                                ./img/vet/liver-support-2x.webp 2x
+                              "
+                            />
+                            <img
+                              class="JD-line__benefit-icon-img"
+                              src="./img/vet/liver-support-1x.webp"
+                              alt="Поддержка печени"
+                              loading="lazy"
+                              decoding="async"
+                              width="40"
+                              height="40"
+                            />
+                          </picture>
+                        </div>
+                        <span class="JD-line__lead-accent"
+                          >Поддержка<br />печени</span
+                        >
+                      </div>
+                      <div class="JD-line__benefit">
+                        <div class="JD-line__benefit-icon">
+                          <picture class="JD-img">
+                            <source
+                              srcset="
+                                ./img/vet/energy-1x.webp 1x,
+                                ./img/vet/energy-2x.webp 2x
+                              "
+                            />
+                            <img
+                              class="JD-line__benefit-icon-img"
+                              src="./img/vet/energy-1x.webp"
+                              alt="Энергия и тонус"
+                              loading="lazy"
+                              decoding="async"
+                              width="40"
+                              height="40"
+                            />
+                          </picture>
+                        </div>
+                        <span>Энергия<br />и тонус</span>
+                      </div>
+                      <div class="JD-line__benefit">
+                        <div class="JD-line__benefit-icon">
+                          <picture class="JD-img">
+                            <source
+                              srcset="
+                                ./img/vet/immunity-1x.webp 1x,
+                                ./img/vet/immunity-2x.webp 2x
+                              "
+                            />
+                            <img
+                              class="JD-line__benefit-icon-img"
+                              src="./img/vet/immunity-1x.webp"
+                              alt="Укрепление иммунитета"
+                              loading="lazy"
+                              decoding="async"
+                              width="40"
+                              height="40"
+                            />
+                          </picture>
+                        </div>
+                        <span>Укрепление<br />иммунитета</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="JD-vet__category">
+                    <div class="JD-vet__category-info">
+                      <h3 class="JD-vet__category-title">Gastrointestinal +</h3>
+                      <p class="JD-vet__category-text">
+                        Профилактика болезней желудочно-кишечного тракта для
+                        собак
+                      </p>
+                    </div>
+                    <div class="JD-line__benefits JD-vet__benefits">
+                      <div class="JD-line__benefit">
+                        <div class="JD-line__benefit-icon">
+                          <picture class="JD-img">
+                            <source
+                              srcset="
+                                ./img/vet/microflora-1x.webp 1x,
+                                ./img/vet/microflora-2x.webp 2x
+                              "
+                            />
+                            <img
+                              class="JD-line__benefit-icon-img"
+                              src="./img/vet/microflora-1x.webp"
+                              alt="Баланс микрофлоры"
+                              loading="lazy"
+                              decoding="async"
+                              width="33"
+                              height="40"
+                            />
+                          </picture>
+                        </div>
+                        <span>Баланс<br />микрофлоры</span>
+                      </div>
+                      <div class="JD-line__benefit">
+                        <div class="JD-line__benefit-icon">
+                          <picture class="JD-img">
+                            <source
+                              srcset="
+                                ./img/vet/protein-digest-1x.webp 1x,
+                                ./img/vet/protein-digest-2x.webp 2x
+                              "
+                            />
+                            <img
+                              class="JD-line__benefit-icon-img"
+                              src="./img/vet/protein-digest-1x.webp"
+                              alt="Легкое усвоение белков"
+                              loading="lazy"
+                              decoding="async"
+                              width="40"
+                              height="40"
+                            />
+                          </picture>
+                        </div>
+                        <span>Легкое усвоение<br />белков</span>
+                      </div>
+                      <div class="JD-line__benefit">
+                        <div class="JD-line__benefit-icon">
+                          <picture class="JD-img">
+                            <source
+                              srcset="
+                                ./img/vet/amino-complex-1x.webp 1x,
+                                ./img/vet/amino-complex-2x.webp 2x
+                              "
+                            />
+                            <img
+                              class="JD-line__benefit-icon-img"
+                              src="./img/vet/amino-complex-1x.webp"
+                              alt="Комплекс аминокислот"
+                              loading="lazy"
+                              decoding="async"
+                              width="38"
+                              height="40"
+                            />
+                          </picture>
+                        </div>
+                        <span>Комплекс<br />аминокислот</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="JD-vet__category">
+                    <div class="JD-vet__category-info">
+                      <h3 class="JD-vet__category-title">Hypoallergenic +</h3>
+                      <p class="JD-vet__category-text">
+                        Гипоаллергенная диета для собак
+                      </p>
+                    </div>
+                    <div class="JD-line__benefits JD-vet__benefits">
+                      <div class="JD-line__benefit">
+                        <div class="JD-line__benefit-icon">
+                          <picture class="JD-img">
+                            <source
+                              srcset="
+                                ./img/vet/comfort-digestion-1x.webp 1x,
+                                ./img/vet/comfort-digestion-2x.webp 2x
+                              "
+                            />
+                            <img
+                              class="JD-line__benefit-icon-img"
+                              src="./img/vet/comfort-digestion-1x.webp"
+                              alt="Комфортное пищеварение"
+                              loading="lazy"
+                              decoding="async"
+                              width="31"
+                              height="40"
+                            />
+                          </picture>
+                        </div>
+                        <span>Комфортное<br />пищеварение</span>
+                      </div>
+                      <div class="JD-line__benefit">
+                        <div class="JD-line__benefit-icon">
+                          <picture class="JD-img">
+                            <source
+                              srcset="
+                                ./img/vet/immune-support-1x.webp 1x,
+                                ./img/vet/immune-support-2x.webp 2x
+                              "
+                            />
+                            <img
+                              class="JD-line__benefit-icon-img"
+                              src="./img/vet/immune-support-1x.webp"
+                              alt="Укрепляет иммунитет"
+                              loading="lazy"
+                              decoding="async"
+                              width="36"
+                              height="40"
+                            />
+                          </picture>
+                        </div>
+                        <span>Укрепляет<br />иммунитет</span>
+                      </div>
+                      <div class="JD-line__benefit">
+                        <div class="JD-line__benefit-icon">
+                          <picture class="JD-img">
+                            <source
+                              srcset="
+                                ./img/vet/skin-coat-1x.webp 1x,
+                                ./img/vet/skin-coat-2x.webp 2x
+                              "
+                            />
+                            <img
+                              class="JD-line__benefit-icon-img"
+                              src="./img/vet/skin-coat-1x.webp"
+                              alt="Здоровье кожи и шерсти"
+                              loading="lazy"
+                              decoding="async"
+                              width="40"
+                              height="40"
+                            />
+                          </picture>
+                        </div>
+                        <span>Здоровье кожи<br />и шерсти</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="JD-vet__category">
+                    <div class="JD-vet__category-info">
+                      <h3 class="JD-vet__category-title">Recovery +</h3>
+                      <p class="JD-vet__category-text">
+                        Восстановительная диета для кошек и собак
+                      </p>
+                    </div>
+                    <div class="JD-line__benefits JD-vet__benefits">
+                      <div class="JD-line__benefit">
+                        <div class="JD-line__benefit-icon">
+                          <picture class="JD-img">
+                            <source
+                              srcset="
+                                ./img/vet/regeneration-1x.webp 1x,
+                                ./img/vet/regeneration-2x.webp 2x
+                              "
+                            />
+                            <img
+                              class="JD-line__benefit-icon-img"
+                              src="./img/vet/regeneration-1x.webp"
+                              alt="Регенерация тканей"
+                              loading="lazy"
+                              decoding="async"
+                              width="40"
+                              height="40"
+                            />
+                          </picture>
+                        </div>
+                        <span>Регенерация<br />тканей</span>
+                      </div>
+                      <div class="JD-line__benefit">
+                        <div class="JD-line__benefit-icon">
+                          <picture class="JD-img">
+                            <source
+                              srcset="
+                                ./img/vet/immune-care-1x.webp 1x,
+                                ./img/vet/immune-care-2x.webp 2x
+                              "
+                            />
+                            <img
+                              class="JD-line__benefit-icon-img"
+                              src="./img/vet/immune-care-1x.webp"
+                              alt="Поддерживает иммунитет"
+                              loading="lazy"
+                              decoding="async"
+                              width="36"
+                              height="40"
+                            />
+                          </picture>
+                        </div>
+                        <span>Поддерживает<br />иммунитет</span>
+                      </div>
+                      <div class="JD-line__benefit">
+                        <div class="JD-line__benefit-icon">
+                          <picture class="JD-img">
+                            <source
+                              srcset="
+                                ./img/vet/recovery-power-1x.webp 1x,
+                                ./img/vet/recovery-power-2x.webp 2x
+                              "
+                            />
+                            <img
+                              class="JD-line__benefit-icon-img"
+                              src="./img/vet/recovery-power-1x.webp"
+                              alt="Восстановление и сила"
+                              loading="lazy"
+                              decoding="async"
+                              width="40"
+                              height="40"
+                            />
+                          </picture>
+                        </div>
+                        <span>Восстановление<br />и сила</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="https://www.dogeat.ru/catalog/just-dog/vet/"
+                  class="JD-btn JD-line__cta JD-vet__cta"
+                >
+                  Смотреть товары
+                </a>
+              </div>
+
+              <picture class="JD-img JD-line__products-image">
+                <source
+                  srcset="
+                    ./img/vet/products-mob-1x.webp 1x,
+                    ./img/vet/products-mob-2x.webp 2x
+                  "
+                  media="(max-width: 370px)"
+                />
+                <source
+                  srcset="
+                    ./img/vet/products-1x.webp 1x,
+                    ./img/vet/products-2x.webp 2x
+                  "
+                />
+                <img
+                  src="./img/vet/products-1x.webp"
+                  alt="Ассортимент продукции"
+                  loading="lazy"
+                  decoding="async"
+                  width="426"
+                  height="716"
+                  class="JD-line__products-img"
+                />
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="JD-composition JD-margin-bottom">
+          <div class="JD-container">
+            <div class="JD-composition__wrapper">
+              <picture class="JD-img JD-composition__bg">
+                <source
+                  srcset="
+                    ./img/composition/background-1x.webp 1x,
+                    ./img/composition/background-2x.webp 2x
+                  "
+                />
+                <img
+                  src="./img/composition/background-1x.webp"
+                  alt="Фоновый паттерн"
+                  loading="lazy"
+                  decoding="async"
+                  class="JD-composition__bg-img"
+                  width="1200"
+                  height="740"
+                />
+              </picture>
+
+              <picture class="JD-img JD-composition__badge">
+                <source
+                  media="(max-width: 370px)"
+                  srcset="
+                    ./img/hero/logo-mob-1x.webp 1x,
+                    ./img/hero/logo-mob-2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 371px)"
+                  srcset="
+                    ./img/hero/logo-1x.webp 1x,
+                    ./img/hero/logo-2x.webp 2x
+                  "
+                />
+                <img
+                  src="./img/hero/logo-1x.webp"
+                  alt="Just Dog"
+                  loading="lazy"
+                  decoding="async"
+                  class="JD-badge-img JD-composition__badge-img"
+                  width="157"
+                  height="129"
+                />
+              </picture>
+              <div class="JD-composition__header">
+                <h2 class="JD-composition__title JD-line__title">
+                  Забота — не&nbsp;в&nbsp;словах, а&nbsp;в&nbsp;составе
+                </h2>
+                <p class="JD-composition__lead JD-line__lead">
+                  JUST DOG — это не просто корм. Это функциональное питание,
+                  созданное по принципам биохакинга.
+                  <br />
+                  Мы верим, что собака — это полноценный член семьи, и её рацион
+                  должен быть сбалансированным
+                </p>
+              </div>
+
+              <div class="JD-composition__grid">
+                <article class="JD-composition__card">
+                  <span class="JD-composition__number">01</span>
+                  <h3 class="JD-composition__card-title">
+                    Животные белки обеспечивают
+                  </h3>
+                  <div
+                    class="JD-line__benefits JD-composition__benefits JD-composition__benefits--primary"
+                  >
+                    <div class="JD-composition__benefit JD-line__benefit">
+                      <picture
+                        class="JD-img JD-line__benefit-icon JD-composition__benefit-icon"
+                      >
+                        <source
+                          srcset="
+                            ./img/composition/aminos-1x.webp 1x,
+                            ./img/composition/aminos-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/composition/aminos-1x.webp"
+                          alt="Аминокислоты"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-composition__benefit-icon-img"
+                          width="39"
+                          height="39"
+                        />
+                      </picture>
+                      <span class="JD-composition__benefit-text"
+                        >аминокислоты</span
+                      >
+                    </div>
+                    <div class="JD-composition__benefit JD-line__benefit">
+                      <picture
+                        class="JD-img JD-line__benefit-icon JD-composition__benefit-icon"
+                      >
+                        <source
+                          srcset="
+                            ./img/composition/energy-1x.webp 1x,
+                            ./img/composition/energy-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/composition/energy-1x.webp"
+                          alt="Энергию"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-composition__benefit-icon-img"
+                          width="34"
+                          height="34"
+                        />
+                      </picture>
+                      <span class="JD-composition__benefit-text">энергию</span>
+                    </div>
+                    <div class="JD-composition__benefit JD-line__benefit">
+                      <picture
+                        class="JD-img JD-line__benefit-icon JD-composition__benefit-icon"
+                      >
+                        <source
+                          srcset="
+                            ./img/composition/muscle-1x.webp 1x,
+                            ./img/composition/muscle-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/composition/muscle-1x.webp"
+                          alt="Развитие мышц"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-composition__benefit-icon-img"
+                          width="34"
+                          height="34"
+                        />
+                      </picture>
+                      <span class="JD-composition__benefit-text"
+                        >развитие мышц</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="JD-composition__details JD-composition__details--meat"
+                  >
+                    <p
+                      class="JD-composition__subtitle JD-composition__subtitle--tight"
+                    >
+                      Только высококачественные источники белка
+                    </p>
+                    <div class="JD-composition__ingredients">
+                      <div
+                        class="JD-composition__ingredient JD-composition__ingredient--gap"
+                      >
+                        <picture
+                          class="JD-img JD-composition__ingredient-icon JD-composition__ingredient-icon--lamb"
+                        >
+                          <source
+                            srcset="
+                              ./img/composition/lamb-1x.webp 1x,
+                              ./img/composition/lamb-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="./img/composition/lamb-1x.webp"
+                            alt="Ягненок"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-composition__ingredient-icon-img"
+                            width="67"
+                            height="67"
+                          />
+                        </picture>
+                        <span>ягненок</span>
+                      </div>
+                      <div
+                        class="JD-composition__ingredient JD-composition__ingredient--gap"
+                      >
+                        <picture
+                          class="JD-img JD-composition__ingredient-icon JD-composition__ingredient-icon--beef"
+                        >
+                          <source
+                            srcset="
+                              ./img/composition/beef-1x.webp 1x,
+                              ./img/composition/beef-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="./img/composition/beef-1x.webp"
+                            alt="Говядина"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-composition__ingredient-icon-img"
+                            width="62"
+                            height="63"
+                          />
+                        </picture>
+                        <span>говядина</span>
+                      </div>
+                      <div
+                        class="JD-composition__ingredient JD-composition__ingredient--gap"
+                      >
+                        <picture
+                          class="JD-img JD-composition__ingredient-icon JD-composition__ingredient-icon--turkey"
+                        >
+                          <source
+                            srcset="
+                              ./img/composition/turkey-1x.webp 1x,
+                              ./img/composition/turkey-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="./img/composition/turkey-1x.webp"
+                            alt="Индейка"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-composition__ingredient-icon-img"
+                            width="56"
+                            height="55"
+                          />
+                        </picture>
+                        <span>индейка</span>
+                      </div>
+                      <div class="JD-composition__ingredient">
+                        <picture class="JD-img JD-composition__ingredient-icon">
+                          <source
+                            srcset="
+                              ./img/composition/rabbit-1x.webp 1x,
+                              ./img/composition/rabbit-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="./img/composition/rabbit-1x.webp"
+                            alt="Кролик"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-composition__ingredient-icon-img"
+                            width="58"
+                            height="56"
+                          />
+                        </picture>
+                        <span>кролик</span>
+                      </div>
+                      <div class="JD-composition__ingredient">
+                        <picture class="JD-img JD-composition__ingredient-icon">
+                          <source
+                            srcset="
+                              ./img/composition/chicken-1x.webp 1x,
+                              ./img/composition/chicken-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="./img/composition/chicken-1x.webp"
+                            alt="Курица"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-composition__ingredient-icon-img"
+                            width="56"
+                            height="57"
+                          />
+                        </picture>
+                        <span>курица</span>
+                      </div>
+                      <div class="JD-composition__ingredient">
+                        <picture class="JD-img JD-composition__ingredient-icon">
+                          <source
+                            srcset="
+                              ./img/composition/fish-1x.webp 1x,
+                              ./img/composition/fish-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="./img/composition/fish-1x.webp"
+                            alt="Рыба"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-composition__ingredient-icon-img"
+                            width="59"
+                            height="58"
+                          />
+                        </picture>
+                        <span>рыба</span>
+                      </div>
+                    </div>
+                  </div>
+                  <picture class="JD-img JD-composition__plate">
+                    <source
+                      srcset="
+                        ./img/composition/plate-meat-1x.webp 1x,
+                        ./img/composition/plate-meat-2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="./img/composition/plate-meat-1x.webp"
+                      alt="Мясное ассорти"
+                      loading="lazy"
+                      decoding="async"
+                      class="JD-composition__plate-img JD-composition__plate-img--meat"
+                      width="140"
+                      height="269"
+                    />
+                  </picture>
+                </article>
+
+                <article class="JD-composition__card">
+                  <span class="JD-composition__number">02</span>
+                  <h3 class="JD-composition__card-title">
+                    Растительные волокна<br />обеспечивают
+                  </h3>
+                  <div
+                    class="JD-line__benefits JD-composition__benefits JD-composition__benefits--secondary"
+                  >
+                    <div class="JD-composition__benefit JD-line__benefit">
+                      <picture
+                        class="JD-img JD-line__benefit-icon JD-composition__benefit-icon"
+                      >
+                        <source
+                          srcset="
+                            ./img/composition/immunity-1x.webp 1x,
+                            ./img/composition/immunity-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/composition/immunity-1x.webp"
+                          alt="Иммунную защиту"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-composition__benefit-icon-img"
+                          width="30"
+                          height="34"
+                        />
+                      </picture>
+                      <span class="JD-composition__benefit-text"
+                        >иммунную защиту</span
+                      >
+                    </div>
+                    <div class="JD-composition__benefit JD-line__benefit">
+                      <picture
+                        class="JD-img JD-line__benefit-icon JD-composition__benefit-icon"
+                      >
+                        <source
+                          srcset="
+                            ./img/composition/antioxidant-1x.webp 1x,
+                            ./img/composition/antioxidant-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/composition/antioxidant-1x.webp"
+                          alt="Антиоксидантную поддержку"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-composition__benefit-icon-img"
+                          width="34"
+                          height="31"
+                        />
+                      </picture>
+                      <span class="JD-composition__benefit-text"
+                        >антиоксидантную поддержку</span
+                      >
+                    </div>
+                    <div class="JD-composition__benefit JD-line__benefit">
+                      <picture
+                        class="JD-img JD-line__benefit-icon JD-composition__benefit-icon"
+                      >
+                        <source
+                          srcset="
+                            ./img/composition/digestion-1x.webp 1x,
+                            ./img/composition/digestion-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/composition/digestion-1x.webp"
+                          alt="Мягкое пищеварение"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-composition__benefit-icon-img"
+                          width="34"
+                          height="34"
+                        />
+                      </picture>
+                      <span class="JD-composition__benefit-text"
+                        >мягкое пищеварение</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="JD-composition__details JD-composition__details--veg"
+                  >
+                    <p class="JD-composition__subtitle">
+                      Только тщательно подобранные растительные компоненты
+                    </p>
+                    <div class="JD-composition__ingredients">
+                      <div class="JD-composition__ingredient">
+                        <picture class="JD-img JD-composition__ingredient-icon">
+                          <source
+                            srcset="
+                              ./img/composition/rice-1x.webp 1x,
+                              ./img/composition/rice-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="./img/composition/rice-1x.webp"
+                            alt="Рис"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-composition__ingredient-icon-img"
+                            width="52"
+                            height="52"
+                          />
+                        </picture>
+                        <span>рис</span>
+                      </div>
+                      <div class="JD-composition__ingredient">
+                        <picture class="JD-img JD-composition__ingredient-icon">
+                          <source
+                            srcset="
+                              ./img/composition/wheat-1x.webp 1x,
+                              ./img/composition/wheat-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="./img/composition/wheat-1x.webp"
+                            alt="Пшеница"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-composition__ingredient-icon-img"
+                            width="52"
+                            height="52"
+                          />
+                        </picture>
+                        <span>пшеница</span>
+                      </div>
+                      <div class="JD-composition__ingredient">
+                        <picture class="JD-img JD-composition__ingredient-icon">
+                          <source
+                            srcset="
+                              ./img/composition/flax-1x.webp 1x,
+                              ./img/composition/flax-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="./img/composition/flax-1x.webp"
+                            alt="Семена льна"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-composition__ingredient-icon-img"
+                            width="52"
+                            height="52"
+                          />
+                        </picture>
+                        <span>семена льна</span>
+                      </div>
+                    </div>
+                    <p class="JD-composition__extra">
+                      <span class="JD-composition__extra-accent"
+                        >Дополняют состав</span
+                      ><br />
+                      тыква, морковь, цукини, свекла, яблоко, груша, черника,
+                      клюква, брусника, шиповник и шпинат
+                    </p>
+                  </div>
+                  <picture class="JD-img JD-composition__plate">
+                    <source
+                      srcset="
+                        ./img/composition/plate-veg-1x.webp 1x,
+                        ./img/composition/plate-veg-2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="./img/composition/plate-veg-1x.webp"
+                      alt="Овощи"
+                      loading="lazy"
+                      decoding="async"
+                      class="JD-composition__plate-img JD-composition__plate-img--veg"
+                      width="168"
+                      height="306"
+                    />
+                  </picture>
+                </article>
+
+                <article class="JD-composition__card">
+                  <span class="JD-composition__number">03</span>
+                  <h3 class="JD-composition__card-title">
+                    Масла и жиры<br />обеспечивают
+                  </h3>
+                  <div
+                    class="JD-line__benefits JD-composition__benefits JD-composition__benefits--tertiary"
+                  >
+                    <div class="JD-composition__benefit JD-line__benefit">
+                      <picture
+                        class="JD-img JD-line__benefit-icon JD-composition__benefit-icon"
+                      >
+                        <source
+                          srcset="
+                            ./img/composition/vitamins-1x.webp 1x,
+                            ./img/composition/vitamins-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/composition/vitamins-1x.webp"
+                          alt="Усвоение витаминов"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-composition__benefit-icon-img"
+                          width="26"
+                          height="34"
+                        />
+                      </picture>
+                      <span class="JD-composition__benefit-text"
+                        >усвоение витаминов</span
+                      >
+                    </div>
+                    <div class="JD-composition__benefit JD-line__benefit">
+                      <picture
+                        class="JD-img JD-line__benefit-icon JD-composition__benefit-icon"
+                      >
+                        <source
+                          srcset="
+                            ./img/composition/skin-1x.webp 1x,
+                            ./img/composition/skin-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/composition/skin-1x.webp"
+                          alt="Здоровье кожи"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-composition__benefit-icon-img"
+                          width="29"
+                          height="29"
+                        />
+                      </picture>
+                      <span class="JD-composition__benefit-text"
+                        >здоровье<br />кожи</span
+                      >
+                    </div>
+                    <div class="JD-composition__benefit JD-line__benefit">
+                      <picture
+                        class="JD-img JD-line__benefit-icon JD-composition__benefit-icon"
+                      >
+                        <source
+                          srcset="
+                            ./img/composition/coat-1x.webp 1x,
+                            ./img/composition/coat-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/composition/coat-1x.webp"
+                          alt="Блеск шерсти"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-composition__benefit-icon-img"
+                          width="30"
+                          height="30"
+                        />
+                      </picture>
+                      <span class="JD-composition__benefit-text"
+                        >блеск<br />шерсти</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="JD-composition__details JD-composition__details--fish"
+                  >
+                    <p class="JD-composition__subtitle">
+                      Высококачественные жиры и масла, которые являются отличным
+                      источником омега-3 и омега-6
+                    </p>
+                    <div class="JD-composition__ingredients">
+                      <div class="JD-composition__ingredient">
+                        <picture class="JD-img JD-composition__ingredient-icon">
+                          <source
+                            srcset="
+                              ./img/composition/sunflower-1x.webp 1x,
+                              ./img/composition/sunflower-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="./img/composition/sunflower-1x.webp"
+                            alt="Подсолнечное масло"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-composition__ingredient-icon-img"
+                            width="54"
+                            height="54"
+                          />
+                        </picture>
+                        <span>подсолнечное масло</span>
+                      </div>
+                      <div class="JD-composition__ingredient">
+                        <picture class="JD-img JD-composition__ingredient-icon">
+                          <source
+                            srcset="
+                              ./img/composition/flax-oil-1x.webp 1x,
+                              ./img/composition/flax-oil-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="./img/composition/flax-oil-1x.webp"
+                            alt="Льняное масло"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-composition__ingredient-icon-img"
+                            width="58"
+                            height="54"
+                          />
+                        </picture>
+                        <span>льняное масло</span>
+                      </div>
+                      <div class="JD-composition__ingredient">
+                        <picture class="JD-img JD-composition__ingredient-icon">
+                          <source
+                            srcset="
+                              ./img/composition/fish-oil-1x.webp 1x,
+                              ./img/composition/fish-oil-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="./img/composition/fish-oil-1x.webp"
+                            alt="Рыбий жир"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-composition__ingredient-icon-img"
+                            width="54"
+                            height="54"
+                          />
+                        </picture>
+                        <span>рыбий жир</span>
+                      </div>
+                    </div>
+                  </div>
+                  <picture
+                    class="JD-img JD-composition__plate JD-composition__plate--fish"
+                  >
+                    <source
+                      srcset="
+                        ./img/composition/plate-fish-1x.webp 1x,
+                        ./img/composition/plate-fish-2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="./img/composition/plate-fish-1x.webp"
+                      alt="Рыба"
+                      loading="lazy"
+                      decoding="async"
+                      class="JD-composition__plate-img JD-composition__plate-img--fish"
+                      width="113"
+                      height="241"
+                    />
+                  </picture>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="JD-comparison JD-margin-bottom">
+          <div class="JD-container">
+            <div class="JD-comparison__wrapper">
+              <picture class="JD-img JD-comparison__bg">
+                <source
+                  srcset="
+                    ./img/comparison/background-1x.webp 1x,
+                    ./img/comparison/background-2x.webp 2x
+                  "
+                />
+                <img
+                  src="./img/comparison/background-1x.webp"
+                  alt="Фоновый паттерн"
+                  loading="lazy"
+                  decoding="async"
+                  class="JD-comparison__bg-img"
+                  width="1200"
+                  height="680"
+                />
+              </picture>
+
+              <picture class="JD-img JD-comparison__badge">
+                <source
+                  media="(max-width: 370px)"
+                  srcset="
+                    ./img/hero/logo-mob-1x.webp 1x,
+                    ./img/hero/logo-mob-2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 371px)"
+                  srcset="
+                    ./img/hero/logo-1x.webp 1x,
+                    ./img/hero/logo-2x.webp 2x
+                  "
+                />
+                <img
+                  src="./img/hero/logo-1x.webp"
+                  alt="Just Dog"
+                  loading="lazy"
+                  decoding="async"
+                  class="JD-badge-img JD-comparison__badge-img"
+                  width="157"
+                  height="129"
+                />
+              </picture>
+
+              <div class="JD-comparison__header">
+                <h3 class="JD-comparison__title">
+                  Отличия, которые имеют значение
+                </h3>
+                <p class="JD-comparison__lead">
+                  В основе всех наших рецептур — клинически проверенные
+                  компоненты, чистый состав и ветеринарный подход. <br />
+                  Каждый ингредиент работает на результат: здоровое пищеварение,
+                  крепкий иммунитет, чистая кожа и блестящая шерсть
+                </p>
+              </div>
+
+              <div class="JD-comparison__table">
+                <div
+                  class="JD-comparison__column JD-comparison__column--labels"
+                >
+                  <ul class="JD-comparison__list">
+                    <li class="JD-comparison__item">Сбалансированный состав</li>
+                    <li class="JD-comparison__item">Натуральные ингредиенты</li>
+                    <li class="JD-comparison__item">
+                      Подходит по возрасту и породе
+                    </li>
+                    <li class="JD-comparison__item">Высокая усвояемость</li>
+                    <li class="JD-comparison__item">Гипоаллергенность</li>
+                    <li class="JD-comparison__item">Прозрачность бренда</li>
+                    <li class="JD-comparison__item">
+                      Улучшение состояния собаки
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="JD-comparison__column JD-comparison__column--brand">
+                  <div class="JD-comparison__brand-card">
+                    <picture class="JD-img JD-comparison__brand-logo">
+                      <source
+                        srcset="
+                          ./img/comparison/logo-1x.webp 1x,
+                          ./img/comparison/logo-2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./img/comparison/logo-1x.webp"
+                        alt="Just Dog"
+                        loading="lazy"
+                        decoding="async"
+                        class="JD-comparison__brand-logo-img"
+                        width="83"
+                        height="64"
+                      />
+                    </picture>
+                    <div class="JD-comparison__marks">
+                      <picture
+                        class="JD-img JD-comparison__mark JD-comparison__mark--yes"
+                      >
+                        <source
+                          srcset="
+                            ./img/comparison/yes-1x.webp 1x,
+                            ./img/comparison/yes-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/comparison/yes-1x.webp"
+                          alt="Да"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-comparison__mark-img"
+                          width="20"
+                          height="20"
+                        />
+                      </picture>
+                      <picture
+                        class="JD-img JD-comparison__mark JD-comparison__mark--yes"
+                      >
+                        <source
+                          srcset="
+                            ./img/comparison/yes-1x.webp 1x,
+                            ./img/comparison/yes-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/comparison/yes-1x.webp"
+                          alt="Да"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-comparison__mark-img"
+                          width="20"
+                          height="20"
+                        />
+                      </picture>
+                      <picture
+                        class="JD-img JD-comparison__mark JD-comparison__mark--yes"
+                      >
+                        <source
+                          srcset="
+                            ./img/comparison/yes-1x.webp 1x,
+                            ./img/comparison/yes-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/comparison/yes-1x.webp"
+                          alt="Да"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-comparison__mark-img"
+                          width="20"
+                          height="20"
+                        />
+                      </picture>
+                      <picture
+                        class="JD-img JD-comparison__mark JD-comparison__mark--yes"
+                      >
+                        <source
+                          srcset="
+                            ./img/comparison/yes-1x.webp 1x,
+                            ./img/comparison/yes-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/comparison/yes-1x.webp"
+                          alt="Да"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-comparison__mark-img"
+                          width="20"
+                          height="20"
+                        />
+                      </picture>
+                      <picture
+                        class="JD-img JD-comparison__mark JD-comparison__mark--yes"
+                      >
+                        <source
+                          srcset="
+                            ./img/comparison/yes-1x.webp 1x,
+                            ./img/comparison/yes-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/comparison/yes-1x.webp"
+                          alt="Да"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-comparison__mark-img"
+                          width="20"
+                          height="20"
+                        />
+                      </picture>
+                      <picture
+                        class="JD-img JD-comparison__mark JD-comparison__mark--yes"
+                      >
+                        <source
+                          srcset="
+                            ./img/comparison/yes-1x.webp 1x,
+                            ./img/comparison/yes-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/comparison/yes-1x.webp"
+                          alt="Да"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-comparison__mark-img"
+                          width="20"
+                          height="20"
+                        />
+                      </picture>
+                      <picture
+                        class="JD-img JD-comparison__mark JD-comparison__mark--yes"
+                      >
+                        <source
+                          srcset="
+                            ./img/comparison/yes-1x.webp 1x,
+                            ./img/comparison/yes-2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="./img/comparison/yes-1x.webp"
+                          alt="Да"
+                          loading="lazy"
+                          decoding="async"
+                          class="JD-comparison__mark-img"
+                          width="20"
+                          height="20"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="JD-comparison__column JD-comparison__column--other">
+                  <div class="JD-comparison__column-title">Другие корма</div>
+                  <div class="JD-comparison__marks">
+                    <picture
+                      class="JD-img JD-comparison__mark JD-comparison__mark--no"
+                    >
+                      <source
+                        srcset="
+                          ./img/comparison/no-1x.webp 1x,
+                          ./img/comparison/no-2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./img/comparison/no-1x.webp"
+                        alt="Нет"
+                        loading="lazy"
+                        decoding="async"
+                        class="JD-comparison__mark-img"
+                        width="20"
+                        height="20"
+                      />
+                    </picture>
+                    <picture
+                      class="JD-img JD-comparison__mark JD-comparison__mark--no"
+                    >
+                      <source
+                        srcset="
+                          ./img/comparison/no-1x.webp 1x,
+                          ./img/comparison/no-2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./img/comparison/no-1x.webp"
+                        alt="Нет"
+                        loading="lazy"
+                        decoding="async"
+                        class="JD-comparison__mark-img"
+                        width="20"
+                        height="20"
+                      />
+                    </picture>
+                    <picture
+                      class="JD-img JD-comparison__mark JD-comparison__mark--no"
+                    >
+                      <source
+                        srcset="
+                          ./img/comparison/no-1x.webp 1x,
+                          ./img/comparison/no-2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./img/comparison/no-1x.webp"
+                        alt="Нет"
+                        loading="lazy"
+                        decoding="async"
+                        class="JD-comparison__mark-img"
+                        width="20"
+                        height="20"
+                      />
+                    </picture>
+                    <picture
+                      class="JD-img JD-comparison__mark JD-comparison__mark--no"
+                    >
+                      <source
+                        srcset="
+                          ./img/comparison/no-1x.webp 1x,
+                          ./img/comparison/no-2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./img/comparison/no-1x.webp"
+                        alt="Нет"
+                        loading="lazy"
+                        decoding="async"
+                        class="JD-comparison__mark-img"
+                        width="20"
+                        height="20"
+                      />
+                    </picture>
+                    <picture
+                      class="JD-img JD-comparison__mark JD-comparison__mark--no"
+                    >
+                      <source
+                        srcset="
+                          ./img/comparison/no-1x.webp 1x,
+                          ./img/comparison/no-2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./img/comparison/no-1x.webp"
+                        alt="Нет"
+                        loading="lazy"
+                        decoding="async"
+                        class="JD-comparison__mark-img"
+                        width="20"
+                        height="20"
+                      />
+                    </picture>
+                    <picture
+                      class="JD-img JD-comparison__mark JD-comparison__mark--no"
+                    >
+                      <source
+                        srcset="
+                          ./img/comparison/no-1x.webp 1x,
+                          ./img/comparison/no-2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./img/comparison/no-1x.webp"
+                        alt="Нет"
+                        loading="lazy"
+                        decoding="async"
+                        class="JD-comparison__mark-img"
+                        width="20"
+                        height="20"
+                      />
+                    </picture>
+                    <picture
+                      class="JD-img JD-comparison__mark JD-comparison__mark--no"
+                    >
+                      <source
+                        srcset="
+                          ./img/comparison/no-1x.webp 1x,
+                          ./img/comparison/no-2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./img/comparison/no-1x.webp"
+                        alt="Нет"
+                        loading="lazy"
+                        decoding="async"
+                        class="JD-comparison__mark-img"
+                        width="20"
+                        height="20"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="JD-assortment JD-margin-bottom">
+          <div class="JD-container">
+            <div class="JD-assortment__wrapper">
+              <picture class="JD-img JD-assortment__bg">
+                <source
+                  media="(max-width: 370px)"
+                  srcset="
+                    ./img/assortment/background-mob-1x.webp 1x,
+                    ./img/assortment/background-mob-2x.webp 2x
+                  "
+                />
+                <source
+                  srcset="
+                    ./img/assortment/background-1x.webp 1x,
+                    ./img/assortment/background-2x.webp 2x
+                  "
+                />
+                <img
+                  src="./img/assortment/background-1x.webp"
+                  alt="Фоновый паттерн"
+                  loading="lazy"
+                  decoding="async"
+                  class="JD-assortment__bg-img"
+                  width="1200"
+                  height="666"
+                />
+              </picture>
+
+              <picture class="JD-img JD-assortment__badge">
+                <source
+                  media="(max-width: 370px)"
+                  srcset="
+                    ./img/hero/logo-mob-1x.webp 1x,
+                    ./img/hero/logo-mob-2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 371px)"
+                  srcset="
+                    ./img/hero/logo-1x.webp 1x,
+                    ./img/hero/logo-2x.webp 2x
+                  "
+                />
+                <img
+                  src="./img/hero/logo-1x.webp"
+                  alt="Just Dog"
+                  loading="lazy"
+                  decoding="async"
+                  class="JD-badge-img JD-assortment__badge-img"
+                  width="157"
+                  height="129"
+                />
+              </picture>
+
+              <div class="JD-assortment__header">
+                <h3 class="JD-assortment__title">
+                  Подберите идеальный корм для здоровья вашего питомца
+                </h3>
+              </div>
+
+              <div class="JD-assortment__grid">
+                <article
+                  class="JD-assortment__card JD-assortment__card--holistic"
+                >
+                  <a
+                    href="https://www.dogeat.ru/catalog/just-dog/holistic/"
+                    class="JD-assortment__tag JD-assortment__tag--holistic JD-btn JD-hero__line JD-hero__line--holistic"
+                  >
+                    Holistic line
+                  </a>
+                  <picture
+                    class="JD-img JD-assortment__products JD-assortment__products--holistic"
+                  >
+                    <source
+                      media="(max-width: 370px)"
+                      srcset="
+                        ./img/assortment/holistic-line-mob-1x.webp 1x,
+                        ./img/assortment/holistic-line-mob-2x.webp 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./img/assortment/holistic-line-1x.webp 1x,
+                        ./img/assortment/holistic-line-2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="./img/assortment/holistic-line-1x.webp"
+                      alt="Holistic line"
+                      loading="lazy"
+                      decoding="async"
+                      class="JD-assortment__products-img"
+                      width="354"
+                      height="287"
+                    />
+                  </picture>
+                  <a
+                    href="https://www.dogeat.ru/catalog/just-dog/holistic/"
+                    class="JD-btn JD-assortment__cta JD-assortment__cta--holistic"
+                  >
+                    Смотреть товары
+                  </a>
+                </article>
+
+                <article class="JD-assortment__card JD-assortment__card--dry">
+                  <a
+                    href="https://www.dogeat.ru/catalog/just-dog/low-grain/"
+                    class="JD-assortment__tag JD-assortment__tag--dry JD-btn JD-hero__line JD-hero__line--dry"
+                  >
+                    Dry line
+                  </a>
+                  <picture
+                    class="JD-img JD-assortment__products JD-assortment__products--dry"
+                  >
+                    <source
+                      media="(max-width: 370px)"
+                      srcset="
+                        ./img/assortment/dry-line-mob-1x.webp 1x,
+                        ./img/assortment/dry-line-mob-2x.webp 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./img/assortment/dry-line-1x.webp 1x,
+                        ./img/assortment/dry-line-2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="./img/assortment/dry-line-1x.webp"
+                      alt="Dry line"
+                      loading="lazy"
+                      decoding="async"
+                      class="JD-assortment__products-img"
+                      width="340"
+                      height="253"
+                    />
+                  </picture>
+                  <a
+                    href="https://www.dogeat.ru/catalog/just-dog/low-grain/"
+                    class="JD-btn JD-assortment__cta JD-assortment__cta--dry"
+                  >
+                    Смотреть товары
+                  </a>
+                </article>
+
+                <article class="JD-assortment__card JD-assortment__card--vet">
+                  <a
+                    href="https://www.dogeat.ru/catalog/just-dog/vet/"
+                    class="JD-assortment__tag JD-assortment__tag--vet JD-btn JD-hero__line JD-hero__line--vet"
+                  >
+                    Vet line
+                  </a>
+                  <picture
+                    class="JD-img JD-assortment__products JD-assortment__products--vet"
+                  >
+                    <source
+                      media="(max-width: 370px)"
+                      srcset="
+                        ./img/assortment/vet-line-mob-1x.webp 1x,
+                        ./img/assortment/vet-line-mob-2x.webp 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./img/assortment/vet-line-1x.webp 1x,
+                        ./img/assortment/vet-line-2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="./img/assortment/vet-line-1x.webp"
+                      alt="Vet line"
+                      loading="lazy"
+                      decoding="async"
+                      class="JD-assortment__products-img"
+                      width="354"
+                      height="251"
+                    />
+                  </picture>
+                  <a
+                    href="https://www.dogeat.ru/catalog/just-dog/vet/"
+                    class="JD-btn JD-assortment__cta JD-assortment__cta--vet"
+                  >
+                    Смотреть товары
+                  </a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Скрипт кнопки "Подробнее" -->
+    <script>
+      function showHidden(id) {
+        let div = document.getElementById(id);
+        div.style.display = div.style.display == "block" ? "none" : "block";
+      }
+    </script>
+    <!-- Скрипт кнопки "Подробнее" -->
+  </body>
+</html>

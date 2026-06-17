@@ -1,0 +1,418 @@
+<section>
+  <style>
+    :root {
+      --text: #3c2a1c;
+      --muted: #7e6d5a;
+      --line: rgba(108, 84, 60, 0.22);
+      --panel: #f7f3ed;
+      --panel-shadow: 0 24px 60px rgba(74, 57, 38, 0.24);
+      --step-bg: #f3eee6;
+      --radius: 22px;
+      --radius-sm: 16px;
+    }
+    .modal__panel-ya {
+      margin: 18px auto;
+      width: min(1200px, 100%);
+      background: var(--panel);
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    .modal__header-ya {
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--line);
+      border-radius: 16px 16px 0 0;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.98),
+        rgba(255, 255, 255, 0.92)
+      );
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .modal__title-ya {
+      margin: 0;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+      color: var(--text);
+    }
+    .modal__subtitle-ya {
+      margin: 6px 0 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .modal__body-ya {
+      border-radius: 0 0 16px 16px;
+      padding: 16px 18px 22px 18px;
+      background:
+        linear-gradient(
+          180deg,
+          rgba(245, 247, 255, 0.55),
+          rgba(255, 255, 255, 0) 60%
+        ),
+        #fff;
+    }
+    ol.steps-ya {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .step-ya {
+      border: 1px solid rgba(18, 24, 38, 0.1);
+      border-radius: var(--radius-sm);
+      background: var(--step-bg);
+      overflow: hidden;
+      box-shadow: 0 10px 26px rgba(16, 24, 40, 0.08);
+    }
+    .step__head-ya {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 14px 12px 14px;
+      background: linear-gradient(
+        90deg,
+        rgba(138, 91, 44, 0.14),
+        rgba(153, 116, 78, 0.1) 60%,
+        rgba(136, 178, 71, 0.1)
+      );
+      border-bottom: 1px solid rgba(18, 24, 38, 0.08);
+    }
+    .badge-ya {
+      width: 36px;
+      height: 36px;
+      border-radius: 11px;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      color: #fff;
+      box-shadow: 0 10px 20px rgba(16, 24, 40, 0.18);
+      flex: 0 0 auto;
+      background: linear-gradient(135deg, #8a5b2c, #6f4520);
+    }
+    .step__text-ya {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: var(--text);
+    }
+    .step__note-ya {
+      margin: 6px 0 0 0;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .step__body-ya {
+      background: #fff;
+    }
+    figure {
+      margin: 0;
+    }
+    .shot-ya {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .notice-wrap-ya .notice-ya {
+      margin-top: 0;
+    }
+    .notice-ya {
+      margin-top: 16px;
+      border: 1px solid rgba(138, 91, 44, 0.34);
+      border-left: 5px solid #8a5b2c;
+      border-radius: var(--radius-sm);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(138, 91, 44, 0.16),
+          rgba(174, 137, 95, 0.12) 55%,
+          rgba(136, 178, 71, 0.14)
+        ),
+        #fdfaf5;
+      box-shadow: 0 12px 28px rgba(74, 57, 38, 0.14);
+      overflow: hidden;
+    }
+    .notice__top-ya {
+      display: flex;
+      gap: 12px;
+      padding: 14px 14px 12px 14px;
+      align-items: flex-start;
+      border-bottom: 1px solid rgba(138, 91, 44, 0.18);
+      background: rgba(255, 250, 242, 0.82);
+    }
+    .notice__icon-ya {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: var(--text);
+      background: linear-gradient(
+        135deg,
+        rgba(138, 91, 44, 0.18),
+        rgba(136, 178, 71, 0.14)
+      );
+      box-shadow: 0 10px 20px rgba(16, 24, 40, 0.1);
+      flex: 0 0 auto;
+      font-size: 18px;
+    }
+    .notice__title-ya {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(110, 69, 31, 0.88);
+    }
+    .notice__lead-ya {
+      margin: 6px 0 0 0;
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      text-wrap: balance;
+    }
+    .notice__text-ya {
+      margin: 6px 0 0 0;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .notice__body-ya {
+      padding: 12px 14px 14px 14px;
+      background: #fff;
+    }
+    .calc-ya {
+      border: 1px dashed rgba(17, 24, 39, 0.2);
+      border-radius: 14px;
+      padding: 12px 12px 10px 12px;
+      background: linear-gradient(
+        180deg,
+        rgba(245, 247, 255, 0.8),
+        rgba(255, 255, 255, 1)
+      );
+    }
+    .calc__label-ya {
+      font-size: 12px;
+      font-weight: 900;
+      color: rgba(17, 24, 39, 0.65);
+      margin: 0 0 8px 0;
+    }
+    .calc__row-ya {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: baseline;
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+      margin: 0;
+    }
+    .calc__from-ya {
+      color: rgba(17, 24, 39, 0.55);
+      text-decoration: line-through;
+      text-decoration-thickness: 2px;
+    }
+    .calc__arrow-ya {
+      color: rgba(17, 24, 39, 0.45);
+      font-weight: 800;
+    }
+    .calc__to-ya {
+      color: var(--text);
+    }
+    .calc__save-ya {
+      margin: 10px 0 0 0;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .calc__save-ya strong {
+      font-weight: 900;
+      background: rgba(34, 197, 94, 0.18);
+      border-radius: 10px;
+      padding: 2px 8px;
+      display: inline-block;
+    }
+  </style>
+
+  <div class="modal__panel-ya">
+    <div class="modal__header-ya">
+      <div>
+        <h2 class="modal__title-ya" id="modalTitle">
+          Как оформить заказ со скидкой через Яндекс Сплит
+        </h2>
+        <p class="modal__subtitle-ya">
+          Следуйте шагам по порядку: так вы выберете нужный способ оплаты и
+          увидите скидку на странице оплаты Яндекса. Скриншоты ниже помогают
+          свериться на каждом этапе.
+        </p>
+      </div>
+    </div>
+
+    <div class="modal__body-ya">
+      <ol class="steps-ya">
+        <li class="step-ya">
+          <div class="step__head-ya">
+            <div class="badge-ya">1</div>
+            <div>
+              <p class="step__text-ya">
+                На странице оформления заказа в блоке «Способ оплаты» выберите
+                «Yandex Pay» и нажмите «Завершить оформление заказа».
+              </p>
+              <p class="step__note-ya">
+                Скидка от Яндекса применяется на стороне Яндекса.
+              </p>
+            </div>
+          </div>
+          <div class="step__body-ya">
+            <figure>
+              <img
+                class="shot-ya"
+                src="ya-screen-5.webp"
+                alt="Скрин 5: выбор способа оплаты Yandex Pay"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </li>
+
+        <li class="step-ya">
+          <div class="step__head-ya">
+            <div class="badge-ya">2</div>
+            <div>
+              <p class="step__text-ya">
+                После этого вам на почту придёт письмо с информацией о заказе.
+              </p>
+              <p class="step__note-ya">
+                Письмо приходит сразу после оформления на сайте.
+              </p>
+            </div>
+          </div>
+          <div class="step__body-ya">
+            <figure>
+              <img
+                class="shot-ya"
+                src="ya-screen-6.webp"
+                alt="Скрин 6: письмо с информацией о заказе"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </li>
+
+        <li class="step-ya">
+          <div class="step__head-ya">
+            <div class="badge-ya">3</div>
+            <div>
+              <p class="step__text-ya">
+                После подтверждения заказа менеджером вам придёт письмо со
+                ссылкой на оплату. Перейдите по этой ссылке.
+              </p>
+              <p class="step__note-ya">
+                Ссылка на оплату активируется после подтверждения.
+              </p>
+            </div>
+          </div>
+          <div class="step__body-ya">
+            <figure>
+              <img
+                class="shot-ya"
+                src="ya-screen-7.webp"
+                alt="Скрин 7: письмо со ссылкой на оплату"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </li>
+
+        <li class="step-ya">
+          <div class="step__head-ya">
+            <div class="badge-ya">4</div>
+            <div>
+              <p class="step__text-ya">
+                В сервисе Яндекса выберите пункт «Сплит».
+              </p>
+              <p class="step__note-ya">
+                На экране оплаты выберите вариант «Сплит».
+              </p>
+            </div>
+          </div>
+          <div class="step__body-ya">
+            <figure>
+              <img
+                class="shot-ya"
+                src="ya-screen-8.webp"
+                alt="Скрин 8: выбор пункта Сплит на странице оплаты"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </li>
+
+        <li class="step-ya">
+          <div class="step__head-ya">
+            <div class="badge-ya">5</div>
+            <div>
+              <p class="step__text-ya">
+                После этого итоговая сумма для оплаты станет со скидкой до 5%.
+              </p>
+              <p class="step__note-ya">Максимальная скидка — до 1000 ₽.</p>
+            </div>
+          </div>
+          <div class="step__body-ya">
+            <figure>
+              <img
+                class="shot-ya"
+                src="ya-screen-9.webp"
+                alt="Скрин 9: итоговая сумма с примененной скидкой"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </li>
+
+        <li class="notice-wrap-ya">
+          <section class="notice-ya" aria-label="Важно о финальной цене">
+            <div class="notice__top-ya">
+              <div class="notice__icon-ya" aria-hidden="true">⚡</div>
+              <div>
+                <p class="notice__title-ya">Важно</p>
+                <p class="notice__lead-ya">
+                  <strong
+                    >Финальная цена со скидкой отображается на странице оплаты
+                    Яндекса после выбора «Сплит».</strong
+                  >
+                </p>
+                <p class="notice__text-ya">
+                  На сайте до перехода к оплате сумма может быть без скидки —
+                  это нормально.
+                </p>
+              </div>
+            </div>
+            <div class="notice__body-ya">
+              <div
+                class="calc-ya"
+                role="note"
+                aria-label="Пример расчёта скидки"
+              >
+                <p class="calc__label-ya">Пример (как на скриншоте)</p>
+                <p class="calc__row-ya">
+                  <span class="calc__from-ya">11&nbsp;485,98&nbsp;₽</span>
+                  <span class="calc__arrow-ya" aria-hidden="true">→</span>
+                  <span class="calc__to-ya">10&nbsp;911,68&nbsp;₽</span>
+                </p>
+                <p class="calc__save-ya">
+                  Экономия: <strong>574,30&nbsp;₽</strong>
+                </p>
+              </div>
+            </div>
+          </section>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>

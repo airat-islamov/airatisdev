@@ -1,0 +1,118 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+  rel="stylesheet"
+>
+
+<style>
+.FZ-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.FZ-footer__link, .FZ-footer__button, .FZ-header__link, .FZ-header__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FZ-footer__logo, .FZ-footer__button, .FZ-hero__button, .FZ-header__logo, .FZ-header__cta {
+  transition: all 0.3s ease;
+}
+.FZ-footer__logo:hover, .FZ-footer__button:hover, .FZ-hero__button:hover, .FZ-header__logo:hover, .FZ-header__cta:hover {
+  opacity: 0.7;
+}
+.FZ-footer__logo:active, .FZ-footer__button:active, .FZ-hero__button:active, .FZ-header__logo:active, .FZ-header__cta:active {
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+#allrecords .FZ {
+  font-family: "Montserrat", sans-serif;
+}
+#allrecords .FZ,
+#allrecords .FZ *,
+#allrecords .FZ *::before,
+#allrecords .FZ *::after {
+  box-sizing: border-box;
+}
+#allrecords .FZ a {
+  color: inherit;
+  text-decoration: none;
+}
+#allrecords .FZ ul,
+#allrecords .FZ ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#allrecords .FZ button,
+#allrecords .FZ input,
+#allrecords .FZ textarea {
+  font: inherit;
+  color: inherit;
+}
+</style>
+
+<script>
+(() => {
+  window.FZFeatures = window.FZFeatures || {};
+
+  window.FZFeatures.initSmoothScroll = () => {
+    const navLinks = document.querySelectorAll(
+      '.FZ-header__link[href*="#"], .FZ-footer__link[href*="#"], .FZ-hero__button--primary[href*="#"]'
+    );
+
+    navLinks.forEach((link) => {
+      if (link.dataset.fzSmoothBound === "true") {
+        return;
+      }
+
+      link.dataset.fzSmoothBound = "true";
+
+      link.addEventListener("click", (event) => {
+        const targetSelector = new URL(link.href, window.location.href).hash;
+
+        if (!targetSelector || targetSelector.length <= 1) {
+          return;
+        }
+
+        const target = document.querySelector(targetSelector);
+
+        if (!target) {
+          return;
+        }
+
+        event.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+  };
+
+  const bootstrap = () => {
+    const normalizedPath = (window.location.pathname || "").replace(/\/+$/, "") || "/";
+    const isHomePage = normalizedPath === "/" || /\/index\.html?$/i.test(normalizedPath);
+    document.documentElement.classList.toggle("is-home", isHomePage);
+
+    ["initSmoothScroll", "initHeader", "initMain", "initLinesTabs", "initFooter"].forEach((name) => {
+      const fn = window.FZFeatures[name];
+
+      if (typeof fn === "function") {
+        fn();
+      }
+    });
+  };
+
+  window.FZFeatures.bootstrap = bootstrap;
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", bootstrap, { once: true });
+  } else {
+    bootstrap();
+  }
+
+  window.addEventListener("load", bootstrap);
+})();
+</script>

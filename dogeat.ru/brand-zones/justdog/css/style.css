@@ -1,0 +1,1739 @@
+@font-face {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Geologica-Regular.woff2") format("woff2"), url("../fonts/Geologica-Regular.woff") format("woff"), url("../fonts/Geologica-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Geologica-Bold.woff2") format("woff2"), url("../fonts/Geologica-Bold.woff") format("woff"), url("../fonts/Geologica-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/Geologica-ExtraBold.woff2") format("woff2"), url("../fonts/Geologica-ExtraBold.woff") format("woff"), url("../fonts/Geologica-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Geologica Cursive";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/Geologica-Cursive-ExtraBold.woff2") format("woff2"), url("../fonts/Geologica-Cursive-ExtraBold.woff") format("woff"), url("../fonts/Geologica-Cursive-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Manrope-Light.woff2") format("woff2"), url("../fonts/Manrope-Light.woff") format("woff"), url("../fonts/Manrope-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff"), url("../fonts/Manrope-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff"), url("../fonts/Manrope-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"), url("../fonts/Manrope-SemiBold.woff") format("woff"), url("../fonts/Manrope-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Manrope-Bold.woff2") format("woff2"), url("../fonts/Manrope-Bold.woff") format("woff"), url("../fonts/Manrope-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/Manrope-ExtraBold.woff2") format("woff2"), url("../fonts/Manrope-ExtraBold.woff") format("woff"), url("../fonts/Manrope-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+.JD * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.JD img {
+  max-width: none;
+}
+.JD-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1259px) {
+  .JD-container {
+    max-width: 930px;
+  }
+}
+@media (max-width: 991px) {
+  .JD-container {
+    max-width: 710px;
+  }
+}
+.JD-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.JD-badge-img {
+  width: 157px;
+  height: 129px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+.JD-btn {
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  text-decoration: none;
+}
+.JD-margin-bottom {
+  margin-bottom: 44px;
+}
+@media (max-width: 991px) {
+  .JD-margin-bottom {
+    margin-bottom: 24px;
+  }
+}
+.JD-tag {
+  padding: 18px 29px 0px 31px;
+  border-radius: 0 16px 0 0;
+  height: 54px;
+  font-family: "Geologica", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  clip-path: path("M0 23.011V54H206V13C206 5.26801 199.732 -1 192 -1H23.7181C19.933 -1 16.3092 0.532642 13.6727 3.24854L3.95465 13.2595C1.41853 15.8721 0 19.3699 0 23.011Z");
+}
+@media (max-width: 991px) {
+  .JD-tag {
+    height: 42px;
+    font-size: 14px;
+    padding: 13px 9px;
+    clip-path: path("M0 20.7995V42H206V14C206 6.26802 199.732 0 192 0H22.6436C19.5039 0 16.4554 1.05536 13.9877 2.99655L5.34413 9.79604C1.96983 12.4504 0 16.5063 0 20.7995Z");
+  }
+}
+
+.JD-hero__wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  min-height: 400px;
+  -webkit-box-shadow: 0 4px 20px 3px rgba(171, 176, 191, 0.35);
+          box-shadow: 0 4px 20px 3px rgba(171, 176, 191, 0.35);
+}
+@media (max-width: 991px) {
+  .JD-hero__wrapper {
+    min-height: 534px;
+  }
+}
+.JD-hero__background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 991px) {
+  .JD-hero__background-img {
+    height: 534px;
+  }
+}
+@media (max-width: 370px) {
+  .JD-hero__background-img {
+    width: 370px;
+    height: 534px;
+  }
+}
+.JD-hero__logo-image {
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+@media (max-width: 991px) {
+  .JD-hero__logo-image {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+@media (max-width: 991px) {
+  .JD-hero__logo-img {
+    width: 123px;
+    height: 102px;
+  }
+}
+.JD-hero__pieces-chicken-meat-image {
+  position: absolute;
+  top: 0;
+  left: 236px;
+}
+@media (max-width: 991px) {
+  .JD-hero__pieces-chicken-meat-image {
+    display: none;
+  }
+}
+.JD-hero__pieces-meat-image {
+  display: none;
+}
+@media (max-width: 991px) {
+  .JD-hero__pieces-meat-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.JD-hero__pieces-chicken-image {
+  display: none;
+}
+@media (max-width: 991px) {
+  .JD-hero__pieces-chicken-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.JD-hero__products-image {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+}
+@media (max-width: 991px) {
+  .JD-hero__products-image {
+    left: 0;
+    right: auto;
+    bottom: 36px;
+  }
+}
+@media (max-width: 1259px) {
+  .JD-hero__products-img {
+    width: 450px;
+    height: 256px;
+  }
+}
+@media (max-width: 991px) {
+  .JD-hero__products-img {
+    width: 359px;
+    height: 253px;
+  }
+}
+.JD-hero__lines {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+@media (max-width: 991px) {
+  .JD-hero__lines {
+    right: auto;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    gap: 0;
+  }
+}
+.JD-hero__line {
+  font-family: "Geologica", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 0 0 16px 0;
+  clip-path: path("M0 21.2005V0H206V28C206 35.732 199.732 42 192 42H22.6436C19.5039 42 16.4554 40.9446 13.9877 39.0035L5.34413 32.204C1.96983 29.5496 0 25.4937 0 21.2005Z");
+}
+@media (max-width: 991px) {
+  .JD-hero__line {
+    font-size: 14px;
+    border-radius: 0 16px 0 0;
+    position: relative;
+    clip-path: path("M0 20.7995V42H206V14C206 6.26802 199.732 0 192 0H22.6436C19.5039 0 16.4554 1.05536 13.9877 2.99655L5.34413 9.79604C1.96983 12.4504 0 16.5063 0 20.7995Z");
+  }
+  .JD-hero__line:not(:last-child) {
+    margin-right: -10px;
+  }
+}
+@media (max-width: 991px) and (max-width: 369px) {
+  .JD-hero__line {
+    font-size: 12px;
+  }
+}
+.JD-hero__line--holistic {
+  padding: 11px 30px;
+  background-image: linear-gradient(132deg, #9a835d 0%, #c8aa7b 50%, #937b55 100%);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  -webkit-transition: background-position 0.5s ease, -webkit-transform 0.12s ease;
+  transition: background-position 0.5s ease, -webkit-transform 0.12s ease;
+  transition: background-position 0.5s ease, transform 0.12s ease;
+  transition: background-position 0.5s ease, transform 0.12s ease, -webkit-transform 0.12s ease;
+}
+.JD-hero__line--holistic:hover {
+  background-position: 100% 50%;
+  color: white;
+}
+.JD-hero__line--holistic:active {
+  -webkit-transform: translateY(-1px) scale(0.98);
+          transform: translateY(-1px) scale(0.98);
+}
+@media (max-width: 991px) {
+  .JD-hero__line--holistic:active {
+    -webkit-transform: translateY(1px) scale(0.98);
+            transform: translateY(1px) scale(0.98);
+  }
+}
+@media (max-width: 991px) {
+  .JD-hero__line--holistic {
+    padding: 12px 9px;
+    z-index: 3;
+  }
+}
+.JD-hero__line--dry {
+  padding: 11px 36px;
+  background-image: linear-gradient(132deg, #595f62 0%, #ababab 50%, #828689 100%);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  -webkit-transition: background-position 0.5s ease, -webkit-transform 0.12s ease;
+  transition: background-position 0.5s ease, -webkit-transform 0.12s ease;
+  transition: background-position 0.5s ease, transform 0.12s ease;
+  transition: background-position 0.5s ease, transform 0.12s ease, -webkit-transform 0.12s ease;
+}
+.JD-hero__line--dry:hover {
+  background-position: 100% 50%;
+  color: white;
+}
+.JD-hero__line--dry:active {
+  -webkit-transform: translateY(-1px) scale(0.98);
+          transform: translateY(-1px) scale(0.98);
+}
+@media (max-width: 991px) {
+  .JD-hero__line--dry:active {
+    -webkit-transform: translateY(1px) scale(0.98);
+            transform: translateY(1px) scale(0.98);
+  }
+}
+@media (max-width: 991px) {
+  .JD-hero__line--dry {
+    padding: 12px 28px;
+    z-index: 2;
+  }
+}
+.JD-hero__line--vet {
+  padding: 11px 30px;
+  background-image: linear-gradient(132deg, #14141a 0%, #26498c 50%, #14141a 100%);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  -webkit-transition: background-position 0.5s ease, -webkit-transform 0.12s ease;
+  transition: background-position 0.5s ease, -webkit-transform 0.12s ease;
+  transition: background-position 0.5s ease, transform 0.12s ease;
+  transition: background-position 0.5s ease, transform 0.12s ease, -webkit-transform 0.12s ease;
+}
+.JD-hero__line--vet:hover {
+  background-position: 100% 50%;
+  color: white;
+}
+.JD-hero__line--vet:active {
+  -webkit-transform: translateY(-1px) scale(0.98);
+          transform: translateY(-1px) scale(0.98);
+}
+@media (max-width: 991px) {
+  .JD-hero__line--vet:active {
+    -webkit-transform: translateY(1px) scale(0.98);
+            transform: translateY(1px) scale(0.98);
+  }
+}
+@media (max-width: 991px) {
+  .JD-hero__line--vet {
+    padding: 12px 28px;
+    z-index: 1;
+  }
+}
+.JD-hero__text {
+  position: absolute;
+  left: 40px;
+  bottom: 35px;
+}
+@media (max-width: 991px) {
+  .JD-hero__text {
+    top: 114px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    text-align: center;
+  }
+}
+.JD-hero__subtitle {
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 151%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #efefef;
+  margin: 0;
+}
+@media (max-width: 1259px) {
+  .JD-hero__subtitle {
+    font-size: 23px;
+  }
+}
+@media (max-width: 369px) {
+  .JD-hero__subtitle {
+    font-size: 20px;
+  }
+}
+.JD-hero__title {
+  font-family: "Geologica", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 67px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+@media (max-width: 1259px) {
+  .JD-hero__title {
+    font-size: 37px;
+  }
+}
+@media (max-width: 991px) {
+  .JD-hero__title {
+    line-height: 120%;
+  }
+}
+@media (max-width: 369px) {
+  .JD-hero__title {
+    font-size: 30px;
+  }
+}
+.JD-hero__cta {
+  text-align: center;
+  padding: 20px 24px;
+  margin-top: 25px;
+  background-image: linear-gradient(132deg, #1d4a38 0%, #259d77 49.71%, #1d4a38 100%);
+}
+@media (max-width: 1259px) {
+  .JD-hero__cta {
+    font-size: 18px;
+    padding: 16px 24px;
+    margin-top: 13px;
+  }
+}
+
+.JD-line__tag {
+  width: 176px;
+  margin-left: 40px;
+}
+@media (max-width: 991px) {
+  .JD-line__tag {
+    width: 120px;
+    margin-left: 24px;
+    position: relative;
+  }
+}
+.JD-line__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 426px;
+  background: #ffffff;
+  border-radius: 24px;
+  -webkit-box-shadow: 0 4px 20px 3px rgba(171, 176, 191, 0.35);
+          box-shadow: 0 4px 20px 3px rgba(171, 176, 191, 0.35);
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .JD-line__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.JD-line__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+}
+@media (max-width: 1259px) {
+  .JD-line__content {
+    padding: 16px;
+  }
+}
+.JD-line__title {
+  font-family: "Geologica", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #231f20;
+  margin: 0 0 7px 0;
+}
+@media (max-width: 1259px) {
+  .JD-line__title {
+    font-size: 26px;
+    line-height: 130%;
+    margin: 0 0 8px 0;
+  }
+}
+.JD-line__lead {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 186%;
+  color: #231f20;
+  margin: 0 0 24px 0;
+}
+@media (max-width: 1259px) {
+  .JD-line__lead {
+    font-size: 14px;
+    margin: 0 0 12px 0;
+  }
+}
+.JD-line__lead .JD-line__lead-accent {
+  font-weight: 600;
+  color: #2a2522;
+}
+.JD-line__chips {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 33px;
+}
+@media (max-width: 1259px) {
+  .JD-line__chips {
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+}
+.JD-line__chip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 18px;
+  padding: 23px;
+  background: #f3f2f1;
+  border-radius: 16px;
+  font-family: "Geologica", sans-serif;
+  color: #2a2522;
+}
+@media (max-width: 1259px) {
+  .JD-line__chip {
+    padding: 12px;
+    gap: 5px;
+  }
+}
+.JD-line__chip-icon {
+  display: block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.JD-line__chip-img {
+  width: auto;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+.JD-line__chip-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Manrope", sans-serif;
+}
+.JD-line__chip-text .JD-line__chip-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+@media (max-width: 1259px) {
+  .JD-line__chip-text .JD-line__chip-title {
+    font-size: 16px;
+  }
+}
+.JD-line__chip-text .JD-line__chip-subtitle {
+  font-size: 14px;
+  color: #5a5655;
+  font-weight: 400;
+  line-height: 143%;
+}
+@media (max-width: 1259px) {
+  .JD-line__chip-text .JD-line__chip-subtitle {
+    font-size: 14px;
+    line-height: 121%;
+  }
+}
+.JD-line__benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 21px 0px;
+  margin-bottom: 21px;
+}
+@media (max-width: 1259px) {
+  .JD-line__benefits {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0px 0px;
+  }
+}
+@media (max-width: 425px) {
+  .JD-line__benefits {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-bottom: 4px;
+  }
+}
+.JD-line__benefit {
+  display: grid;
+  justify-items: start;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #231f20;
+  max-width: 160px;
+  gap: 8px;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  padding-bottom: 12px;
+}
+@media (max-width: 1259px) {
+  .JD-line__benefit {
+    font-size: 13px;
+    gap: 10px;
+    line-height: 150%;
+  }
+}
+.JD-line__benefit-icon {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.JD-line__benefit-icon-img {
+  width: auto;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+.JD-line__cta {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-family: "Geologica", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 100px;
+  padding: 20px 28px;
+  text-align: center;
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  -webkit-transition: background-position 0.5s ease, -webkit-transform 0.12s ease;
+  transition: background-position 0.5s ease, -webkit-transform 0.12s ease;
+  transition: background-position 0.5s ease, transform 0.12s ease;
+  transition: background-position 0.5s ease, transform 0.12s ease, -webkit-transform 0.12s ease;
+}
+.JD-line__cta:hover {
+  background-position: 100% 50%;
+  color: white;
+}
+.JD-line__cta:active {
+  -webkit-transform: translateY(-1px) scale(0.98);
+          transform: translateY(-1px) scale(0.98);
+}
+@media (max-width: 991px) {
+  .JD-line__cta:active {
+    -webkit-transform: translateY(1px) scale(0.98);
+            transform: translateY(1px) scale(0.98);
+  }
+}
+@media (max-width: 991px) {
+  .JD-line__cta {
+    width: 100%;
+    padding: 16px 0px;
+    font-size: 18px;
+  }
+}
+.JD-line__products-image {
+  position: relative;
+  z-index: 1;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 100%;
+  display: block;
+}
+@media (max-width: 1259px) {
+  .JD-line__products-image {
+    width: 100%;
+  }
+}
+.JD-line__products-img {
+  width: auto;
+  height: 100%;
+  max-width: none;
+  display: block;
+}
+@media (max-width: 991px) {
+  .JD-line__products-img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.JD-line--holistic .JD-line__tag {
+  background-image: linear-gradient(132deg, #9a835d 0%, #c8aa7b 50%, #937b55 100%);
+}
+.JD-line--holistic .JD-line__cta {
+  background-image: linear-gradient(135deg, #9a835d 0%, #c8aa7b 50%, #937b55 100%);
+}
+
+.JD-line--dry .JD-line__tag {
+  background-image: linear-gradient(132deg, #595f62 0%, #ababab 50%, #828689 100%);
+  width: 145px;
+  margin-left: 44px;
+}
+.JD-line--dry .JD-line__cta {
+  background-image: linear-gradient(132deg, #595f62 0%, #ababab 50%, #828689 100%);
+}
+
+.JD-vet__tag {
+  width: 132px;
+  background-image: linear-gradient(132deg, #14141a 0%, #26498c 50%, #14141a 100%);
+}
+@media (max-width: 991px) {
+  .JD-vet__tag {
+    width: 120px;
+  }
+}
+@media (max-width: 1259px) {
+  .JD-vet__content {
+    padding: 16px;
+  }
+}
+.JD-vet__categories {
+  display: grid;
+  margin-bottom: 14px;
+  gap: 13px;
+}
+@media (max-width: 1259px) {
+  .JD-vet__categories {
+    margin-bottom: 20px;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+}
+.JD-vet__category {
+  display: grid;
+  grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+  gap: 16px 25px;
+}
+@media (max-width: 1259px) {
+  .JD-vet__category {
+    grid-template-columns: 1fr;
+    gap: 12px 25px;
+  }
+}
+.JD-vet__category-info {
+  display: grid;
+}
+.JD-vet__category-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #231f20;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.JD-vet__category-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  color: #231f20;
+  opacity: 0.6;
+  margin: 0;
+}
+.JD-vet__benefits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px 0px;
+  margin: 0;
+}
+.JD-vet__cta {
+  background-image: linear-gradient(132deg, #2a3f6f 0%, #4f6cb1 55%, #2a3f6f 100%);
+}
+
+.JD-comparison__wrapper {
+  position: relative;
+  padding: 40px;
+  border-radius: 24px;
+  overflow: hidden;
+  color: #ffffff;
+  background: linear-gradient(46deg, #9a835d 0%, #c8aa7b 41.73%);
+  -webkit-box-shadow: 0 4px 20px 3px rgba(171, 176, 191, 0.35);
+          box-shadow: 0 4px 20px 3px rgba(171, 176, 191, 0.35);
+}
+@media (max-width: 1259px) {
+  .JD-comparison__wrapper {
+    padding: 0;
+  }
+}
+.JD-comparison__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.JD-comparison__bg-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.JD-comparison__badge {
+  position: absolute;
+  top: -1px;
+  right: 26px;
+  z-index: 2;
+}
+@media (max-width: 1259px) {
+  .JD-comparison__badge {
+    display: none;
+  }
+}
+.JD-comparison__header {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 23px;
+}
+@media (max-width: 1259px) {
+  .JD-comparison__header {
+    margin-bottom: 16px;
+  }
+}
+.JD-comparison__title {
+  font-family: "Geologica", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+  letter-spacing: 0.2px;
+}
+@media (max-width: 1259px) {
+  .JD-comparison__title {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 131%;
+    margin: 16px 0 8px;
+    letter-spacing: 0.4px;
+    padding: 0 16px;
+  }
+}
+.JD-comparison__lead {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 156%;
+  margin: 0;
+  letter-spacing: 0.15px;
+}
+@media (max-width: 1259px) {
+  .JD-comparison__lead {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0px;
+    padding: 0 16px;
+  }
+}
+.JD-comparison__table {
+  max-width: 1062px;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 298px 298px;
+  gap: 24px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(133deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  padding: 16px 44px;
+  margin: 0 auto;
+}
+@media (max-width: 1259px) {
+  .JD-comparison__table {
+    padding: 12px;
+    grid-template-columns: minmax(0, 1fr) 100px 100px;
+    gap: 0;
+  }
+}
+@media (max-width: 369px) {
+  .JD-comparison__table {
+    padding: 12px;
+    grid-template-columns: minmax(0, 1fr) 70px 70px;
+    gap: 0;
+  }
+}
+.JD-comparison__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 44px;
+}
+@media (max-width: 1259px) {
+  .JD-comparison__column {
+    gap: 10px;
+  }
+}
+.JD-comparison__column--labels {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.JD-comparison__column--brand {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.JD-comparison__column--other {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.JD-comparison__column-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+}
+@media (max-width: 1259px) {
+  .JD-comparison__column-title {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+}
+@media (max-width: 369px) {
+  .JD-comparison__column-title {
+    padding: 0;
+  }
+}
+.JD-comparison__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-rows: 44px;
+  gap: 9px;
+}
+@media (max-width: 1259px) {
+  .JD-comparison__list {
+    padding-bottom: 20px;
+  }
+}
+.JD-comparison__item {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+}
+@media (max-width: 1259px) {
+  .JD-comparison__item {
+    font-weight: 400;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.JD-comparison__brand-card {
+  width: 100%;
+  max-width: 298px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 15px 16px 0;
+  display: grid;
+  gap: 28px;
+  justify-items: center;
+}
+@media (max-width: 1259px) {
+  .JD-comparison__brand-card {
+    gap: 6px;
+  }
+}
+@media (max-width: 369px) {
+  .JD-comparison__brand-card {
+    padding: 15px 0 0;
+  }
+}
+.JD-comparison__brand-logo-img {
+  width: 83px;
+  height: 64px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 1259px) {
+  .JD-comparison__brand-logo-img {
+    width: 65px;
+    height: auto;
+  }
+}
+@media (max-width: 369px) {
+  .JD-comparison__brand-logo-img {
+    width: 55px;
+    height: auto;
+  }
+}
+.JD-comparison__marks {
+  display: grid;
+  grid-auto-rows: 44px;
+  gap: 9px;
+  justify-items: center;
+}
+@media (max-width: 1259px) {
+  .JD-comparison__marks {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 20px;
+  }
+}
+.JD-comparison__mark {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+}
+.JD-comparison__mark-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+.JD-assortment__wrapper {
+  position: relative;
+  padding: 40px;
+  border-radius: 24px;
+  overflow: hidden;
+  color: #231f20;
+  -webkit-box-shadow: 0 4px 20px 3px rgba(171, 176, 191, 0.35);
+          box-shadow: 0 4px 20px 3px rgba(171, 176, 191, 0.35);
+}
+@media (max-width: 1259px) {
+  .JD-assortment__wrapper {
+    padding: 16px;
+  }
+}
+.JD-assortment__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.JD-assortment__bg-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.JD-assortment__badge {
+  position: absolute;
+  top: 0;
+  right: 24px;
+  z-index: 3;
+}
+@media (max-width: 1259px) {
+  .JD-assortment__badge {
+    right: 13px;
+  }
+}
+@media (max-width: 1259px) {
+  .JD-assortment__badge-img {
+    width: 83px;
+    height: 69px;
+  }
+}
+@media (max-width: 369px) {
+  .JD-assortment__badge-img {
+    width: 63px;
+    height: 53px;
+  }
+}
+.JD-assortment__header {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 29px;
+  max-width: 85%;
+}
+.JD-assortment__title {
+  font-family: "Geologica", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 0.25px;
+}
+@media (max-width: 1259px) {
+  .JD-assortment__title {
+    font-size: 26px;
+  }
+}
+.JD-assortment__grid {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+@media (max-width: 1259px) {
+  .JD-assortment__grid {
+    gap: 16px;
+  }
+}
+.JD-assortment__card {
+  position: relative;
+  width: 353px;
+  min-height: 476px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 17px;
+  -webkit-box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+}
+@media (max-width: 1259px) {
+  .JD-assortment__card {
+    min-height: auto;
+    gap: 0px;
+  }
+}
+@media (max-width: 370px) {
+  .JD-assortment__card {
+    min-height: auto;
+    gap: 0px;
+  }
+}
+.JD-assortment__tag {
+  position: absolute;
+  top: -1px;
+  right: 20px;
+  z-index: 2;
+  border-radius: 0 0 16px 0;
+}
+@media (max-width: 991px) {
+  .JD-assortment__tag {
+    font-size: 11px;
+    border-radius: 0 0 16px 0;
+    padding: 9px 9px;
+    clip-path: path("M0 15.648V0H152.048V20.6667C152.048 26.3736 147.421 31 141.714 31H16.7131C14.3958 31 12.1456 30.221 10.3243 28.7883L3.94448 23.7696C1.45393 21.8104 0 18.8168 0 15.648Z");
+  }
+}
+@media (max-width: 991px) {
+  .JD-assortment__tag--holistic {
+    width: 129px;
+    height: 31px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .JD-assortment__tag--dry {
+    width: 107px;
+    height: 31px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .JD-assortment__tag--vet {
+    width: 97px;
+    height: 31px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .JD-assortment .JD-hero__line.JD-assortment__tag:not(:last-child) {
+    margin-right: 0;
+  }
+}
+.JD-assortment__products {
+  margin-top: 48px;
+}
+.JD-assortment__products-img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+.JD-assortment__products--holistic {
+  margin-top: 77px;
+}
+@media (max-width: 370px) {
+  .JD-assortment__products--holistic {
+    margin-top: 40px;
+  }
+}
+.JD-assortment__products--dry {
+  margin-top: 113px;
+}
+@media (max-width: 370px) {
+  .JD-assortment__products--dry {
+    margin-top: 50px;
+  }
+}
+.JD-assortment__products--vet {
+  margin-top: 115px;
+}
+@media (max-width: 370px) {
+  .JD-assortment__products--vet {
+    margin-top: 55px;
+  }
+}
+.JD-assortment__cta {
+  margin-bottom: 30px;
+  padding: 18px 24px;
+  border-radius: 100px;
+  font-family: "Geologica", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+}
+@media (max-width: 1259px) {
+  .JD-assortment__cta {
+    width: 90%;
+    margin: 0 16px 20px;
+    font-size: 18px;
+    padding: 16px 0px;
+  }
+}
+.JD-assortment__cta--holistic {
+  background-image: linear-gradient(132deg, #9a835d 0%, #c8aa7b 50%, #937b55 100%);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  -webkit-transition: background-position 0.5s ease, -webkit-transform 0.12s ease;
+  transition: background-position 0.5s ease, -webkit-transform 0.12s ease;
+  transition: background-position 0.5s ease, transform 0.12s ease;
+  transition: background-position 0.5s ease, transform 0.12s ease, -webkit-transform 0.12s ease;
+}
+.JD-assortment__cta--holistic:hover {
+  background-position: 100% 50%;
+  color: white;
+}
+.JD-assortment__cta--holistic:active {
+  -webkit-transform: translateY(-1px) scale(0.98);
+          transform: translateY(-1px) scale(0.98);
+}
+@media (max-width: 991px) {
+  .JD-assortment__cta--holistic:active {
+    -webkit-transform: translateY(1px) scale(0.98);
+            transform: translateY(1px) scale(0.98);
+  }
+}
+.JD-assortment__cta--dry {
+  background-image: linear-gradient(132deg, #595f62 0%, #ababab 50%, #828689 100%);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  -webkit-transition: background-position 0.5s ease, -webkit-transform 0.12s ease;
+  transition: background-position 0.5s ease, -webkit-transform 0.12s ease;
+  transition: background-position 0.5s ease, transform 0.12s ease;
+  transition: background-position 0.5s ease, transform 0.12s ease, -webkit-transform 0.12s ease;
+}
+.JD-assortment__cta--dry:hover {
+  background-position: 100% 50%;
+  color: white;
+}
+.JD-assortment__cta--dry:active {
+  -webkit-transform: translateY(-1px) scale(0.98);
+          transform: translateY(-1px) scale(0.98);
+}
+@media (max-width: 991px) {
+  .JD-assortment__cta--dry:active {
+    -webkit-transform: translateY(1px) scale(0.98);
+            transform: translateY(1px) scale(0.98);
+  }
+}
+.JD-assortment__cta--vet {
+  background-image: linear-gradient(132deg, #14141a 0%, #26498c 50%, #14141a 100%);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  -webkit-transition: background-position 0.5s ease, -webkit-transform 0.12s ease;
+  transition: background-position 0.5s ease, -webkit-transform 0.12s ease;
+  transition: background-position 0.5s ease, transform 0.12s ease;
+  transition: background-position 0.5s ease, transform 0.12s ease, -webkit-transform 0.12s ease;
+}
+.JD-assortment__cta--vet:hover {
+  background-position: 100% 50%;
+  color: white;
+}
+.JD-assortment__cta--vet:active {
+  -webkit-transform: translateY(-1px) scale(0.98);
+          transform: translateY(-1px) scale(0.98);
+}
+@media (max-width: 991px) {
+  .JD-assortment__cta--vet:active {
+    -webkit-transform: translateY(1px) scale(0.98);
+            transform: translateY(1px) scale(0.98);
+  }
+}
+
+.JD-composition__wrapper {
+  z-index: 2;
+  position: relative;
+  padding: 40px;
+  color: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  background-image: linear-gradient(135deg, #0f6f51 0%, #0d5d45 46%, #0a4a38 100%);
+}
+@media (max-width: 1259px) {
+  .JD-composition__wrapper {
+    padding: 16px;
+  }
+}
+.JD-composition__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.JD-composition__bg-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.35;
+  display: block;
+}
+@media (max-width: 370px) {
+  .JD-composition__bg-img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+.JD-composition__badge {
+  position: absolute;
+  top: -1px;
+  right: 28px;
+  z-index: 3;
+}
+@media (max-width: 1259px) {
+  .JD-composition__badge {
+    right: 13px;
+  }
+}
+@media (max-width: 1259px) {
+  .JD-composition__badge-img {
+    width: 123px;
+    height: 102px;
+  }
+}
+.JD-composition__header {
+  margin-bottom: 32px;
+}
+.JD-composition__title {
+  color: #ffffff;
+  margin: 0 0 17px;
+  font-weight: 800;
+}
+@media (max-width: 1259px) {
+  .JD-composition__title {
+    max-width: 75%;
+    margin: 0 0 8px;
+  }
+}
+.JD-composition__lead {
+  color: #ffffff;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  max-width: 900px;
+  margin-bottom: 32px;
+}
+@media (max-width: 1259px) {
+  .JD-composition__lead {
+    max-width: 85%;
+    font-size: 14px;
+    line-height: 171%;
+  }
+}
+@media (max-width: 700px) {
+  .JD-composition__lead {
+    max-width: 100%;
+  }
+}
+.JD-composition__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.JD-composition__card {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: center;
+  gap: 16px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  padding: 15px 23px;
+  width: 357px;
+}
+@media (max-width: 400px) {
+  .JD-composition__card {
+    padding: 16px;
+    gap: 9px;
+  }
+}
+.JD-composition__card-title {
+  margin: 0;
+  font-family: "Geologica", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-align: left;
+}
+.JD-composition__number {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.JD-composition__benefits {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+  margin: 0;
+}
+@media (max-width: 369px) {
+  .JD-composition__benefits {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 4px;
+  }
+}
+.JD-composition__benefits--primary {
+  margin-bottom: 20px;
+}
+.JD-composition__benefits--secondary {
+  margin-bottom: 6px;
+}
+.JD-composition__benefits--tertiary {
+  margin-bottom: 6px;
+}
+.JD-composition__benefit {
+  background: rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  text-align: center;
+  color: #ffffff;
+  max-width: none;
+  border-radius: 20px;
+  padding: 10px 6px;
+  line-height: 100%;
+}
+.JD-composition__benefit-icon {
+  width: 36px;
+  height: 36px;
+}
+.JD-composition__benefit-icon-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+.JD-composition__benefit-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  color: #ffffff;
+}
+.JD-composition__subtitle {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: 260px;
+  text-align: left;
+  margin: 0 0 11px 0;
+}
+.JD-composition__subtitle--tight {
+  margin: 0 0 5px 0;
+}
+.JD-composition__details {
+  margin-left: 0;
+}
+.JD-composition__details--meat {
+  margin-left: 123px;
+}
+@media (max-width: 400px) {
+  .JD-composition__details--meat {
+    margin-left: 110px;
+  }
+}
+@media (max-width: 360px) {
+  .JD-composition__details--meat {
+    margin-left: 30%;
+  }
+}
+.JD-composition__details--veg {
+  margin-left: 110px;
+}
+@media (max-width: 400px) {
+  .JD-composition__details--veg {
+    margin-left: 95px;
+  }
+}
+.JD-composition__details--fish {
+  margin-left: 110px;
+}
+@media (max-width: 400px) {
+  .JD-composition__details--fish {
+    margin-left: 95px;
+  }
+}
+.JD-composition__ingredients {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 19px 12px;
+}
+.JD-composition__ingredient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: lowercase;
+}
+.JD-composition__ingredient--gap {
+  gap: 0;
+}
+.JD-composition__ingredient-icon {
+  display: grid;
+  place-items: center;
+}
+.JD-composition__ingredient-icon--lamb {
+  width: 67px;
+  height: 67px;
+  gap: 0px;
+}
+.JD-composition__ingredient-icon--beef {
+  width: 62px;
+  height: 63px;
+  margin: 2px 0;
+  gap: 0px;
+}
+.JD-composition__ingredient-icon--turkey {
+  margin: 7px 0;
+  gap: 0px;
+}
+.JD-composition__ingredient-icon-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+.JD-composition__extra {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.45;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.85);
+}
+.JD-composition__extra-accent {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+.JD-composition__plate {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  z-index: 1;
+}
+@media (max-width: 400px) {
+  .JD-composition__plate {
+    left: -20px;
+  }
+}
+.JD-composition__plate--fish {
+  bottom: 24px;
+}
+@media (max-width: 1259px) {
+  .JD-composition__plate--fish {
+    bottom: -30px;
+  }
+}
+.JD-composition__plate-img--meat {
+  width: 140px;
+  height: 269px;
+}
+.JD-composition__plate-img--veg {
+  width: 168px;
+  height: 306px;
+}
+.JD-composition__plate-img--fish {
+  width: 113px;
+  height: 241px;
+}
+.JD-composition__card > *:not(.JD-composition__plate) {
+  position: relative;
+  z-index: 2;
+}

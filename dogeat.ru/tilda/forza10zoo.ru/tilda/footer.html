@@ -1,0 +1,249 @@
+<div class="FZ">
+  <footer class="FZ-footer" id="contacts">
+    <div class="FZ-footer__container">
+      <div class="FZ-footer__top">
+        <a class="FZ-footer__logo" href="#top">
+          <img
+            class="FZ-footer__logo-img"
+            src="https://static.tildacdn.com/tild6263-6561-4439-b732-386665643065/logo-1x.webp"
+            srcset="
+              https://static.tildacdn.com/tild6263-6561-4439-b732-386665643065/logo-1x.webp 1x,
+              https://static.tildacdn.com/tild3464-3931-4163-a165-636261366232/logo-2x.webp 2x
+            "
+            alt="Forza10"
+            width="177"
+            height="35"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
+        <div class="FZ-footer__actions">
+          <nav class="FZ-footer__nav" aria-label="Навигация в подвале">
+            <a class="FZ-footer__link" href="#lines">Линейки</a>
+            <a class="FZ-footer__link" href="#contacts">Контакты</a>
+          </nav>
+          <a class="FZ-footer__button" href="#">Купить в магазине</a>
+        </div>
+      </div>
+      <div class="FZ-footer__bottom">
+        <p class="FZ-footer__copy">© 2025 Форза10</p>
+        <div class="FZ-footer__meta">
+          <a class="FZ-footer__meta-link" href="#"
+            >Политика обработки персональных данных</a
+          >
+          <a class="FZ-footer__meta-link" href="#"
+            >Согласие на обработку персональных данных</a
+          >
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<style>
+  #allrecords .FZ .FZ-footer {
+    background-color: #174159;
+  }
+  #allrecords .FZ .FZ-footer__container {
+    max-width: 1440px;
+    margin-inline: auto;
+    padding: 32px 156px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-footer__container {
+      padding: 32px 16px 24px;
+    }
+  }
+  #allrecords .FZ .FZ-footer__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-footer__top {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  #allrecords .FZ .FZ-footer__logo {
+    width: 177px;
+    height: 35px;
+    position: relative;
+    display: block;
+    flex-shrink: 0;
+  }
+  #allrecords .FZ .FZ-footer__logo-img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  #allrecords .FZ .FZ-footer__actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-footer__actions {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  #allrecords .FZ .FZ-footer__nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-footer__nav {
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+    }
+  }
+  #allrecords .FZ .FZ-footer__link {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.007;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+  #allrecords .FZ .FZ-footer__link:hover[href$="#lines"] {
+    text-decoration: underline;
+  }
+  html.is-home #allrecords .FZ .FZ-footer__link:hover[href$="#lines"] {
+    text-decoration: underline dashed;
+  }
+  #allrecords .FZ .FZ-footer__link:hover[href$="#contacts"] {
+    text-decoration: underline;
+  }
+  #allrecords .FZ .FZ-footer__link:hover {
+    opacity: 0.7;
+  }
+  #allrecords .FZ .FZ-footer__link:active {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  #allrecords .FZ .FZ-footer__link:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  #allrecords .FZ .FZ-footer__button {
+    padding: 16px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #205372;
+    white-space: nowrap;
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.007;
+    font-weight: 700;
+  }
+  #allrecords .FZ .FZ-footer__button:focus-visible {
+    outline: 2px solid #205372;
+    outline-offset: 2px;
+    border-radius: 100px;
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-footer__button {
+      order: -1;
+      width: 100%;
+    }
+  }
+  #allrecords .FZ .FZ-footer__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-footer__bottom {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 17px;
+    }
+  }
+  #allrecords .FZ .FZ-footer__copy {
+    margin: 0;
+    flex: 1 0 0;
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-footer__copy {
+      flex: none;
+      width: 100%;
+    }
+  }
+  #allrecords .FZ .FZ-footer__meta {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    text-align: right;
+    white-space: nowrap;
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-footer__meta {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      white-space: normal;
+      gap: 18px;
+    }
+  }
+  #allrecords .FZ .FZ-footer__meta-link {
+    margin: 0;
+    color: inherit;
+    text-decoration: none;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+  #allrecords .FZ .FZ-footer__meta-link:hover {
+    opacity: 0.7;
+  }
+  #allrecords .FZ .FZ-footer__meta-link:active {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  #allrecords .FZ .FZ-footer__meta-link:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+</style>
+
+<script>
+  (() => {
+    window.FZFeatures = window.FZFeatures || {};
+    window.FZFeatures.initFooter = () => {};
+
+    if (typeof window.FZFeatures.bootstrap === "function") {
+      window.FZFeatures.bootstrap();
+    }
+  })();
+</script>

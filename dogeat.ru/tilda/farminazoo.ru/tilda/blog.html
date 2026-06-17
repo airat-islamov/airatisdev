@@ -1,0 +1,1978 @@
+<style>
+  .fa-blog-widget {
+    --fa-bg: #ffffff;
+    --fa-surface: #ffffff;
+    --fa-title: #1f222f;
+    --fa-subtitle: #454b5b;
+    --fa-accent: #2e324d;
+    --fa-border: rgba(31, 34, 47, 0.1);
+    --fa-muted: #8b90a0;
+    --fa-section-gap: 60px;
+    font-family: "TildaSans", Arial, sans-serif;
+    position: relative;
+    z-index: 0;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 28px 0 62px;
+    line-height: 1.4;
+    color: var(--fa-title);
+    word-break: normal;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+    overflow-x: clip;
+  }
+
+  .fa-blog-widget::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background: var(--fa-bg);
+    z-index: -1;
+  }
+
+  .fa-blog-widget * {
+    box-sizing: border-box;
+  }
+
+  .fa-blog-widget__hero {
+    margin-bottom: var(--fa-section-gap);
+  }
+
+  .fa-blog-widget__title,
+  .fa-blog-widget .fa-blog-widget__title {
+    margin: 0 0 16px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.02;
+    color: var(--fa-title);
+  }
+
+  .fa-blog-widget__subtitle,
+  .fa-blog-widget .fa-blog-widget__subtitle {
+    margin: 0;
+    max-width: 100%;
+    line-height: 1.55;
+    font-size: 16px;
+  }
+
+  .fa-blog-widget__search-wrap {
+    margin-top: 26px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 52px;
+    background: var(--fa-surface);
+    border: 1px solid var(--fa-border);
+    border-radius: 999px;
+    padding: 0 18px;
+    min-width: 0;
+    transition:
+      border-color 0.24s ease,
+      box-shadow 0.24s ease;
+  }
+
+  .fa-blog-widget__search-wrap:hover {
+    border-color: rgba(31, 34, 47, 0.18);
+  }
+
+  .fa-blog-widget__search-wrap:focus-within {
+    border-color: rgba(31, 34, 47, 0.3);
+    box-shadow: 0 0 0 3px rgba(31, 34, 47, 0.08);
+  }
+
+  .fa-blog-widget__search {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--fa-title);
+    font: inherit;
+    font-size: 15px;
+    caret-color: var(--fa-accent);
+  }
+
+  .fa-blog-widget__search::placeholder {
+    color: var(--fa-muted);
+  }
+
+  .fa-blog-widget__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    min-height: 0;
+  }
+
+  .fa-blog-widget__stats {
+    font-size: 14px;
+    white-space: nowrap;
+    color: var(--fa-muted);
+  }
+
+  .fa-blog-widget__grid {
+    margin: 0 0 var(--fa-section-gap);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 50px;
+  }
+
+  .fa-blog-widget__card {
+    min-height: 0;
+    border-radius: 0;
+    overflow: visible;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(6px);
+    animation: fa-blog-card-seq 0.66s cubic-bezier(0.2, 0.75, 0.2, 1) forwards;
+    animation-delay: var(--fa-card-delay, 0ms);
+    will-change: opacity, transform;
+  }
+
+  .fa-blog-widget__card-link,
+  #allrecords .fa-blog-widget .fa-blog-widget__card-link {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    transform: scale(1);
+    transform-origin: center;
+    color: inherit;
+    text-decoration: none;
+    transition:
+      opacity 0.2s ease,
+      transform 0.12s ease;
+  }
+
+  .fa-blog-widget__card-link:hover,
+  #allrecords .fa-blog-widget .fa-blog-widget__card-link:hover {
+    opacity: 0.9;
+  }
+
+  .fa-blog-widget__card-link:active,
+  #allrecords .fa-blog-widget .fa-blog-widget__card-link:active {
+    transform: scale(0.985);
+  }
+
+  .fa-blog-widget__card-link:hover .fa-blog-widget__post-title,
+  .fa-blog-widget__card-link:focus-visible .fa-blog-widget__post-title {
+    color: var(--fa-accent);
+  }
+
+  .fa-blog-widget__card-link:focus-visible {
+    outline: 0;
+    border-radius: 22px;
+    box-shadow: 0 0 0 3px rgba(31, 34, 47, 0.12);
+  }
+
+  @keyframes fa-blog-card-seq {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fa-blog-widget__cover,
+  .fa-blog-widget .fa-blog-widget__cover {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+    border-radius: 22px;
+    background: linear-gradient(
+      140deg,
+      rgba(31, 34, 47, 0.08),
+      rgba(255, 255, 255, 0.8)
+    );
+  }
+
+  .fa-blog-widget__cover--placeholder {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px dashed var(--fa-border);
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  .fa-blog-widget__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 14px 0;
+  }
+
+  .fa-blog-widget__post-title,
+  .fa-blog-widget .fa-blog-widget__post-title {
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 1.18;
+    color: var(--fa-title);
+  }
+
+  .fa-blog-widget__excerpt,
+  .fa-blog-widget .fa-blog-widget__excerpt {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.58;
+  }
+
+  .fa-blog-widget__empty {
+    margin-top: 8px;
+    border-radius: 20px;
+    border: 1px dashed var(--fa-border);
+    background: rgba(255, 255, 255, 0.72);
+    text-align: center;
+    padding: 26px;
+  }
+
+  .fa-blog-widget__pagination {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .fa-blog-widget__page-btn {
+    min-width: 54px;
+    height: 54px;
+    padding: 0 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(31, 34, 47, 0.08);
+    background: rgba(255, 255, 255, 0.72);
+    color: var(--fa-title);
+    font: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    transition:
+      border-color 0.22s ease,
+      background-color 0.22s ease,
+      color 0.22s ease;
+  }
+
+  .fa-blog-widget__page-btn:not([disabled]):not(.is-active):hover {
+    background: #fff;
+    border-color: rgba(31, 34, 47, 0.18);
+  }
+
+  .fa-blog-widget__page-btn:not([disabled]):focus-visible {
+    outline: 0;
+    border-color: rgba(31, 34, 47, 0.32);
+    box-shadow: 0 0 0 3px rgba(31, 34, 47, 0.08);
+  }
+
+  .fa-blog-widget__page-btn[disabled] {
+    opacity: 0.48;
+    cursor: default;
+  }
+
+  .fa-blog-widget__page-btn.is-active {
+    background: #dfe1e7;
+    border-color: transparent;
+    color: var(--fa-title);
+    font-weight: 600;
+  }
+
+  .fa-blog-widget__ellipsis {
+    width: 54px;
+    height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    border: 1px dashed rgba(31, 34, 47, 0.16);
+    color: var(--fa-subtitle);
+    font-size: 20px;
+  }
+
+  @media (max-width: 1160px) {
+    .fa-blog-widget {
+      width: calc(100% - 48px);
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .fa-blog-widget__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 980px) {
+    .fa-blog-widget {
+      --fa-section-gap: 48px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .fa-blog-widget {
+      --fa-section-gap: 36px;
+      padding: 22px 0 40px;
+    }
+
+    .fa-blog-widget__stats {
+      white-space: normal;
+    }
+
+    .fa-blog-widget__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .fa-blog-widget__cover,
+    .fa-blog-widget .fa-blog-widget__cover {
+      border-radius: 18px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .fa-blog-widget {
+      --fa-section-gap: 28px;
+    }
+
+    .fa-blog-widget__title,
+    .fa-blog-widget .fa-blog-widget__title {
+      font-size: clamp(40px, 12vw, 52px);
+    }
+
+    .fa-blog-widget__subtitle,
+    .fa-blog-widget .fa-blog-widget__subtitle {
+      font-size: 15px;
+    }
+
+    .fa-blog-widget__search-wrap {
+      min-height: 50px;
+    }
+
+    .fa-blog-widget__page-btn {
+      min-width: 46px;
+      height: 46px;
+      padding: 0 12px;
+      font-size: 15px;
+    }
+
+    .fa-blog-widget__ellipsis {
+      width: 46px;
+      height: 46px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fa-blog-widget__card {
+      animation: none;
+      opacity: 1;
+      transform: none;
+      will-change: auto;
+    }
+  }
+</style>
+
+<div class="fa-blog-widget" data-fa-blog>
+  <section class="fa-blog-widget__hero">
+    <h1 class="fa-blog-widget__title">Блог</h1>
+    <p class="fa-blog-widget__subtitle">
+      Статьи о кормлении и уходе за кошками и собаками: рекомендации экспертов,
+      разбор рационов и практические советы на каждый день.
+    </p>
+
+    <div class="fa-blog-widget__search-wrap">
+      <input
+        class="fa-blog-widget__search"
+        data-role="search"
+        type="search"
+        autocomplete="off"
+        placeholder="Поиск по заголовку или описанию"
+      />
+    </div>
+  </section>
+
+  <section class="fa-blog-widget__grid" data-role="grid"></section>
+  <div class="fa-blog-widget__empty" data-role="empty" hidden>
+    По вашему запросу ничего не найдено. Попробуйте изменить запрос.
+  </div>
+  <div class="fa-blog-widget__pagination" data-role="pagination"></div>
+  <div class="fa-blog-widget__controls">
+    <div class="fa-blog-widget__stats" data-role="stats"></div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var POSTS_PER_PAGE = 12;
+
+    // Данные постов блога.
+    var BLOG_POSTS = [
+      {
+        id: 1,
+        title: "Почему «Фармина» — это хороший корм для питомца?",
+        excerpt:
+          "Подробный разбор, почему Farmina заслуживает доверия: научная база Vet Life, вакуумное внесение и Long Life Vitamins, прозрачные составы, разные форматы и рекомендации по кормлению, практические советы владельцу.",
+        url: "/blog/pochemu-farmina-horoshij-korm",
+        cover:
+          "https://static.tildacdn.com/tild6165-6630-4161-a261-363433653936/04f5dbb8f5b723b14afb.webp",
+        coverAlt: "Обложка поста 001",
+      },
+      {
+        id: 2,
+        title:
+          "Farmina Vet Life Hepatic для кошек. Кому подходит и как работает?",
+        excerpt:
+          "Подробно о том, кому подходит Farmina Vet Life Hepatic для кошек: хроническая печёночная недостаточность, логика умеренного белка, роль омега‑кислот, выбор сухого и влажного форматов и контроль результатов вместе с врачом.",
+        url: "/blog/farmina-vet-life-hepatic-dlya-koshek",
+        cover:
+          "https://static.tildacdn.com/tild3739-6239-4635-b564-336638336361/160_74_33_47_29_fibr.jpg",
+        coverAlt: "Обложка поста 002",
+      },
+      {
+        id: 3,
+        title:
+          "Farmina Vet Life Hypoallergenic для собак — подробный обзор формул",
+        excerpt:
+          "Разбор гипоаллергенных рационов Farmina Vet Life для собак: показания, логика ограниченных ингредиентов, сухие и влажные варианты, особенности рецептов и практические советы по переходу и контролю совместно с ветеринаром.",
+        url: "/blog/farmina-vet-life-hypoallergenic-dlya-sobak-obzor",
+        cover:
+          "https://static.tildacdn.com/tild3134-3136-4262-a431-383633316238/-ufBGqx6xhZg8VvgCPZh.jpeg",
+        coverAlt: "Обложка поста 003",
+      },
+      {
+        id: 4,
+        title: "Farmina Matisse для кошек — полный разбор линейки",
+        excerpt:
+          "Подробный обзор линейки Farmina Matisse: Kitten, Adult и Neutered, сухие и влажные рецептуры, источники белка и углеводов, аналитика и энергетика, фасовки и практические ориентиры для владельца.",
+        url: "/blog/farmina-matisse-dlya-koshek-razbor",
+        cover:
+          "https://static.tildacdn.com/tild3861-3338-4130-a364-306634663662/__2025-08-28__140042.png",
+        coverAlt: "Обложка поста 004",
+      },
+      {
+        id: 5,
+        title:
+          "Что включает Farmina N&D: полная карта линеек Natural & Delicious",
+        excerpt:
+          "Подробно о составе и идеологии Farmina N&D: Prime, Pumpkin, Quinoa, Ocean и Ancestral Grain, новые ветви White/Brown/Tropical/Spirulina, аналитика и энергетика на карточках, влажные форматы и правила применения.",
+        url: "/blog/chto-vklyuchaet-linejka-farmina-n-d",
+        cover:
+          "https://static.tildacdn.com/tild6330-3038-4238-b630-663538366466/korm-farmina-farmina.jpg",
+        coverAlt: "Обложка поста 005",
+      },
+      {
+        id: 6,
+        title: "Корм Farmina Neutered — полный обзор видов",
+        excerpt:
+          "Развёрнутый гид по Farmina Neutered для кошек и собак: ингредиенты, энергетика, фасовки и нормы, сухие и влажные варианты; как читать карточки, комбинировать форматы и контролировать массу тела после стерилизации.",
+        url: "/blog/obzor-linejki-farmina-neutered",
+        cover:
+          "https://static.tildacdn.com/tild3662-3133-4732-b930-636335326565/11026_01_tagliere-pr.jpg",
+        coverAlt: "Обложка поста 006",
+      },
+      {
+        id: 7,
+        title:
+          "Farmina Vet Life Obesity для кошек — когда выбирать диету и из чего она состоит?",
+        excerpt:
+          "Кому подходит Vet Life Obesity: типовые сценарии, состав и поддерживающие компоненты, сухой и влажный форматы, чтение карточек и расчёт порций, практические советы по снижению массы у взрослых кошек.",
+        url: "/blog/komu-podhodit-korm-vet-life-obesity",
+        cover:
+          "https://static.tildacdn.com/tild6639-3738-4331-b738-666431616665/image.webp",
+        coverAlt: "Обложка поста 007",
+      },
+      {
+        id: 8,
+        title:
+          "Farmina Vet Life Renal для кошек и собак — назначение, состав, форматы",
+        excerpt:
+          "Что включает диета Renal у Farmina: показания, особенности кошачьей и собачьей формул, сухие и влажные варианты, ключевая аналитика и практическое применение под контролем ветеринара.",
+        url: "/blog/farmina-vet-life-renal-dlya-koshek-i-sobak",
+        cover:
+          "https://static.tildacdn.com/tild3361-6462-4333-a431-313664613737/pexels-danielle-dani.jpg",
+        coverAlt: "Обложка поста 008",
+      },
+      {
+        id: 9,
+        title:
+          "Farmina Vet Life Struvite и Struvite Management — что это за диеты и чем отличаются?",
+        excerpt:
+          "Подробный разбор диет Farmina Struvite для кошек и собак: задачи растворения и профилактики, состав и аналитика, форматы и фасовки, алгоритм чтения карточек, режим, гидратация и контроль у врача.",
+        url: "/blog/korm-farmina-vet-life-struvite-i-struvite-management",
+        cover:
+          "https://static.tildacdn.com/tild6238-3534-4130-a632-396532633539/__2025-10-16__152008.png",
+        coverAlt: "Обложка поста 009",
+      },
+      {
+        id: 10,
+        title:
+          "Farmina Vet Life — полный обзор видов: Gastrointestinal, UltraHypo/Hypoallergenic, Struvite, Renal, Hepatic, Diabetic и Obesity",
+        excerpt:
+          "Системный гид по диетам Farmina Vet Life для кошек и собак: назначения, логика составов, сухие и влажные форматы, как читать карточки и комбинировать режим, на что смотреть в аналитике и как переводить цифры в практику дома.",
+        url: "/blog/korm-farmina-vet-life-polnyj-obzor-vidov/",
+        cover:
+          "https://static.tildacdn.com/tild6664-3933-4530-a335-636130663339/65862751a32ada3cf22c.jpg",
+        coverAlt: "Обложка поста 010",
+      },
+      {
+        id: 11,
+        title: "Чем отличается беззерновой корм Farmina от обычного? Разбор",
+        excerpt:
+          "Подробный разбор беззерновых и «обычных» рационов Farmina: линии N&D Prime/Pumpkin/Quinoa/Ocean, Ancestral Grain на спельте и овсе и повседневный Matisse; гликемический индекс, ингредиенты, технологии, фасовки и практические советы по выбору и переходу.",
+        url: "/blog/chem-otlichaetsya-bezzernovoj-korm-farmina/",
+        cover:
+          "https://static.tildacdn.com/tild6336-3437-4961-b965-323666303538/jn22di02-1000x1000.jpg",
+        coverAlt: "Обложка поста 011",
+      },
+      {
+        id: 12,
+        title: "Влажные корма Farmina: виды и выбор",
+        excerpt:
+          "Обзор влажных рационов Farmina — Vet Life, N&D и Matisse; назначение, форматы, как читать карточки и комбинировать с сухим кормом.",
+        url: "/blog/vlazhnye-korma-farmina/",
+        cover:
+          "https://static.tildacdn.com/tild3530-3731-4432-a532-346164386330/pexels-jhelmuth-3726.jpg",
+        coverAlt: "Обложка поста 012",
+      },
+      {
+        id: 13,
+        title: "Как выбрать корм Farmina для котят?",
+        excerpt:
+          "Руководство по выбору Farmina для котят: N&D Prime и Ocean, Matisse Kitten, сухие и влажные форматы, как читать карточки и считать порции.",
+        url: "/blog/korm-farmina-dlya-kotyat/",
+        cover:
+          "https://static.tildacdn.com/tild3332-3831-4438-b532-343234313532/photo.jpg",
+        coverAlt: "Обложка поста 013",
+      },
+      {
+        id: 14,
+        title: "Почему Farmina — лучший выбор для кошек?",
+        excerpt:
+          "Плюсы Farmina для кошек: продуманная линейка N&D и Matisse, диеты Vet Life, технологии сохранности, прозрачная аналитика и удобный расчёт порций.",
+        url: "/blog/farmina-luchshij-korm-dlya-koshek/",
+        cover:
+          "https://static.tildacdn.com/tild6163-6235-4165-b263-353461373134/pexels-pixabay-56857.jpg",
+        coverAlt: "Обложка поста 014",
+      },
+      {
+        id: 15,
+        title: "Корм Farmina для мелких пород собак — обзор",
+        excerpt:
+          "Как выбрать Farmina для маленькой собаки: линии N&D Mini, влажные варианты и ветдиеты, состав и аналитика, нормы и режим кормления.",
+        url: "/blog/korm-farmina-dlya-melkih-porod-sobak/",
+        cover:
+          "https://static.tildacdn.com/tild3862-3165-4735-b663-343232366264/__2025-08-28__135837.png",
+        coverAlt: "Обложка поста 015",
+      },
+      {
+        id: 16,
+        title: "Как выбрать корм Farmina для собак?",
+        excerpt:
+          "Пошаговое руководство по выбору корма Farmina: линии N&D и Matisse, ветдиеты Vet Life, размер и возраст собаки, формат и энергетика, как читать карточки и настраивать режим.",
+        url: "/blog/vybiraem-korm-farmina-dlya-sobak/",
+        cover:
+          "https://static.tildacdn.com/tild6561-3436-4830-b534-343733343261/pexels-pixabay-16219.jpg",
+        coverAlt: "Обложка поста 016",
+      },
+      {
+        id: 17,
+        title: "Как подобрать корм Farmina для щенка?",
+        excerpt:
+          "Пошаговый выбор корма Farmina для щенка: линии N&D и Ancestral Grain, размер гранулы, сухой и влажный форматы, как читать карточки и настраивать режим роста.",
+        url: "/blog/kak-vybrat-korm-farmina-dlya-shchenka/",
+        cover:
+          "https://static.tildacdn.com/tild6261-3733-4736-b830-353061356332/pexels-nord6-7324407.jpg",
+        coverAlt: "Обложка поста 017",
+      },
+      {
+        id: 18,
+        title:
+          "Farmina Vet Life Gastrointestinal — обзор диеты для кошек и собак",
+        excerpt:
+          "Что включает ветеринарная диета Farmina GI: назначение, форматы для кошек и собак, щенячий GI Puppy, как читать карточки, комбинировать сухой и влажный и настраивать режим восстановления.",
+        url: "/blog/korm-farmina-vet-life-gastrointestinal-obzor/",
+        cover:
+          "https://static.tildacdn.com/tild3439-3838-4535-b833-363662616639/pexels-kiangalass-12.jpg",
+        coverAlt: "Обложка поста 018",
+      },
+      {
+        id: 19,
+        title: "Где купить корм Farmina? Разбираем безопасные варианты",
+        excerpt:
+          "Как выбрать место покупки: проверенные зоомагазины с доставкой, маркетплейсы и офлайн‑сети; как проверить партию, хранить дома и не переплачивать за риск.",
+        url: "/blog/kupit-korm-farmina/",
+        cover:
+          "https://static.tildacdn.com/tild6130-6333-4538-b463-343533303533/Full-Product-Lineup.jpg",
+        coverAlt: "Обложка поста 019",
+      },
+      {
+        id: 20,
+        title: "Стоит ли выбирать корм Farmina с курицей?",
+        excerpt:
+          "Кому подходят куриные рецепты Farmina, как выбрать между беззерновым и на спельте/рисе, когда лучше искать другой белок и как собрать удобный режим кормления.",
+        url: "/blog/korm-farmina-s-kuricej/",
+        cover:
+          "https://static.tildacdn.com/tild6137-3930-4361-b136-383963393531/pexels-tranmautritam.jpg",
+        coverAlt: "Обложка поста 020",
+      },
+      {
+        id: 21,
+        title: "Состав сухого корма Farmina для собак — разбор",
+        excerpt:
+          "Подробно о составе сухих рационов Farmina: белки, углеводы, жиры, волокна, минералы и энергетика; как читать карточки, сравнивать формулы и переводить EM в порции.",
+        url: "/blog/sostav-suhogo-korma-farmina-dlya-sobak/",
+        cover:
+          "https://static.tildacdn.com/tild3834-3962-4934-b631-376466346363/hq720.jpg",
+        coverAlt: "Обложка поста 021",
+      },
+      {
+        id: 22,
+        title: "Корма Farmina для стерилизованных кошек — полный обзор",
+        excerpt:
+          "Какие варианты предлагает Farmina для стерилизованных кошек: N&D и Matisse, сухие и влажные форматы, как читать карточки и настраивать рацион под поведение и здоровье питомца.",
+        url: "/blog/korm-farmina-dlya-sterilizovannyh-koshek/",
+        cover:
+          "https://static.tildacdn.com/tild6435-3430-4335-b930-646561343334/pexels-aleksandar-cv.jpg",
+        coverAlt: "Обложка поста 022",
+      },
+      {
+        id: 23,
+        title: "Зачем в кормах Farmina содержится черника?",
+        excerpt:
+          "Разбираем роль черники в рецептах Farmina: антиоксиданты, волокна, вкус и низкий калораж; как читать состав и когда такой компонент особенно уместен.",
+        url: "/blog/korm-farmina-chernika/",
+        cover:
+          "https://static.tildacdn.com/tild6531-6631-4666-b633-366361616330/467-FARMINA-ND------.jpeg",
+        coverAlt: "Обложка поста 023",
+      },
+      {
+        id: 24,
+        title: "Когда выбирать корм Farmina с ягнёнком?",
+        excerpt:
+          "Кому и зачем подходят ягнячьи рецептуры Farmina; как выбрать углеводную матрицу, комбинировать сухой и влажный форматы, считать калории и мягко вводить рацион.",
+        url: "/blog/korm-farmina-s-yagnyonkom/",
+        cover:
+          "https://static.tildacdn.com/tild3733-6365-4565-a632-383135373463/minii-prym-.jpg",
+        coverAlt: "Обложка поста 024",
+      },
+      {
+        id: 25,
+        title: "В чём польза корма Farmina?",
+        excerpt:
+          "Разбираем практическую пользу рецептур Farmina: белки, углеводы, жиры, волокна, минералы, технологии и форматы; как по карточкам перевести цифры в стабильный результат в миске.",
+        url: "/blog/polza-korma-farmina/",
+        cover:
+          "https://static.tildacdn.com/tild6434-6439-4138-b162-353432633463/_04f5dbb8f5b723b14af.jpg",
+        coverAlt: "Обложка поста 025",
+      },
+      {
+        id: 26,
+        title: "Как выбрать паштет Farmina для кошек?",
+        excerpt:
+          "Пошаговый выбор паштетов Farmina: какие есть линии, как читать карточку, подбирать белок, собирать микс с сухим рационом и избегать типичных ошибок.",
+        url: "/blog/pashtet-farmina-dlya-koshek/",
+        cover:
+          "https://static.tildacdn.com/tild3038-6138-4564-b936-313235623431/pexels-ingewallu-177.jpg",
+        coverAlt: "Обложка поста 026",
+      },
+      {
+        id: 27,
+        title: "Почему Farmina — хороший выбор для питомца?",
+        excerpt:
+          "Разбираем, за счёт чего Farmina работает в миске: прозрачные карточки, логичный состав, форматы сухой/влажный, версии Mini и ветлинейка Vet Life; как читать цифры и переводить их в стабильный результат каждый день.",
+        url: "/blog/korm-farmina-vybor-pitomca/",
+        cover:
+          "https://static.tildacdn.com/tild3761-6464-4539-b432-393066626239/Farmina.png",
+        coverAlt: "Обложка поста 027",
+      },
+      {
+        id: 28,
+        title: "Состав корма Farmina для кошек — полный разбор",
+        excerpt:
+          "Белки, жиры, углеводы, волокна, минералы и энергетика в кормах Farmina для кошек: как читать карточку, сравнивать формулы, собирать «сухой + влажный» и избегать типичных ошибок.",
+        url: "/blog/sostav-korma-farmina-dlya-koshek/",
+        cover:
+          "https://static.tildacdn.com/tild6430-3930-4531-b737-366161383738/pexels-arina-krasnik.jpg",
+        coverAlt: "Обложка поста 028",
+      },
+      {
+        id: 29,
+        title: "«Фармина» или «Грандорф» — как выбрать корм для собаки?",
+        excerpt:
+          "Пошаговое сравнение по карточкам: белки, углеводы, жиры, волокна, минералы и энергетика; как читать состав, собирать сухой и влажный режим и избегать типичных ошибок при выборе между брендами.",
+        url: "/blog/pochemu-korm-farmina-luchshe-grandorfa/",
+        cover:
+          "https://static.tildacdn.com/tild6637-6264-4932-b264-633832386637/Korm-dlya-sobak-Farm.jpg",
+        coverAlt: "Обложка поста 029",
+      },
+      {
+        id: 30,
+        title: "Обзор консервов «Фармина» для собак",
+        excerpt:
+          "Виды консервов «Фармина», как выбрать белок и текстуру, собрать микс с сухим кормом, учесть возраст и чувствительность ЖКТ; пошаговый разбор карточек и частые ошибки при влажном кормлении.",
+        url: "/blog/konservy-farmina-dlya-sobak/",
+        cover:
+          "https://static.tildacdn.com/tild3234-3033-4066-a139-343363643366/pexels-simonakidric-.jpg",
+        coverAlt: "Обложка поста 030",
+      },
+      {
+        id: 31,
+        title: "Питание щенков джек рассела: руководство",
+        excerpt:
+          "Подробное руководство по созданию правильного питания щенков джек рассела: особенности породы, структура рациона, режим кормления и примеры готовых рационов Farmina.",
+        url: "/blog/pitanie-shchenkov-dzhek-rassela",
+        cover:
+          "https://static.tildacdn.com/tild6336-3036-4663-a531-626636373834/018e70b5-5980-7239-b.jpg",
+        coverAlt: "Обложка поста 031",
+      },
+      {
+        id: 32,
+        title: "Диеты для кошек Farmina: обзор линеек и возможностей",
+        excerpt:
+          "Обзор диет для кошек Farmina: ежедневные линейки N&D, функциональные рационы и ветеринарные диеты Vet Life, а также сервисы подбора индивидуального питания.",
+        url: "/blog/diety-dlya-koshek-farmina-linejki",
+        cover:
+          "https://static.tildacdn.com/tild3532-3135-4339-b233-326136656464/pexels-arnie-chou-30.jpg",
+        coverAlt: "Обложка поста 032",
+      },
+      {
+        id: 33,
+        title: "Корм Farmina с кабаном и яблоком: разбор состава",
+        excerpt:
+          "Детальный разбор корма Farmina с кабаном и яблоком для взрослых кошек: белки, жиры, растительные компоненты, добавки и рекомендации по введению в рацион.",
+        url: "/blog/korm-farmina-s-kabanom-i-yablokom",
+        cover:
+          "https://static.tildacdn.com/tild6665-3466-4565-b931-303064393033/21086970.jpg",
+        coverAlt: "Обложка поста 033",
+      },
+      {
+        id: 34,
+        title: "Как перевести кошку на новый корм без стресса?",
+        excerpt:
+          "Подробная инструкция по переводу кошки на другой корм: когда стоит менять рацион, как делать это по шагам и почему корма Farmina удобны в роли нового рациона.",
+        url: "/blog/perevesti-koshku-na-novyj-korm",
+        cover:
+          "https://static.tildacdn.com/tild6234-3837-4139-a230-373464653665/pexels-aleksandar-cv.jpg",
+        coverAlt: "Обложка поста 034",
+      },
+      {
+        id: 35,
+        title: "Как перевести кошку с натурального рациона на корм?",
+        excerpt:
+          "Подробное руководство по переводу кошки с домашнего питания на промышленный корм: как выбрать рацион, построить поэтапный переход и снизить стресс для питомца.",
+        url: "/blog/perevesti-koshku-s-naturalki-na-korm",
+        cover:
+          "https://static.tildacdn.com/tild3763-3432-4532-a661-386639386332/pexels-catscoming-13.jpg",
+        coverAlt: "Обложка поста 035",
+      },
+      {
+        id: 36,
+        title: "Как перевести собаку с натурального питания на корм?",
+        excerpt:
+          "Практическое руководство по переводу собаки с домашнего рациона на готовый корм: когда стоит менять питание, как выбрать корм и организовать поэтапный переход.",
+        url: "/blog/perevesti-sobaku-s-naturalki-na-korm",
+        cover:
+          "https://static.tildacdn.com/tild3432-3463-4433-a366-326264383232/pexels-freestocks-99.jpg",
+        coverAlt: "Обложка поста 036",
+      },
+      {
+        id: 37,
+        title: "Как перевести щенка на корм?",
+        excerpt:
+          "Подробная инструкция по переводу щенка на корм: выбор рациона, схема поэтапного перехода, контроль состояния и роль кормов Farmina в новом питании.",
+        url: "/blog/perevesti-shchenka-s-naturalki-na-korm",
+        cover:
+          "https://static.tildacdn.com/tild6536-6137-4562-b561-626362363636/pexels-brett-sayles-.jpg",
+        coverAlt: "Обложка поста 037",
+      },
+      {
+        id: 38,
+        title: "Как правильно подобрать корм для кошки?",
+        excerpt:
+          "Как по шагам выбрать подходящий корм для кошки: на что смотреть в составе, как учитывать возраст и здоровье и чем удобны многолинейные рационы вроде Farmina.",
+        url: "/blog/kak-podobrat-korm-dlya-koshki",
+        cover:
+          "https://static.tildacdn.com/tild3431-3330-4336-a438-623063623835/pexels-catscoming-16.jpg",
+        coverAlt: "Обложка поста 038",
+      },
+      {
+        id: 39,
+        title: "Как проявляется аллергия на корм у домашних животных?",
+        excerpt:
+          "Подробно о том, как проявляется аллергия на корм у кошек и собак: кожные и ЖКТ‑симптомы, скрытые признаки, роль диет и когда нужна помощь ветеринара.",
+        url: "/blog/kak-proyavlyaetsya-allergiya-na-korm",
+        cover:
+          "https://static.tildacdn.com/tild3863-3436-4433-b534-353832396263/pexels-catscoming-29.jpg",
+        coverAlt: "Обложка поста 039",
+      },
+      {
+        id: 40,
+        title: "Как правильно хранить сухой корм для домашних животных?",
+        excerpt:
+          "Подробное руководство по хранению сухого корма: выбор места и тары, работа с открытым пакетом, гигиена мисок и защита рациона от влаги, тепла и воздуха.",
+        url: "/blog/kak-hranit-suhoj-korm",
+        cover:
+          "https://static.tildacdn.com/tild3837-3162-4530-b938-396638646538/pexels-catscoming-29.jpg",
+        coverAlt: "Обложка поста 040",
+      },
+      {
+        id: 41,
+        title: "Какой корм лучше для питомца: Фармина или Роял канин",
+        excerpt:
+          "Сравнение подходов брендов Фармина и Роял канин к питанию кошек и собак: философия, состав, технологии и причины, по которым многие владельцы выбирают Фармину.",
+        url: "/blog/pochemu-korm-farmina-luchshe",
+        cover:
+          "https://static.tildacdn.com/tild3330-6664-4331-a235-656437626237/11026_01_tagliere-pr.jpg",
+        coverAlt: "Обложка поста 041",
+      },
+      {
+        id: 42,
+        title: "Какой корм «Фармина» лучше выбрать для собаки?",
+        excerpt:
+          "Обзор линеек кормов «Фармина» для собак и рекомендации, как подобрать лучший рацион по возрасту, активности и здоровью питомца.",
+        url: "/blog/kakoj-korm-farmina-luchshe-dlya-sobaki",
+        cover:
+          "https://static.tildacdn.com/tild3633-6161-4339-a463-663065646361/163_77_31_43_57_prot.jpg",
+        coverAlt: "Обложка поста 042",
+      },
+      {
+        id: 43,
+        title:
+          "Корм «Фармина» для щенков – отзывы владельцев и разбор рационов",
+        excerpt:
+          "Обзор кормов Farmina для щенков по отзывам владельцев: N&D Prime, Pumpkin и Ocean, их особенности, кому они подходят и как опыт других помогает выбрать рацион.",
+        url: "/blog/korm-farmina-dlya-shchenkov-otzyvy",
+        cover:
+          "https://static.tildacdn.com/tild3535-6339-4338-b263-613137306365/pexels-glenn-970339-.jpg",
+        coverAlt: "Обложка поста 043",
+      },
+      {
+        id: 44,
+        title: "Разбор корма Farmina с гранатом для собак и кошек",
+        excerpt:
+          "Подробный обзор кормов Farmina с гранатом: состав, линейки для собак и кошек, кому они подходят и как аккуратно перевести питомца на такой рацион.",
+        url: "/blog/razbor-korma-farmina-s-granatom",
+        cover:
+          "https://static.tildacdn.com/tild3837-3366-4634-b563-653838383231/__2025-08-28__152657.png",
+        coverAlt: "Обложка поста 044",
+      },
+      {
+        id: 45,
+        title: "Почему котёнок много ест и когда это повод для тревоги?",
+        excerpt:
+          "Разбираем причины повышенного аппетита у котят: нормальный рост, ошибки кормления, возможные болезни и роль сбалансованных рационов в контроле потребления корма.",
+        url: "/blog/pochemu-kotyonok-mnogo-est",
+        cover:
+          "https://static.tildacdn.com/tild3831-6665-4332-a439-616639353232/__2025-11-20__120124.png",
+        coverAlt: "Обложка поста 045",
+      },
+      {
+        id: 46,
+        title:
+          "Можно ли мешать корм с кашей: разбор последствий для рациона питомца",
+        excerpt:
+          "Почему смешивание полнорационного корма с кашей меняет баланс рациона, чем это грозит кошкам и собакам и как безопасно организовать питание без лишних экспериментов.",
+        url: "/blog/mozhno-li-meshat-korm-s-kashej",
+        cover:
+          "https://static.tildacdn.com/tild3231-3638-4435-b439-313239396565/pexels-yungsaac-3798.jpg",
+        coverAlt: "Обложка поста 046",
+      },
+      {
+        id: 47,
+        title: "Можно ли взрослой собаке корм для щенков?",
+        excerpt:
+          "Почему корма для щенков не подходят взрослым собакам, в каких редких случаях их назначает врач и чем лучше заменить щенячий рацион для безопасного питания.",
+        url: "/blog/mozhno-li-sobake-korm-shchenkov",
+        cover:
+          "https://static.tildacdn.com/tild6662-3239-4434-a437-643966353939/pexels-steshkacroes-.jpg",
+        coverAlt: "Обложка поста 047",
+      },
+      {
+        id: 48,
+        title: "Можно ли давать собаке кошачий корм?",
+        excerpt:
+          "Чем кошачий корм отличается от собачьего, какие риски несёт его регулярное поедание собакой и как организовать питание в доме с несколькими питомцами.",
+        url: "/blog/mozhno-li-sobake-koshachij-korm",
+        cover:
+          "https://static.tildacdn.com/tild3233-6666-4562-b866-656338663137/pexels-steshkacroes-.jpg",
+        coverAlt: "Обложка поста 048",
+      },
+      {
+        id: 49,
+        title: "Можно ли добавлять воду в сухой корм для кошек и собак",
+        excerpt:
+          "Разбираем, в каких случаях допустимо размачивать сухой корм, какие есть риски, когда лучше оставить гранулы сухими и как по‑другому позаботиться о гидратации питомца.",
+        url: "/blog/mozhno-li-dobavlyat-vodu-v-suhoj-korm",
+        cover:
+          "https://static.tildacdn.com/tild6136-3439-4466-b637-363037326466/pexels-sibi-mathew-4.jpg",
+        coverAlt: "Обложка поста 049",
+      },
+      {
+        id: 50,
+        title:
+          "Можно ли кормить не стерилизованного кота кормом для стерилизованных кошек",
+        excerpt:
+          "Объясняем, чем отличаются рационы для стерилизованных и стерилизованных котов, какие риски несёт постоянная подмена и как выбрать подходящий корм по статусу животного.",
+        url: "/blog/mozhno-li-kormit-kota-kormom-dlya-sterilizovannyh",
+        cover:
+          "https://static.tildacdn.com/tild3864-6439-4962-b230-343764323132/pexels-tuncay-kutlu-.jpg",
+        coverAlt: "Обложка поста 050",
+      },
+      {
+        id: 51,
+        title: "Можно ли кормить собаку разными кормами: советы",
+        excerpt:
+          "Подробно разбирается, к чему приводит постоянная смена кормов, в каких случаях сочетание рационов допустимо, как безопасно переводить собаку на новый корм и когда разумно выбрать Farmina.",
+        url: "/blog/kormit-sobaku-raznymi-kormami",
+        cover:
+          "https://static.tildacdn.com/tild3632-3336-4537-b963-663064653566/pexels-636238602-344.jpg",
+        coverAlt: "Обложка поста 051",
+      },
+      {
+        id: 52,
+        title: "Можно ли кормить кошку только влажным кормом?",
+        excerpt:
+          "Разбор плюсов и ограничений кормления кошки только влажным кормом, типичные ошибки владельцев и роль комплексных линеек Farmina в подборе рациона.",
+        url: "/blog/kormit-koshku-tolko-vlazhnym-kormom",
+        cover:
+          "https://static.tildacdn.com/tild6662-6334-4139-b932-336466633931/pexels-tuncay-kutlu-.jpg",
+        coverAlt: "Обложка поста 052",
+      },
+      {
+        id: 53,
+        title: "Можно ли котенку давать жидкий корм?",
+        excerpt:
+          "Подробное объяснение, какие жидкие корма подходят котятам, как их вводить в рацион, в чем плюсы и риски такого питания и как выбрать полнорационный влажный корм.",
+        url: "/blog/kotenku-davat-zhidkij-korm",
+        cover:
+          "https://static.tildacdn.com/tild3063-6531-4338-b265-366664316631/pexels-surin-chammak.jpg",
+        coverAlt: "Обложка поста 053",
+      },
+      {
+        id: 54,
+        title: "Можно ли давать взрослому коту корм для котят?",
+        excerpt:
+          "Объясняется, чем отличаются корма для котят от рационов взрослых кошек, какие риски возникают при постоянном использовании «детских» формул и почему лучше выбирать специализированный корм для взрослых животных.",
+        url: "/blog/vzroslomu-kotu-korm-dlya-kotyat",
+        cover:
+          "https://static.tildacdn.com/tild6563-6336-4564-b464-363363646236/pexels-abby-chung-37.jpg",
+        coverAlt: "Обложка поста 054",
+      },
+      {
+        id: 55,
+        title: "Можно ли давать котятам детское мясное питание?",
+        excerpt:
+          "Подробно рассмотрим, чем детское мясное питание отличается от кормов для котят, какие риски несет его регулярное использование и почему безопаснее выбирать специализированные рационы для котят, включая влажные и сухие корма Farmina.",
+        url: "/blog/kotyatam-detskoe-myasnoe-pitanie",
+        cover:
+          "https://static.tildacdn.com/tild3431-3132-4362-b735-336139323365/pexels-leah-newhouse.jpg",
+        coverAlt: "Обложка поста 055",
+      },
+      {
+        id: 56,
+        title: "Можно ли давать щенку корм для взрослых собак?",
+        excerpt:
+          "Разбираем, чем питание щенка отличается от рациона взрослой собаки, к каким рискам приводит постоянный взрослый корм и почему безопаснее выбирать специализированные щенячьи рационы, включая корма Farmina.",
+        url: "/blog/shchenku-korm-dlya-vzroslyh-sobak",
+        cover:
+          "https://static.tildacdn.com/tild6232-6465-4330-b037-336538323664/pexels-brett-sayles-.jpg",
+        coverAlt: "Обложка поста 056",
+      },
+      {
+        id: 57,
+        title: "Можно мешать влажный и сухой корм?",
+        excerpt:
+          "Подробный разбор плюсов и рисков комбинированного кормления, правил безопасного сочетания влажного и сухого корма и роли согласованных линеек вроде Farmina в построении сбалансированного рациона.",
+        url: "/blog/meshat-vlazhnyj-i-suhoj-korm",
+        cover:
+          "https://static.tildacdn.com/tild3132-3664-4062-b964-656236333765/pexels-ekaterina-bol.jpg",
+        coverAlt: "Обложка поста 057",
+      },
+      {
+        id: 58,
+        title: "Можно ли щенкам детское питание?",
+        excerpt:
+          "Объясняем, чем детское питание отличается от профессиональных кормов для щенков, какие риски несет его регулярное использование и почему безопаснее выбирать специализированные рационы для роста и развития собаки.",
+        url: "/blog/shchenki-i-detskoe-pitanie",
+        cover:
+          "https://static.tildacdn.com/tild6234-3365-4364-b665-346133383431/pexels-nlyfaith-1892.jpg",
+        coverAlt: "Обложка поста 058",
+      },
+      {
+        id: 59,
+        title: "Корм «Фармина» для собак – как рассчитать нормы кормления",
+        excerpt:
+          "Разбор принципов расчёта норм кормления кормами «Фармина» для собак разных возрастов и размеров, с пояснением таблиц на упаковке и роли сервисов бренда в подборе порции.",
+        url: "/blog/korm-farmina-dlya-sobak-kormlenie",
+        cover:
+          "https://static.tildacdn.com/tild3132-3535-4338-b364-616137653838/pexels-liz-tremblay-.jpg",
+        coverAlt: "Обложка поста 059",
+      },
+      {
+        id: 60,
+        title: "Обзор паштета Farmina Vet Life Gastrointestinal для собак",
+        excerpt:
+          "Обзор диетического паштета Farmina Vet Life Gastrointestinal для собак с нарушениями пищеварения: состав, показания, особенности действия и рекомендации по кормлению.",
+        url: "/blog/farmina-vet-life-gastrointestinal-dlya-sobak",
+        cover:
+          "https://static.tildacdn.com/tild3261-3365-4462-b032-393131313838/farmina-vetlife-gast.jpg",
+        coverAlt: "Обложка поста 060",
+      },
+      {
+        id: 61,
+        title: "Правильное питание для котенка мейн куна. Разбор",
+        excerpt:
+          "Подробное руководство по кормлению котенка мейн куна: нормы, баланс рациона, выбор промышленных кормов и роль кормов Farmina в поддержании здоровья крупной породы.",
+        url: "/blog/pitanie-kotenka-mejn-kuna",
+        cover:
+          "https://static.tildacdn.com/tild6239-3137-4335-a666-383561333232/__2025-11-24__093244.png",
+        coverAlt: "Обложка поста 061",
+      },
+      {
+        id: 62,
+        title: "Правильное питание щенков мальтипу: руководство",
+        excerpt:
+          "Развернутое руководство по организации питания щенков мальтипу: выбор формата рациона, режим кормления, ключевые нутриенты и роль кормов Farmina.",
+        url: "/blog/pitanie-shchenkov-maltipu",
+        cover:
+          "https://static.tildacdn.com/tild6332-6430-4035-b964-616664306137/7186c23a-c2c4-443f-9.jpeg",
+        coverAlt: "Обложка поста 062",
+      },
+      {
+        id: 63,
+        title: "Правильное питание месячного котенка: руководство",
+        excerpt:
+          "Подробная статья о том, как организовать питание месячного котенка: выбор кормов, режим кормления, плавный отъем и роль полнорационных рационов для малышей.",
+        url: "/blog/pitanie-mesyachnogo-kotenka",
+        cover:
+          "https://static.tildacdn.com/tild6162-3364-4939-b937-306539653634/pexels-duygugungor-3.jpg",
+        coverAlt: "Обложка поста 063",
+      },
+      {
+        id: 64,
+        title: "Правильное питание шотландских котят. Правила",
+        excerpt:
+          "Подробное руководство по организации питания шотландских котят: выбор корма, режим кормления, особенности породы и роль рационов Farmina в поддержке роста.",
+        url: "/blog/pitanie-shotlandskih-kotyat",
+        cover:
+          "https://static.tildacdn.com/tild3230-3532-4362-b234-363736313461/1675852976_ornella-c.jpg",
+        coverAlt: "Обложка поста 064",
+      },
+      {
+        id: 65,
+        title: "Как создать правильное питание для 3-месячного щенка",
+        excerpt:
+          "Подробное руководство по организации рациона 3-месячного щенка: особенности возраста, режим кормления, выбор между домашней едой и промышленными кормами, а также возможности линеек Farmina для щенков.",
+        url: "/blog/pitanie-dlya-3-mesyachnogo-shchenka",
+        cover:
+          "https://static.tildacdn.com/tild3339-6565-4336-a236-636635623433/pexels-helenalopes-2.jpg",
+        coverAlt: "Обложка поста 065",
+      },
+      {
+        id: 66,
+        title:
+          "Правильное питание щенка йоркширского терьера: подробное руководство",
+        excerpt:
+          "Развернутая статья о том, как организовать питание щенка йорка: особенности породы, режим кормления, выбор формата рациона и роль кормов Farmina для щенков мини-пород.",
+        url: "/blog/pitanie-shchenka-jorkshirskogo-terera",
+        cover:
+          "https://static.tildacdn.com/tild3061-3839-4131-b030-373832353965/__2025-11-24__094403.png",
+        coverAlt: "Обложка поста 066",
+      },
+      {
+        id: 67,
+        title: "Правильное питание щенка спаниеля: руководство",
+        excerpt:
+          "Развёрнутая статья о питании щенка спаниеля: особенности породы, режим кормления, выбор формата рациона и роль полнорационных кормов в здоровом росте собаки.",
+        url: "/blog/pitanie-shchenka-spanielya",
+        cover:
+          "https://static.tildacdn.com/tild3764-6538-4662-a134-613632356131/__2025-11-24__094647.png",
+        coverAlt: "Обложка поста 067",
+      },
+      {
+        id: 68,
+        title: "Как создать правильное питание для щенков корги?",
+        excerpt:
+          "Подробное руководство по организации питания щенков корги: особенности породы, режим кормления, выбор формата рациона и использование полнорационных кормов для здорового роста.",
+        url: "/blog/pitanie-dlya-shchenkov-korgi",
+        cover:
+          "https://static.tildacdn.com/tild3235-6162-4565-b235-306463326264/1638063691_1-sobakov.jpg",
+        coverAlt: "Обложка поста 068",
+      },
+      {
+        id: 69,
+        title: "Как создать правильное питание для щенков пуделей?",
+        excerpt:
+          "Подробное руководство по организации питания щенков пуделей: особенности породы, выбор формата рациона, режим кормления и роль полнорационных кормов.",
+        url: "/blog/pitanie-dlya-shchenkov-pudelej",
+        cover:
+          "https://static.tildacdn.com/tild3432-3863-4237-b539-363737653466/433291-Kycb.jpg",
+        coverAlt: "Обложка поста 069",
+      },
+      {
+        id: 70,
+        title: "Как создать правильное питание для щенка чихуахуа?",
+        excerpt:
+          "Подробное руководство по питанию щенка чихуахуа: особенности мини-породы, режим кормления, выбор формата рациона и использование полнорационных кормов Farmina.",
+        url: "/blog/pitanie-dlya-shchenka-chihuahua",
+        cover:
+          "https://static.tildacdn.com/tild3366-3134-4863-a236-663465343764/3-1-scaled.jpg",
+        coverAlt: "Обложка поста 070",
+      },
+      {
+        id: 71,
+        title: "Почему собака отказывается от корма и что делать?",
+        excerpt:
+          "Причины отказа собаки от корма: нормы и тревожные симптомы, болезни и поведение, ошибки кормления, роль полноценных рационов Farmina и подробный план действий для внимательного владельца.",
+        url: "/blog/sobaka-otkazyvaetsya-ot-korma",
+        cover:
+          "https://static.tildacdn.com/tild6265-6635-4639-a533-393231663463/pexels-alinaskazka-1.jpg",
+        coverAlt: "Обложка поста 071",
+      },
+      {
+        id: 72,
+        title: "Что должно быть в рационе питания щенка?",
+        excerpt:
+          "Состав рационального питания щенка: роль белков, жиров, витаминов и минералов, режим кормления, оценка состояния щенка и возможности готовых кормов Farmina.",
+        url: "/blog/racion-pitaniya-shchenka",
+        cover:
+          "https://static.tildacdn.com/tild6532-3963-4538-b038-363930363864/pexels-jhelmuth-1253.jpg",
+        coverAlt: "Обложка поста 072",
+      },
+      {
+        id: 73,
+        title: "Обзор сухого корма Farmina Vet Life Renal для кошек",
+        excerpt:
+          "Диетический сухой корм Farmina Vet Life Renal для кошек с почечной недостаточностью: особенности состава, задачи диеты, правила перевода и роль контроля ветеринара.",
+        url: "/blog/korm-farmina-vet-life-renal",
+        cover:
+          "https://static.tildacdn.com/tild3736-3066-4533-b730-353631333038/pexels-andreas-schna.jpg",
+        coverAlt: "Обложка поста 073",
+      },
+      {
+        id: 74,
+        title: "Корма Farmina с ягнёнком – подробный разбор состава",
+        excerpt:
+          "Обзор сухих и влажных кормов Farmina с ягнёнком: линейки N&D, ключевые ингредиенты, роль злаков, овощей и ягод, особенности формул для кошек и собак и советы по выбору подходящего рациона.",
+        url: "/blog/korma-farmina-s-yagnyonkom",
+        cover:
+          "https://static.tildacdn.com/tild6433-6439-4562-a565-623332373237/6016776073.jpg",
+        coverAlt: "Обложка поста 074",
+      },
+      {
+        id: 75,
+        title: "Когда выбирать упаковку 20 кг корма Farmina?",
+        excerpt:
+          "В каких случаях фасовка 20 кг корма Farmina оправдана, для кого создавалась линейка Team Breeder, как хранить большие мешки и на что обратить внимание при выборе рациона.",
+        url: "/blog/20-kg-korma-farmina",
+        cover:
+          "https://static.tildacdn.com/tild3330-6562-4361-b962-383462326133/pexels-blue-bird-721.jpg",
+        coverAlt: "Обложка поста 075",
+      },
+      {
+        id: 76,
+        title: "Корм Farmina Vet Life Neutered Female: разбор",
+        excerpt:
+          "Диетический корм Farmina Vet Life Neutered Female для стерилизованных кошек: состав, питательные особенности, задачи диеты, плюсы и ограничения применения.",
+        url: "/blog/korm-farmina-vet-life-neutered-female",
+        cover:
+          "https://static.tildacdn.com/tild3930-3239-4936-a165-366230363835/__2025-11-25__093004.png",
+        coverAlt: "Обложка поста 076",
+      },
+      {
+        id: 77,
+        title: "Обзор серии корма Farmina N&D Prime",
+        excerpt:
+          "Разбор линейки Farmina N&D Prime: беззерновые формулы, высокая доля белка животного происхождения, особенности состава, технологии производства и рекомендации по выбору корма для собак и кошек.",
+        url: "/blog/korma-farmina-n-d-prime",
+        cover:
+          "https://static.tildacdn.com/tild6334-6663-4439-a232-376637616337/minii-prym-.jpg",
+        coverAlt: "Обложка поста 077",
+      },
+      {
+        id: 78,
+        title: "Зачем Farmina добавляет апельсин в корма?",
+        excerpt:
+          "Зачем апельсин входит в состав кормов Farmina: роль антиоксидантов, поддержка иммунитета, особенности линейки N&D Ocean и значение для рациона питомца.",
+        url: "/blog/korm-farmina-apelsin",
+        cover:
+          "https://static.tildacdn.com/tild6531-3833-4666-b666-393264333231/d3d1a3621cc4506770ab.png",
+        coverAlt: "Обложка поста 078",
+      },
+      {
+        id: 79,
+        title: "Как выбрать беззерновой корм Farmina для собак мелких пород?",
+        excerpt:
+          "Разбор беззерновых линий Farmina для мини‑собак: N&D Prime, Pumpkin, Ocean и Quinoa, их особенности, задачи и практические советы по выбору подходящего рациона.",
+        url: "/blog/korm-farmina-dlya-sobak-melkih-porod",
+        cover:
+          "https://static.tildacdn.com/tild6463-6561-4432-a565-663236656336/pexels-bianca-beltra.jpg",
+        coverAlt: "Обложка поста 079",
+      },
+      {
+        id: 80,
+        title: "Отзывы владельцев на корма Farmina Vet Life",
+        excerpt:
+          "Отзывы на линейку диетических кормов Farmina Vet Life для собак и кошек: Gastrointestinal, Hypoallergenic, Diabetic, практические выводы и ожидания владельцев.",
+        url: "/blog/korm-farmina-vet-life-otzyvy",
+        cover:
+          "https://static.tildacdn.com/tild3631-6639-4130-b061-633263643734/65862751a32ada3cf22c.jpg",
+        coverAlt: "Обложка поста 080",
+      },
+      {
+        id: 81,
+        title: "Корм Farmina для кошек: полный разбор линеек и составов",
+        excerpt:
+          "Подробный разбор кормов Farmina для кошек: линейки Natural & Delicious, функциональные рационы с киноа, классические корма и диеты Vet Life, с советами по осознанному выбору рациона.",
+        url: "/blog/korm-farmina-dlya-koshek",
+        cover:
+          "https://static.tildacdn.com/tild6566-6163-4166-a131-376161333066/pexels-david-bartus-.jpg",
+        coverAlt: "Обложка поста 081",
+      },
+      {
+        id: 82,
+        title:
+          "Разбор состава корма Farmina Gastrointestinal для собак и кошек",
+        excerpt:
+          "Детальный обзор состава ветеринарных рационов Farmina Gastrointestinal, их ключевых ингредиентов и функциональных добавок для поддержки чувствительного ЖКТ собак и кошек.",
+        url: "/blog/sostav-korma-farmina-gastrointestinal",
+        cover:
+          "https://static.tildacdn.com/tild3038-3637-4362-a437-353937613862/farmina-vetlife-gast.jpg",
+        coverAlt: "Обложка поста 082",
+      },
+      {
+        id: 83,
+        title: "Обзор влажного корма Farmina Vet Life Hepatic для собак",
+        excerpt:
+          "Подробный разбор состава, назначения и особенностей влажного ветеринарного корма Farmina Vet Life Hepatic для собак с хроническими заболеваниями печени.",
+        url: "/blog/vlazhnyj-korm-farmina-vet-life-hepatic",
+        cover:
+          "https://static.tildacdn.com/tild3966-6438-4337-b030-323637633663/pexels-didsss-164374.jpg",
+        coverAlt: "Обложка поста 083",
+      },
+      {
+        id: 84,
+        title: "Гипоаллергенный корм Farmina с рыбой для собак – обзор",
+        excerpt:
+          "Подробный разбор рыбных гипоаллергенных рационов Farmina для собак, их состава, назначения, преимуществ и правил подбора при чувствительной коже и пищевой непереносимости.",
+        url: "/blog/gipoallergennyj-korm-farmina-s-ryboj-dlya-sobak",
+        cover:
+          "https://static.tildacdn.com/tild3636-3330-4161-a561-383439656431/pexels-david-kanigan.jpg",
+        coverAlt: "Обложка поста 084",
+      },
+      {
+        id: 85,
+        title: "Из чего состоят гранулы корма Farmina – подробный разбор",
+        excerpt:
+          "Статья о том, как устроены гранулы кормов Farmina: животные белки, углеводная основа, фрукты, пребиотики, жиры, витамины и технологии вакуумного покрытия.",
+        url: "/blog/granuly-korma-farmina",
+        cover:
+          "https://static.tildacdn.com/tild6339-6232-4264-a464-373030333537/pexels-fedorgoldberg.jpg",
+        coverAlt: "Обложка поста 085",
+      },
+      {
+        id: 86,
+        title:
+          "Влажный корм Farmina Vet Life Diabetic для собак – подробный обзор диетического рациона",
+        excerpt:
+          "Обзор влажного корма Farmina Vet Life Diabetic для собак с сахарным диабетом: состав, аналитические показатели, особенности формулы и правила применения диеты.",
+        url: "/blog/vlazhnyj-korm-farmina-vet-life-diabetic-dlya-sobak",
+        cover:
+          "https://static.tildacdn.com/tild3961-6331-4865-b637-616337316433/pexels-leah-newhouse.jpg",
+        coverAlt: "Обложка поста 086",
+      },
+      {
+        id: 87,
+        title:
+          "Корм Farmina для кастрированных собак – обзор линейки N&D Quinoa Neutered",
+        excerpt:
+          "Подробный разбор того, что предлагает Farmina для кастрированных собак: состав и особенности линейки N&D Quinoa Neutered, контроль веса и поддержка обмена веществ.",
+        url: "/blog/korm-farmina-dlya-kastrirovannyh-sobak",
+        cover:
+          "https://static.tildacdn.com/tild3033-3234-4430-a664-323339633736/pexels-mart-producti.jpg",
+        coverAlt: "Обложка поста 087",
+      },
+      {
+        id: 88,
+        title: "Какие вкусы предлагает корм Farmina – обзор линеек и сочетаний",
+        excerpt:
+          "Обзор вкусов кормов Farmina для собак и кошек: мясные, рыбные, тыквенные и фруктово‑ягодные сочетания в линейках N&D и Vet Life, их особенности и принципы выбора.",
+        url: "/blog/vkusy-korma-farmina-linejki",
+        cover:
+          "https://static.tildacdn.com/tild3566-6631-4230-b964-373161623236/pexels-samson-katt-5.jpg",
+        coverAlt: "Обложка поста 088",
+      },
+      {
+        id: 89,
+        title: "Корм Farmina для кошек – как выбрать подходящую линейку",
+        excerpt:
+          "Подробный разбор линеек корма Farmina для кошек: N&D, Vet Life, Matisse, варианты для стерилизованных животных, здоровых питомцев и кошек с особыми потребностями.",
+        url: "/blog/korm-farmina-dlya-koshek-linejki",
+        cover:
+          "https://static.tildacdn.com/tild3866-6636-4336-a139-363739363532/pexels-photo4passion.jpg",
+        coverAlt: "Обложка поста 089",
+      },
+      {
+        id: 90,
+        title:
+          "Корм Farmina для пожилых собак и кошек – обзор линеек Senior и Vet Life",
+        excerpt:
+          "Обзор кормов Farmina для пожилых питомцев: линейки N&D Ancestral Grain и Quinoa Senior, особенности формул для собак и кошек и практичные отзывы владельцев.",
+        url: "/blog/korm-farmina-dlya-pozhilyh",
+        cover:
+          "https://static.tildacdn.com/tild6634-6464-4866-a337-353738633562/pexels-majkel-berger.jpg",
+        coverAlt: "Обложка поста 090",
+      },
+      {
+        id: 91,
+        title:
+          "Какой корм Farmina Vet Life Renal выбрать при заболеваниях почек",
+        excerpt:
+          "Обзор диет Farmina Vet Life Renal для собак и кошек с болезнями почек, особенности сухих и влажных рационов и практические отзывы владельцев о применении диеты.",
+        url: "/blog/korm-farmina-vet-life-renal-dlya-pochek",
+        cover:
+          "https://static.tildacdn.com/tild3261-3836-4063-a438-353539613161/pexels-leah-newhouse.jpg",
+        coverAlt: "Обложка поста 091",
+      },
+      {
+        id: 92,
+        title: "Когда выгодно покупать корм Farmina для собак в фасовке 7 кг?",
+        excerpt:
+          "В каких случаях собакам выгодно брать корм Farmina в упаковке 7 кг, какие линейки и рационы доступны в этом формате и что говорят владельцы о своём опыте использования.",
+        url: "/blog/farmina-dlya-sobak-7-kg",
+        cover:
+          "https://static.tildacdn.com/tild6437-3038-4562-b137-333462333433/pexels-diogo-miranda.jpg",
+        coverAlt: "Обложка поста 092",
+      },
+      {
+        id: 93,
+        title: "Корм «Фармина» для собак – что говорят ветеринары",
+        excerpt:
+          "Подробный разбор кормов Farmina для собак, комментарии ветеринаров и реальные отзывы владельцев на рационы N&D Pumpkin, N&D Ocean и N&D Quinoa Digestion.",
+        url: "/blog/korm-farmina-dlya-sobak-otzyvy",
+        cover:
+          "https://static.tildacdn.com/tild3634-3463-4639-a666-626137303335/pexels-joenibraw-265.jpg",
+        coverAlt: "Обложка поста 093",
+      },
+      {
+        id: 94,
+        title: "Какой корм «Фармина» выбрать для здоровья шерсти собаки",
+        excerpt:
+          "Подробный разбор линеек Farmina для поддержки кожи и шерсти: N&D Quinoa Skin & Coat, N&D Ocean и Vet Life Derma с отзывами реальных владельцев.",
+        url: "/blog/korm-farmina-dlya-shersti",
+        cover:
+          "https://static.tildacdn.com/tild3330-3731-4931-a263-393537623631/pexels-ninobur-16109.jpg",
+        coverAlt: "Обложка поста 094",
+      },
+      {
+        id: 95,
+        title: "Как выбрать корм «Фармина» для щенков крупных пород",
+        excerpt:
+          "Обзор линеек Farmina для щенков крупных пород с примерами рационов N&D Ancestral Grain, Pumpkin и Ocean и отзывами владельцев о росте, шерсти и пищеварении.",
+        url: "/blog/farmina-dlya-shchenkov-krupnyh-porod",
+        cover:
+          "https://static.tildacdn.com/tild6163-6663-4561-b763-383933396236/pexels-pixabay-16226.jpg",
+        coverAlt: "Обложка поста 095",
+      },
+      {
+        id: 96,
+        title: "Какой корм лучше для собаки: «Фармина» или «Монж»",
+        excerpt:
+          "Сравнение кормов Farmina и Monge: философия питания, состав, научные исследования, линейки и сервис. Почему рацион Farmina чаще оказывается более продуманным выбором.",
+        url: "/blog/luchshij-korm-dlya-sobaki-farmina",
+        cover:
+          "https://static.tildacdn.com/tild3365-6661-4566-b739-356335363837/_04f5dbb8f5b723b14af.jpg",
+        coverAlt: "Обложка поста 096",
+      },
+      {
+        id: 97,
+        title: "Корм Farmina с индейкой: преимущества для собак и кошек",
+        excerpt:
+          "Подробный разбор кормов Farmina с индейкой, их преимуществ для пищеварения, шерсти и контроля веса, а также практические советы по выбору рациона.",
+        url: "/blog/korm-farmina-s-indejkoj",
+        cover:
+          "https://static.tildacdn.com/tild6135-3434-4165-b636-383361636635/pexels-karola-g-5942.jpg",
+        coverAlt: "Обложка поста 097",
+      },
+      {
+        id: 98,
+        title:
+          "Корм Farmina с картофелем и рыбой: подробный обзор диет Vet Life",
+        excerpt:
+          "Обзор диетических кормов Farmina Vet Life с рыбой и картофелем, их назначения, особенностей формулы и реальных отзывов владельцев собак с аллергиями и дерматитами.",
+        url: "/blog/korm-farmina-kartofel-ryba",
+        cover:
+          "https://static.tildacdn.com/tild3662-6339-4731-a237-323938323037/65862751a32ada3cf22c.jpg",
+        coverAlt: "Обложка поста 098",
+      },
+      {
+        id: 99,
+        title: "Корм Farmina N&D Quinoa для кошек: подробный обзор линеек",
+        excerpt:
+          "Обзор функциональных кормов Farmina N&D Quinoa для кошек: Digestion, Urinary и Skin & Coat с киноа, их особенности, задачи и реальные отзывы владельцев.",
+        url: "/blog/korm-farmina-n-d-quinoa-dlya-koshek",
+        cover:
+          "https://static.tildacdn.com/tild3936-6431-4263-a364-303164623165/10654_7731_05_img-qu.png",
+        coverAlt: "Обложка поста 099",
+      },
+      {
+        id: 100,
+        title: "Какой класс у корма Farmina: разбор линеек N&D и Vet Life",
+        excerpt:
+          "Подробно разбираем, к какому классу относится корм Farmina, чем отличаются линии N&D и Vet Life и как владельцу выбрать подходящий рацион для питомца.",
+        url: "/blog/klass-korma-farmina-n-d-i-vet-life",
+        cover:
+          "https://static.tildacdn.com/tild3234-6430-4262-b838-613233653838/Farmina.png",
+        coverAlt: "Обложка поста 100",
+      },
+      {
+        id: 101,
+        title: "Корм Farmina для кошек с чувствительным пищеварением: обзор",
+        excerpt:
+          "Обзор кормов Farmina для улучшения пищеварения у кошек: функциональная линейка N&D Quinoa Digestion, рационы с тыквой и отзывы владельцев о реальных результатах.",
+        url: "/blog/korm-farmina-dlya-koshek-chuvstvitelnoe-pishchevarenie",
+        cover:
+          "https://static.tildacdn.com/tild3239-6536-4365-b733-623661303965/pexels-pixabay-60635.jpg",
+        coverAlt: "Обложка поста 101",
+      },
+      {
+        id: 102,
+        title: "Как выбрать корм Farmina для собак крупных пород",
+        excerpt:
+          "Разбираемся, какой корм Farmina подойдёт собакам крупных пород: особенности линеек N&D для Medium & Maxi, примеры рационов и советы по подбору и нормам.",
+        url: "/blog/korm-farmina-dlya-sobak-krupnyh-porod",
+        cover:
+          "https://static.tildacdn.com/tild3936-3765-4236-a163-393663306538/pexels-shvetsa-45880.jpg",
+        coverAlt: "Обложка поста 102",
+      },
+      {
+        id: 103,
+        title: "Особенности производства корма «Фармина» для собак и кошек",
+        excerpt:
+          "Подробный разбор технологий производства кормов Farmina, ключевых линеек N&D и Vet Life и примеров рационов с отзывами владельцев питомцев о результате кормления.",
+        url: "/blog/proizvodstvo-korma-farmina",
+        cover:
+          "https://static.tildacdn.com/tild6361-3930-4736-b131-663866393431/hq720.jpg",
+        coverAlt: "Обложка поста 103",
+      },
+      {
+        id: 104,
+        title:
+          "Обзор корма Farmina с курицей и гранатом для стерилизованных кошек",
+        excerpt:
+          "Подробный обзор сухих и влажных кормов Farmina с курицей и гранатом для стерилизованных кошек, различий формул и отзывов владельцев о результатах кормления.",
+        url: "/blog/farmina-s-kuricej-i-granatom-dlya-sterilizovannyh-koshek",
+        cover:
+          "https://static.tildacdn.com/tild3331-6334-4063-b535-653935386664/11033_11_raw-ingredi.jpg",
+        coverAlt: "Обложка поста 104",
+      },
+      {
+        id: 105,
+        title: "Кому подходит корм Farmina с лососем для собак и кошек",
+        excerpt:
+          "Кому подойдёт корм Farmina с лососем, какие есть варианты сухих и влажных рационов N&D Ocean и как выбрать подходящую формулу для питомца.",
+        url: "/blog/korm-farmina-s-lososem",
+        cover:
+          "https://static.tildacdn.com/tild6461-3536-4361-b938-373661653431/__2025-11-28__121624.png",
+        coverAlt: "Обложка поста 105",
+      },
+      {
+        id: 106,
+        title: "Обзор серии корма Farmina Matisse для кошек",
+        excerpt:
+          "Разбор линейки кормов Farmina Matisse: особенности серии, обзор сухих и влажных рационов и примеры выбора корма под возраст и статус кошки.",
+        url: "/blog/korm-farmina-matisse-dlya-koshek",
+        cover:
+          "https://static.tildacdn.com/tild6164-3334-4664-b234-373034316432/1.jpg",
+        coverAlt: "Обложка поста 106",
+      },
+      {
+        id: 107,
+        title: "Обзор муссов Farmina для взрослых кошек",
+        excerpt:
+          "Обзор полнорационных муссов Farmina Matisse для взрослых кошек с разбором состава, особенностей формата и примерами выбора вкуса под характер и привычки питомца.",
+        url: "/blog/mussy-farmina-dlya-koshek",
+        cover:
+          "https://static.tildacdn.com/tild3064-6138-4934-b337-326361653166/pexels-ozrenildo-979.jpg",
+        coverAlt: "Обложка поста 107",
+      },
+      {
+        id: 108,
+        title: "Когда выбирать корм Farmina Vet Life Oxalate для собак?",
+        excerpt:
+          "В каких случаях ветеринар назначает диету Farmina Vet Life Oxalate собакам, чем она отличается от других урологических рационов и какие результаты отмечают владельцы.",
+        url: "/blog/urologicheskij-korm-farmina",
+        cover:
+          "https://static.tildacdn.com/tild6265-3437-4033-b639-633664383130/1.jpg",
+        coverAlt: "Обложка поста 108",
+      },
+      {
+        id: 109,
+        title: "Обзор кормов Farmina с олениной для собак и кошек",
+        excerpt:
+          "Подробный обзор рационов Farmina с олениной в линейках N&D Pumpkin и N&D Quinoa, их особенностей и ситуаций, когда такой корм выбирают для питомца.",
+        url: "/blog/korm-farmina-s-oleninoj",
+        cover:
+          "https://static.tildacdn.com/tild6335-6131-4635-b166-303035353838/1.jpg",
+        coverAlt: "Обложка поста 109",
+      },
+      {
+        id: 110,
+        title: "Как отличить оригинальный корм Farmina от подделки",
+        excerpt:
+          "Как по упаковке, продавцу и поведению питомца проверить подлинность кормов Farmina и убедиться, что в миску попадает оригинальный продукт.",
+        url: "/blog/original-korm-farmina",
+        cover:
+          "https://static.tildacdn.com/tild3239-3930-4366-b437-613933623362/1.jpg",
+        coverAlt: "Обложка поста 110",
+      },
+      {
+        id: 111,
+        title: "Почему Farmina считается качественным кормом для собак и кошек",
+        excerpt:
+          "Разбор философии питания Farmina, состава и технологий бренда на примерах рационов N&D Prime, Ocean и Pumpkin и опыте владельцев питомцев.",
+        url: "/blog/farmina-kachestvennyj-korm",
+        cover:
+          "https://static.tildacdn.com/tild3962-3438-4033-b036-356232363365/image.webp",
+        coverAlt: "Обложка поста 111",
+      },
+      {
+        id: 112,
+        title:
+          "Корм Farmina Vet Life Renal для кошек: обзор и отзывы владельцев",
+        excerpt:
+          "Подробный разбор диеты Farmina Vet Life Renal для кошек с болезнью почек, особенности состава, показания к назначению и реальные отзывы владельцев.",
+        url: "/blog/korm-farmina-vet-life-renal-dlya-koshek",
+        cover:
+          "https://static.tildacdn.com/tild6462-6439-4136-b161-353264363335/1.jpg",
+        coverAlt: "Обложка поста 112",
+      },
+      {
+        id: 113,
+        title: "Когда выбирать корма Farmina со свининой для собак и кошек",
+        excerpt:
+          "В каких ситуациях стоит отдавать предпочтение рационам Farmina со свининой, чем они отличаются по составу и какие результаты отмечают владельцы на примере разных линий кормов.",
+        url: "/blog/korm-farmina-so-svininoj",
+        cover:
+          "https://static.tildacdn.com/tild3737-3664-4166-a231-643465613966/1.jpg",
+        coverAlt: "Обложка поста 113",
+      },
+      {
+        id: 114,
+        title: "Корм «Фармина» с сельдью – преимущества для собак и кошек",
+        excerpt:
+          "Подробный разбор преимуществ корма «Фармина» с сельдью, особенности состава, польза для шерсти, кожи, пищеварения и общего состояния питомца.",
+        url: "/blog/korm-farmina-s-seldyu",
+        cover:
+          "https://static.tildacdn.com/tild3766-6136-4164-a137-353034373039/33Untitled.png",
+        coverAlt: "Обложка поста 114",
+      },
+      {
+        id: 115,
+        title: "Сколько давать собаке корма Фармина – нормы и расчёт порции",
+        excerpt:
+          "Подробное руководство по расчёту суточной нормы корма Фармина для собак с учётом веса, возраста, активности и особенностей разных линеек.",
+        url: "/blog/korma-farmina-norma-kormleniya",
+        cover:
+          "https://static.tildacdn.com/tild3962-6539-4135-a366-633862643063/021.png",
+        coverAlt: "Обложка поста 115",
+      },
+      {
+        id: 116,
+        title: "Корм Farmina Team Breeder для собак – особенности и назначение",
+        excerpt:
+          "Обзор линейки кормов Farmina Team Breeder для собак: для кого она создана, какие формулы включает и чем отличается от обычных рационов бренда.",
+        url: "/blog/korm-farmina-team-breeder-dlya-sobak",
+        cover:
+          "https://static.tildacdn.com/tild3038-3139-4937-b962-363832313433/HAPPY-PET.jpg",
+        coverAlt: "Обложка поста 116",
+      },
+      {
+        id: 117,
+        title: "Корм Фармина с треской – преимущества рациона",
+        excerpt:
+          "Подробный разбор кормов Фармина с треской для собак и кошек, их состав, особенности и польза для кожи, шерсти и пищеварения.",
+        url: "/blog/korm-farmina-s-treskoj",
+        cover:
+          "https://static.tildacdn.com/tild3266-3036-4263-a662-383865613438/Farmina-N_D-Okean-Lo.jpg",
+        coverAlt: "Обложка поста 117",
+      },
+      {
+        id: 118,
+        title: "Корм Фармина Тропикал – особенности и преимущества линейки",
+        excerpt:
+          "Подробный разбор кормов Farmina Tropical для собак, их состав, роль тропических фруктов и польза для иммунитета и пищеварения.",
+        url: "/blog/korm-farmina-tropikal",
+        cover:
+          "https://static.tildacdn.com/tild6339-6365-4166-b635-356562306631/Full-Product-Lineup.jpg",
+        coverAlt: "Обложка поста 118",
+      },
+      {
+        id: 119,
+        title: "Зачем в корм Фармина добавляют тропические фрукты",
+        excerpt:
+          "Разбор, почему Farmina использует тропические фрукты в линейке N&D Tropical Selection, как они влияют на иммунитет, пищеварение и общее здоровье кошек и собак.",
+        url: "/blog/korm-farmina-tropicheskie-frukty",
+        cover:
+          "https://static.tildacdn.com/tild3032-3538-4661-b531-333834326564/pexels-karola-g-5942.jpg",
+        coverAlt: "Обложка поста 119",
+      },
+      {
+        id: 120,
+        title: "Корм Фармина для кошек с тыквой – подробный обзор линейки",
+        excerpt:
+          "Обзор линейки кормов Farmina N&D Pumpkin для кошек: состав с тыквой, основные разновидности рационов, польза для пищеварения, иммунитета и контроля веса.",
+        url: "/blog/korm-farmina-dlya-koshek-s-tykvoj",
+        cover:
+          "https://static.tildacdn.com/tild3461-6530-4661-a363-373462363435/photo.jpg",
+        coverAlt: "Обложка поста 120",
+      },
+      {
+        id: 121,
+        title: "Обзор корма Farmina Vet Life Struvite для собак и кошек",
+        excerpt:
+          "Подробный разбор диеты Farmina Vet Life Struvite: назначение при струвитных камнях, различия со Struvite Management, особенности состава и важные правила применения под контролем ветеринарного врача.",
+        url: "/blog/korm-farmina-vet-life-struvite",
+        cover:
+          "https://static.tildacdn.com/tild6338-3930-4338-a636-663438643533/pexels-diana-d-reino.jpg",
+        coverAlt: "Обложка поста 121",
+      },
+      {
+        id: 122,
+        title: "Почему Фармина считается хорошим кормом для кошек?",
+        excerpt:
+          "Обзор кормов Farmina для кошек: философия бренда, линейки N&D и Vet Life, технологии производства и возможности подбора рациона под возраст, здоровье и образ жизни питомца.",
+        url: "/blog/farmina-horoshij-korm-dlya-koshek",
+        cover:
+          "https://static.tildacdn.com/tild6630-6564-4737-b237-346636366430/pexels-pixabay-16100.jpg",
+        coverAlt: "Обложка поста 122",
+      },
+      {
+        id: 123,
+        title: "Разбор линейки корма Cibau от Farmina для собак",
+        excerpt:
+          "Подробный обзор корма Cibau от Farmina: состав, назначение, виды формул для щенков и взрослых собак, особенности белков, жиров и углеводов в повседневном рационе.",
+        url: "/blog/linejka-korma-cibau-farmina-dlya-sobak",
+        cover:
+          "https://static.tildacdn.com/tild3666-6637-4465-a464-333031333738/pexels-pixabay-35609.jpg",
+        coverAlt: "Обложка поста 123",
+      },
+      {
+        id: 124,
+        title: "Обзор корма Фармина с ягненком для щенков",
+        excerpt:
+          "Развернутый обзор кормов Farmina с ягнёнком для щенков: беззерновые и низкозерновые линейки, особенности состава для малых и крупных пород, роль ягнёнка, жиров и добавок в здоровом росте щенка.",
+        url: "/blog/korma-farmina-s-yagnenkom-dlya-shchenkov",
+        cover:
+          "https://static.tildacdn.com/tild3662-6332-4239-b731-343031613639/pexels-jhelmuth-1253.jpg",
+        coverAlt: "Обложка поста 124",
+      },
+      {
+        id: 125,
+        title: "Правильное питание для щенка французского бульдога",
+        excerpt:
+          "Подробный разбор питания щенка французского бульдога: базовые принципы рациона, режим кормления, выбор сухого и влажного корма и обзор возможностей кормов Farmina для этой породы.",
+        url: "/blog/pitanie-shchenka-francuzskogo-buldoga",
+        cover:
+          "https://static.tildacdn.com/tild3730-3662-4937-b737-313566376330/3_32.jpg",
+        coverAlt: "Обложка поста 125",
+      },
+      {
+        id: 126,
+        title: "Что можно добавлять в сухой корм собаке?",
+        excerpt:
+          "Подробный разбор допустимых добавок к сухому корму: мясо, овощи, масла, бульоны, витамины, а также объяснение, почему полнорационные корма часто не требуют никаких добавок.",
+        url: "/blog/chto-dobavlyat-v-suhoj-korm-sobake",
+        cover:
+          "https://static.tildacdn.com/tild3433-6463-4431-b232-613065333063/pexels-damir-mijailo.jpg",
+        coverAlt: "Обложка поста 126",
+      },
+      {
+        id: 127,
+        title: "Правильное питание для щенка шпица?",
+        excerpt:
+          "Подробный разбор питания щенка шпица: режим кормления, выбор формата рациона, особенности миниатюрной породы и готовые решения на кормах Farmina для гармоничного роста.",
+        url: "/blog/pitanie-shchenka-shpica",
+        cover:
+          "https://static.tildacdn.com/tild6538-3461-4230-a265-616634393732/3055.jpg",
+        coverAlt: "Обложка поста 127",
+      },
+      {
+        id: 128,
+        title: "Когда щенку нужно трехразовое питание?",
+        excerpt:
+          "Подробное объяснение, в каком возрасте и при каких условиях щенка переводят на трёхразовое питание, с учётом породы, темпа роста и роли полнорационных кормов Farmina в рационе щенков.",
+        url: "/blog/trekhrazovoe-pitanie-shchenka",
+        cover:
+          "https://static.tildacdn.com/tild6537-3532-4436-a232-363939323939/pexels-brett-sayles-.jpg",
+        coverAlt: "Обложка поста 128",
+      },
+    ];
+
+    var root = document.querySelector("[data-fa-blog]");
+    if (!root) return;
+
+    var searchNode = root.querySelector('[data-role="search"]');
+    var statsNode = root.querySelector('[data-role="stats"]');
+    var gridNode = root.querySelector('[data-role="grid"]');
+    var emptyNode = root.querySelector('[data-role="empty"]');
+    var paginationNode = root.querySelector('[data-role="pagination"]');
+
+    var currentPage = 1;
+    var searchValue = "";
+
+    var posts = BLOG_POSTS.slice().sort(function (a, b) {
+      return Number(b.id) - Number(a.id);
+    });
+    var filteredPosts = [];
+
+    function escapeHtml(value) {
+      return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/\"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function readStateFromUrl() {
+      var params = new URLSearchParams(window.location.search);
+      var query = String(params.get("q") || "").trim();
+      var page = Number(params.get("page"));
+
+      if (!Number.isInteger(page) || page < 1) page = 1;
+
+      return { query: query, page: page };
+    }
+
+    function normalizePost(post, index) {
+      var id = Number(post.id) || index + 1;
+      var padded = String(id).padStart(3, "0");
+
+      return {
+        title: post.title || "Заголовок поста " + padded,
+        excerpt: post.excerpt || "Краткое описание статьи.",
+        url: post.url || "#post-" + padded,
+        cover: post.cover || "",
+        coverAlt: post.coverAlt || "Обложка поста " + padded,
+      };
+    }
+
+    posts = posts.map(normalizePost);
+    filteredPosts = posts.slice();
+
+    function getTotalPages(totalItems) {
+      return Math.max(1, Math.ceil(totalItems / POSTS_PER_PAGE));
+    }
+
+    function applySearchFilter() {
+      if (!searchValue) {
+        filteredPosts = posts.slice();
+        return;
+      }
+
+      var needle = searchValue.toLowerCase();
+      filteredPosts = posts.filter(function (post) {
+        var haystack = (post.title + " " + post.excerpt).toLowerCase();
+        return haystack.indexOf(needle) !== -1;
+      });
+    }
+
+    function updateUrlState() {
+      var url = new URL(window.location.href);
+
+      if (searchValue) url.searchParams.set("q", searchValue);
+      else url.searchParams.delete("q");
+
+      if (currentPage > 1) url.searchParams.set("page", String(currentPage));
+      else url.searchParams.delete("page");
+
+      var next =
+        url.pathname +
+        (url.searchParams.toString() ? "?" + url.searchParams.toString() : "") +
+        url.hash;
+      var current =
+        window.location.pathname +
+        window.location.search +
+        window.location.hash;
+
+      if (next !== current) {
+        window.history.replaceState(null, "", next);
+      }
+    }
+
+    function getPageTokens(totalPages, page) {
+      if (totalPages <= 7) {
+        return Array.from({ length: totalPages }, function (_, i) {
+          return i + 1;
+        });
+      }
+
+      var tokens = [1];
+      var start = Math.max(2, page - 1);
+      var end = Math.min(totalPages - 1, page + 1);
+
+      if (start > 2) tokens.push("...");
+      for (var p = start; p <= end; p += 1) tokens.push(p);
+      if (end < totalPages - 1) tokens.push("...");
+
+      tokens.push(totalPages);
+      return tokens;
+    }
+
+    function renderCards(items) {
+      gridNode.innerHTML = items
+        .map(function (post, index) {
+          var delay = Math.min(index, 11) * 65;
+          var media = post.cover
+            ? '<img class="fa-blog-widget__cover" src="' +
+              escapeHtml(post.cover) +
+              '" alt="' +
+              escapeHtml(post.coverAlt) +
+              '" loading="lazy" decoding="async" data-cover>'
+            : '<div class="fa-blog-widget__cover fa-blog-widget__cover--placeholder">Изображение статьи</div>';
+
+          return (
+            '<article class="fa-blog-widget__card" style="--fa-card-delay: ' +
+            delay +
+            'ms">' +
+            '<a class="fa-blog-widget__card-link" href="' +
+            escapeHtml(post.url) +
+            '">' +
+            media +
+            '<div class="fa-blog-widget__body">' +
+            '<h2 class="fa-blog-widget__post-title">' +
+            escapeHtml(post.title) +
+            "</h2>" +
+            '<p class="fa-blog-widget__excerpt">' +
+            escapeHtml(post.excerpt) +
+            "</p>" +
+            "</div>" +
+            "</a>" +
+            "</article>"
+          );
+        })
+        .join("");
+
+      gridNode.querySelectorAll("img[data-cover]").forEach(function (imgNode) {
+        imgNode.addEventListener(
+          "error",
+          function () {
+            var placeholder = document.createElement("div");
+            placeholder.className =
+              "fa-blog-widget__cover fa-blog-widget__cover--placeholder";
+            placeholder.textContent = "Изображение недоступно";
+            imgNode.replaceWith(placeholder);
+          },
+          { once: true },
+        );
+      });
+    }
+
+    function renderPagination(totalPages) {
+      var tokens = getPageTokens(totalPages, currentPage);
+      var html = [];
+
+      html.push(
+        '<button class="fa-blog-widget__page-btn" type="button" data-page="' +
+          (currentPage - 1) +
+          '"' +
+          (currentPage === 1 ? " disabled" : "") +
+          ">Назад</button>",
+      );
+
+      tokens.forEach(function (token) {
+        if (token === "...") {
+          html.push('<span class="fa-blog-widget__ellipsis">...</span>');
+          return;
+        }
+
+        html.push(
+          '<button class="fa-blog-widget__page-btn' +
+            (token === currentPage ? " is-active" : "") +
+            '" type="button" data-page="' +
+            token +
+            '">' +
+            token +
+            "</button>",
+        );
+      });
+
+      html.push(
+        '<button class="fa-blog-widget__page-btn" type="button" data-page="' +
+          (currentPage + 1) +
+          '"' +
+          (currentPage === totalPages ? " disabled" : "") +
+          ">Вперед</button>",
+      );
+
+      paginationNode.innerHTML = html.join("");
+    }
+
+    function render(options) {
+      var config = options || {};
+      var total = filteredPosts.length;
+      var totalPages = getTotalPages(total);
+      if (currentPage > totalPages) currentPage = totalPages;
+
+      var start = (currentPage - 1) * POSTS_PER_PAGE;
+      var pageItems = filteredPosts.slice(start, start + POSTS_PER_PAGE);
+
+      statsNode.textContent =
+        "Найдено: " +
+        total +
+        " · Страница " +
+        currentPage +
+        " из " +
+        totalPages;
+
+      emptyNode.hidden = total !== 0;
+      gridNode.hidden = total === 0;
+
+      if (total === 0) {
+        paginationNode.innerHTML = "";
+        if (config.syncUrl !== false) updateUrlState();
+        return;
+      }
+
+      renderCards(pageItems);
+      renderPagination(totalPages);
+      if (config.syncUrl !== false) updateUrlState();
+    }
+
+    searchNode.addEventListener("input", function (event) {
+      searchValue = String(event.target.value || "").trim();
+      currentPage = 1;
+      applySearchFilter();
+      render();
+    });
+
+    paginationNode.addEventListener("click", function (event) {
+      var button = event.target.closest("[data-page]");
+      if (!button || button.hasAttribute("disabled")) return;
+
+      var nextPage = Number(button.getAttribute("data-page"));
+      if (!Number.isInteger(nextPage)) return;
+
+      var totalPages = getTotalPages(filteredPosts.length);
+      if (nextPage < 1 || nextPage > totalPages) return;
+
+      currentPage = nextPage;
+      render();
+
+      var offsetTop = root.getBoundingClientRect().top + window.scrollY - 24;
+      window.scrollTo({ top: Math.max(0, offsetTop), behavior: "smooth" });
+    });
+
+    var state = readStateFromUrl();
+    searchValue = state.query;
+    currentPage = state.page;
+    searchNode.value = searchValue;
+    applySearchFilter();
+    render({ syncUrl: false });
+  })();
+</script>

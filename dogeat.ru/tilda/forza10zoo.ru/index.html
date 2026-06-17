@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forza10</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body style="margin: 0;">
+    <div class="FZ">
+      <header class="FZ-header" id="top">
+        <div class="FZ-header__container">
+          <a class="FZ-header__logo" href="#top">
+            <img
+              class="FZ-header__logo-img"
+              src="img/header/logo-1x.avif"
+              srcset="img/header/logo-1x.avif 1x, img/header/logo-2x.avif 2x"
+              alt="Forza10"
+              width="177"
+              height="35"
+              loading="eager"
+              decoding="async"
+            />
+          </a>
+          <div class="FZ-header__actions">
+            <nav class="FZ-header__nav">
+              <a class="FZ-header__link" href="#lines">Линейки</a>
+              <a class="FZ-header__link" href="#contacts">Контакты</a>
+            </nav>
+            <a class="FZ-header__cta" href="#">
+              <span class="FZ-header__cta-text FZ-header__cta-text--mobile">Купить</span>
+              <span class="FZ-header__cta-text FZ-header__cta-text--desktop">Купить в магазине</span>
+            </a>
+          </div>
+        </div>
+      </header>
+        <section class="FZ-hero">
+          <div class="FZ-hero__container">
+            <div class="FZ-hero__wrapper">
+              <picture class="FZ-hero__wave">
+                <source
+                  media="(max-width: 375px)"
+                  srcset="img/hero/wave-mob-1x.avif 1x, img/hero/wave-mob-2x.avif 2x"
+                />
+                <source srcset="img/hero/wave-1x.avif 1x, img/hero/wave-2x.avif 2x" />
+                <img
+                  class="FZ-hero__wave-image"
+                  src="img/hero/wave-1x.avif"
+                  alt=""
+                  width="1113"
+                  height="410"
+                  loading="eager"
+                  decoding="async"
+                />
+              </picture>
+              <div class="FZ-hero__text">
+                <h1 class="FZ-hero__title">
+                  Здоровое питание
+                  <br />
+                  для счастливых
+                  <br />
+                  собак и кошек
+                </h1>
+                <p class="FZ-hero__description">
+                  Итальянские корма, созданные ветеринарами для защиты здоровья собак и кошек
+                </p>
+                <div class="FZ-hero__actions">
+                  <a class="FZ-hero__button FZ-hero__button--primary" href="#lines">Смотреть линейки</a>
+                  <a class="FZ-hero__button FZ-hero__button--ghost" href="#">Купить в магазине</a>
+                </div>
+              </div>
+              <picture class="FZ-hero__pet">
+                <source
+                  media="(max-width: 1008px)"
+                  srcset="img/hero/animals-mob-1x.avif 1x, img/hero/animals-mob-2x.avif 2x"
+                />
+                <source srcset="img/hero/animals-1x.avif 1x, img/hero/animals-2x.avif 2x" />
+                <img
+                  class="FZ-hero__pet-image"
+                  src="img/hero/animals-1x.avif"
+                  alt="Собака и кошка"
+                  loading="eager"
+                  decoding="async"
+                  width="538"
+                  height="487"
+                />
+              </picture>
+              <div class="FZ-hero__badge">
+                <img
+                  class="FZ-hero__badge-icon"
+                  src="img/hero/gmo-1x.avif"
+                  srcset="img/hero/gmo-1x.avif 1x, img/hero/gmo-2x.avif 2x"
+                  alt=""
+                  loading="eager"
+                  decoding="async"
+                  width="53"
+                  height="53"
+                />
+                <div class="FZ-hero__badge-text">
+                  <p class="FZ-hero__badge-title">Без ГМО, без химии</p>
+                  <p class="FZ-hero__badge-description">
+                    только чистые, натуральные ингредиенты и функциональные формулы, доказавшие эффективность
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="FZ-benefits" aria-labelledby="fz-benefits-title">
+          <div class="FZ-benefits__container">
+            <h2 class="FZ-benefits__title" id="fz-benefits-title">Почему выбирают FORZA10</h2>
+            <div class="FZ-benefits__list">
+              <article class="FZ-benefits__item">
+                <img
+                  class="FZ-benefits__icon"
+                  src="img/benefits/dog-1x.avif"
+                  srcset="img/benefits/dog-1x.avif 1x, img/benefits/dog-2x.avif 2x"
+                  alt=""
+                  width="72"
+                  height="72"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="FZ-benefits__content">
+                  <h3 class="FZ-benefits__item-title">Поддержка пищеварения, кожи, иммунитета</h3>
+                  <p class="FZ-benefits__item-description">Помогает питомцу чувствовать себя лучше каждый день</p>
+                </div>
+              </article>
+              <article class="FZ-benefits__item">
+                <img
+                  class="FZ-benefits__icon"
+                  src="img/benefits/fish-1x.avif"
+                  srcset="img/benefits/fish-1x.avif 1x, img/benefits/fish-2x.avif 2x"
+                  alt=""
+                  width="72"
+                  height="72"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="FZ-benefits__content">
+                  <h3 class="FZ-benefits__item-title">Натуральные компоненты и дикая рыба из чистейших вод</h3>
+                  <p class="FZ-benefits__item-description">
+                    Только чистые ингредиенты
+                    <br />
+                    без ГМО и химии
+                  </p>
+                </div>
+              </article>
+              <article class="FZ-benefits__item">
+                <img
+                  class="FZ-benefits__icon"
+                  src="img/benefits/flask-1x.avif"
+                  srcset="img/benefits/flask-1x.avif 1x, img/benefits/flask-2x.avif 2x"
+                  alt=""
+                  width="72"
+                  height="72"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="FZ-benefits__content">
+                  <h3 class="FZ-benefits__item-title">Разработано по результатам более 30 научных исследований</h3>
+                  <p class="FZ-benefits__item-description">
+                    Эффективность доказана
+                    <br />
+                    ветеринарами и наукой
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="FZ-lines" id="lines" aria-labelledby="fz-lines-title">
+          <div class="FZ-lines__container">
+            <div class="FZ-lines__panel">
+              <div class="FZ-lines__header">
+                <h2 class="FZ-lines__title" id="fz-lines-title">Линейки кормов</h2>
+                <div class="FZ-lines__tabs" aria-label="Переключение линеек кормов" data-lines-tabs>
+                  <button class="FZ-lines__tab FZ-lines__tab--active" type="button" aria-pressed="true" data-lines-target="dogs">
+                    Для собак
+                  </button>
+                  <button class="FZ-lines__tab" type="button" aria-pressed="false" data-lines-target="cats">
+                    Для кошек
+                  </button>
+                </div>
+              </div>
+              <div class="FZ-lines__cards" data-lines-panel="dogs">
+                <article class="FZ-lines__card FZ-lines__card--active-line">
+                  <div class="FZ-lines__card-content">
+                    <div class="FZ-lines__card-text">
+                      <p class="FZ-lines__card-label">Для собак</p>
+                      <h3 class="FZ-lines__card-title">Active Line</h3>
+                      <p class="FZ-lines__card-description">
+                        Линейка для собак, которым нужна дополнительная поддержка организма при чувствительности,
+                        склонности к дискомфорту и разных особенностях здоровья. Это вариант для тех случаев, когда
+                        хочется подобрать более деликатное питание с акцентом на ежедневную заботу о самочувствии
+                        собаки.
+                      </p>
+                      <button class="FZ-lines__card-more" type="button" aria-expanded="false">Подробнее</button>
+                    </div>
+                    <ul class="FZ-lines__card-tags">
+                      <li class="FZ-lines__card-tag">Поддержка организма</li>
+                      <li class="FZ-lines__card-tag">Для чувствительных собак</li>
+                      <li class="FZ-lines__card-tag">Деликатный рацион</li>
+                      <li class="FZ-lines__card-tag">На каждый день</li>
+                    </ul>
+                    <a class="FZ-lines__card-button" href="#">Купить корм</a>
+                  </div>
+                  <div class="FZ-lines__card-visual" aria-hidden="true">
+                    <img
+                      class="FZ-lines__card-image"
+                      src="img/lines/dog/active-line-1x.avif"
+                      srcset="img/lines/dog/active-line-1x.avif 1x, img/lines/dog/active-line-2x.avif 2x"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      width="429"
+                      height="264"
+                    />
+                  </div>
+                </article>
+                <article class="FZ-lines__card FZ-lines__card--active-wet">
+                  <div class="FZ-lines__card-content">
+                    <div class="FZ-lines__card-text">
+                      <p class="FZ-lines__card-label">Для собак</p>
+                      <h3 class="FZ-lines__card-title">Active Vet Diet</h3>
+                      <p class="FZ-lines__card-description">
+                        Специальный диетический корм для собак, когда нужен более точный и продуманный рацион
+                        с учетом состояния здоровья. Такая линейка подходит в ситуациях, где обычного повседневного
+                        корма уже может быть недостаточно и требуется более направленное питание.
+                      </p>
+                      <button class="FZ-lines__card-more" type="button" aria-expanded="false">Подробнее</button>
+                    </div>
+                    <ul class="FZ-lines__card-tags">
+                      <li class="FZ-lines__card-tag">Диетический подход</li>
+                      <li class="FZ-lines__card-tag">Точный выбор рациона</li>
+                      <li class="FZ-lines__card-tag">При особых состояниях</li>
+                      <li class="FZ-lines__card-tag">Направленное питание</li>
+                    </ul>
+                    <a class="FZ-lines__card-button" href="#">Купить корм</a>
+                  </div>
+                  <div class="FZ-lines__card-visual" aria-hidden="true">
+                    <img
+                      class="FZ-lines__card-image"
+                      src="img/lines/dog/active-vet-diet-1x.avif"
+                      srcset="img/lines/dog/active-vet-diet-1x.avif 1x, img/lines/dog/active-vet-diet-2x.avif 2x"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      width="366"
+                      height="262"
+                    />
+                  </div>
+                </article>
+                <article class="FZ-lines__card FZ-lines__card--maintenance">
+                  <div class="FZ-lines__card-content">
+                    <div class="FZ-lines__card-text">
+                      <p class="FZ-lines__card-label">Для собак</p>
+                      <h3 class="FZ-lines__card-title">Maintenance</h3>
+                      <p class="FZ-lines__card-description">
+                        Корм на каждый день для здоровых собак - сбалансированный, понятный и удобный для
+                        постоянного питания. Это хороший базовый вариант для владельцев, которым нужен спокойный
+                        повседневный рацион без лишней сложности, но с заботой о качестве питания собаки.
+                      </p>
+                      <button class="FZ-lines__card-more" type="button" aria-expanded="false">Подробнее</button>
+                    </div>
+                    <ul class="FZ-lines__card-tags">
+                      <li class="FZ-lines__card-tag">Рацион на каждый день</li>
+                      <li class="FZ-lines__card-tag">Для здоровых собак</li>
+                      <li class="FZ-lines__card-tag">Сбалансированный состав</li>
+                      <li class="FZ-lines__card-tag">Базовое питание</li>
+                    </ul>
+                    <a class="FZ-lines__card-button" href="#">Купить корм</a>
+                  </div>
+                  <div class="FZ-lines__card-visual" aria-hidden="true">
+                    <img
+                      class="FZ-lines__card-image"
+                      src="img/lines/dog/maintenance-1x.avif"
+                      srcset="img/lines/dog/maintenance-1x.avif 1x, img/lines/dog/maintenance-2x.avif 2x"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      width="370"
+                      height="262"
+                    />
+                  </div>
+                </article>
+                <article class="FZ-lines__card FZ-lines__card--diet">
+                  <div class="FZ-lines__card-content">
+                    <div class="FZ-lines__card-text">
+                      <p class="FZ-lines__card-label">Для собак</p>
+                      <h3 class="FZ-lines__card-title">MonoDiet</h3>
+                      <p class="FZ-lines__card-description">
+                        Линейка с одним источником белка для собак, которым сложно подобрать подходящий корм
+                        из-за чувствительности или реакции на питание. Такой формат помогает сделать рацион
+                        более понятным и аккуратным, когда хочется сократить количество возможных пищевых
+                        раздражителей.
+                      </p>
+                      <button class="FZ-lines__card-more" type="button" aria-expanded="false">Подробнее</button>
+                    </div>
+                    <ul class="FZ-lines__card-tags">
+                      <li class="FZ-lines__card-tag">Один источник белка</li>
+                      <li class="FZ-lines__card-tag">Проще подбор корма</li>
+                      <li class="FZ-lines__card-tag">При чувствительном ЖКТ</li>
+                      <li class="FZ-lines__card-tag">Более понятный состав</li>
+                    </ul>
+                    <a class="FZ-lines__card-button" href="#">Купить корм</a>
+                  </div>
+                  <div class="FZ-lines__card-visual" aria-hidden="true">
+                    <img
+                      class="FZ-lines__card-image"
+                      src="img/lines/dog/monodiet-1x.avif"
+                      srcset="img/lines/dog/monodiet-1x.avif 1x, img/lines/dog/monodiet-2x.avif 2x"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      width="387"
+                      height="271"
+                    />
+                  </div>
+                </article>
+                <article class="FZ-lines__card FZ-lines__card--breeders">
+                  <div class="FZ-lines__card-content">
+                    <div class="FZ-lines__card-text">
+                      <p class="FZ-lines__card-label">Для собак</p>
+                      <h3 class="FZ-lines__card-title">Best Breeders</h3>
+                      <p class="FZ-lines__card-description">
+                        Профессиональный корм для ежедневного рациона собак с акцентом на стабильность и качество
+                        питания. Эта линейка подойдет тем, кто ищет более серьезный и продуманный подход к
+                        кормлению - как для заводчиков, так и для владельцев с высокими требованиями к рациону.
+                      </p>
+                      <button class="FZ-lines__card-more" type="button" aria-expanded="false">Подробнее</button>
+                    </div>
+                    <ul class="FZ-lines__card-tags">
+                      <li class="FZ-lines__card-tag">Профессиональный рацион</li>
+                      <li class="FZ-lines__card-tag">Стабильное питание</li>
+                      <li class="FZ-lines__card-tag">Для требовательных</li>
+                      <li class="FZ-lines__card-tag">Продуманный подход</li>
+                    </ul>
+                    <a class="FZ-lines__card-button" href="#">Купить корм</a>
+                  </div>
+                  <div class="FZ-lines__card-visual" aria-hidden="true">
+                    <img
+                      class="FZ-lines__card-image"
+                      src="img/lines/dog/best-breeders-1x.avif"
+                      srcset="img/lines/dog/best-breeders-1x.avif 1x, img/lines/dog/best-breeders-2x.avif 2x"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      width="327"
+                      height="274"
+                    />
+                  </div>
+                </article>
+              </div>
+              <div class="FZ-lines__cards" data-lines-panel="cats" aria-hidden="true" hidden>
+                <article class="FZ-lines__card FZ-lines__card--active-line">
+                  <div class="FZ-lines__card-content">
+                    <div class="FZ-lines__card-text">
+                      <p class="FZ-lines__card-label">Для кошек</p>
+                      <h3 class="FZ-lines__card-title">Active Line</h3>
+                      <p class="FZ-lines__card-description">
+                        Линейка для кошек, которым нужна дополнительная поддержка организма при чувствительности,
+                        склонности к дискомфорту и разных особенностях здоровья. Это более деликатный вариант питания
+                        для ситуаций, когда хочется подобрать рацион с акцентом на ежедневную заботу о самочувствии
+                        и более внимательный подход к кормлению.
+                      </p>
+                      <button class="FZ-lines__card-more" type="button" aria-expanded="false">Подробнее</button>
+                    </div>
+                    <ul class="FZ-lines__card-tags">
+                      <li class="FZ-lines__card-tag">Поддержка организма</li>
+                      <li class="FZ-lines__card-tag">Для чувствительных</li>
+                      <li class="FZ-lines__card-tag">Деликатный рацион</li>
+                      <li class="FZ-lines__card-tag">Повседневная забота</li>
+                    </ul>
+                    <a class="FZ-lines__card-button" href="#">Купить корм</a>
+                  </div>
+                  <div class="FZ-lines__card-visual" aria-hidden="true">
+                    <img
+                      class="FZ-lines__card-image"
+                      src="img/lines/cat/active-line-1x.avif"
+                      srcset="img/lines/cat/active-line-1x.avif 1x, img/lines/cat/active-line-2x.avif 2x"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      width="408"
+                      height="334"
+                    />
+                  </div>
+                </article>
+                <article class="FZ-lines__card FZ-lines__card--active-wet">
+                  <div class="FZ-lines__card-content">
+                    <div class="FZ-lines__card-text">
+                      <p class="FZ-lines__card-label">Для кошек</p>
+                      <h3 class="FZ-lines__card-title">Active Vet Diet</h3>
+                      <p class="FZ-lines__card-description">
+                        Специальный диетический корм для кошек, когда нужен более точный и продуманный рацион под
+                        состояние здоровья. На официальном сайте FORZA10 эта линейка описана как питание для животных
+                        с определенными заболеваниями, пищевой чувствительностью и непереносимостью, то есть это уже
+                        более направленный вариант, чем обычный повседневный корм.
+                      </p>
+                      <button class="FZ-lines__card-more" type="button" aria-expanded="false">Подробнее</button>
+                    </div>
+                    <ul class="FZ-lines__card-tags">
+                      <li class="FZ-lines__card-tag">Диетический подход</li>
+                      <li class="FZ-lines__card-tag">При особых состояниях</li>
+                      <li class="FZ-lines__card-tag">Точный выбор корма</li>
+                      <li class="FZ-lines__card-tag">Направленное питание</li>
+                    </ul>
+                    <a class="FZ-lines__card-button" href="#">Купить корм</a>
+                  </div>
+                  <div class="FZ-lines__card-visual" aria-hidden="true">
+                    <img
+                      class="FZ-lines__card-image"
+                      src="img/lines/cat/active-vet-diet-1x.avif"
+                      srcset="img/lines/cat/active-vet-diet-1x.avif 1x, img/lines/cat/active-vet-diet-2x.avif 2x"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      width="422"
+                      height="218"
+                    />
+                  </div>
+                </article>
+                <article class="FZ-lines__card FZ-lines__card--maintenance">
+                  <div class="FZ-lines__card-content">
+                    <div class="FZ-lines__card-text">
+                      <p class="FZ-lines__card-label">Для кошек</p>
+                      <h3 class="FZ-lines__card-title">Maintenance</h3>
+                      <p class="FZ-lines__card-description">
+                        Корм на каждый день для здоровых кошек - сбалансированный, понятный и удобный для постоянного
+                        питания. FORZA10 прямо описывает эту линейку как рацион для поддержания общего благополучия
+                        кошек без особых проблем со здоровьем и без выраженной пищевой непереносимости, то есть это
+                        спокойная базовая линия на каждый день.
+                      </p>
+                      <button class="FZ-lines__card-more" type="button" aria-expanded="false">Подробнее</button>
+                    </div>
+                    <ul class="FZ-lines__card-tags">
+                      <li class="FZ-lines__card-tag">Рацион на каждый день</li>
+                      <li class="FZ-lines__card-tag">Для здоровых кошек</li>
+                      <li class="FZ-lines__card-tag">Базовое питание</li>
+                      <li class="FZ-lines__card-tag">Сбалансированный корм</li>
+                    </ul>
+                    <a class="FZ-lines__card-button" href="#">Купить корм</a>
+                  </div>
+                  <div class="FZ-lines__card-visual" aria-hidden="true">
+                    <img
+                      class="FZ-lines__card-image"
+                      src="img/lines/cat/maintenance-1x.avif"
+                      srcset="img/lines/cat/maintenance-1x.avif 1x, img/lines/cat/maintenance-2x.avif 2x"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      width="199"
+                      height="366"
+                    />
+                  </div>
+                </article>
+                <article class="FZ-lines__card FZ-lines__card--diet">
+                  <div class="FZ-lines__card-content">
+                    <div class="FZ-lines__card-text">
+                      <p class="FZ-lines__card-label">Для кошек</p>
+                      <h3 class="FZ-lines__card-title">Mono</h3>
+                      <p class="FZ-lines__card-description">
+                        Линейка с одним источником животного белка для кошек, которым сложно подобрать подходящий
+                        корм из-за чувствительности к питанию. На сайте FORZA10 эта серия прямо описана как линия
+                        для контроля пищевой чувствительности и сохранения общего благополучия кошек, поэтому она
+                        хорошо подходит, когда нужен более понятный и аккуратный рацион.
+                      </p>
+                      <button class="FZ-lines__card-more" type="button" aria-expanded="false">Подробнее</button>
+                    </div>
+                    <ul class="FZ-lines__card-tags">
+                      <li class="FZ-lines__card-tag">Один источник белка</li>
+                      <li class="FZ-lines__card-tag">Проще подбор корма</li>
+                      <li class="FZ-lines__card-tag">При чувствительности</li>
+                      <li class="FZ-lines__card-tag">Более понятный состав</li>
+                    </ul>
+                    <a class="FZ-lines__card-button" href="#">Купить корм</a>
+                  </div>
+                  <div class="FZ-lines__card-visual" aria-hidden="true">
+                    <img
+                      class="FZ-lines__card-image"
+                      src="img/lines/cat/monodiet-1x.avif"
+                      srcset="img/lines/cat/monodiet-1x.avif 1x, img/lines/cat/monodiet-2x.avif 2x"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      width="178"
+                      height="318"
+                    />
+                  </div>
+                </article>
+                <article class="FZ-lines__card FZ-lines__card--breeders">
+                  <div class="FZ-lines__card-content">
+                    <div class="FZ-lines__card-text">
+                      <p class="FZ-lines__card-label">Для кошек</p>
+                      <h3 class="FZ-lines__card-title">Mr Fruit</h3>
+                      <p class="FZ-lines__card-description">
+                        Линейка для кошек, в которой корм сочетает ежедневное питание и добавленную фруктовую
+                        составляющую с акцентом на общее самочувствие. В официальном каталоге FORZA10 эта серия
+                        описана как полноценная линия кормов для кошек, где вкус, качество и забота о здоровье
+                        сочетаются с использованием антиоксидантных фруктовых экстрактов, а разные варианты
+                        рассчитаны на разные этапы жизни.
+                      </p>
+                      <button class="FZ-lines__card-more" type="button" aria-expanded="false">Подробнее</button>
+                    </div>
+                    <ul class="FZ-lines__card-tags">
+                      <li class="FZ-lines__card-tag">Фруктовые экстракты</li>
+                      <li class="FZ-lines__card-tag">Антиоксидантный акцент</li>
+                      <li class="FZ-lines__card-tag">Для разных этапов</li>
+                      <li class="FZ-lines__card-tag">Повседневный рацион</li>
+                    </ul>
+                    <a class="FZ-lines__card-button" href="#">Купить корм</a>
+                  </div>
+                  <div class="FZ-lines__card-visual" aria-hidden="true">
+                    <img
+                      class="FZ-lines__card-image"
+                      src="img/lines/cat/mrfruit-1x.avif"
+                      srcset="img/lines/cat/mrfruit-1x.avif 1x, img/lines/cat/mrfruit-2x.avif 2x"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      width="408"
+                      height="350"
+                    />
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="FZ-footer" id="contacts">
+          <div class="FZ-footer__container">
+            <div class="FZ-footer__top">
+              <a class="FZ-footer__logo" href="#top">
+                <img
+                  class="FZ-footer__logo-img"
+                  src="img/footer/logo-1x.avif"
+                  srcset="img/footer/logo-1x.avif 1x, img/footer/logo-2x.avif 2x"
+                  alt="Forza10"
+                  width="177"
+                  height="35"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="FZ-footer__actions">
+                <nav class="FZ-footer__nav" aria-label="Навигация в подвале">
+                  <a class="FZ-footer__link" href="#lines">Линейки</a>
+                  <a class="FZ-footer__link" href="#contacts">Контакты</a>
+                </nav>
+                <a class="FZ-footer__button" href="#">Купить в магазине</a>
+              </div>
+            </div>
+            <div class="FZ-footer__bottom">
+              <p class="FZ-footer__copy">© 2025 Форза10</p>
+              <div class="FZ-footer__meta">
+                <a class="FZ-footer__meta-link" href="#">Политика обработки персональных данных</a>
+                <a class="FZ-footer__meta-link" href="#">Согласие на обработку персональных данных</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </div>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/lines-tabs.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

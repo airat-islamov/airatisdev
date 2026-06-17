@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ночные часы</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #000000;
+        --text-time: #d8d8d8;
+        --text-date: #9e9e9e;
+        --text-weekday: #6f6f6f;
+        --text-weather: #323232;
+        --text-muted: #292929;
+        --shift-x: 0px;
+        --shift-y: 0px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Avenir Next", "Segoe UI", "Arial", sans-serif;
+        color: var(--text-date);
+        background: var(--bg);
+        overflow: hidden;
+      }
+
+      body.cursor-hidden {
+        cursor: none;
+      }
+
+      .clock-shell {
+        width: min(96vw, 980px);
+        padding: clamp(20px, 4vw, 44px);
+        transform: translate(var(--shift-x), var(--shift-y));
+        transition: transform 1.2s ease;
+      }
+
+      .clock-main {
+        text-align: center;
+      }
+
+      .clock-top {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 26px;
+      }
+
+      .time {
+        margin: 0;
+        font-size: clamp(64px, 16vw, 170px);
+        line-height: 0.94;
+        letter-spacing: 0.06em;
+        font-variant-numeric: tabular-nums;
+        color: var(--text-time);
+      }
+
+      .date {
+        margin: 16px 0 4px;
+        font-size: clamp(20px, 3.2vw, 32px);
+        color: var(--text-date);
+        letter-spacing: 0.01em;
+      }
+
+      .weekday {
+        margin: 0;
+        font-size: clamp(15px, 2.4vw, 22px);
+        color: var(--text-weekday);
+        text-transform: capitalize;
+      }
+
+      .weather {
+        margin-top: clamp(18px, 3vw, 28px);
+        padding: 0;
+      }
+
+      .weather-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 8px;
+      }
+
+      .weather-title {
+        margin: 0;
+        font-size: 14px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+      }
+
+      .weather-city {
+        margin: 0;
+        font-size: 16px;
+        color: var(--text-weather);
+      }
+
+      .weather-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px 14px;
+      }
+
+      .weather-item {
+        font-size: clamp(14px, 1.8vw, 18px);
+        color: var(--text-weather);
+      }
+
+      .weather-note {
+        margin: 8px 0 0;
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+
+      .weather-link {
+        color: var(--text-muted);
+        text-decoration: none;
+      }
+
+      .weather-link:hover {
+        text-decoration: underline;
+      }
+
+      .btn {
+        border: 0;
+        border-radius: 0;
+        padding: 4px 6px;
+        font-size: 13px;
+        color: var(--text-weekday);
+        background: transparent;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        color: var(--text-date);
+      }
+
+      .btn.on {
+        color: var(--text-date);
+      }
+
+      #nightModeBtn {
+        font-size: 52px;
+        line-height: 1;
+        transition: opacity 0.35s ease;
+      }
+
+      .weather-note {
+        transition: opacity 0.35s ease;
+      }
+
+      body.ui-idle #nightModeBtn,
+      body.ui-idle .weather-note {
+        opacity: 0;
+      }
+
+      body.ui-idle #nightModeBtn {
+        pointer-events: none;
+      }
+
+      @media (max-width: 640px) {
+        .weather-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .time {
+          letter-spacing: 0.03em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="clock-shell" id="clockShell">
+      <section class="clock-main">
+        <div class="clock-top">
+          <button class="btn" id="nightModeBtn" type="button">
+            Ночной режим
+          </button>
+        </div>
+        <h1 class="time" id="time">--:--:--</h1>
+        <p class="date" id="date">Загрузка даты...</p>
+        <p class="weekday" id="weekday">Загрузка дня недели...</p>
+      </section>
+
+      <section class="weather" aria-live="polite">
+        <div class="weather-top">
+          <p class="weather-city" id="weatherCity">Определяю локацию...</p>
+        </div>
+        <div class="weather-grid" id="weatherGrid">
+          <div class="weather-item" id="weatherTemp">Температура: --</div>
+          <div class="weather-item" id="weatherFeelsLike">Ощущается: --</div>
+          <div class="weather-item" id="weatherCondition">Состояние: --</div>
+          <div class="weather-item" id="weatherWind">Ветер: --</div>
+          <div class="weather-item" id="weatherHumidity">Влажность: --</div>
+          <div class="weather-item" id="weatherUpdated">Обновление: --</div>
+        </div>
+        <p class="weather-note" id="weatherNote">
+          Нужен только доступ к геолокации.
+        </p>
+      </section>
+    </main>
+
+    <script>
+      const STORAGE_KEY = "nightWallClock:v1";
+      const WEATHER_REFRESH_MS = 15 * 60 * 1000;
+      const SHIFT_INTERVAL_MS = 1 * 60 * 1000;
+      const SHIFT_MAX_X = 200;
+      const SHIFT_MAX_Y = 200;
+      const UI_IDLE_MS = 15 * 1000;
+      const SHIFT_PATH = [
+        { x: -SHIFT_MAX_X, y: -SHIFT_MAX_Y },
+        { x: 0, y: -SHIFT_MAX_Y },
+        { x: SHIFT_MAX_X, y: -SHIFT_MAX_Y },
+        { x: -SHIFT_MAX_X, y: 0 },
+        { x: 0, y: 0 },
+        { x: SHIFT_MAX_X, y: 0 },
+        { x: -SHIFT_MAX_X, y: SHIFT_MAX_Y },
+        { x: 0, y: SHIFT_MAX_Y },
+        { x: SHIFT_MAX_X, y: SHIFT_MAX_Y },
+      ];
+
+      const CONDITION_MAP = {
+        0: "Ясно",
+        1: "Преимущественно ясно",
+        2: "Переменная облачность",
+        3: "Пасмурно",
+        45: "Туман",
+        48: "Туман с инеем",
+        51: "Слабая морось",
+        53: "Морось",
+        55: "Сильная морось",
+        56: "Ледяная морось",
+        57: "Сильная ледяная морось",
+        61: "Небольшой дождь",
+        63: "Дождь",
+        65: "Сильный дождь",
+        66: "Ледяной дождь",
+        67: "Сильный ледяной дождь",
+        71: "Небольшой снег",
+        73: "Снег",
+        75: "Сильный снег",
+        77: "Снежные зерна",
+        80: "Небольшой ливень",
+        81: "Ливень",
+        82: "Сильный ливень",
+        85: "Небольшой снегопад",
+        86: "Сильный снегопад",
+        95: "Гроза",
+        96: "Гроза с градом",
+        99: "Сильная гроза с градом",
+      };
+
+      const state = {
+        nightMode: false,
+        keepAwake: true,
+        weatherCache: null,
+        wakeLock: null,
+        weatherInterval: null,
+      };
+
+      const el = {
+        time: document.getElementById("time"),
+        date: document.getElementById("date"),
+        weekday: document.getElementById("weekday"),
+        weatherCity: document.getElementById("weatherCity"),
+        weatherTemp: document.getElementById("weatherTemp"),
+        weatherFeelsLike: document.getElementById("weatherFeelsLike"),
+        weatherCondition: document.getElementById("weatherCondition"),
+        weatherWind: document.getElementById("weatherWind"),
+        weatherHumidity: document.getElementById("weatherHumidity"),
+        weatherUpdated: document.getElementById("weatherUpdated"),
+        weatherNote: document.getElementById("weatherNote"),
+        nightModeBtn: document.getElementById("nightModeBtn"),
+      };
+
+      function loadState() {
+        try {
+          const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+          state.keepAwake = saved.keepAwake ?? true;
+          state.weatherCache = saved.weatherCache ?? null;
+        } catch {
+          // ignore broken localStorage payload
+        }
+      }
+
+      function persistState() {
+        localStorage.setItem(
+          STORAGE_KEY,
+          JSON.stringify({
+            keepAwake: state.keepAwake,
+            weatherCache: state.weatherCache,
+          }),
+        );
+      }
+
+      function cap(text) {
+        if (!text) return "";
+        return text.charAt(0).toUpperCase() + text.slice(1);
+      }
+
+      function renderClock() {
+        const now = new Date();
+        const timeOptions = {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+        };
+
+        el.time.textContent = new Intl.DateTimeFormat(
+          "ru-RU",
+          timeOptions,
+        ).format(now);
+
+        el.date.textContent = cap(
+          new Intl.DateTimeFormat("ru-RU", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          }).format(now),
+        );
+
+        el.weekday.textContent = cap(
+          new Intl.DateTimeFormat("ru-RU", {
+            weekday: "long",
+          }).format(now),
+        );
+      }
+
+      function setWeatherMessage(message, options = {}) {
+        if (options.allowHtml) {
+          el.weatherNote.innerHTML = message;
+          return;
+        }
+        el.weatherNote.textContent = message;
+      }
+
+      function setWeatherLoading() {
+        el.weatherCity.textContent = "Определяю локацию...";
+        el.weatherTemp.textContent = "Температура: --";
+        el.weatherFeelsLike.textContent = "Ощущается: --";
+        el.weatherCondition.textContent = "Состояние: --";
+        el.weatherWind.textContent = "Ветер: --";
+        el.weatherHumidity.textContent = "Влажность: --";
+        el.weatherUpdated.textContent = "Обновление: --";
+      }
+
+      function formatTemp(value) {
+        const n = Number(value);
+        if (!Number.isFinite(n)) return "--";
+        return `${n > 0 ? "+" : ""}${Math.round(n)}°C`;
+      }
+
+      function formatClockTime(value) {
+        const date = value instanceof Date ? value : new Date(value);
+        if (Number.isNaN(date.getTime())) return "--";
+        return new Intl.DateTimeFormat("ru-RU", {
+          hour: "2-digit",
+          minute: "2-digit",
+        }).format(date);
+      }
+
+      function renderWeatherSnapshot(snapshot, options = {}) {
+        if (!snapshot) return;
+        const conditionLabel =
+          CONDITION_MAP[snapshot.condition] || snapshot.condition || "--";
+        const updatedAt = snapshot.observedAt || snapshot.fetchedAt;
+
+        el.weatherCity.textContent = snapshot.city || "Текущее местоположение";
+        el.weatherTemp.textContent = `Температура: ${formatTemp(snapshot.temp)}`;
+        el.weatherFeelsLike.textContent = `Ощущается: ${formatTemp(snapshot.feelsLike)}`;
+        el.weatherCondition.textContent = `Состояние: ${conditionLabel}`;
+        el.weatherWind.textContent = `Ветер: ${snapshot.windSpeed ?? "--"} м/с`;
+        el.weatherHumidity.textContent = `Влажность: ${snapshot.humidity ?? "--"}%`;
+        el.weatherUpdated.textContent = `Обновление: ${formatClockTime(updatedAt)}${options.cached ? " (кэш)" : ""}`;
+      }
+
+      function saveWeatherCache(snapshot) {
+        state.weatherCache = snapshot;
+        persistState();
+      }
+
+      function showCachedWeather(reason) {
+        if (!state.weatherCache) return false;
+
+        renderWeatherSnapshot(state.weatherCache, { cached: true });
+        const cachedAt = formatClockTime(state.weatherCache.fetchedAt);
+        setWeatherMessage(`${reason} Показаны последние данные (${cachedAt}).`);
+        return true;
+      }
+
+      function getCoords() {
+        return new Promise((resolve, reject) => {
+          if (!navigator.geolocation) {
+            reject(new Error("Браузер не поддерживает геолокацию."));
+            return;
+          }
+
+          navigator.geolocation.getCurrentPosition(resolve, reject, {
+            enableHighAccuracy: false,
+            timeout: 10000,
+            maximumAge: 10 * 60 * 1000,
+          });
+        });
+      }
+
+      async function fetchWeather() {
+        setWeatherLoading();
+
+        try {
+          const position = await getCoords();
+          const { latitude, longitude } = position.coords;
+          const url = new URL("https://api.open-meteo.com/v1/forecast");
+          url.searchParams.set("latitude", String(latitude));
+          url.searchParams.set("longitude", String(longitude));
+          url.searchParams.set(
+            "current",
+            "temperature_2m,apparent_temperature,relative_humidity_2m,wind_speed_10m,weather_code",
+          );
+          url.searchParams.set("wind_speed_unit", "ms");
+          url.searchParams.set("timezone", "auto");
+
+          const response = await fetch(url.toString());
+
+          if (!response.ok) {
+            throw new Error(`Ошибка API: ${response.status}`);
+          }
+
+          const data = await response.json();
+          const current = data.current || {};
+          const weatherCode = Number(current.weather_code);
+          const locationCoords = `${latitude.toFixed(2)}°, ${longitude.toFixed(2)}°`;
+          const timezoneLabel =
+            typeof data.timezone === "string"
+              ? data.timezone.replaceAll("_", " ")
+              : null;
+
+          const snapshot = {
+            city: timezoneLabel
+              ? `${timezoneLabel} · ${locationCoords}`
+              : locationCoords,
+            temp: current.temperature_2m,
+            feelsLike: current.apparent_temperature,
+            condition: Number.isFinite(weatherCode) ? weatherCode : "--",
+            windSpeed: current.wind_speed_10m,
+            humidity: current.relative_humidity_2m,
+            observedAt: current.time
+              ? new Date(current.time).toISOString()
+              : null,
+            fetchedAt: new Date().toISOString(),
+          };
+
+          renderWeatherSnapshot(snapshot);
+          saveWeatherCache(snapshot);
+
+          setWeatherMessage("Данные погоды обновлены.");
+        } catch (error) {
+          const message =
+            error instanceof Error ? error.message : String(error);
+          const hasCache = showCachedWeather(
+            `Не удалось получить данные: ${message}.`,
+          );
+          if (!hasCache) {
+            el.weatherCity.textContent = "Погода недоступна";
+            setWeatherMessage(
+              `Не удалось получить данные: ${message}. Проверьте подключение и разрешение геолокации.`,
+            );
+          }
+        }
+      }
+
+      function startWeatherPolling() {
+        if (state.weatherInterval) {
+          clearInterval(state.weatherInterval);
+        }
+
+        fetchWeather();
+        state.weatherInterval = setInterval(fetchWeather, WEATHER_REFRESH_MS);
+      }
+
+      async function requestWakeLock() {
+        if (!("wakeLock" in navigator)) {
+          return false;
+        }
+
+        try {
+          state.wakeLock = await navigator.wakeLock.request("screen");
+          state.wakeLock.addEventListener("release", () => {
+            state.wakeLock = null;
+            updateButtons();
+          });
+          return true;
+        } catch {
+          state.wakeLock = null;
+          return false;
+        }
+      }
+
+      async function setKeepAwake(enabled) {
+        state.keepAwake = enabled;
+        persistState();
+
+        if (!enabled) {
+          if (state.wakeLock) {
+            try {
+              await state.wakeLock.release();
+            } catch {
+              // ignore release errors
+            }
+            state.wakeLock = null;
+          }
+          updateButtons();
+          return;
+        }
+
+        await requestWakeLock();
+        updateButtons();
+      }
+
+      async function setNightMode(enabled) {
+        state.nightMode = enabled;
+
+        if (enabled) {
+          try {
+            if (!document.fullscreenElement) {
+              await document.documentElement.requestFullscreen();
+            }
+          } catch {
+            // ignore fullscreen errors
+          }
+          document.body.classList.add("cursor-hidden");
+          updateButtons();
+          return;
+        }
+
+        if (document.fullscreenElement) {
+          try {
+            await document.exitFullscreen();
+          } catch {
+            // ignore fullscreen errors
+          }
+        }
+        refreshCursorTimer();
+        updateButtons();
+      }
+
+      function updateButtons() {
+        el.nightModeBtn.textContent = state.nightMode ? "🌙" : "☾";
+        el.nightModeBtn.setAttribute(
+          "aria-label",
+          state.nightMode ? "Ночной режим включен" : "Ночной режим выключен",
+        );
+        el.nightModeBtn.setAttribute(
+          "title",
+          state.nightMode ? "Ночной режим включен" : "Ночной режим выключен",
+        );
+        el.nightModeBtn.classList.toggle("on", state.nightMode);
+      }
+
+      let shiftPathIndex = 0;
+      function stepShift() {
+        const point = SHIFT_PATH[shiftPathIndex % SHIFT_PATH.length];
+        document.documentElement.style.setProperty("--shift-x", `${point.x}px`);
+        document.documentElement.style.setProperty("--shift-y", `${point.y}px`);
+        shiftPathIndex += 1;
+      }
+
+      let cursorTimer;
+      let uiIdleTimer;
+      function refreshCursorTimer() {
+        document.body.classList.remove("cursor-hidden");
+        clearTimeout(cursorTimer);
+        cursorTimer = setTimeout(() => {
+          document.body.classList.add("cursor-hidden");
+        }, 3500);
+      }
+
+      function refreshUiIdleTimer() {
+        document.body.classList.remove("ui-idle");
+        clearTimeout(uiIdleTimer);
+        uiIdleTimer = setTimeout(() => {
+          document.body.classList.add("ui-idle");
+        }, UI_IDLE_MS);
+      }
+
+      function onUserActivity() {
+        refreshCursorTimer();
+        refreshUiIdleTimer();
+      }
+
+      function bindEvents() {
+        el.nightModeBtn.addEventListener("click", async () => {
+          await setNightMode(!state.nightMode);
+        });
+
+        document.addEventListener("visibilitychange", async () => {
+          if (
+            document.visibilityState === "visible" &&
+            state.keepAwake &&
+            !state.wakeLock
+          ) {
+            await requestWakeLock();
+            updateButtons();
+          }
+        });
+
+        window.addEventListener("mousemove", onUserActivity, { passive: true });
+        window.addEventListener("touchstart", onUserActivity, {
+          passive: true,
+        });
+        window.addEventListener("keydown", onUserActivity);
+      }
+
+      function init() {
+        loadState();
+
+        bindEvents();
+        updateButtons();
+        renderClock();
+        setInterval(renderClock, 1000);
+
+        stepShift();
+        setInterval(stepShift, SHIFT_INTERVAL_MS);
+
+        onUserActivity();
+        startWeatherPolling();
+
+        setKeepAwake(true);
+      }
+
+      init();
+    </script>
+  </body>
+</html>

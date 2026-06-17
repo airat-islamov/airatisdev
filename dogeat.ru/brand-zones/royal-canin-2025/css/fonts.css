@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "DIN Pro Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/DIN-Pro-Condensed-Regular.woff2") format("woff2"), url("../fonts/DIN-Pro-Condensed-Regular.woff") format("woff"), url("../fonts/DIN-Pro-Condensed-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "DIN Pro Condensed";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/DIN-Pro-Condensed-Medium.woff2") format("woff2"), url("../fonts/DIN-Pro-Condensed-Medium.woff") format("woff"), url("../fonts/DIN-Pro-Condensed-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "DIN Pro Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/DIN-Pro-Condensed-Bold.woff2") format("woff2"), url("../fonts/DIN-Pro-Condensed-Bold.woff") format("woff"), url("../fonts/DIN-Pro-Condensed-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "DIN Pro Condensed";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/DIN-Pro-Condensed-Black.woff2") format("woff2"), url("../fonts/DIN-Pro-Condensed-Black.woff") format("woff"), url("../fonts/DIN-Pro-Condensed-Black.otf") format("opentype");
+}
+@font-face {
+  font-family: "DIN Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/DIN-Pro-Regular.woff2") format("woff2"), url("../fonts/DIN-Pro-Regular.woff") format("woff"), url("../fonts/DIN-Pro-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "DIN Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/DIN-Pro-Medium.woff2") format("woff2"), url("../fonts/DIN-Pro-Medium.woff") format("woff"), url("../fonts/DIN-Pro-Medium.otf") format("opentype");
+}

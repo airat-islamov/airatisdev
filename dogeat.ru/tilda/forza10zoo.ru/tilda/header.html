@@ -1,0 +1,213 @@
+<div class="FZ">
+  <header class="FZ-header" id="top">
+    <div class="FZ-header__container">
+      <a class="FZ-header__logo" href="#top">
+        <img
+          class="FZ-header__logo-img"
+          src="https://static.tildacdn.com/tild3138-6361-4263-b433-343865633162/logo-1x.webp"
+          srcset="
+            https://static.tildacdn.com/tild3138-6361-4263-b433-343865633162/logo-1x.webp 1x,
+            https://static.tildacdn.com/tild3062-3630-4330-a562-333763356462/logo-2x.webp 2x
+          "
+          alt="Forza10"
+          width="177"
+          height="35"
+          loading="eager"
+          decoding="async"
+        />
+      </a>
+      <div class="FZ-header__actions">
+        <nav class="FZ-header__nav">
+          <a class="FZ-header__link" href="#lines">Линейки</a>
+          <a class="FZ-header__link" href="#contacts">Контакты</a>
+        </nav>
+        <a class="FZ-header__cta" href="#">
+          <span class="FZ-header__cta-text FZ-header__cta-text--mobile"
+            >Купить</span
+          >
+          <span class="FZ-header__cta-text FZ-header__cta-text--desktop"
+            >Купить в магазине</span
+          >
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+
+<style>
+  #allrecords .FZ .FZ-header__container {
+    max-width: 1178px;
+    margin-inline: auto;
+    padding: 24px 25px;
+    gap: 24px;
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-header__container {
+      padding: 20px 16px;
+      gap: 16px;
+    }
+  }
+  #allrecords .FZ .FZ-header__logo {
+    width: 177px;
+    height: 35px;
+    position: relative;
+    display: block;
+    flex-shrink: 0;
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-header__logo {
+      width: 171px;
+      height: 34px;
+    }
+  }
+  #allrecords .FZ .FZ-header__logo-img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  #allrecords .FZ .FZ-header__actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-header__actions {
+      gap: 12px;
+    }
+  }
+  #allrecords .FZ .FZ-header__nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-header__nav {
+      display: none;
+    }
+  }
+  #allrecords .FZ .FZ-header__link {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.007;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      color 0.3s ease;
+  }
+  #allrecords .FZ .FZ-header__link:hover[href$="#lines"] {
+    text-decoration: underline;
+  }
+  html.is-home #allrecords .FZ .FZ-header__link:hover[href$="#lines"] {
+    text-decoration: underline dashed;
+  }
+  #allrecords .FZ .FZ-header__link:hover[href$="#contacts"] {
+    text-decoration: underline;
+  }
+  #allrecords .FZ .FZ-header__link:hover {
+    opacity: 0.7;
+    color: #205372;
+  }
+  #allrecords .FZ .FZ-header__link:active {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  #allrecords .FZ .FZ-header__link:focus-visible {
+    outline: 2px solid #205372;
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  #allrecords .FZ .FZ-header__cta {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 16px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #ffffff;
+    white-space: nowrap;
+    background-image: linear-gradient(121.39deg, #4d90b8 3%, #092c41 113%);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      filter 0.2s ease;
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-header__cta {
+      background-image: linear-gradient(106.39deg, #4d90b8 3%, #092c41 113%);
+    }
+  }
+  #allrecords .FZ .FZ-header__cta:hover,
+  #allrecords .FZ .FZ-header__cta:focus-visible {
+    opacity: 1;
+    filter: brightness(1.05);
+  }
+  #allrecords .FZ .FZ-header__cta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0) 18%,
+      rgba(255, 255, 255, 0.35) 50%,
+      rgba(255, 255, 255, 0) 82%
+    );
+    transform: translateX(-130%);
+    transition: transform 0.75s ease;
+  }
+  #allrecords .FZ .FZ-header__cta:hover::before,
+  #allrecords .FZ .FZ-header__cta:focus-visible::before {
+    transform: translateX(130%);
+  }
+  #allrecords .FZ .FZ-header__cta:focus-visible {
+    outline: 2px solid #1b4760;
+    outline-offset: 2px;
+  }
+  #allrecords .FZ .FZ-header__cta-text {
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    line-height: 1.007;
+    font-weight: 700;
+    color: inherit;
+  }
+  #allrecords .FZ .FZ-header__cta-text--mobile {
+    display: none;
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-header__cta-text--mobile {
+      display: inline;
+    }
+  }
+  #allrecords .FZ .FZ-header__cta-text--desktop {
+    display: inline;
+  }
+  @media (max-width: 1008px) {
+    #allrecords .FZ .FZ-header__cta-text--desktop {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  (() => {
+    window.FZFeatures = window.FZFeatures || {};
+    window.FZFeatures.initHeader = () => {};
+
+    if (typeof window.FZFeatures.bootstrap === "function") {
+      window.FZFeatures.bootstrap();
+    }
+  })();
+</script>

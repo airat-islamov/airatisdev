@@ -1,0 +1,1633 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just Dog - Smart Nutrition</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="JD">
+      <header class="JD-header" data-js-header>
+        <div class="JD-container JD-header__container">
+          <div class="JD-header__bar">
+            <div class="JD-header__left">
+              <a href="#" class="JD-header__logo">
+                <img
+                  src="img/header/logo-1x.avif"
+                  srcset="
+                    img/header/logo-1x.avif 1x,
+                    img/header/logo-2x.avif 2x
+                  "
+                  alt="Just Dog"
+                  width="94"
+                  height="72"
+                  class="JD-header__logo-img"
+                />
+              </a>
+
+              <nav class="JD-header__nav">
+                <a href="#" class="JD-header__nav-link">Влажные корма</a>
+                <a href="#" class="JD-header__nav-link">Сухие корма</a>
+                <a href="#" class="JD-header__nav-link">Ветеринарный рацион</a>
+                <a href="#" class="JD-header__nav-link">Оптовикам</a>
+                <a href="#" class="JD-header__nav-link">Блог</a>
+                <a href="#" class="JD-header__nav-link">Контакты</a>
+              </nav>
+            </div>
+
+            <div class="JD-header__actions">
+              <button
+                type="button"
+                class="JD-btn JD-header__btn JD-header__btn--vet"
+              >
+                Оставить заявку
+              </button>
+
+              <button
+                type="button"
+                class="JD-btn JD-header__btn JD-header__btn--green"
+              >
+                Купить в зоомагазине
+              </button>
+            </div>
+
+            <button
+              type="button"
+              class="JD-btn JD-header__menu-toggle"
+              data-js-header-toggle
+            >
+              <span class="JD-header__menu-icon"></span>
+            </button>
+          </div>
+
+          <div
+            class="JD-header__mobile"
+            id="jd-header-mobile-menu"
+            data-js-header-menu
+          >
+            <nav class="JD-header__mobile-nav">
+              <a href="#" class="JD-header__mobile-link" data-js-header-link
+                >Влажные корма</a
+              >
+              <a href="#" class="JD-header__mobile-link" data-js-header-link
+                >Сухие корма</a
+              >
+              <a href="#" class="JD-header__mobile-link" data-js-header-link
+                >Ветеринарный рацион</a
+              >
+              <a href="#" class="JD-header__mobile-link" data-js-header-link
+                >Оптовикам</a
+              >
+              <a href="#" class="JD-header__mobile-link" data-js-header-link
+                >Блог</a
+              >
+              <a href="#" class="JD-header__mobile-link" data-js-header-link
+                >Контакты</a
+              >
+            </nav>
+
+            <div class="JD-header__mobile-actions">
+              <button
+                type="button"
+                class="JD-btn JD-header__mobile-btn JD-header__mobile-btn--vet"
+              >
+                Оставить заявку
+              </button>
+
+              <button
+                type="button"
+                class="JD-btn JD-header__mobile-btn JD-header__mobile-btn--green"
+              >
+                Купить в зоомагазине
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="JD-hero" data-js-hero>
+        <picture class="JD-img JD-hero__bg">
+          <source
+            srcset="
+              img/hero/bg-1x.avif 1x,
+              img/hero/bg-2x.avif 2x
+            "
+          />
+          <img
+            src="img/hero/bg-1x.avif"
+            alt="Фоновая текстура"
+            width="1440"
+            height="987"
+            class="JD-hero__bg-img"
+          />
+        </picture>
+
+        <div class="JD-container">
+          <div class="JD-hero__intro">
+            <p class="JD-hero__subtitle">
+              Поддержка здоровья. Чистый состав. Проверенная формула.
+            </p>
+            <h1 class="JD-hero__title">
+              для собак, стремящихся
+              <br />
+              к долголетию
+            </h1>
+            <button
+              type="button"
+              class="JD-btn JD-hero__cta"
+              data-js-hero-cta
+            >
+              Подобрать корм питомцу
+            </button>
+          </div>
+
+          <div class="JD-hero__cards" data-js-hero-cards>
+            <article
+              class="JD-hero__card JD-hero__card--wet"
+              data-js-hero-card
+            >
+              <div class="JD-hero__card-label">Влажные корма</div>
+
+              <div class="JD-hero__product JD-hero__product--wet">
+                <img
+                  src="img/hero/products-wet-1x.avif"
+                  srcset="
+                    img/hero/products-wet-1x.avif 1x,
+                    img/hero/products-wet-2x.avif 2x
+                  "
+                  alt="Влажный корм"
+                  width="407"
+                  height="278"
+                  class="JD-hero__wet-image"
+                  loading="lazy"
+                />
+              </div>
+
+            </article>
+
+            <article
+              class="JD-hero__card JD-hero__card--dry"
+              data-js-hero-card
+            >
+              <div class="JD-hero__card-label">Сухие корма</div>
+
+              <div class="JD-hero__product JD-hero__product--dry">
+                <img
+                  src="img/hero/products-dry-1x.avif"
+                  srcset="
+                    img/hero/products-dry-1x.avif 1x,
+                    img/hero/products-dry-2x.avif 2x
+                  "
+                  alt="Сухой корм"
+                  width="378"
+                  height="312"
+                  class="JD-hero__dry-image"
+                  loading="lazy"
+                />
+              </div>
+
+            </article>
+
+            <article
+              class="JD-hero__card JD-hero__card--vet"
+              data-js-hero-card
+            >
+              <div class="JD-hero__card-label">Ветеринарный рацион</div>
+
+              <div class="JD-hero__product JD-hero__product--vet">
+                <img
+                  src="img/hero/products-vet-1x.avif"
+                  srcset="
+                    img/hero/products-vet-1x.avif 1x,
+                    img/hero/products-vet-2x.avif 2x
+                  "
+                  alt="Ветеринарный рацион"
+                  width="395"
+                  height="258"
+                  class="JD-hero__vet-image"
+                  loading="lazy"
+                />
+              </div>
+
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="JD-bio" data-js-bio>
+        <div class="JD-container">
+          <h2 class="JD-bio__title">
+            питание, созданное
+            <br />
+            по принципам биохакинга
+          </h2>
+
+          <div class="JD-bio__tabs">
+            <button
+              type="button"
+              class="JD-btn JD-bio__tab JD-bio__tab--wet is-active"
+              data-js-bio-tab
+              data-bio-key="wet"
+            >
+              <span class="JD-bio__tab-title">holistic line</span>
+              <span class="JD-bio__tab-sub">влажные корма</span>
+            </button>
+            <button
+              type="button"
+              class="JD-btn JD-bio__tab JD-bio__tab--dry"
+              data-js-bio-tab
+              data-bio-key="dry"
+            >
+              <span class="JD-bio__tab-title">dry line</span>
+              <span class="JD-bio__tab-sub">сухие корма</span>
+            </button>
+            <button
+              type="button"
+              class="JD-btn JD-bio__tab JD-bio__tab--vet"
+              data-js-bio-tab
+              data-bio-key="vet"
+            >
+              <span class="JD-bio__tab-title">vet line</span>
+              <span class="JD-bio__tab-sub">ветеринарные корма</span>
+            </button>
+          </div>
+
+          <article class="JD-bio__panel">
+            <div class="JD-bio__content">
+              <h3 class="JD-bio__panel-title" data-js-bio-title>
+                holistic line - влажный корм
+              </h3>
+              <p class="JD-bio__lead" data-js-bio-lead>
+                <strong>Не менее 71% мяса, без сои, ГМО и усилителей вкуса.</strong>
+                Только мясо, овощи, ягоды и натуральные добавки.
+                Противовоспалительная, антиоксидантная и микробиотическая защита
+                в самой основе корма
+              </p>
+
+              <div class="JD-bio__chips">
+                <div class="JD-bio__chip">
+                  <img
+                    src="img/bio/for-adult-dogs-1x.webp"
+                    srcset="
+                      img/bio/for-adult-dogs-1x.webp 1x,
+                      img/bio/for-adult-dogs-2x.webp 2x
+                    "
+                    alt=""
+                    width="86"
+                    height="39"
+                    class="JD-bio__chip-icon"
+                    loading="lazy"
+                  />
+                  <div class="JD-bio__chip-text">
+                    <span class="JD-bio__chip-title">for adult dogs</span>
+                    <span class="JD-bio__chip-subtitle">для взрослых собак</span>
+                  </div>
+                </div>
+
+                <div class="JD-bio__chip">
+                  <img
+                    src="img/bio/all-breads-1x.webp"
+                    srcset="
+                      img/bio/all-breads-1x.webp 1x,
+                      img/bio/all-breads-2x.webp 2x
+                    "
+                    alt=""
+                    width="122"
+                    height="39"
+                    class="JD-bio__chip-icon"
+                    loading="lazy"
+                  />
+                  <div class="JD-bio__chip-text">
+                    <span class="JD-bio__chip-title">all breeds</span>
+                    <span class="JD-bio__chip-subtitle">все породы</span>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="JD-bio__benefits" data-js-bio-benefits>
+                <li class="JD-bio__benefit">
+                  <img
+                    src="img/bio/obesity-1x.webp"
+                    srcset="img/bio/obesity-1x.webp 1x, img/bio/obesity-2x.webp 2x"
+                    alt=""
+                    width="35"
+                    height="39"
+                    class="JD-bio__benefit-icon"
+                    loading="lazy"
+                  />
+                  <span>Предотвращает ожирение</span>
+                </li>
+                <li class="JD-bio__benefit">
+                  <img
+                    src="img/bio/liver-1x.webp"
+                    srcset="img/bio/liver-1x.webp 1x, img/bio/liver-2x.webp 2x"
+                    alt=""
+                    width="37"
+                    height="37"
+                    class="JD-bio__benefit-icon"
+                    loading="lazy"
+                  />
+                  <span>Поддержание работы печени</span>
+                </li>
+                <li class="JD-bio__benefit">
+                  <img
+                    src="img/bio/urinary-1x.webp"
+                    srcset="
+                      img/bio/urinary-1x.webp 1x,
+                      img/bio/urinary-2x.webp 2x
+                    "
+                    alt=""
+                    width="41"
+                    height="36"
+                    class="JD-bio__benefit-icon"
+                    loading="lazy"
+                  />
+                  <span>Предупреждение мочекаменной болезни</span>
+                </li>
+                <li class="JD-bio__benefit">
+                  <img
+                    src="img/bio/fitness-1x.webp"
+                    srcset="
+                      img/bio/fitness-1x.webp 1x,
+                      img/bio/fitness-2x.webp 2x
+                    "
+                    alt=""
+                    width="37"
+                    height="37"
+                    class="JD-bio__benefit-icon"
+                    loading="lazy"
+                  />
+                  <span>Укрепление физической формы</span>
+                </li>
+                <li class="JD-bio__benefit">
+                  <img
+                    src="img/bio/cognition-1x.webp"
+                    srcset="
+                      img/bio/cognition-1x.webp 1x,
+                      img/bio/cognition-2x.webp 2x
+                    "
+                    alt=""
+                    width="40"
+                    height="40"
+                    class="JD-bio__benefit-icon"
+                    loading="lazy"
+                  />
+                  <span>Улучшение когнитивных функций</span>
+                </li>
+                <li class="JD-bio__benefit">
+                  <img
+                    src="img/bio/joints-1x.webp"
+                    srcset="img/bio/joints-1x.webp 1x, img/bio/joints-2x.webp 2x"
+                    alt=""
+                    width="40"
+                    height="40"
+                    class="JD-bio__benefit-icon"
+                    loading="lazy"
+                  />
+                  <span>Защита суставов</span>
+                </li>
+                <li class="JD-bio__benefit">
+                  <img
+                    src="img/bio/regeneration-1x.webp"
+                    srcset="
+                      img/bio/regeneration-1x.webp 1x,
+                      img/bio/regeneration-2x.webp 2x
+                    "
+                    alt=""
+                    width="37"
+                    height="40"
+                    class="JD-bio__benefit-icon"
+                    loading="lazy"
+                  />
+                  <span>Регенерация тканей</span>
+                </li>
+                <li class="JD-bio__benefit">
+                  <img
+                    src="img/bio/coat-1x.webp"
+                    srcset="img/bio/coat-1x.webp 1x, img/bio/coat-2x.webp 2x"
+                    alt=""
+                    width="36"
+                    height="36"
+                    class="JD-bio__benefit-icon"
+                    loading="lazy"
+                  />
+                  <span>Сияющая шерсть</span>
+                </li>
+                <li class="JD-bio__benefit">
+                  <img
+                    src="img/bio/immunity-1x.webp"
+                    srcset="
+                      img/bio/immunity-1x.webp 1x,
+                      img/bio/immunity-2x.webp 2x
+                    "
+                    alt=""
+                    width="42"
+                    height="37"
+                    class="JD-bio__benefit-icon"
+                    loading="lazy"
+                  />
+                  <span>Крепкий иммунитет</span>
+                </li>
+                <li class="JD-bio__benefit">
+                  <img
+                    src="img/bio/skin-1x.webp"
+                    srcset="img/bio/skin-1x.webp 1x, img/bio/skin-2x.webp 2x"
+                    alt=""
+                    width="38"
+                    height="34"
+                    class="JD-bio__benefit-icon"
+                    loading="lazy"
+                  />
+                  <span>Здоровая кожа</span>
+                </li>
+              </ul>
+
+              <a
+                href="https://www.dogeat.ru/catalog/just-dog/holistic/"
+                class="JD-btn JD-bio__cta JD-bio__cta--wet"
+                data-js-bio-cta
+                >смотреть товары</a
+              >
+            </div>
+
+            <picture class="JD-img JD-bio__media" data-js-bio-media>
+              <source
+                data-js-bio-source-desktop
+                type="image/avif"
+                srcset="
+                  img/bio/products-1x.avif 1x,
+                  img/bio/products-2x.avif 2x
+                "
+              />
+              <img
+                src="img/bio/products-1x.avif"
+                alt="Собака и продукция Just Dog Holistic Line"
+                width="586"
+                height="651"
+                class="JD-bio__media-img"
+                loading="lazy"
+                data-js-bio-image
+              />
+            </picture>
+          </article>
+        </div>
+      </section>
+
+      <section class="JD-care" data-js-care>
+        <picture class="JD-img JD-care__bg-shapes" aria-hidden="true">
+          <source
+            type="image/avif"
+            srcset="
+              img/care/bg-1x.avif 1x,
+              img/care/bg-2x.avif 2x
+            "
+          />
+          <img
+            src="img/care/bg-1x.avif"
+            alt=""
+            width="1729"
+            height="839"
+            class="JD-care__bg-shapes-img"
+            loading="lazy"
+          />
+        </picture>
+
+        <div class="JD-container">
+          <div class="JD-care__layout">
+            <div class="JD-care__intro">
+              <h2 class="JD-care__title">
+                Забота —
+                <br />
+                не в словах,
+                <br />
+                а в составе
+              </h2>
+              <p class="JD-care__lead">
+                JUST DOG — это не просто корм. Это функциональное питание,
+                созданное по принципам биохакинга.
+                <br />
+                Мы верим, что собака — это полноценный член семьи, и её рацион
+                должен быть сбалансированным
+              </p>
+            </div>
+
+            <div class="JD-care__cards" data-js-care-cards>
+              <div class="JD-care__cards-track" data-js-care-track>
+                <article class="JD-care__card" data-js-care-card>
+                  <span class="JD-care__number">01</span>
+                  <h3 class="JD-care__card-title">
+                    Животные белки
+                    <br />
+                    обеспечивают
+                  </h3>
+
+                  <ul class="JD-care__benefits">
+                    <li class="JD-care__benefit">
+                      <img
+                        src="img/care/aminos-1x.webp"
+                        srcset="
+                          img/care/aminos-1x.webp 1x,
+                          img/care/aminos-2x.webp 2x
+                        "
+                        alt=""
+                        width="40"
+                        height="40"
+                        class="JD-care__benefit-icon"
+                        loading="lazy"
+                      />
+                      <span class="JD-care__benefit-text">аминокислоты</span>
+                    </li>
+                    <li class="JD-care__benefit">
+                      <img
+                        src="img/care/energy-1x.webp"
+                        srcset="
+                          img/care/energy-1x.webp 1x,
+                          img/care/energy-2x.webp 2x
+                        "
+                        alt=""
+                        width="40"
+                        height="40"
+                        class="JD-care__benefit-icon"
+                        loading="lazy"
+                      />
+                      <span class="JD-care__benefit-text">энергию</span>
+                    </li>
+                    <li class="JD-care__benefit">
+                      <img
+                        src="img/care/muscle-1x.webp"
+                        srcset="
+                          img/care/muscle-1x.webp 1x,
+                          img/care/muscle-2x.webp 2x
+                        "
+                        alt=""
+                        width="40"
+                        height="40"
+                        class="JD-care__benefit-icon"
+                        loading="lazy"
+                      />
+                      <span class="JD-care__benefit-text">развитие мышц</span>
+                    </li>
+                  </ul>
+
+                  <div class="JD-care__details">
+                    <p class="JD-care__subtitle">
+                      Только высококачественные источники белка
+                    </p>
+
+                    <div class="JD-care__ingredients">
+                      <div class="JD-care__ingredient JD-care__ingredient--gap">
+                        <picture
+                          class="JD-img JD-care__ingredient-icon JD-care__ingredient-icon--lamb"
+                        >
+                          <source
+                            srcset="
+                              img/care/lamb-1x.webp 1x,
+                              img/care/lamb-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="img/care/lamb-1x.webp"
+                            alt="Ягненок"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-care__ingredient-icon-img"
+                            width="67"
+                            height="67"
+                          />
+                        </picture>
+                        <span>ягненок</span>
+                      </div>
+                      <div class="JD-care__ingredient JD-care__ingredient--gap">
+                        <picture
+                          class="JD-img JD-care__ingredient-icon JD-care__ingredient-icon--beef"
+                        >
+                          <source
+                            srcset="
+                              img/care/beef-1x.webp 1x,
+                              img/care/beef-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="img/care/beef-1x.webp"
+                            alt="Говядина"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-care__ingredient-icon-img"
+                            width="62"
+                            height="63"
+                          />
+                        </picture>
+                        <span>говядина</span>
+                      </div>
+                      <div class="JD-care__ingredient JD-care__ingredient--gap">
+                        <picture
+                          class="JD-img JD-care__ingredient-icon JD-care__ingredient-icon--turkey"
+                        >
+                          <source
+                            srcset="
+                              img/care/turkey-1x.webp 1x,
+                              img/care/turkey-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="img/care/turkey-1x.webp"
+                            alt="Индейка"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-care__ingredient-icon-img"
+                            width="56"
+                            height="55"
+                          />
+                        </picture>
+                        <span>индейка</span>
+                      </div>
+                      <div class="JD-care__ingredient">
+                        <picture class="JD-img JD-care__ingredient-icon">
+                          <source
+                            srcset="
+                              img/care/rabbit-1x.webp 1x,
+                              img/care/rabbit-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="img/care/rabbit-1x.webp"
+                            alt="Кролик"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-care__ingredient-icon-img"
+                            width="58"
+                            height="56"
+                          />
+                        </picture>
+                        <span>кролик</span>
+                      </div>
+                      <div class="JD-care__ingredient">
+                        <picture class="JD-img JD-care__ingredient-icon">
+                          <source
+                            srcset="
+                              img/care/chicken-1x.webp 1x,
+                              img/care/chicken-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="img/care/chicken-1x.webp"
+                            alt="Курица"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-care__ingredient-icon-img"
+                            width="56"
+                            height="57"
+                          />
+                        </picture>
+                        <span>курица</span>
+                      </div>
+                      <div class="JD-care__ingredient">
+                        <picture class="JD-img JD-care__ingredient-icon">
+                          <source
+                            srcset="
+                              img/care/fish-1x.webp 1x,
+                              img/care/fish-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="img/care/fish-1x.webp"
+                            alt="Рыба"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-care__ingredient-icon-img"
+                            width="59"
+                            height="58"
+                          />
+                        </picture>
+                        <span>рыба</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <picture class="JD-img JD-care__bowl">
+                    <source
+                      srcset="
+                        img/care/bowl-meat-1x.avif 1x,
+                        img/care/bowl-meat-2x.avif 2x
+                      "
+                      type="image/avif"
+                    />
+                    <img
+                      src="img/care/bowl-meat-1x.avif"
+                      srcset="
+                        img/care/bowl-meat-1x.avif 1x,
+                        img/care/bowl-meat-2x.avif 2x
+                      "
+                      alt="Мясные ингредиенты в миске"
+                      width="336"
+                      height="354"
+                      class="JD-care__bowl-img"
+                      loading="lazy"
+                    />
+                  </picture>
+                </article>
+                <article class="JD-care__card" data-js-care-card>
+                  <span class="JD-care__number">02</span>
+                  <h3 class="JD-care__card-title">
+                    Растительные волокна
+                    <br />
+                    обеспечивают
+                  </h3>
+
+                  <ul class="JD-care__benefits">
+                    <li class="JD-care__benefit">
+                      <img
+                        src="img/care/immunity-1x.webp"
+                        srcset="
+                          img/care/immunity-1x.webp 1x,
+                          img/care/immunity-2x.webp 2x
+                        "
+                        alt=""
+                        width="40"
+                        height="40"
+                        class="JD-care__benefit-icon"
+                        loading="lazy"
+                      />
+                      <span class="JD-care__benefit-text">иммунную защиту</span>
+                    </li>
+                    <li class="JD-care__benefit">
+                      <img
+                        src="img/care/antioxidant-1x.webp"
+                        srcset="
+                          img/care/antioxidant-1x.webp 1x,
+                          img/care/antioxidant-2x.webp 2x
+                        "
+                        alt=""
+                        width="40"
+                        height="40"
+                        class="JD-care__benefit-icon"
+                        loading="lazy"
+                      />
+                      <span class="JD-care__benefit-text">
+                        антиоксидантную поддержку
+                      </span>
+                    </li>
+                    <li class="JD-care__benefit">
+                      <img
+                        src="img/care/digestion-1x.webp"
+                        srcset="
+                          img/care/digestion-1x.webp 1x,
+                          img/care/digestion-2x.webp 2x
+                        "
+                        alt=""
+                        width="40"
+                        height="40"
+                        class="JD-care__benefit-icon"
+                        loading="lazy"
+                      />
+                      <span class="JD-care__benefit-text">
+                        мягкое пищеварение
+                      </span>
+                    </li>
+                  </ul>
+
+                  <div class="JD-care__details">
+                    <p class="JD-care__subtitle">
+                      Только тщательно подобранные растительные компоненты
+                    </p>
+
+                    <div class="JD-care__ingredients">
+                      <div class="JD-care__ingredient">
+                        <picture class="JD-img JD-care__ingredient-icon">
+                          <source
+                            srcset="
+                              img/care/rice-1x.webp 1x,
+                              img/care/rice-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="img/care/rice-1x.webp"
+                            alt="Рис"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-care__ingredient-icon-img"
+                            width="52"
+                            height="52"
+                          />
+                        </picture>
+                        <span>рис</span>
+                      </div>
+                      <div class="JD-care__ingredient">
+                        <picture class="JD-img JD-care__ingredient-icon">
+                          <source
+                            srcset="
+                              img/care/wheat-1x.webp 1x,
+                              img/care/wheat-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="img/care/wheat-1x.webp"
+                            alt="Пшеница"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-care__ingredient-icon-img"
+                            width="52"
+                            height="52"
+                          />
+                        </picture>
+                        <span>пшеница</span>
+                      </div>
+                      <div class="JD-care__ingredient">
+                        <picture class="JD-img JD-care__ingredient-icon">
+                          <source
+                            srcset="
+                              img/care/flax-1x.webp 1x,
+                              img/care/flax-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="img/care/flax-1x.webp"
+                            alt="Семена льна"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-care__ingredient-icon-img"
+                            width="52"
+                            height="52"
+                          />
+                        </picture>
+                        <span>семена льна</span>
+                      </div>
+                    </div>
+
+                    <p
+                      class="JD-care__subtitle JD-care__subtitle--extra"
+                    >
+                      <strong class="JD-care__subtitle-accent">
+                        Дополняют состав
+                      </strong>
+                      <br />
+                      тыква, морковь, цукини, свекла, яблоко, груша, черника,
+                      клюква, брусника, шиповник и шпинат
+                    </p>
+                  </div>
+
+                  <picture class="JD-img JD-care__bowl JD-care__bowl--vegetables">
+                    <source
+                      type="image/avif"
+                      srcset="
+                        img/care/bowl-vegetables-1x.avif 1x,
+                        img/care/bowl-vegetables-2x.avif 2x
+                      "
+                    />
+                    <img
+                      src="img/care/bowl-vegetables-1x.avif"
+                      srcset="
+                        img/care/bowl-vegetables-1x.avif 1x,
+                        img/care/bowl-vegetables-2x.avif 2x
+                      "
+                      alt="Овощи в миске"
+                      width="296"
+                      height="380"
+                      class="JD-care__bowl-img"
+                      loading="lazy"
+                    />
+                  </picture>
+                </article>
+                <article class="JD-care__card" data-js-care-card>
+                  <span class="JD-care__number">03</span>
+                  <h3 class="JD-care__card-title">
+                    Масла и жиры
+                    <br />
+                    обеспечивают
+                  </h3>
+
+                  <ul class="JD-care__benefits">
+                    <li class="JD-care__benefit">
+                      <img
+                        src="img/care/vitamins-1x.webp"
+                        srcset="
+                          img/care/vitamins-1x.webp 1x,
+                          img/care/vitamins-2x.webp 2x
+                        "
+                        alt=""
+                        width="40"
+                        height="40"
+                        class="JD-care__benefit-icon"
+                        loading="lazy"
+                      />
+                      <span class="JD-care__benefit-text">
+                        усвоение витаминов
+                      </span>
+                    </li>
+                    <li class="JD-care__benefit">
+                      <img
+                        src="img/care/skin-1x.webp"
+                        srcset="
+                          img/care/skin-1x.webp 1x,
+                          img/care/skin-2x.webp 2x
+                        "
+                        alt=""
+                        width="40"
+                        height="40"
+                        class="JD-care__benefit-icon"
+                        loading="lazy"
+                      />
+                      <span class="JD-care__benefit-text">здоровье кожи</span>
+                    </li>
+                    <li class="JD-care__benefit">
+                      <img
+                        src="img/care/coat-1x.webp"
+                        srcset="
+                          img/care/coat-1x.webp 1x,
+                          img/care/coat-2x.webp 2x
+                        "
+                        alt=""
+                        width="40"
+                        height="40"
+                        class="JD-care__benefit-icon"
+                        loading="lazy"
+                      />
+                      <span class="JD-care__benefit-text">блеск шерсти</span>
+                    </li>
+                  </ul>
+
+                  <div class="JD-care__details">
+                    <p class="JD-care__subtitle">
+                      Высококачественные жиры и масла, которые являются отличным
+                      источником омега-3 и омега-6
+                    </p>
+
+                    <div class="JD-care__ingredients">
+                      <div class="JD-care__ingredient">
+                        <picture class="JD-img JD-care__ingredient-icon">
+                          <source
+                            srcset="
+                              img/care/sunflower-1x.webp 1x,
+                              img/care/sunflower-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="img/care/sunflower-1x.webp"
+                            alt="Подсолнечное масло"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-care__ingredient-icon-img"
+                            width="54"
+                            height="54"
+                          />
+                        </picture>
+                        <span>подсолнечное масло</span>
+                      </div>
+                      <div class="JD-care__ingredient">
+                        <picture class="JD-img JD-care__ingredient-icon">
+                          <source
+                            srcset="
+                              img/care/flax-oil-1x.webp 1x,
+                              img/care/flax-oil-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="img/care/flax-oil-1x.webp"
+                            alt="Льняное масло"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-care__ingredient-icon-img"
+                            width="58"
+                            height="54"
+                          />
+                        </picture>
+                        <span>льняное масло</span>
+                      </div>
+                      <div class="JD-care__ingredient">
+                        <picture class="JD-img JD-care__ingredient-icon">
+                          <source
+                            srcset="
+                              img/care/fish-oil-1x.webp 1x,
+                              img/care/fish-oil-2x.webp 2x
+                            "
+                          />
+                          <img
+                            src="img/care/fish-oil-1x.webp"
+                            alt="Рыбий жир"
+                            loading="lazy"
+                            decoding="async"
+                            class="JD-care__ingredient-icon-img"
+                            width="54"
+                            height="54"
+                          />
+                        </picture>
+                        <span>рыбий жир</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <picture class="JD-img JD-care__bowl JD-care__bowl--oil">
+                    <source
+                      type="image/avif"
+                      srcset="
+                        img/care/bowl-oil-1x.avif 1x,
+                        img/care/bowl-oil-2x.avif 2x
+                      "
+                    />
+                    <img
+                      src="img/care/bowl-oil-1x.avif"
+                      srcset="
+                        img/care/bowl-oil-1x.avif 1x,
+                        img/care/bowl-oil-2x.avif 2x
+                      "
+                      alt="Масла в миске"
+                      width="285"
+                      height="374"
+                      class="JD-care__bowl-img"
+                      loading="lazy"
+                    />
+                  </picture>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="JD-holistic" data-js-holistic>
+        <div class="JD-container">
+          <div class="JD-holistic__intro">
+            <h2 class="JD-holistic__title">HOLISTIC LINE &#8212; влажные корма</h2>
+            <p class="JD-holistic__lead">
+              <span class="JD-holistic__lead-brand">Just Dog Holistic</span>
+              - это линейка кормов, разработанная для собак всех пород и
+              возрастов, особенно с чувствительным пищеварением и склонностью к
+              аллергии
+            </p>
+          </div>
+
+          <div class="JD-holistic__viewport swiper" data-js-holistic-viewport>
+            <div class="JD-holistic__track swiper-wrapper" data-js-holistic-track>
+              <article class="JD-holistic__card swiper-slide">
+                <span class="JD-holistic__badge">гипоаллергенный</span>
+
+                <div class="JD-holistic__media">
+                  <img
+                    src="img/holistic/product-rabbit-1x.avif"
+                    srcset="
+                      img/holistic/product-rabbit-1x.avif 1x,
+                      img/holistic/product-rabbit-2x.avif 2x
+                    "
+                    alt="Влажный корм Just Dog Holistic Кролик"
+                    width="387"
+                    height="245"
+                    class="JD-holistic__image"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="JD-holistic__content">
+                  <div class="JD-holistic__tags">
+                    <span class="JD-holistic__tag">все породы</span>
+                    <span class="JD-holistic__tag">для взрослых собак</span>
+                  </div>
+
+                  <h3 class="JD-holistic__card-title">Кролик</h3>
+                  <p class="JD-holistic__card-subtitle">
+                    С ТЫКВОЙ, МОРКОВЬЮ И ЦУКИНИ
+                  </p>
+                  <p class="JD-holistic__description">
+                    Полнорационный сбалансированный гипоаллергенный влажный
+                    корм для собак всех возрастов
+                  </p>
+                  <p class="JD-holistic__weight">340 г</p>
+
+                  <a
+                    href="https://www.dogeat.ru/catalog/just-dog/holistic/"
+                    class="JD-btn JD-holistic__buy"
+                    >Купить в зоомагазине</a
+                  >
+                  <a href="#" class="JD-btn JD-holistic__more">Подробнее</a>
+                </div>
+              </article>
+
+              <article class="JD-holistic__card swiper-slide">
+                <span class="JD-holistic__badge">гипоаллергенный</span>
+
+                <div class="JD-holistic__media">
+                  <img
+                    src="img/holistic/product-lamb-1x.avif"
+                    srcset="
+                      img/holistic/product-lamb-1x.avif 1x,
+                      img/holistic/product-lamb-2x.avif 2x
+                    "
+                    alt="Влажный корм Just Dog Holistic Ягненок"
+                    width="387"
+                    height="245"
+                    class="JD-holistic__image"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="JD-holistic__content">
+                  <div class="JD-holistic__tags">
+                    <span class="JD-holistic__tag">все породы</span>
+                    <span class="JD-holistic__tag">для взрослых собак</span>
+                  </div>
+
+                  <h3 class="JD-holistic__card-title">Ягненок</h3>
+                  <p class="JD-holistic__card-subtitle">
+                    С ЯБЛОКОМ, ЧЕРНИКОЙ И КЛЮКВОЙ
+                  </p>
+                  <p class="JD-holistic__description">
+                    Полнорационный сбалансированный гипоаллергенный влажный
+                    корм для собак всех возрастов
+                  </p>
+                  <p class="JD-holistic__weight">340 г</p>
+
+                  <a
+                    href="https://www.dogeat.ru/catalog/just-dog/holistic/"
+                    class="JD-btn JD-holistic__buy"
+                    >Купить в зоомагазине</a
+                  >
+                  <a href="#" class="JD-btn JD-holistic__more">Подробнее</a>
+                </div>
+              </article>
+
+              <article class="JD-holistic__card swiper-slide">
+                <span class="JD-holistic__badge">гипоаллергенный</span>
+
+                <div class="JD-holistic__media">
+                  <img
+                    src="img/holistic/product-4meat-1x.avif"
+                    srcset="
+                      img/holistic/product-4meat-1x.avif 1x,
+                      img/holistic/product-4meat-2x.avif 2x
+                    "
+                    alt="Влажный корм Just Dog Holistic 4 мяса"
+                    width="387"
+                    height="245"
+                    class="JD-holistic__image"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="JD-holistic__content">
+                  <div class="JD-holistic__tags">
+                    <span class="JD-holistic__tag">все породы</span>
+                    <span class="JD-holistic__tag">для взрослых собак</span>
+                  </div>
+
+                  <h3 class="JD-holistic__card-title">4 мяса</h3>
+                  <p class="JD-holistic__card-subtitle">
+                    ЯГНЕНОК, ИНДЕЙКА, КРОЛИК, КОНИНА
+                  </p>
+                  <p class="JD-holistic__description">
+                    Полнорационный сбалансированный гипоаллергенный влажный
+                    корм для собак всех возрастов
+                  </p>
+                  <p class="JD-holistic__weight">340 г</p>
+
+                  <a
+                    href="https://www.dogeat.ru/catalog/just-dog/holistic/"
+                    class="JD-btn JD-holistic__buy"
+                    >Купить в зоомагазине</a
+                  >
+                  <a href="#" class="JD-btn JD-holistic__more">Подробнее</a>
+                </div>
+              </article>
+
+              <article class="JD-holistic__card swiper-slide">
+                <span class="JD-holistic__badge">гипоаллергенный</span>
+
+                <div class="JD-holistic__media">
+                  <img
+                    src="img/holistic/product-chicken-1x.avif"
+                    srcset="
+                      img/holistic/product-chicken-1x.avif 1x,
+                      img/holistic/product-chicken-2x.avif 2x
+                    "
+                    alt="Влажный корм Just Dog Holistic Курица"
+                    width="387"
+                    height="245"
+                    class="JD-holistic__image"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="JD-holistic__content">
+                  <div class="JD-holistic__tags">
+                    <span class="JD-holistic__tag">все породы</span>
+                    <span class="JD-holistic__tag">для взрослых собак</span>
+                  </div>
+
+                  <h3 class="JD-holistic__card-title">Курица</h3>
+                  <p class="JD-holistic__card-subtitle">
+                    С ТЫКВОЙ, МОРКОВЬЮ И ШПИНАТОМ
+                  </p>
+                  <p class="JD-holistic__description">
+                    Полнорационный сбалансированный гипоаллергенный влажный
+                    корм для собак всех возрастов
+                  </p>
+                  <p class="JD-holistic__weight">340 г</p>
+
+                  <a
+                    href="https://www.dogeat.ru/catalog/just-dog/holistic/"
+                    class="JD-btn JD-holistic__buy"
+                    >Купить в зоомагазине</a
+                  >
+                  <a href="#" class="JD-btn JD-holistic__more">Подробнее</a>
+                </div>
+              </article>
+
+              <article class="JD-holistic__card swiper-slide">
+                <span class="JD-holistic__badge">гипоаллергенный</span>
+
+                <div class="JD-holistic__media">
+                  <img
+                    src="img/holistic/product-beef-1x.avif"
+                    srcset="
+                      img/holistic/product-beef-1x.avif 1x,
+                      img/holistic/product-beef-2x.avif 2x
+                    "
+                    alt="Влажный корм Just Dog Holistic Говядина"
+                    width="387"
+                    height="245"
+                    class="JD-holistic__image"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="JD-holistic__content">
+                  <div class="JD-holistic__tags">
+                    <span class="JD-holistic__tag">все породы</span>
+                    <span class="JD-holistic__tag">для взрослых собак</span>
+                  </div>
+
+                  <h3 class="JD-holistic__card-title">Говядина</h3>
+                  <p class="JD-holistic__card-subtitle">
+                    С ГРУШЕЙ, ЧЕРНИКОЙ И БРУСНИКОЙ
+                  </p>
+                  <p class="JD-holistic__description">
+                    Полнорационный сбалансированный гипоаллергенный влажный
+                    корм для собак всех возрастов
+                  </p>
+                  <p class="JD-holistic__weight">340 г</p>
+
+                  <a
+                    href="https://www.dogeat.ru/catalog/just-dog/holistic/"
+                    class="JD-btn JD-holistic__buy"
+                    >Купить в зоомагазине</a
+                  >
+                  <a href="#" class="JD-btn JD-holistic__more">Подробнее</a>
+                </div>
+              </article>
+
+              <article class="JD-holistic__card swiper-slide">
+                <span class="JD-holistic__badge">гипоаллергенный</span>
+
+                <div class="JD-holistic__media">
+                  <img
+                    src="img/holistic/product-turkey-1x.avif"
+                    srcset="
+                      img/holistic/product-turkey-1x.avif 1x,
+                      img/holistic/product-turkey-2x.avif 2x
+                    "
+                    alt="Влажный корм Just Dog Holistic Индейка"
+                    width="387"
+                    height="245"
+                    class="JD-holistic__image"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="JD-holistic__content">
+                  <div class="JD-holistic__tags">
+                    <span class="JD-holistic__tag">все породы</span>
+                    <span class="JD-holistic__tag">для взрослых собак</span>
+                  </div>
+
+                  <h3 class="JD-holistic__card-title">Индейка</h3>
+                  <p class="JD-holistic__card-subtitle">
+                    С ТЫКВОЙ, ЦУКИНИ, ШПИНАТОМ И КЛЮКВОЙ
+                  </p>
+                  <p class="JD-holistic__description">
+                    Полнорационный сбалансированный гипоаллергенный влажный
+                    корм для собак всех возрастов
+                  </p>
+                  <p class="JD-holistic__weight">340 г</p>
+
+                  <a
+                    href="https://www.dogeat.ru/catalog/just-dog/holistic/"
+                    class="JD-btn JD-holistic__buy"
+                    >Купить в зоомагазине</a
+                  >
+                  <a href="#" class="JD-btn JD-holistic__more">Подробнее</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div
+            class="JD-holistic__pagination"
+            data-js-holistic-pagination
+            aria-label="Навигация по товарам"
+          ></div>
+
+          <img
+            src="img/holistic/korm-1x.avif"
+            srcset="
+              img/holistic/korm-1x.avif 1x,
+              img/holistic/korm-2x.avif 2x
+            "
+            alt=""
+            width="779"
+            height="260"
+            class="JD-holistic__kibble"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="JD-dryline" data-js-dryline>
+        <div class="JD-container">
+          <div class="JD-dryline__intro">
+            <h2 class="JD-dryline__title">DRY LINE - СУХИЕ КОРМА</h2>
+            <p class="JD-dryline__lead">
+              Эта линейка полнорационных сухих кормов создана для взрослых
+              собак всех размеров и пород.
+            </p>
+          </div>
+
+          <div class="JD-dryline__viewport swiper" data-js-dryline-viewport>
+            <div class="JD-dryline__track swiper-wrapper" data-js-dryline-track>
+              <article class="JD-dryline__card JD-dryline__card--lamb-rosehip swiper-slide">
+                <span class="JD-dryline__badge">гипоаллергенный</span>
+
+                <div class="JD-dryline__media">
+                  <img
+                    src="img/dryline/product-lamb-rosehip-1x.avif"
+                    srcset="
+                      img/dryline/product-lamb-rosehip-1x.avif 1x,
+                      img/dryline/product-lamb-rosehip-2x.avif 2x
+                    "
+                    alt="Сухой корм Just Dog Dry Line Ягненок"
+                    width="262"
+                    height="319"
+                    class="JD-dryline__image"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="JD-dryline__content">
+                  <div class="JD-dryline__meta">
+                    <div class="JD-dryline__chips">
+                      <span class="JD-dryline__chip">Все породы</span>
+                      <span class="JD-dryline__chip">для взрослых собак</span>
+                    </div>
+
+                    <div class="JD-dryline__copy">
+                      <div class="JD-dryline__heading">
+                        <h3 class="JD-dryline__name">ЯГНЕНОК</h3>
+                        <p class="JD-dryline__taste">
+                          С РИСОМ, КЛЮКВОЙ, ЯБЛОКОМ И ШИПОВНИКОМ
+                        </p>
+                      </div>
+                      <p class="JD-dryline__description">
+                        Сухой полнорационный корм для взрослых собак крупных
+                        пород
+                      </p>
+                      <p class="JD-dryline__weight">12 кг и 1.2 кг</p>
+                    </div>
+                  </div>
+
+                  <div class="JD-dryline__actions">
+                    <a
+                      href="https://www.dogeat.ru/catalog/just-dog/low-grain/"
+                      class="JD-btn JD-dryline__buy"
+                    >
+                      Купить в зоомагазине
+                    </a>
+                    <a href="#" class="JD-btn JD-dryline__more">Подробнее</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="JD-dryline__card JD-dryline__card--beef swiper-slide">
+                <span class="JD-dryline__badge">гипоаллергенный</span>
+
+                <div class="JD-dryline__media">
+                  <img
+                    src="img/dryline/product-beef-1x.avif"
+                    srcset="
+                      img/dryline/product-beef-1x.avif 1x,
+                      img/dryline/product-beef-2x.avif 2x
+                    "
+                    alt="Сухой корм Just Dog Dry Line Говядина"
+                    width="256"
+                    height="311"
+                    class="JD-dryline__image"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="JD-dryline__content">
+                  <div class="JD-dryline__meta">
+                    <div class="JD-dryline__chips">
+                      <span class="JD-dryline__chip">Все породы</span>
+                      <span class="JD-dryline__chip">для взрослых собак</span>
+                    </div>
+
+                    <div class="JD-dryline__copy">
+                      <div class="JD-dryline__heading">
+                        <h3 class="JD-dryline__name">ГОВЯДИНА</h3>
+                        <p class="JD-dryline__taste">
+                          С ТЫКВОЙ, СВЕКЛОЙ, МОРКОВЬЮ И ЯГОДАМИ
+                        </p>
+                      </div>
+                      <p class="JD-dryline__description">
+                        Сухой полнорационный корм для взрослых собак всех пород
+                      </p>
+                      <p class="JD-dryline__weight">12 кг и 1.2 кг</p>
+                    </div>
+                  </div>
+
+                  <div class="JD-dryline__actions">
+                    <a
+                      href="https://www.dogeat.ru/catalog/just-dog/low-grain/"
+                      class="JD-btn JD-dryline__buy"
+                    >
+                      Купить в зоомагазине
+                    </a>
+                    <a href="#" class="JD-btn JD-dryline__more">Подробнее</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="JD-dryline__card JD-dryline__card--fish swiper-slide">
+                <span class="JD-dryline__badge">гипоаллергенный</span>
+
+                <div class="JD-dryline__media">
+                  <img
+                    src="img/dryline/product-fish-1x.avif"
+                    srcset="
+                      img/dryline/product-fish-1x.avif 1x,
+                      img/dryline/product-fish-2x.avif 2x
+                    "
+                    alt="Сухой корм Just Dog Dry Line Рыба"
+                    width="256"
+                    height="311"
+                    class="JD-dryline__image"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="JD-dryline__content">
+                  <div class="JD-dryline__meta">
+                    <div class="JD-dryline__chips">
+                      <span class="JD-dryline__chip">Все породы</span>
+                      <span class="JD-dryline__chip">для взрослых собак</span>
+                    </div>
+
+                    <div class="JD-dryline__copy">
+                      <div class="JD-dryline__heading">
+                        <h3 class="JD-dryline__name">РЫБА</h3>
+                        <p class="JD-dryline__taste">
+                          С ТЫКВОЙ, МОРКОВЬЮ, ЯБЛОКОМ И ЯГОДАМИ
+                        </p>
+                      </div>
+                      <p class="JD-dryline__description">
+                        Сухой полнорационный корм для взрослых собак всех пород
+                      </p>
+                      <p class="JD-dryline__weight">12 кг и 1.2 кг</p>
+                    </div>
+                  </div>
+
+                  <div class="JD-dryline__actions">
+                    <a
+                      href="https://www.dogeat.ru/catalog/just-dog/low-grain/"
+                      class="JD-btn JD-dryline__buy"
+                    >
+                      Купить в зоомагазине
+                    </a>
+                    <a href="#" class="JD-btn JD-dryline__more">Подробнее</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="JD-dryline__card JD-dryline__card--lamb swiper-slide">
+                <span class="JD-dryline__badge">гипоаллергенный</span>
+
+                <div class="JD-dryline__media">
+                  <img
+                    src="img/dryline/product-lamb-1x.avif"
+                    srcset="
+                      img/dryline/product-lamb-1x.avif 1x,
+                      img/dryline/product-lamb-2x.avif 2x
+                    "
+                    alt="Сухой корм Just Dog Dry Line Ягненок"
+                    width="241"
+                    height="311"
+                    class="JD-dryline__image"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="JD-dryline__content">
+                  <div class="JD-dryline__meta">
+                    <div class="JD-dryline__chips">
+                      <span class="JD-dryline__chip">Все породы</span>
+                      <span class="JD-dryline__chip">для взрослых собак</span>
+                    </div>
+
+                    <div class="JD-dryline__copy">
+                      <div class="JD-dryline__heading">
+                        <h3 class="JD-dryline__name">ЯГНЕНОК</h3>
+                        <p class="JD-dryline__taste">
+                          С РИСОМ, КЛЮКВОЙ, ЯБЛОКОМ И ШИПОВНИКОМ
+                        </p>
+                      </div>
+                      <p class="JD-dryline__description">
+                        Сухой полнорационный корм для взрослых собак всех пород
+                      </p>
+                      <p class="JD-dryline__weight">12 кг и 1.2 кг</p>
+                    </div>
+                  </div>
+
+                  <div class="JD-dryline__actions">
+                    <a
+                      href="https://www.dogeat.ru/catalog/just-dog/low-grain/"
+                      class="JD-btn JD-dryline__buy"
+                    >
+                      Купить в зоомагазине
+                    </a>
+                    <a href="#" class="JD-btn JD-dryline__more">Подробнее</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="JD-dryline__card JD-dryline__card--turkey swiper-slide">
+                <span class="JD-dryline__badge">гипоаллергенный</span>
+
+                <div class="JD-dryline__media">
+                  <img
+                    src="img/dryline/product-turkey-1x.avif"
+                    srcset="
+                      img/dryline/product-turkey-1x.avif 1x,
+                      img/dryline/product-turkey-2x.avif 2x
+                    "
+                    alt="Сухой корм Just Dog Dry Line Индейка"
+                    width="241"
+                    height="323"
+                    class="JD-dryline__image"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="JD-dryline__content">
+                  <div class="JD-dryline__meta">
+                    <div class="JD-dryline__chips">
+                      <span class="JD-dryline__chip">Все породы</span>
+                      <span class="JD-dryline__chip">для взрослых собак</span>
+                    </div>
+
+                    <div class="JD-dryline__copy">
+                      <div class="JD-dryline__heading">
+                        <h3 class="JD-dryline__name">ИНДЕЙКА</h3>
+                        <p class="JD-dryline__taste">
+                          С ТЫКВОЙ, МОРКОВЬЮ И ЯГОДАМИ
+                        </p>
+                      </div>
+                      <p class="JD-dryline__description">
+                        Сухой полнорационный корм для взрослых собак крупных и
+                        средних пород
+                      </p>
+                      <p class="JD-dryline__weight">12 кг и 1.2 кг</p>
+                    </div>
+                  </div>
+
+                  <div class="JD-dryline__actions">
+                    <a
+                      href="https://www.dogeat.ru/catalog/just-dog/low-grain/"
+                      class="JD-btn JD-dryline__buy"
+                    >
+                      Купить в зоомагазине
+                    </a>
+                    <a href="#" class="JD-btn JD-dryline__more">Подробнее</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div
+            class="JD-dryline__pagination"
+            data-js-dryline-pagination
+            aria-label="Навигация по товарам сухой линейки"
+          ></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/holistic-carousel.js"></script>
+    <script src="js/dryline-carousel.js"></script>
+    <script src="js/care-slider.js"></script>
+  </body>
+</html>

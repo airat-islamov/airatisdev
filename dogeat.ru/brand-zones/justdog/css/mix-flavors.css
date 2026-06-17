@@ -1,0 +1,194 @@
+.JD-mix-flavors__wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  background-color: #ffffff;
+  background-image: url("../img/mix-flavors/background-1x.avif");
+  background-image: -webkit-image-set(
+    url("../img/mix-flavors/background-1x.avif") 1x,
+    url("../img/mix-flavors/background-2x.avif") 2x
+  );
+  background-image: image-set(
+    url("../img/mix-flavors/background-1x.avif") 1x,
+    url("../img/mix-flavors/background-2x.avif") 2x
+  );
+  background-repeat: no-repeat;
+  background-size: 665px 400px;
+  box-shadow: 0 4px 20px 3px rgba(171, 176, 191, 0.35);
+  border-radius: 24px;
+}
+
+.JD-mix-flavors__content {
+  position: absolute;
+  inset: 0;
+}
+
+.JD-mix-flavors__logo,
+.JD-mix-flavors__products,
+.JD-mix-flavors__signature {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+}
+
+.JD-mix-flavors__layer-img,
+.JD-mix-flavors__signature-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.JD-mix-flavors__layer-img,
+.JD-mix-flavors__signature-img {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.JD-mix-flavors__logo {
+  left: 32px;
+  top: 0;
+  width: 164px;
+  height: 164px;
+  -webkit-filter: drop-shadow(4px 3px 8px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(4px 3px 8px rgba(0, 0, 0, 0.25));
+  z-index: 1;
+}
+
+.JD-mix-flavors__products {
+  left: 245px;
+  top: 42px;
+  z-index: 1;
+  width: 400px;
+  height: 342px;
+}
+
+.JD-mix-flavors__content {
+  z-index: 2;
+}
+
+.JD-mix-flavors__lead {
+  position: absolute;
+  left: 60.67%;
+  top: 7%;
+  width: 173px;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.JD-mix-flavors__title {
+  position: absolute;
+  left: 60.67%;
+  top: 25%;
+  margin: 0;
+  font-family: "Geologica", sans-serif;
+  font-weight: 800;
+  font-size: 88px;
+  line-height: 0.9;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: transparent;
+  background-image:
+    linear-gradient(
+      128deg,
+      rgba(0, 0, 0, 0.2) 4.5%,
+      rgba(255, 250, 250, 0.2) 77%
+    ),
+    linear-gradient(90deg, #e2bc80 0%, #e2bc80 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.JD-mix-flavors__signature {
+  left: 82.88%;
+  top: 82.35%;
+  width: 14%;
+  height: 10.5%;
+  -webkit-transform: rotate(-4.57deg);
+  transform: rotate(-4.57deg);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+@media (max-width: 1259px) {
+  .JD-mix-flavors__wrapper {
+    height: 310px;
+    background-size: 515px 310px;
+  }
+
+  .JD-mix-flavors__products {
+    left: 190px;
+    top: 33px;
+  }
+
+  .JD-mix-flavors__lead {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .JD-mix-flavors__title {
+    font-size: 68px;
+  }
+}
+
+@media (max-width: 991px) {
+  .JD-mix-flavors__wrapper {
+    width: min(100%, 370px);
+    height: auto;
+    aspect-ratio: 370 / 667;
+    margin: 0 auto;
+    background-size: auto 100%;
+  }
+
+  .JD-mix-flavors__logo {
+    left: 62.97%;
+    top: -3%;
+    width: 120px;
+    height: 127px;
+    -webkit-filter: drop-shadow(3px 2px 7px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(3px 2px 7px rgba(0, 0, 0, 0.25));
+  }
+
+  .JD-mix-flavors__products {
+    left: auto;
+    right: 1px;
+    top: 444px;
+  }
+
+  .JD-mix-flavors__lead {
+    left: 6.76%;
+    top: 7.05%;
+    width: 142px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .JD-mix-flavors__title {
+    left: 6.76%;
+    top: 17.35%;
+    font-size: 71px;
+    line-height: 0.9;
+  }
+
+  .JD-mix-flavors__signature {
+    left: 55.68%;
+    top: 45.58%;
+    width: 36.75%;
+    height: 5.1%;
+  }
+}
+
+@media (max-width: 369px) {
+  .JD-mix-flavors__lead {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .JD-mix-flavors__title {
+    font-size: 62px;
+  }
+}
