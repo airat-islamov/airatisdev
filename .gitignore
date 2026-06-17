@@ -1,0 +1,89 @@
+# ------------------------------
+# OS: macOS (Finder/Spotlight/trash/cache artifacts)
+# ------------------------------
+.DS_Store
+*/.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+.fseventsd
+.apdisk
+*.qlgenerator
+*.dylib
+
+# ------------------------------
+# Env/Secrets
+# ------------------------------
+.env
+.env.*
+!.env.example
+!.env.local.example
+!.env.*.example
+
+# ------------------------------
+# Node.js
+# ------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# package managers caches / metadata
+.npm/
+.pnpm-store/
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# build / output
+dist/
+build/
+out/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# common frameworks
+.next/
+.nuxt/
+.output/
+.svelte-kit/
+
+# tooling caches
+.parcel-cache/
+.turbo/
+.vite/
+.eslintcache
+.stylelintcache
+
+# deploy/platform dirs (если используешь)
+.vercel/
+.netlify/
+.serverless/
+.firebase/
+
+# ------------------------------
+# Logs / PIDs
+# ------------------------------
+*.log
+*.log.*
+*.pid
+*.pid.lock
+*.seed
+
+# ------------------------------
+# Misc caches
+# ------------------------------
+.cache/
+.cache-loader/
+
+# ------------------------------
+# IDE
+# ------------------------------
+.vscode/*
