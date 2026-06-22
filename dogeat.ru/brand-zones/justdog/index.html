@@ -209,6 +209,8 @@
                     ./img/mix-flavors/logo-mob-1x.avif 1x,
                     ./img/mix-flavors/logo-mob-2x.avif 2x
                   "
+                  width="139"
+                  height="136"
                 />
                 <img
                   class="JD-mix-flavors__layer-img"
@@ -226,18 +228,25 @@
               </picture>
 
               <picture class="JD-img JD-mix-flavors__products">
+                <source
+                  media="(max-width: 991px)"
+                  srcset="
+                    ./img/mix-flavors/background-mob-1x.avif 1x,
+                    ./img/mix-flavors/background-mob-2x.avif 2x
+                  "
+                />
                 <img
                   class="JD-mix-flavors__layer-img"
                   srcset="
-                    ./img/mix-flavors/products-1x.avif 1x,
-                    ./img/mix-flavors/products-2x.avif 2x
+                    ./img/mix-flavors/background-1x.avif 1x,
+                    ./img/mix-flavors/background-2x.avif 2x
                   "
-                  src="./img/mix-flavors/products-1x.avif"
+                  src="./img/mix-flavors/background-1x.avif"
                   alt=""
                   loading="lazy"
                   decoding="async"
-                  width="400"
-                  height="342"
+                  width="665"
+                  height="400"
                 />
               </picture>
 
@@ -254,16 +263,23 @@
                 <picture class="JD-img JD-mix-flavors__signature">
                   <source
                     media="(max-width: 991px)"
-                    srcset="./img/mix-flavors/signature-mobile.svg"
+                    srcset="
+                      ./img/mix-flavors/signature-mob-1x.avif 1x,
+                      ./img/mix-flavors/signature-mob-2x.avif 2x
+                    "
                   />
                   <img
                     class="JD-mix-flavors__signature-img"
-                    src="./img/mix-flavors/signature-desktop.svg"
+                    srcset="
+                      ./img/mix-flavors/signature-1x.avif 1x,
+                      ./img/mix-flavors/signature-2x.avif 2x
+                    "
+                    src="./img/mix-flavors/signature-1x.avif"
                     alt="Just do eat!"
                     loading="lazy"
                     decoding="async"
-                    width="168"
-                    height="42"
+                    width="165"
+                    height="55"
                   />
                 </picture>
               </div>

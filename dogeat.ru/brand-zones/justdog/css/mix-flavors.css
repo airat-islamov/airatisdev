@@ -1,33 +1,41 @@
 .JD-mix-flavors__wrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   overflow: hidden;
-  height: 400px;
-  background-color: #ffffff;
-  background-image: url("../img/mix-flavors/background-1x.avif");
-  background-image: -webkit-image-set(
-    url("../img/mix-flavors/background-1x.avif") 1x,
-    url("../img/mix-flavors/background-2x.avif") 2x
-  );
-  background-image: image-set(
-    url("../img/mix-flavors/background-1x.avif") 1x,
-    url("../img/mix-flavors/background-2x.avif") 2x
-  );
-  background-repeat: no-repeat;
-  background-size: 665px 400px;
+  min-height: 400px;
   box-shadow: 0 4px 20px 3px rgba(171, 176, 191, 0.35);
   border-radius: 24px;
 }
 
 .JD-mix-flavors__content {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  z-index: 2;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 545px;
+  flex: 0 1 545px;
+  max-width: 545px;
+  min-height: 400px;
+  padding: 28px 40px 24px 63px;
 }
 
 .JD-mix-flavors__logo,
-.JD-mix-flavors__products,
 .JD-mix-flavors__signature {
   position: absolute;
   display: block;
+  pointer-events: none;
+}
+
+.JD-mix-flavors__products {
+  position: relative;
+  z-index: 1;
+  display: block;
+  -webkit-box-flex: 1;
+  max-width: 665px;
   pointer-events: none;
 }
 
@@ -45,50 +53,34 @@
 }
 
 .JD-mix-flavors__logo {
-  left: 32px;
+  left: 31px;
   top: 0;
   width: 164px;
   height: 164px;
-  -webkit-filter: drop-shadow(4px 3px 8px rgba(0, 0, 0, 0.25));
-  filter: drop-shadow(4px 3px 8px rgba(0, 0, 0, 0.25));
-  z-index: 1;
-}
-
-.JD-mix-flavors__products {
-  left: 245px;
-  top: 42px;
-  z-index: 1;
-  width: 400px;
-  height: 342px;
-}
-
-.JD-mix-flavors__content {
   z-index: 2;
 }
 
+.JD-mix-flavors__products {
+  width: 100%;
+}
+
 .JD-mix-flavors__lead {
-  position: absolute;
-  left: 60.67%;
-  top: 7%;
-  width: 173px;
-  margin: 0;
+  max-width: 173px;
+  margin: 0 0 35px;
   font-family: "Manrope", sans-serif;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 23px;
   line-height: 25px;
   color: #000000;
 }
 
 .JD-mix-flavors__title {
-  position: absolute;
-  left: 60.67%;
-  top: 25%;
   margin: 0;
   font-family: "Geologica", sans-serif;
   font-weight: 800;
   font-size: 88px;
   line-height: 0.9;
-  letter-spacing: 0;
+  letter-spacing: -9px;
   text-transform: uppercase;
   color: transparent;
   background-image:
@@ -104,28 +96,28 @@
 }
 
 .JD-mix-flavors__signature {
-  left: 82.88%;
-  top: 82.35%;
-  width: 14%;
-  height: 10.5%;
-  -webkit-transform: rotate(-4.57deg);
-  transform: rotate(-4.57deg);
+  right: 38px;
+  bottom: 15px;
+  width: 165px;
+  height: 55px;
+  -webkit-transform: rotate(-0.5deg);
+  transform: rotate(-0.5deg);
   -webkit-transform-origin: center;
   transform-origin: center;
 }
 
 @media (max-width: 1259px) {
   .JD-mix-flavors__wrapper {
-    height: 310px;
-    background-size: 515px 310px;
+    min-height: 310px;
   }
 
-  .JD-mix-flavors__products {
-    left: 190px;
-    top: 33px;
+  .JD-mix-flavors__content {
+    min-height: 310px;
+    padding: 22px 28px 20px 40px;
   }
 
   .JD-mix-flavors__lead {
+    margin-bottom: 18px;
     font-size: 18px;
     line-height: 21px;
   }
@@ -137,48 +129,67 @@
 
 @media (max-width: 991px) {
   .JD-mix-flavors__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: min(100%, 370px);
-    height: auto;
-    aspect-ratio: 370 / 667;
+    min-height: 667px;
     margin: 0 auto;
-    background-size: auto 100%;
   }
 
   .JD-mix-flavors__logo {
-    left: 62.97%;
-    top: -3%;
-    width: 120px;
-    height: 127px;
-    -webkit-filter: drop-shadow(3px 2px 7px rgba(0, 0, 0, 0.25));
-    filter: drop-shadow(3px 2px 7px rgba(0, 0, 0, 0.25));
+    left: auto;
+    top: 0;
+    right: -1px;
+    width: 139px;
+    height: 136px;
   }
 
   .JD-mix-flavors__products {
-    left: auto;
-    right: 1px;
-    top: 444px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 370px;
+    max-width: 100%;
+    height: 306px;
+    aspect-ratio: auto;
+  }
+
+  .JD-mix-flavors__content {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 361px;
+    flex: 0 0 361px;
+    width: 100%;
+    max-width: none;
+    min-height: 361px;
+    padding: 47px 25px 0;
   }
 
   .JD-mix-flavors__lead {
-    left: 6.76%;
-    top: 7.05%;
     width: 142px;
-    font-size: 18px;
+    margin-bottom: 29px;
+    font-size: 19px;
     line-height: 20px;
   }
 
   .JD-mix-flavors__title {
-    left: 6.76%;
-    top: 17.35%;
     font-size: 71px;
     line-height: 0.9;
+    letter-spacing: -7px;
   }
 
   .JD-mix-flavors__signature {
-    left: 55.68%;
-    top: 45.58%;
-    width: 36.75%;
-    height: 5.1%;
+    right: 28px;
+    bottom: 16px;
+    width: 134px;
+    height: 45px;
   }
 }
 
