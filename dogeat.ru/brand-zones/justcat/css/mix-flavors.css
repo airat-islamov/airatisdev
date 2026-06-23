@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/Geologica-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Manrope-Light.woff2") format("woff2");
+}
+
+body {
+  margin: 0;
+}
+
+.JC,
+.JC *,
+.JC *::before,
+.JC *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.JC img {
+  max-width: 100%;
+}
+
+.JC-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.JC-img {
+  display: block;
+}
+
+.JC-margin-bottom {
+  margin-bottom: 44px;
+}
+
+.JC-mix-flavors__wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  background-color: #ffffff;
+  border-radius: 24px;
+  -webkit-box-shadow: 0 4px 20px 3px rgba(171, 176, 191, 0.35);
+  box-shadow: 0 4px 20px 3px rgba(171, 176, 191, 0.35);
+  isolation: isolate;
+}
+
+.JC-mix-flavors__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 67.5%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.JC-mix-flavors__background-img,
+.JC-mix-flavors__logo-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.JC-mix-flavors__background-img {
+  -o-object-position: right top;
+  object-position: right top;
+}
+
+.JC-mix-flavors__logo {
+  display: none;
+}
+
+.JC-mix-flavors__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 28px 0 0 50px;
+}
+
+.JC-mix-flavors__lead {
+  width: 321px;
+  margin: 0 0 35px;
+  font-family: "Manrope", sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 1.129;
+  color: #000000;
+}
+
+.JC-mix-flavors__lead-mobile {
+  display: none;
+}
+
+.JC-mix-flavors__title {
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: 0;
+  font-family: "Geologica", sans-serif;
+  font-size: 87.716px;
+  font-weight: 800;
+  line-height: 0.899;
+  letter-spacing: -8px;
+  text-transform: uppercase;
+  color: transparent;
+  background-image:
+    linear-gradient(
+      128deg,
+      rgba(0, 0, 0, 0.2) 4.5%,
+      rgba(255, 250, 250, 0.2) 77.2%
+    ),
+    linear-gradient(-85.8deg, #f19328 10.9%, #dd3a32 91.3%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.JC-mix-flavors__signature {
+  position: absolute;
+  bottom: 11px;
+  left: 277px;
+  display: block;
+  width: 165px;
+  pointer-events: none;
+}
+
+.JC-mix-flavors__signature-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1259px) {
+  .JC-container {
+    max-width: 930px;
+  }
+
+  .JC-mix-flavors__lead {
+    width: 290px;
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .JC-mix-flavors__title {
+    font-size: 70px;
+    letter-spacing: -5px;
+  }
+}
+
+@media (max-width: 991px) {
+  .JC-container {
+    max-width: 710px;
+  }
+
+  .JC-margin-bottom {
+    margin-bottom: 24px;
+  }
+
+  .JC-mix-flavors__wrapper {
+    width: min(100%, 370px);
+    margin: 0 auto;
+    aspect-ratio: 370 / 667;
+  }
+
+  .JC-mix-flavors__background {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 51.724%;
+  }
+
+  .JC-mix-flavors__background-img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center bottom;
+    object-position: center bottom;
+  }
+
+  .JC-mix-flavors__logo {
+    position: absolute;
+    top: 0;
+    right: 0.811%;
+    z-index: 3;
+    display: block;
+    width: 39.189%;
+    aspect-ratio: 145 / 143;
+    pointer-events: none;
+  }
+
+  .JC-mix-flavors__content {
+    padding: 27px 0 0 25px;
+  }
+
+  .JC-mix-flavors__lead {
+    width: 259.362px;
+    margin-bottom: 28.094px;
+    font-size: 16px;
+    line-height: 1.2625;
+  }
+
+  .JC-mix-flavors__lead-desktop {
+    display: none;
+  }
+
+  .JC-mix-flavors__lead-mobile {
+    display: inline;
+  }
+
+  .JC-mix-flavors__title {
+    font-size: 70.873px;
+    line-height: 0.899;
+    letter-spacing: -7.796px;
+  }
+
+  .JC-mix-flavors__signature {
+    bottom: auto;
+    top: 294px;
+    right: 27.5px;
+    left: auto;
+    width: 36.216%;
+  }
+}
+
+@media (max-width: 369px) {
+  .JC-mix-flavors__lead {
+    font-size: 15px;
+    line-height: 1.22;
+  }
+
+  .JC-mix-flavors__title {
+    font-size: 62px;
+    letter-spacing: -6.8px;
+  }
+}

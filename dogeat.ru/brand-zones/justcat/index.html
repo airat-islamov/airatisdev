@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just Cat Mix Flavors</title>
+    <link rel="stylesheet" href="css/mix-flavors.css?v=20260623-2" />
+  </head>
+  <body>
+    <main class="JC">
+      <section
+        class="JC-mix-flavors JC-margin-bottom"
+        aria-labelledby="JC-mix-flavors-title"
+      >
+        <div class="JC-container">
+          <div class="JC-mix-flavors__wrapper">
+            <picture class="JC-img JC-mix-flavors__background">
+              <source
+                media="(max-width: 991px)"
+                srcset="
+                  ./img/mix-flavors/background-mob-1x.avif 1x,
+                  ./img/mix-flavors/background-mob-2x.avif 2x
+                "
+              />
+              <img
+                class="JC-mix-flavors__background-img"
+                srcset="
+                  ./img/mix-flavors/background-1x.avif 1x,
+                  ./img/mix-flavors/background-2x.avif 2x
+                "
+                src="./img/mix-flavors/background-1x.avif"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="810"
+                height="400"
+              />
+            </picture>
+
+            <picture class="JC-img JC-mix-flavors__logo">
+              <img
+                class="JC-mix-flavors__logo-img"
+                srcset="
+                  ./img/mix-flavors/logo-mob-1x.avif 1x,
+                  ./img/mix-flavors/logo-mob-2x.avif 2x
+                "
+                src="./img/mix-flavors/logo-mob-1x.avif"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="145"
+                height="143"
+              />
+            </picture>
+
+            <div class="JC-mix-flavors__content">
+              <p class="JC-mix-flavors__lead">
+                <span class="JC-mix-flavors__lead-desktop">
+                  Для стерилизованных кошек<br />
+                  и ветеринарный корм
+                </span>
+                <span class="JC-mix-flavors__lead-mobile">
+                  Для стерилизованных<br />
+                  кошек и ветеринарный<br />
+                  корм
+                </span>
+              </p>
+
+              <h2 class="JC-mix-flavors__title" id="JC-mix-flavors-title">
+                Новые<br />
+                микс-<br />
+                вкусы
+              </h2>
+
+              <picture class="JC-img JC-mix-flavors__signature">
+                <source
+                  media="(max-width: 991px)"
+                  srcset="
+                    ./img/mix-flavors/signature-mob-1x.avif 1x,
+                    ./img/mix-flavors/signature-mob-2x.avif 2x
+                  "
+                />
+                <img
+                  class="JC-mix-flavors__signature-img"
+                  srcset="
+                    ./img/mix-flavors/signature-1x.avif 1x,
+                    ./img/mix-flavors/signature-2x.avif 2x
+                  "
+                  src="./img/mix-flavors/signature-1x.avif"
+                  alt="Just do eat!"
+                  loading="lazy"
+                  decoding="async"
+                  width="165"
+                  height="55"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
