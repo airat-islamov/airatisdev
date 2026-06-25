@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy Daily</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/promo-banner-news.css" />
   </head>
   <body style="margin: 0">
     <div class="HD">
@@ -109,6 +110,61 @@
         </div>
       </section>
       <div id="hiddenBlock" style="display: none">
+        <section
+          class="promo-banner-news HD-margin-bottom"
+          aria-label="Новинки Happy Daily с артишоком"
+        >
+          <div class="HD-container">
+            <div class="promo-banner-news__wrapper">
+              <div class="HD-img promo-banner-news__logo" aria-hidden="true">
+                <img
+                  src="img/composition/logo-1x.avif"
+                  srcset="
+                    img/composition/logo-1x.avif 1x,
+                    img/composition/logo-2x.avif 2x
+                  "
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  width="162"
+                  height="141"
+                  class="promo-banner-news__logo-img"
+                />
+              </div>
+
+              <picture class="HD-img promo-banner-news__artichoke">
+                <source
+                  media="(max-width: 991px)"
+                  srcset="
+                    img/promo-banner-news/artichoke-mob-1x.avif 1x,
+                    img/promo-banner-news/artichoke-mob-2x.avif 2x
+                  "
+                />
+                <img
+                  src="img/promo-banner-news/artichoke-1x.avif"
+                  srcset="
+                    img/promo-banner-news/artichoke-1x.avif 1x,
+                    img/promo-banner-news/artichoke-2x.avif 2x
+                  "
+                  alt="Натуральный пребиотик: содержит артишок и антиоксидант"
+                  loading="lazy"
+                  decoding="async"
+                  width="193"
+                  height="189"
+                  class="promo-banner-news__artichoke-img"
+                />
+              </picture>
+
+              <button
+                type="button"
+                class="HD-btn promo-banner-news__button"
+              >
+                Смотреть новинки
+              </button>
+            </div>
+          </div>
+        </section>
+
         <section class="HD-lines HD-margin-bottom" aria-label="Линейки кормов">
           <div class="HD-container">
             <ul class="HD-lines__list">
