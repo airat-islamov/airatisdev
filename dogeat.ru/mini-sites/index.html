@@ -1,0 +1,2396 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AWARD — суперпремиальные корма для кошек и собак."
+    />
+    <title>AWARD — корма для кошек и собак</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="AW">
+      <header class="AW-header">
+        <div class="AW-container AW-header__container">
+          <a class="AW-header__logo" href="#" aria-label="AWARD — на главную">
+            <picture class="AW-header__logo-picture">
+              <source
+                media="(max-width: 700px)"
+                srcset="
+                  img/header/logo-mobile-1x.avif 1x,
+                  img/header/logo-mobile-2x.avif 2x
+                "
+                width="97"
+                height="23"
+              />
+              <img
+                class="AW-header__logo-image"
+                src="img/header/logo-1x.avif"
+                srcset="img/header/logo-1x.avif 1x, img/header/logo-2x.avif 2x"
+                width="144"
+                height="34"
+                alt="AWARD"
+                fetchpriority="high"
+              />
+            </picture>
+          </a>
+
+          <nav class="AW-header__nav" aria-label="Основная навигация">
+            <ul class="AW-header__nav-list">
+              <li class="AW-header__nav-item">
+                <a class="AW-header__nav-link" href="/catalog">Каталог</a>
+              </li>
+              <li class="AW-header__nav-item">
+                <a class="AW-header__nav-link" href="/catalog"> Для кошек </a>
+              </li>
+              <li class="AW-header__nav-item">
+                <a class="AW-header__nav-link" href="/catalog"> Для собак </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="AW-header__actions">
+            <button class="AW-btn AW-header__contact" type="button">
+              Связаться с нами
+            </button>
+
+            <button
+              class="AW-btn AW-header__menu-toggle"
+              type="button"
+              aria-label="Открыть меню"
+              aria-controls="AW-mobile-menu"
+              aria-expanded="false"
+              data-js-menu-toggle
+            >
+              <span class="AW-header__menu-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="AW-header__menu-backdrop"
+          aria-hidden="true"
+          data-js-menu-backdrop
+        ></div>
+
+        <div
+          class="AW-header__mobile-panel"
+          id="AW-mobile-menu"
+          aria-hidden="true"
+          data-js-mobile-menu
+          inert
+        >
+          <div class="AW-header__mobile-main">
+            <div class="AW-header__mobile-top">
+              <a
+                class="AW-header__mobile-logo"
+                href="#"
+                aria-label="AWARD — на главную"
+                data-js-mobile-link
+              >
+                <img
+                  src="img/header/logo-mobile-1x.avif"
+                  srcset="
+                    img/header/logo-mobile-1x.avif 1x,
+                    img/header/logo-mobile-2x.avif 2x
+                  "
+                  width="97"
+                  height="23"
+                  alt="AWARD"
+                />
+              </a>
+
+              <button
+                class="AW-btn AW-header__menu-close"
+                type="button"
+                aria-label="Закрыть меню"
+                data-js-menu-close
+              >
+                <span class="AW-header__close-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <nav class="AW-header__mobile-nav" aria-label="Мобильная навигация">
+              <ul class="AW-header__mobile-list">
+                <li><a href="/catalog" data-js-mobile-link>Каталог</a></li>
+                <li>
+                  <a href="/catalog" data-js-mobile-link> Для кошек </a>
+                </li>
+                <li>
+                  <a href="/catalog" data-js-mobile-link> Для собак </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <button
+            class="AW-btn AW-header__mobile-contact"
+            type="button"
+            data-js-mobile-link
+          >
+            Связаться с нами
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="AW-hero" aria-labelledby="AW-hero-title">
+          <div class="AW-container AW-hero__container">
+            <div class="AW-hero__card">
+              <div class="AW-hero__content">
+                <div class="AW-hero__shadows" aria-hidden="true">
+                  <picture class="AW-hero__shadow AW-hero__shadow--right">
+                    <img
+                      class="AW-hero__shadow-image"
+                      src="img/hero/shadow-right.avif"
+                      width="774"
+                      height="458"
+                      alt=""
+                    />
+                  </picture>
+
+                  <picture class="AW-hero__shadow AW-hero__shadow--left">
+                    <img
+                      class="AW-hero__shadow-image"
+                      src="img/hero/shadow-left.avif"
+                      width="490"
+                      height="516"
+                      alt=""
+                    />
+                  </picture>
+
+                  <img
+                    class="AW-hero__shadow AW-hero__shadow--mobile"
+                    src="img/hero/shadow-mobile.avif"
+                    width="375"
+                    height="544"
+                    alt=""
+                  />
+                </div>
+
+                <h1 class="AW-hero__title" id="AW-hero-title">
+                  <strong class="AW-hero__title-accent">
+                    Суперпремиальный
+                  </strong>
+                  <span class="AW-hero__title-text">
+                    корм, созданный
+                    <br class="AW-hero__title-break" />
+                    по самым современным технологиям
+                  </span>
+                </h1>
+
+                <div class="AW-hero__actions">
+                  <a class="AW-btn AW-hero__link" href="/catalog">
+                    <img
+                      class="AW-hero__link-icon"
+                      src="img/hero/icon-cat-1x.avif"
+                      srcset="
+                        img/hero/icon-cat-1x.avif 1x,
+                        img/hero/icon-cat-2x.avif 2x
+                      "
+                      width="18"
+                      height="18"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span>Для кошек</span>
+                  </a>
+
+                  <a class="AW-btn AW-hero__link" href="/catalog">
+                    <img
+                      class="AW-hero__link-icon"
+                      src="img/hero/icon-dog-1x.avif"
+                      srcset="
+                        img/hero/icon-dog-1x.avif 1x,
+                        img/hero/icon-dog-2x.avif 2x
+                      "
+                      width="22"
+                      height="23"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span>Для собак</span>
+                  </a>
+                </div>
+              </div>
+
+              <picture class="AW-hero__dog">
+                <source
+                  media="(max-width: 991px)"
+                  srcset="
+                    img/hero/hero-dog-mobile-1x.avif 1x,
+                    img/hero/hero-dog-mobile-2x.avif 2x
+                  "
+                  width="375"
+                  height="220"
+                />
+                <img
+                  class="AW-hero__dog-image"
+                  src="img/hero/hero-dog-1x.avif"
+                  srcset="
+                    img/hero/hero-dog-1x.avif 1x,
+                    img/hero/hero-dog-2x.avif 2x
+                  "
+                  width="660"
+                  height="516"
+                  alt="Собака с игрушкой"
+                  fetchpriority="high"
+                />
+              </picture>
+
+              <div
+                class="AW-hero__products"
+                role="img"
+                aria-label="Упаковки корма AWARD"
+              >
+                <picture class="AW-hero__products-picture">
+                  <source
+                    media="(max-width: 991px)"
+                    srcset="
+                      img/hero/hero-pack-mobile-1x.avif 1x,
+                      img/hero/hero-pack-mobile-2x.avif 2x
+                    "
+                    width="122"
+                    height="193"
+                  />
+                  <img
+                    class="AW-hero__products-image"
+                    src="img/hero/hero-pack-1x.avif"
+                    srcset="
+                      img/hero/hero-pack-1x.avif 1x,
+                      img/hero/hero-pack-2x.avif 2x
+                    "
+                    width="236"
+                    height="380"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="AW-catalog"
+          id="catalog"
+          aria-labelledby="AW-catalog-title"
+          data-js-catalog
+        >
+          <div class="AW-container AW-catalog__container">
+            <div class="AW-catalog__panel">
+              <div class="AW-catalog__top">
+                <h2 class="AW-catalog__title" id="AW-catalog-title">
+                  <strong>Каталог</strong>
+                  <span>товаров</span>
+                </h2>
+
+                <a class="AW-catalog__all" href="/catalog/">
+                  <span>Смотреть все</span>
+                  <span class="AW-catalog__all-icon" aria-hidden="true"></span>
+                </a>
+              </div>
+
+              <div
+                class="AW-catalog__species"
+                role="tablist"
+                aria-label="Категории каталога"
+              >
+                <button
+                  class="AW-btn AW-catalog__species-button is-active"
+                  type="button"
+                  id="cats"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="AW-catalog-panel-cats"
+                  data-js-catalog-tab
+                >
+                  <span class="AW-catalog__species-icon" aria-hidden="true">
+                    <picture
+                      class="AW-catalog__species-picture AW-catalog__species-picture--active"
+                    >
+                      <source
+                        media="(max-width: 700px)"
+                        srcset="
+                          img/catalog/icon-cat-white-mobile-1x.avif 1x,
+                          img/catalog/icon-cat-white-mobile-2x.avif 2x
+                        "
+                        width="20"
+                        height="19"
+                      />
+                      <img
+                        src="img/catalog/icon-cat-white-1x.avif"
+                        srcset="
+                          img/catalog/icon-cat-white-1x.avif 1x,
+                          img/catalog/icon-cat-white-2x.avif 2x
+                        "
+                        width="25"
+                        height="24"
+                        alt=""
+                      />
+                    </picture>
+                    <picture
+                      class="AW-catalog__species-picture AW-catalog__species-picture--inactive"
+                    >
+                      <source
+                        media="(max-width: 700px)"
+                        srcset="
+                          img/catalog/icon-cat-gray-mobile-1x.avif 1x,
+                          img/catalog/icon-cat-gray-mobile-2x.avif 2x
+                        "
+                        width="20"
+                        height="19"
+                      />
+                      <img
+                        src="img/catalog/icon-cat-gray-1x.avif"
+                        srcset="
+                          img/catalog/icon-cat-gray-1x.avif 1x,
+                          img/catalog/icon-cat-gray-2x.avif 2x
+                        "
+                        width="25"
+                        height="24"
+                        alt=""
+                      />
+                    </picture>
+                  </span>
+                  <span>Для кошек</span>
+                </button>
+
+                <button
+                  class="AW-btn AW-catalog__species-button"
+                  type="button"
+                  id="dogs"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="AW-catalog-panel-dogs"
+                  data-js-catalog-tab
+                >
+                  <span class="AW-catalog__species-icon" aria-hidden="true">
+                    <picture
+                      class="AW-catalog__species-picture AW-catalog__species-picture--active"
+                    >
+                      <source
+                        media="(max-width: 700px)"
+                        srcset="
+                          img/catalog/icon-dog-white-mobile-1x.avif 1x,
+                          img/catalog/icon-dog-white-mobile-2x.avif 2x
+                        "
+                        width="20"
+                        height="20"
+                      />
+                      <img
+                        src="img/catalog/icon-dog-white-1x.avif"
+                        srcset="
+                          img/catalog/icon-dog-white-1x.avif 1x,
+                          img/catalog/icon-dog-white-2x.avif 2x
+                        "
+                        width="25"
+                        height="25"
+                        alt=""
+                      />
+                    </picture>
+                    <picture
+                      class="AW-catalog__species-picture AW-catalog__species-picture--inactive"
+                    >
+                      <source
+                        media="(max-width: 700px)"
+                        srcset="
+                          img/catalog/icon-dog-gray-mobile-1x.avif 1x,
+                          img/catalog/icon-dog-gray-mobile-2x.avif 2x
+                        "
+                        width="20"
+                        height="20"
+                      />
+                      <img
+                        src="img/catalog/icon-dog-gray-1x.avif"
+                        srcset="
+                          img/catalog/icon-dog-gray-1x.avif 1x,
+                          img/catalog/icon-dog-gray-2x.avif 2x
+                        "
+                        width="25"
+                        height="25"
+                        alt=""
+                      />
+                    </picture>
+                  </span>
+                  <span>Для собак</span>
+                </button>
+              </div>
+
+              <div class="AW-catalog__viewport" data-js-catalog-viewport>
+                <div
+                  class="AW-catalog__track is-active"
+                  id="AW-catalog-panel-cats"
+                  role="tabpanel"
+                  aria-labelledby="cats"
+                  data-js-catalog-panel
+                >
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Hairball & Indoor Adult Duck"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                      сухой...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Hairball & Indoor Adult Duck"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                      сухой...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Hairball & Indoor Adult Duck"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                      сухой...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Hairball & Indoor Adult Duck"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                      сухой...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Hairball & Indoor Adult Duck"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                      сухой...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Hairball & Indoor Adult Duck"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                      сухой...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Hairball & Indoor Adult Duck"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                      сухой...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Hairball & Indoor Adult Duck"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                      сухой...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Hairball & Indoor Adult Duck"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                      сухой...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Hairball & Indoor Adult Duck"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                      сухой...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Hairball & Indoor Adult Duck"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                      сухой...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Hairball & Indoor Adult Duck"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                      сухой...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+                </div>
+
+                <div
+                  class="AW-catalog__track"
+                  id="AW-catalog-panel-dogs"
+                  role="tabpanel"
+                  aria-labelledby="dogs"
+                  data-js-catalog-panel
+                  hidden
+                >
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Adult Dog"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Adult Dog Duck сухой корм для взрослых собак...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Adult Dog"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Adult Dog Duck сухой корм для взрослых собак...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Adult Dog"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Adult Dog Duck сухой корм для взрослых собак...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Adult Dog"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Adult Dog Duck сухой корм для взрослых собак...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Adult Dog"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Adult Dog Duck сухой корм для взрослых собак...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Adult Dog"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Adult Dog Duck сухой корм для взрослых собак...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Adult Dog"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Adult Dog Duck сухой корм для взрослых собак...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Adult Dog"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Adult Dog Duck сухой корм для взрослых собак...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Adult Dog"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Adult Dog Duck сухой корм для взрослых собак...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Adult Dog"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Adult Dog Duck сухой корм для взрослых собак...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Adult Dog"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Adult Dog Duck сухой корм для взрослых собак...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+
+                  <article class="AW-catalog-product">
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="img/catalog/product-1x.avif"
+                        srcset="
+                          img/catalog/product-1x.avif 1x,
+                          img/catalog/product-2x.avif 2x
+                        "
+                        width="76"
+                        height="122"
+                        alt="AWARD Adult Dog"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1062 р.</span>
+                        <span class="AW-catalog-product__old">1236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-14%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Adult Dog Duck сухой корм для взрослых собак...
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      type="button"
+                    >
+                      Подробнее
+                    </button>
+                  </article>
+                </div>
+              </div>
+
+              <div
+                class="AW-catalog__pagination"
+                aria-label="Прокрутка каталога"
+                data-js-catalog-pagination
+              >
+                <button
+                  class="AW-catalog__pagination-dot is-active"
+                  type="button"
+                  aria-label="Показать страницу 1"
+                  data-js-catalog-dot
+                ></button>
+                <button
+                  class="AW-catalog__pagination-dot"
+                  type="button"
+                  aria-label="Показать страницу 2"
+                  data-js-catalog-dot
+                ></button>
+                <button
+                  class="AW-catalog__pagination-dot"
+                  type="button"
+                  aria-label="Показать страницу 3"
+                  data-js-catalog-dot
+                ></button>
+                <button
+                  class="AW-catalog__pagination-dot"
+                  type="button"
+                  aria-label="Показать страницу 4"
+                  data-js-catalog-dot
+                ></button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="AW-ingredients" aria-labelledby="AW-ingredients-title">
+          <div class="AW-container AW-ingredients__container">
+            <div class="AW-ingredients__card">
+              <h2 class="AW-ingredients__title" id="AW-ingredients-title">
+                Только <strong>отборные мясные</strong><br />
+                ингредиенты № 1 в составе
+              </h2>
+
+              <ul class="AW-ingredients__items">
+                <li class="AW-ingredients__item AW-ingredients__item--chicken">
+                  <picture class="AW-ingredients__item-icon" aria-hidden="true">
+                    <source
+                      media="(max-width: 991px)"
+                      srcset="
+                        img/ingredients/chicken-mobile-1x.avif 1x,
+                        img/ingredients/chicken-mobile-2x.avif 2x
+                      "
+                      width="21"
+                      height="23"
+                    />
+                    <img
+                      class="AW-ingredients__item-image"
+                      src="img/ingredients/chicken-1x.avif"
+                      srcset="
+                        img/ingredients/chicken-1x.avif 1x,
+                        img/ingredients/chicken-2x.avif 2x
+                      "
+                      width="31"
+                      height="34"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                  <p class="AW-ingredients__item-text">
+                    От 65% животного белка
+                  </p>
+                </li>
+
+                <li class="AW-ingredients__item AW-ingredients__item--vitamins">
+                  <picture class="AW-ingredients__item-icon" aria-hidden="true">
+                    <source
+                      media="(max-width: 991px)"
+                      srcset="
+                        img/ingredients/vitamins-mobile-1x.avif 1x,
+                        img/ingredients/vitamins-mobile-2x.avif 2x
+                      "
+                      width="20"
+                      height="26"
+                    />
+                    <img
+                      class="AW-ingredients__item-image"
+                      src="img/ingredients/vitamins-1x.avif"
+                      srcset="
+                        img/ingredients/vitamins-1x.avif 1x,
+                        img/ingredients/vitamins-2x.avif 2x
+                      "
+                      width="32"
+                      height="40"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                  <p class="AW-ingredients__item-text">
+                    Суперфуды<br />
+                    и&nbsp;витамины
+                  </p>
+                </li>
+
+                <li class="AW-ingredients__item AW-ingredients__item--fish">
+                  <picture class="AW-ingredients__item-icon" aria-hidden="true">
+                    <source
+                      media="(max-width: 991px)"
+                      srcset="
+                        img/ingredients/fish-mobile-1x.avif 1x,
+                        img/ingredients/fish-mobile-2x.avif 2x
+                      "
+                      width="22"
+                      height="14"
+                    />
+                    <img
+                      class="AW-ingredients__item-image"
+                      src="img/ingredients/fish-1x.avif"
+                      srcset="
+                        img/ingredients/fish-1x.avif 1x,
+                        img/ingredients/fish-2x.avif 2x
+                      "
+                      width="34"
+                      height="20"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                  <p class="AW-ingredients__item-text">
+                    Рыбий жир — источник Омега 3
+                  </p>
+                </li>
+
+                <li
+                  class="AW-ingredients__item AW-ingredients__item--prebiotic"
+                >
+                  <picture class="AW-ingredients__item-icon" aria-hidden="true">
+                    <source
+                      media="(max-width: 991px)"
+                      srcset="
+                        img/ingredients/prebiotic-mobile-1x.avif 1x,
+                        img/ingredients/prebiotic-mobile-2x.avif 2x
+                      "
+                      width="24"
+                      height="26"
+                    />
+                    <img
+                      class="AW-ingredients__item-image"
+                      src="img/ingredients/prebiotic-1x.avif"
+                      srcset="
+                        img/ingredients/prebiotic-1x.avif 1x,
+                        img/ingredients/prebiotic-2x.avif 2x
+                      "
+                      width="36"
+                      height="40"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                  <p class="AW-ingredients__item-text">
+                    Про<br />
+                    — и пребиотики
+                  </p>
+                </li>
+
+                <li class="AW-ingredients__item AW-ingredients__item--molecule">
+                  <picture class="AW-ingredients__item-icon" aria-hidden="true">
+                    <source
+                      media="(max-width: 991px)"
+                      srcset="
+                        img/ingredients/molecule-mobile-1x.avif 1x,
+                        img/ingredients/molecule-mobile-2x.avif 2x
+                      "
+                      width="26"
+                      height="26"
+                    />
+                    <img
+                      class="AW-ingredients__item-image"
+                      src="img/ingredients/molecule-1x.avif"
+                      srcset="
+                        img/ingredients/molecule-1x.avif 1x,
+                        img/ingredients/molecule-2x.avif 2x
+                      "
+                      width="40"
+                      height="39"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                  <p class="AW-ingredients__item-text">
+                    L-карнитин<br />
+                    и таурин
+                  </p>
+                </li>
+
+                <li class="AW-ingredients__item AW-ingredients__item--chondro">
+                  <picture class="AW-ingredients__item-icon" aria-hidden="true">
+                    <source
+                      media="(max-width: 991px)"
+                      srcset="
+                        img/ingredients/chondro-mobile-1x.avif 1x,
+                        img/ingredients/chondro-mobile-2x.avif 2x
+                      "
+                      width="26"
+                      height="26"
+                    />
+                    <img
+                      class="AW-ingredients__item-image"
+                      src="img/ingredients/chondro-1x.avif"
+                      srcset="
+                        img/ingredients/chondro-1x.avif 1x,
+                        img/ingredients/chondro-2x.avif 2x
+                      "
+                      width="40"
+                      height="40"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                  <p class="AW-ingredients__item-text">
+                    Хондроитин и&nbsp;глюкозамин
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="AW-hits"
+          aria-labelledby="AW-hits-title"
+          data-js-catalog
+        >
+          <div class="AW-container AW-hits__container">
+            <div class="AW-hits__panel">
+              <div class="AW-hits__top">
+                <picture class="AW-hits__products" aria-hidden="true">
+                  <img
+                    class="AW-hits__products-image"
+                    src="img/hits/products-1x.avif"
+                    srcset="
+                      img/hits/products-1x.avif 1x,
+                      img/hits/products-2x.avif 2x
+                    "
+                    width="136"
+                    height="144"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+
+                <div class="AW-hits__title-wrap">
+                  <h2 class="AW-hits__title" id="AW-hits-title">
+                    <strong>Хиты продаж</strong>
+                    <span> для кошек</span>
+                  </h2>
+                </div>
+
+                <a class="AW-btn AW-hits__all" href="/catalog/">
+                  <span>Смотреть все</span>
+                  <span class="AW-hits__all-icon" aria-hidden="true"></span>
+                </a>
+              </div>
+
+              <div class="AW-hits__body">
+                <div
+                  class="AW-hits__tabs"
+                  role="tablist"
+                  aria-label="Тип корма в хитах продаж"
+                >
+                  <button
+                    class="AW-btn AW-hits__tab is-active"
+                    type="button"
+                    id="AW-hits-tab-dry"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="AW-hits-panel-dry"
+                    data-js-catalog-tab
+                  >
+                    Сухой корм
+                  </button>
+                  <button
+                    class="AW-btn AW-hits__tab"
+                    type="button"
+                    id="AW-hits-tab-wet"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="AW-hits-panel-wet"
+                    data-js-catalog-tab
+                  >
+                    Влажный корм
+                  </button>
+                </div>
+
+                <div class="AW-hits__viewport" data-js-catalog-viewport>
+                  <div
+                    class="AW-hits__track is-active"
+                    id="AW-hits-panel-dry"
+                    role="tabpanel"
+                    aria-labelledby="AW-hits-tab-dry"
+                    data-js-catalog-panel
+                  >
+                    <article class="AW-catalog-product">
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="img/catalog/product-1x.avif"
+                          srcset="
+                            img/catalog/product-1x.avif 1x,
+                            img/catalog/product-2x.avif 2x
+                          "
+                          width="76"
+                          height="122"
+                          alt="AWARD Hairball & Indoor Adult Duck"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current"
+                            >1062 р.</span
+                          >
+                          <span class="AW-catalog-product__old">1236 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-14%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                        сухой...
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        type="button"
+                      >
+                        Подробнее
+                      </button>
+                    </article>
+
+                    <article class="AW-catalog-product">
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="img/catalog/product-1x.avif"
+                          srcset="
+                            img/catalog/product-1x.avif 1x,
+                            img/catalog/product-2x.avif 2x
+                          "
+                          width="76"
+                          height="122"
+                          alt="AWARD Hairball & Indoor Adult Duck"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current"
+                            >1062 р.</span
+                          >
+                          <span class="AW-catalog-product__old">1236 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-14%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                        сухой...
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        type="button"
+                      >
+                        Подробнее
+                      </button>
+                    </article>
+
+                    <article class="AW-catalog-product">
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="img/catalog/product-1x.avif"
+                          srcset="
+                            img/catalog/product-1x.avif 1x,
+                            img/catalog/product-2x.avif 2x
+                          "
+                          width="76"
+                          height="122"
+                          alt="AWARD Hairball & Indoor Adult Duck"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current"
+                            >1062 р.</span
+                          >
+                          <span class="AW-catalog-product__old">1236 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-14%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                        сухой...
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        type="button"
+                      >
+                        Подробнее
+                      </button>
+                    </article>
+
+                    <article class="AW-catalog-product">
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="img/catalog/product-1x.avif"
+                          srcset="
+                            img/catalog/product-1x.avif 1x,
+                            img/catalog/product-2x.avif 2x
+                          "
+                          width="76"
+                          height="122"
+                          alt="AWARD Hairball & Indoor Adult Duck"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current"
+                            >1062 р.</span
+                          >
+                          <span class="AW-catalog-product__old">1236 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-14%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                        сухой...
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        type="button"
+                      >
+                        Подробнее
+                      </button>
+                    </article>
+
+                    <article class="AW-catalog-product">
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="img/catalog/product-1x.avif"
+                          srcset="
+                            img/catalog/product-1x.avif 1x,
+                            img/catalog/product-2x.avif 2x
+                          "
+                          width="76"
+                          height="122"
+                          alt="AWARD Hairball & Indoor Adult Duck"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current"
+                            >1062 р.</span
+                          >
+                          <span class="AW-catalog-product__old">1236 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-14%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                        сухой...
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        type="button"
+                      >
+                        Подробнее
+                      </button>
+                    </article>
+
+                    <article class="AW-catalog-product">
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="img/catalog/product-1x.avif"
+                          srcset="
+                            img/catalog/product-1x.avif 1x,
+                            img/catalog/product-2x.avif 2x
+                          "
+                          width="76"
+                          height="122"
+                          alt="AWARD Hairball & Indoor Adult Duck"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current"
+                            >1062 р.</span
+                          >
+                          <span class="AW-catalog-product__old">1236 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-14%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                        сухой...
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        type="button"
+                      >
+                        Подробнее
+                      </button>
+                    </article>
+
+                    <article class="AW-catalog-product">
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="img/catalog/product-1x.avif"
+                          srcset="
+                            img/catalog/product-1x.avif 1x,
+                            img/catalog/product-2x.avif 2x
+                          "
+                          width="76"
+                          height="122"
+                          alt="AWARD Hairball & Indoor Adult Duck"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current"
+                            >1062 р.</span
+                          >
+                          <span class="AW-catalog-product__old">1236 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-14%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor
+                        сухой...
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        type="button"
+                      >
+                        Подробнее
+                      </button>
+                    </article>
+                  </div>
+
+                  <div
+                    class="AW-hits__track"
+                    id="AW-hits-panel-wet"
+                    role="tabpanel"
+                    aria-labelledby="AW-hits-tab-wet"
+                    data-js-catalog-panel
+                    hidden
+                  >
+                    <article class="AW-catalog-product">
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="img/catalog/product-1x.avif"
+                          srcset="
+                            img/catalog/product-1x.avif 1x,
+                            img/catalog/product-2x.avif 2x
+                          "
+                          width="76"
+                          height="122"
+                          alt="AWARD влажный корм для кошек"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current"
+                            >1062 р.</span
+                          >
+                          <span class="AW-catalog-product__old">1236 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-14%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award влажный корм для кошек с индейкой и овощами...
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        type="button"
+                      >
+                        Подробнее
+                      </button>
+                    </article>
+
+                    <article class="AW-catalog-product">
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="img/catalog/product-1x.avif"
+                          srcset="
+                            img/catalog/product-1x.avif 1x,
+                            img/catalog/product-2x.avif 2x
+                          "
+                          width="76"
+                          height="122"
+                          alt="AWARD влажный корм для кошек"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current"
+                            >1062 р.</span
+                          >
+                          <span class="AW-catalog-product__old">1236 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-14%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award влажный корм для кошек с индейкой и овощами...
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        type="button"
+                      >
+                        Подробнее
+                      </button>
+                    </article>
+
+                    <article class="AW-catalog-product">
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="img/catalog/product-1x.avif"
+                          srcset="
+                            img/catalog/product-1x.avif 1x,
+                            img/catalog/product-2x.avif 2x
+                          "
+                          width="76"
+                          height="122"
+                          alt="AWARD влажный корм для кошек"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current"
+                            >1062 р.</span
+                          >
+                          <span class="AW-catalog-product__old">1236 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-14%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award влажный корм для кошек с индейкой и овощами...
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        type="button"
+                      >
+                        Подробнее
+                      </button>
+                    </article>
+
+                    <article class="AW-catalog-product">
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="img/catalog/product-1x.avif"
+                          srcset="
+                            img/catalog/product-1x.avif 1x,
+                            img/catalog/product-2x.avif 2x
+                          "
+                          width="76"
+                          height="122"
+                          alt="AWARD влажный корм для кошек"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current"
+                            >1062 р.</span
+                          >
+                          <span class="AW-catalog-product__old">1236 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-14%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award влажный корм для кошек с индейкой и овощами...
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        type="button"
+                      >
+                        Подробнее
+                      </button>
+                    </article>
+                  </div>
+                </div>
+
+                <div
+                  class="AW-hits__pagination AW-catalog__pagination"
+                  aria-label="Прокрутка хитов продаж"
+                  data-js-catalog-pagination
+                >
+                  <button
+                    class="AW-catalog__pagination-dot is-active"
+                    type="button"
+                    aria-label="Показать страницу 1"
+                    data-js-catalog-dot
+                  ></button>
+                  <button
+                    class="AW-catalog__pagination-dot"
+                    type="button"
+                    aria-label="Показать страницу 2"
+                    data-js-catalog-dot
+                  ></button>
+                  <button
+                    class="AW-catalog__pagination-dot"
+                    type="button"
+                    aria-label="Показать страницу 3"
+                    data-js-catalog-dot
+                  ></button>
+                  <button
+                    class="AW-catalog__pagination-dot"
+                    type="button"
+                    aria-label="Показать страницу 4"
+                    data-js-catalog-dot
+                  ></button>
+                  <button
+                    class="AW-catalog__pagination-dot"
+                    type="button"
+                    aria-label="Показать страницу 5"
+                    data-js-catalog-dot
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="AW-assortment" aria-labelledby="AW-assortment-title">
+          <div class="AW-container AW-assortment__container">
+            <div class="AW-assortment__card">
+              <div class="AW-assortment__media" aria-hidden="true">
+                <picture class="AW-assortment__dog">
+                  <source
+                    media="(max-width: 991px)"
+                    srcset="
+                      img/assortment/dog-mobile-1x.avif 1x,
+                      img/assortment/dog-mobile-2x.avif 2x
+                    "
+                    width="375"
+                    height="220"
+                  />
+                  <img
+                    class="AW-assortment__dog-image"
+                    src="img/assortment/dog-1x.avif"
+                    srcset="
+                      img/assortment/dog-1x.avif 1x,
+                      img/assortment/dog-2x.avif 2x
+                    "
+                    width="660"
+                    height="516"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+
+                <picture class="AW-assortment__product">
+                  <source
+                    media="(max-width: 991px)"
+                    srcset="
+                      img/assortment/product-mobile-1x.avif 1x,
+                      img/assortment/product-mobile-2x.avif 2x
+                    "
+                    width="85"
+                    height="160"
+                  />
+                  <img
+                    class="AW-assortment__product-image"
+                    src="img/assortment/product-1x.avif"
+                    srcset="
+                      img/assortment/product-1x.avif 1x,
+                      img/assortment/product-2x.avif 2x
+                    "
+                    width="157"
+                    height="298"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+
+              <div class="AW-assortment__content">
+                <div class="AW-assortment__text">
+                  <h2 class="AW-assortment__title" id="AW-assortment-title">
+                    <strong>Широкий ассортимент </strong>
+                    <span
+                      >сухих и&nbsp;влажных кормов для&nbsp;кошек
+                      и&nbsp;собак</span
+                    >
+                  </h2>
+
+                  <p class="AW-assortment__description">
+                    В&nbsp;зависимости от&nbsp;возраста питомца питания животных
+                    во&nbsp;время беременности и&nbsp;лактации,
+                    для&nbsp;здоровья шерсти, желудочно-кишечного тракта,
+                    мочеполовой системы и&nbsp;другие типы стандартного
+                    и&nbsp;специализированного питания.
+                  </p>
+                </div>
+
+                <a class="AW-btn AW-assortment__link" href="/catalog/">
+                  Выберите корма для вашего любимца
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
