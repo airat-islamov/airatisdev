@@ -20,7 +20,7 @@ def product_slug(product: dict[str, object]) -> str:
 
 
 def product_path(product: dict[str, object]) -> str:
-    return f"catalog/product/{product_slug(product)}/"
+    return f"/catalog/product/{product_slug(product)}/"
 
 
 def format_price(value: str) -> str:
@@ -195,7 +195,7 @@ def page_head(
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="https://airat-islamov.github.io/airatisdev/dogeat.ru/mini-sites/" />
+    <base href="/" />
     <title>{escaped_title}</title>
     <meta name="description" content="{escaped_description}" />
     <meta name="robots" content="index, follow" />
@@ -204,15 +204,15 @@ def page_head(
     <meta property="og:title" content="{escaped_title}" />
     <meta property="og:description" content="{escaped_description}" />
     <meta property="og:url" content="{escaped_canonical}" />{social_meta}
-    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Award" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="manifest" href="img/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <script src="js/main.js" defer></script>
+    <link rel="manifest" href="/img/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <script src="/js/main.js" defer></script>
   </head>"""
 
 
@@ -260,12 +260,12 @@ def render_product(product: dict[str, object]) -> str:
         data-product-url="{page_url}"
       >
         <div class="AW-product__toolbar">
-          <a class="AW-btn AW-product__back" href="catalog/" data-js-product-close>
+          <a class="AW-btn AW-product__back" href="/catalog/" data-js-product-close>
             Назад в каталог
           </a>
           <a
             class="AW-btn AW-product__close"
-            href="catalog/"
+            href="/catalog/"
             aria-label="Закрыть карточку и вернуться в каталог"
             data-js-product-close
           ></a>
@@ -812,7 +812,7 @@ def render_catalog_page(
     head = page_head(
         title="Каталог кормов AWARD для кошек и собак",
         description="Каталог суперпремиальных кормов AWARD для кошек и собак.",
-        canonical="catalog/",
+        canonical="/catalog/",
     )
 
     return f"""{head}
