@@ -195,7 +195,7 @@ def page_head(
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="/mini-sites/" />
+    <base href="https://airat-islamov.github.io/airatisdev/dogeat.ru/mini-sites/" />
     <title>{escaped_title}</title>
     <meta name="description" content="{escaped_description}" />
     <meta name="robots" content="index, follow" />
