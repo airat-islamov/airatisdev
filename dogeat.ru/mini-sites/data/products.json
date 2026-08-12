@@ -1,0 +1,3984 @@
+{
+  "source": {
+    "catalogDate": "2026-08-11 13:49",
+    "shopName": "Старая ферма",
+    "company": "ООО Николь",
+    "platform": "PHP",
+    "url": "https://www.dogeat.ru"
+  },
+  "currencies": [
+    {
+      "id": "RUR",
+      "rate": "1"
+    }
+  ],
+  "categories": [
+    {
+      "id": "399",
+      "parentId": null,
+      "name": "Товары для животных"
+    },
+    {
+      "id": "847",
+      "parentId": "399",
+      "name": "Ветаптека"
+    },
+    {
+      "id": "849",
+      "parentId": "847",
+      "name": "Для собак"
+    },
+    {
+      "id": "848",
+      "parentId": "847",
+      "name": "Для кошек"
+    },
+    {
+      "id": "850",
+      "parentId": "847",
+      "name": "Для грызунов"
+    },
+    {
+      "id": "939",
+      "parentId": "847",
+      "name": "Для птиц"
+    },
+    {
+      "id": "851",
+      "parentId": "847",
+      "name": "Для лошадей"
+    },
+    {
+      "id": "781",
+      "parentId": "399",
+      "name": "Страна производитель"
+    },
+    {
+      "id": "782",
+      "parentId": "781",
+      "name": "Российский производитель"
+    },
+    {
+      "id": "783",
+      "parentId": "781",
+      "name": "Импортный производитель"
+    },
+    {
+      "id": "691",
+      "parentId": "399",
+      "name": "Ветеринарная диета"
+    },
+    {
+      "id": "693",
+      "parentId": "691",
+      "name": "Для кошек"
+    },
+    {
+      "id": "692",
+      "parentId": "691",
+      "name": "Для собак"
+    },
+    {
+      "id": "13",
+      "parentId": "399",
+      "name": "Для собак"
+    },
+    {
+      "id": "12",
+      "parentId": "13",
+      "name": "Корма для собак"
+    },
+    {
+      "id": "27",
+      "parentId": "13",
+      "name": "Средства от паразитов"
+    },
+    {
+      "id": "22",
+      "parentId": "13",
+      "name": "Лакомства"
+    },
+    {
+      "id": "28",
+      "parentId": "13",
+      "name": "Средства по уходу"
+    },
+    {
+      "id": "249",
+      "parentId": "13",
+      "name": "Ветаптека"
+    },
+    {
+      "id": "25",
+      "parentId": "13",
+      "name": "Витамины"
+    },
+    {
+      "id": "250",
+      "parentId": "13",
+      "name": "Одежда и обувь"
+    },
+    {
+      "id": "94",
+      "parentId": "13",
+      "name": "Контроль поведения"
+    },
+    {
+      "id": "21",
+      "parentId": "13",
+      "name": "Транспортировка и содержание"
+    },
+    {
+      "id": "40",
+      "parentId": "13",
+      "name": "Амуниция"
+    },
+    {
+      "id": "140",
+      "parentId": "13",
+      "name": "Туалеты и принадлежности"
+    },
+    {
+      "id": "23",
+      "parentId": "13",
+      "name": "Миски и принадлежности"
+    },
+    {
+      "id": "26",
+      "parentId": "13",
+      "name": "Игрушки"
+    },
+    {
+      "id": "552",
+      "parentId": "399",
+      "name": "Для щенков"
+    },
+    {
+      "id": "554",
+      "parentId": "552",
+      "name": "Корма для щенков"
+    },
+    {
+      "id": "563",
+      "parentId": "552",
+      "name": "Средства от паразитов"
+    },
+    {
+      "id": "562",
+      "parentId": "552",
+      "name": "Лакомства"
+    },
+    {
+      "id": "561",
+      "parentId": "552",
+      "name": "Средства по уходу"
+    },
+    {
+      "id": "564",
+      "parentId": "552",
+      "name": "Витамины"
+    },
+    {
+      "id": "557",
+      "parentId": "552",
+      "name": "Лежанки"
+    },
+    {
+      "id": "558",
+      "parentId": "552",
+      "name": "Клетки"
+    },
+    {
+      "id": "556",
+      "parentId": "552",
+      "name": "Пеленки"
+    },
+    {
+      "id": "555",
+      "parentId": "552",
+      "name": "Миски и принадлежности"
+    },
+    {
+      "id": "560",
+      "parentId": "552",
+      "name": "Игрушки"
+    },
+    {
+      "id": "667",
+      "parentId": "552",
+      "name": "Пакеты для уборки"
+    },
+    {
+      "id": "15",
+      "parentId": "399",
+      "name": "Для кошек"
+    },
+    {
+      "id": "16",
+      "parentId": "15",
+      "name": "Корма для кошек"
+    },
+    {
+      "id": "33",
+      "parentId": "15",
+      "name": "Наполнители"
+    },
+    {
+      "id": "38",
+      "parentId": "15",
+      "name": "Средства от паразитов"
+    },
+    {
+      "id": "251",
+      "parentId": "15",
+      "name": "Ветаптека"
+    },
+    {
+      "id": "14",
+      "parentId": "15",
+      "name": "Лакомства"
+    },
+    {
+      "id": "29",
+      "parentId": "15",
+      "name": "Когтеточки"
+    },
+    {
+      "id": "97",
+      "parentId": "15",
+      "name": "Контроль поведения"
+    },
+    {
+      "id": "31",
+      "parentId": "15",
+      "name": "Туалеты и принадлежности"
+    },
+    {
+      "id": "39",
+      "parentId": "15",
+      "name": "Средства по уходу"
+    },
+    {
+      "id": "35",
+      "parentId": "15",
+      "name": "Амуниция"
+    },
+    {
+      "id": "30",
+      "parentId": "15",
+      "name": "Транспортировка и содержание"
+    },
+    {
+      "id": "36",
+      "parentId": "15",
+      "name": "Витамины"
+    },
+    {
+      "id": "32",
+      "parentId": "15",
+      "name": "Миски и принадлежности"
+    },
+    {
+      "id": "37",
+      "parentId": "15",
+      "name": "Игрушки"
+    },
+    {
+      "id": "553",
+      "parentId": "399",
+      "name": "Для котят"
+    },
+    {
+      "id": "592",
+      "parentId": "553",
+      "name": "Корма для котят"
+    },
+    {
+      "id": "601",
+      "parentId": "553",
+      "name": "Наполнители"
+    },
+    {
+      "id": "639",
+      "parentId": "553",
+      "name": "Средства от паразитов"
+    },
+    {
+      "id": "603",
+      "parentId": "553",
+      "name": "Когтеточки"
+    },
+    {
+      "id": "594",
+      "parentId": "553",
+      "name": "Туалеты и принадлежности"
+    },
+    {
+      "id": "637",
+      "parentId": "553",
+      "name": "Средства по уходу"
+    },
+    {
+      "id": "635",
+      "parentId": "553",
+      "name": "Амуниция"
+    },
+    {
+      "id": "602",
+      "parentId": "553",
+      "name": "Транспортировка и содержание"
+    },
+    {
+      "id": "638",
+      "parentId": "553",
+      "name": "Витамины"
+    },
+    {
+      "id": "593",
+      "parentId": "553",
+      "name": "Миски и принадлежности"
+    },
+    {
+      "id": "640",
+      "parentId": "553",
+      "name": "Для кормления"
+    },
+    {
+      "id": "636",
+      "parentId": "553",
+      "name": "Игрушки"
+    },
+    {
+      "id": "41",
+      "parentId": "399",
+      "name": "Для птиц"
+    },
+    {
+      "id": "315",
+      "parentId": "41",
+      "name": "Виды птиц"
+    },
+    {
+      "id": "86",
+      "parentId": "41",
+      "name": "Корма для птиц"
+    },
+    {
+      "id": "88",
+      "parentId": "41",
+      "name": "Наполнители"
+    },
+    {
+      "id": "240",
+      "parentId": "41",
+      "name": "Витамины"
+    },
+    {
+      "id": "241",
+      "parentId": "41",
+      "name": "Игрушки"
+    },
+    {
+      "id": "242",
+      "parentId": "41",
+      "name": "Контроль поведения"
+    },
+    {
+      "id": "244",
+      "parentId": "41",
+      "name": "Миски и кормушки"
+    },
+    {
+      "id": "246",
+      "parentId": "41",
+      "name": "Средства по уходу"
+    },
+    {
+      "id": "247",
+      "parentId": "41",
+      "name": "Транспортировка и содержание"
+    },
+    {
+      "id": "87",
+      "parentId": "41",
+      "name": "Лакомства"
+    },
+    {
+      "id": "42",
+      "parentId": "399",
+      "name": "Для грызунов"
+    },
+    {
+      "id": "314",
+      "parentId": "42",
+      "name": "Виды грызунов"
+    },
+    {
+      "id": "90",
+      "parentId": "42",
+      "name": "Корма для грызунов"
+    },
+    {
+      "id": "92",
+      "parentId": "42",
+      "name": "Лакомства"
+    },
+    {
+      "id": "254",
+      "parentId": "42",
+      "name": "Амуниция"
+    },
+    {
+      "id": "256",
+      "parentId": "42",
+      "name": "Витамины"
+    },
+    {
+      "id": "257",
+      "parentId": "42",
+      "name": "Игрушки"
+    },
+    {
+      "id": "258",
+      "parentId": "42",
+      "name": "Миски"
+    },
+    {
+      "id": "261",
+      "parentId": "42",
+      "name": "Транспортировка и содержание"
+    },
+    {
+      "id": "262",
+      "parentId": "42",
+      "name": "Туалеты и принадлежности"
+    },
+    {
+      "id": "259",
+      "parentId": "42",
+      "name": "Средства от паразитов"
+    },
+    {
+      "id": "260",
+      "parentId": "42",
+      "name": "Средства по уходу"
+    },
+    {
+      "id": "91",
+      "parentId": "42",
+      "name": "Наполнители"
+    },
+    {
+      "id": "105",
+      "parentId": "399",
+      "name": "Для рыб"
+    },
+    {
+      "id": "106",
+      "parentId": "105",
+      "name": "Корма для рыб"
+    },
+    {
+      "id": "236",
+      "parentId": "105",
+      "name": "Аквариумы"
+    },
+    {
+      "id": "229",
+      "parentId": "105",
+      "name": "Аквариумное оборудование"
+    },
+    {
+      "id": "367",
+      "parentId": "105",
+      "name": "Кормушки"
+    },
+    {
+      "id": "368",
+      "parentId": "105",
+      "name": "Аквариумные декорации"
+    },
+    {
+      "id": "369",
+      "parentId": "105",
+      "name": "Растения"
+    },
+    {
+      "id": "239",
+      "parentId": "105",
+      "name": "Витамины"
+    },
+    {
+      "id": "113",
+      "parentId": "399",
+      "name": "Для хорьков"
+    },
+    {
+      "id": "114",
+      "parentId": "113",
+      "name": "Корма для хорьков"
+    },
+    {
+      "id": "115",
+      "parentId": "113",
+      "name": "Клетки"
+    },
+    {
+      "id": "316",
+      "parentId": "113",
+      "name": "Гамаки"
+    },
+    {
+      "id": "265",
+      "parentId": "113",
+      "name": "Витамины"
+    },
+    {
+      "id": "264",
+      "parentId": "113",
+      "name": "Амуниция"
+    },
+    {
+      "id": "317",
+      "parentId": "113",
+      "name": "Тоннели"
+    },
+    {
+      "id": "116",
+      "parentId": "113",
+      "name": "Средства по уходу"
+    },
+    {
+      "id": "268",
+      "parentId": "113",
+      "name": "Средства от паразитов"
+    },
+    {
+      "id": "319",
+      "parentId": "399",
+      "name": "Для рептилий"
+    },
+    {
+      "id": "323",
+      "parentId": "319",
+      "name": "Корма для рептилий"
+    },
+    {
+      "id": "322",
+      "parentId": "319",
+      "name": "Наполнители"
+    },
+    {
+      "id": "321",
+      "parentId": "319",
+      "name": "Лакомства"
+    },
+    {
+      "id": "681",
+      "parentId": "319",
+      "name": "Средства от паразитов"
+    },
+    {
+      "id": "320",
+      "parentId": "319",
+      "name": "Аквариумы"
+    },
+    {
+      "id": "382",
+      "parentId": "319",
+      "name": "Террариумы"
+    },
+    {
+      "id": "383",
+      "parentId": "319",
+      "name": "Фаунариумы"
+    },
+    {
+      "id": "384",
+      "parentId": "319",
+      "name": "Оборудование и комплектующие"
+    },
+    {
+      "id": "385",
+      "parentId": "319",
+      "name": "Кормушки и поилки"
+    },
+    {
+      "id": "386",
+      "parentId": "319",
+      "name": "Для очистки стекла"
+    },
+    {
+      "id": "387",
+      "parentId": "319",
+      "name": "Для очистки и подготовки воды"
+    },
+    {
+      "id": "388",
+      "parentId": "319",
+      "name": "Субстрат и песок"
+    },
+    {
+      "id": "389",
+      "parentId": "319",
+      "name": "Декорации"
+    },
+    {
+      "id": "390",
+      "parentId": "319",
+      "name": "Контейнеры"
+    },
+    {
+      "id": "391",
+      "parentId": "319",
+      "name": "Аксессуары"
+    },
+    {
+      "id": "392",
+      "parentId": "399",
+      "name": "Для лошадей"
+    },
+    {
+      "id": "394",
+      "parentId": "392",
+      "name": "Средства по уходу"
+    },
+    {
+      "id": "395",
+      "parentId": "392",
+      "name": "Ветеринарные препараты"
+    },
+    {
+      "id": "1111",
+      "parentId": "399",
+      "name": "Прочие товары"
+    }
+  ],
+  "deliveryOptions": [
+    {
+      "cost": "198"
+    }
+  ],
+  "products": [
+    {
+      "id": "55185",
+      "available": true,
+      "vendorCode": "7176809",
+      "barcodes": [
+        "4630147177011",
+        "4630147179282"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-healthy-growth-vlazhnyj-korm-dlya-kotyat-ot-1-mesyaca-s-indejkoj-kusochki-v-souse-v-pauchah-85-g.htm?yandfeed=1",
+      "price": "1846.80",
+      "oldPrice": "1944.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-healthy-growth-vlazhnyj-korm-dlya-kotyat-ot-1-mesyaca-s-indejkoj-kusochki-v-souse-v-pauchah-85-g.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "2.040",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Healthy Growth Chunks in Gravy Kitten Turkey Healthy Growth влажный корм для котят от 1 месяца, с ИНДЕЙКОЙ, кусочки в соусе, в паучах - 85 г",
+      "description": "Купить в Москве Award Healthy Growth Chunks in Gravy Kitten Turkey Healthy Growth влажный корм для котят от 1 месяца, с ИНДЕЙКОЙ, кусочки в соусе, в паучах - 85 г по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Паучи"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Влажный"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для котят"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "wet",
+      "displayWeight": "2,04 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "55189",
+      "available": true,
+      "vendorCode": "7176984",
+      "barcodes": [
+        "4630147177042",
+        "4630147179329"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-urinary-vlazhnyj-korm-dlya-profilaktiki-mochekamennoj-bolezni-u-vzroslyh-koshek-s-kuricej-kusochki-v-souse-v-pauchah-85-g.htm?yandfeed=1",
+      "price": "1846.80",
+      "oldPrice": "1944.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-urinary-vlazhnyj-korm-dlya-profilaktiki-mochekamennoj-bolezni-u-vzroslyh-koshek-s-kuricej-kusochki-v-souse-v-pauchah-85-g.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "2.040",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Urinary Chunks in Gravy Adult Chicken Urinary влажный корм для взрослых кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, кусочки в соусе, в паучах - 85 г",
+      "description": "Купить в Москве Award Urinary Chunks in Gravy Adult Chicken Urinary влажный корм для взрослых кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, кусочки в соусе, в паучах - 85 г по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Паучи"
+        },
+        {
+          "name": "Показания",
+          "value": "При МКБ"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С курицей"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Влажный"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "wet",
+      "displayWeight": "2,04 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "55191",
+      "available": true,
+      "vendorCode": "2540454",
+      "barcodes": [
+        "4620202540645"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-vlazhnyj-korm-dlya-koshek-s-indejkoj-i-ovoshchami-v-konservah-100-g.htm?yandfeed=1",
+      "price": "2325.60",
+      "oldPrice": "2448.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-vlazhnyj-korm-dlya-koshek-s-indejkoj-i-ovoshchami-v-konservah-100-g.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "1.600",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Pate Adult Turkey & Vegetables влажный корм для кошек, с ИНДЕЙКОЙ и овощами, в консервах - 100 г (16 шт)",
+      "description": "Купить в Москве Award Pate Adult Turkey & Vegetables влажный корм для кошек, с ИНДЕЙКОЙ и овощами, в консервах - 100 г по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Консервы (в железной банке)"
+        },
+        {
+          "name": "Особенности состава",
+          "value": "Безглютеновые"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С овощами"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Влажный"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "wet",
+      "displayWeight": "1,6 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "55195",
+      "available": true,
+      "vendorCode": "7173679",
+      "barcodes": [
+        "4630147173679"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-hairball-indoor-suhoj-korm-dlya-vzroslyh-koshek-dlya-vyvedeniya-shersti-s-utkoj-indejkoj-chechevicej-i-yukki-shidigera-1-5-kg.htm?yandfeed=1",
+      "price": "1174.20",
+      "oldPrice": "1236.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-hairball-indoor-suhoj-korm-dlya-vzroslyh-koshek-dlya-vyvedeniya-shersti-s-utkoj-indejkoj-chechevicej-i-yukki-shidigera-1-5-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "1.500",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Hairball & Indoor Adult Duck Hairball Indoor сухой корм для взрослых кошек, для выведения шерсти, с УТКОЙ, ИНДЕЙКОЙ, чечевицей и Юккой - 1,5 кг",
+      "description": "Купить в Москве Award Hairball & Indoor Adult Duck Hairball Indoor сухой корм для взрослых кошек, для выведения шерсти, с УТКОЙ, ИНДЕЙКОЙ, чечевицей и Юккой - 1,5 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Для выведения шерсти из желудка"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С уткой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С чечевицей"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "dry",
+      "displayWeight": "1,5 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "55196",
+      "available": true,
+      "vendorCode": "7173686",
+      "barcodes": [
+        "4630147173686"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-hairball-indoor-suhoj-korm-dlya-vzroslyh-koshek-dlya-vyvedeniya-shersti-s-utkoj-s-indejkoj-s-chechevicy-i-yukki-shidigera-10-kg.htm?yandfeed=1",
+      "price": "5253.06",
+      "oldPrice": "6038.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-hairball-indoor-suhoj-korm-dlya-vzroslyh-koshek-dlya-vyvedeniya-shersti-s-utkoj-s-indejkoj-s-chechevicy-i-yukki-shidigera-10-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "10.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Hairball & Indoor Adult Duck Hairball Indoor сухой корм для взрослых кошек, для выведения шерсти, с УТКОЙ, ИНДЕЙКОЙ, чечевицей и Юккой",
+      "description": "Купить в Москве Award Hairball & Indoor Adult Duck Hairball Indoor сухой корм для взрослых кошек, для выведения шерсти, с УТКОЙ, ИНДЕЙКОЙ, чечевицей и Юккой по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Для выведения шерсти из желудка"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С уткой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С чечевицей"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "dry",
+      "displayWeight": "10 кг",
+      "discountPercent": 13
+    },
+    {
+      "id": "55198",
+      "available": true,
+      "vendorCode": "7173556",
+      "barcodes": [
+        "4630147173556"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-healthy-growth-suhoj-korm-dlya-kotyat-ot-1-mesyaca-beremennyh-i-suhoj-kormyashchih-koshek-s-indejkoj-i-kuricej-1-5-kg.htm?yandfeed=1",
+      "price": "1195.10",
+      "oldPrice": "1258.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-healthy-growth-suhoj-korm-dlya-kotyat-ot-1-mesyaca-beremennyh-i-suhoj-kormyashchih-koshek-s-indejkoj-i-kuricej-1-5-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "1.500",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Healthy Growth Kitten Turkey Healthy Growth сухой корм для котят от 1 месяца, беременных и кормящих кошек, с ИНДЕЙКОЙ и КУРИЦЕЙ - 1,5 кг",
+      "description": "Купить в Москве Award Healthy Growth Kitten Turkey Healthy Growth сухой корм для котят от 1 месяца, беременных и кормящих кошек, с ИНДЕЙКОЙ и КУРИЦЕЙ - 1,5 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Беременность и лактация"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С курицей"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для котят"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "dry",
+      "displayWeight": "1,5 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "55202",
+      "available": true,
+      "vendorCode": "7173716",
+      "barcodes": [
+        "4630147173716"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-indoor-big-cats-suhoj-korm-dlya-koshek-krupnyh-porod-s-govyadinoj-kuricej-brokkoli-i-yukki-shidigera-10-kg.htm?yandfeed=1",
+      "price": "5253.06",
+      "oldPrice": "6038.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-indoor-big-cats-suhoj-korm-dlya-koshek-krupnyh-porod-s-govyadinoj-kuricej-brokkoli-i-yukki-shidigera-10-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "10.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Indoor Big Cats Adult Beef Indoor Big Cats сухой корм для кошек крупных пород, с ГОВЯДИНОЙ, КУРИЦЕЙ, брокколи и юкки Шидигера",
+      "description": "Купить в Москве Award Indoor Big Cats Adult Beef Indoor Big Cats сухой корм для кошек крупных пород, с ГОВЯДИНОЙ, КУРИЦЕЙ, брокколи и юкки Шидигера по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Породы крупного размера"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С говядиной"
+        },
+        {
+          "name": "Вкус",
+          "value": "С курицей"
+        },
+        {
+          "name": "Вкус",
+          "value": "С брокколи"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "dry",
+      "displayWeight": "10 кг",
+      "discountPercent": 13
+    },
+    {
+      "id": "55204",
+      "available": true,
+      "vendorCode": "7173617",
+      "barcodes": [
+        "4630147173617"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-beloj-ryboj-klyukvoj-i-cikoriem-1-5-kg.htm?yandfeed=1",
+      "price": "1351.85",
+      "oldPrice": "1423.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-beloj-ryboj-klyukvoj-i-cikoriem-1-5-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "1.500",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Sterilized Adult White Fish Sterilized сухой корм для стерилизованных кошек, с белой РЫБОЙ, клюквой и цикорием - 1,5 кг",
+      "description": "Купить в Москве Award Sterilized Adult White Fish Sterilized сухой корм для стерилизованных кошек, с белой РЫБОЙ, клюквой и цикорием - 1,5 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Кастрация и стерилизация"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С клюквой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С белой рыбой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "dry",
+      "displayWeight": "1,5 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "55205",
+      "available": true,
+      "vendorCode": "7173624",
+      "barcodes": [
+        "4630147173624"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-beloj-ryboj-klyukvoj-i-cikoriem-10-kg.htm?yandfeed=1",
+      "price": "6221.37",
+      "oldPrice": "7151.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-beloj-ryboj-klyukvoj-i-cikoriem-10-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "10.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Sterilized Adult White Fish Sterilized сухой корм для стерилизованных кошек, с белой РЫБОЙ, клюквой и цикорием - 10 кг",
+      "description": "Купить в Москве Award Sterilized Adult White Fish Sterilized сухой корм для стерилизованных кошек, с белой РЫБОЙ, клюквой и цикорием - 10 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Кастрация и стерилизация"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С клюквой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С белой рыбой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "dry",
+      "displayWeight": "10 кг",
+      "discountPercent": 13
+    },
+    {
+      "id": "55206",
+      "available": true,
+      "vendorCode": "7173600",
+      "barcodes": [
+        "4630147173600"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-beloj-ryboj-klyukvoj-i-cikoriem-400-g.htm?yandfeed=1",
+      "price": "473.10",
+      "oldPrice": "498.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-beloj-ryboj-klyukvoj-i-cikoriem-400-g.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "0.400",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Sterilized Adult White Fish Sterilized сухой корм для стерилизованных кошек, с белой РЫБОЙ, клюквой и цикорием - 400 г",
+      "description": "Купить в Москве Award Sterilized Adult White Fish Sterilized сухой корм для стерилизованных кошек, с белой РЫБОЙ, клюквой и цикорием - 400 г по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Кастрация и стерилизация"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С клюквой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С белой рыбой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "dry",
+      "displayWeight": "400 г",
+      "discountPercent": 5
+    },
+    {
+      "id": "55207",
+      "available": true,
+      "vendorCode": "7173587",
+      "barcodes": [
+        "4630147173587"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-indejkoj-kuricej-klyukvoj-i-cikoriem-1-5-kg.htm?yandfeed=1",
+      "price": "1174.20",
+      "oldPrice": "1236.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-indejkoj-kuricej-klyukvoj-i-cikoriem-1-5-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "1.500",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Sterilized Adult Turkey Sterilized сухой корм для стерилизованных кошек, с ИНДЕЙКОЙ, КУРИЦЕЙ, клюквой и цикорием - 1,5 кг",
+      "description": "Купить в Москве Award Sterilized Adult Turkey Sterilized сухой корм для стерилизованных кошек, с ИНДЕЙКОЙ, КУРИЦЕЙ, клюквой и цикорием - 1,5 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Кастрация и стерилизация"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С курицей"
+        },
+        {
+          "name": "Вкус",
+          "value": "С клюквой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "dry",
+      "displayWeight": "1,5 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "55208",
+      "available": true,
+      "vendorCode": "7173594",
+      "barcodes": [
+        "4630147173594"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-indejkoj-kuricej-klyukvoj-i-cikoriem-10-kg.htm?yandfeed=1",
+      "price": "5253.06",
+      "oldPrice": "6038.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-indejkoj-kuricej-klyukvoj-i-cikoriem-10-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "10.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Sterilized Adult Turkey Sterilized сухой корм для стерилизованных кошек, с ИНДЕЙКОЙ, КУРИЦЕЙ, клюквой и цикорием - 10 кг",
+      "description": "Купить в Москве Award Sterilized Adult Turkey Sterilized сухой корм для стерилизованных кошек, с ИНДЕЙКОЙ, КУРИЦЕЙ, клюквой и цикорием - 10 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Кастрация и стерилизация"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С курицей"
+        },
+        {
+          "name": "Вкус",
+          "value": "С клюквой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "dry",
+      "displayWeight": "10 кг",
+      "discountPercent": 13
+    },
+    {
+      "id": "55210",
+      "available": true,
+      "vendorCode": "7173648",
+      "barcodes": [
+        "4630147173648"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-urinary-suhoj-korm-dlya-koshek-dlya-profilaktiki-mochekamennoj-bolezni-s-kuricej-klyukvoj-cikoriem-i-rybim-zhirom-1-5-kg.htm?yandfeed=1",
+      "price": "1174.20",
+      "oldPrice": "1236.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-urinary-suhoj-korm-dlya-koshek-dlya-profilaktiki-mochekamennoj-bolezni-s-kuricej-klyukvoj-cikoriem-i-rybim-zhirom-1-5-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "1.500",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Urinary Adult Chicken Urinary сухой корм для кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, клюквой, цикорием и рыбьим жиром - 1,5 кг",
+      "description": "Купить в Москве Award Urinary Adult Chicken Urinary сухой корм для кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, клюквой, цикорием и рыбьим жиром - 1,5 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "При МКБ"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С курицей"
+        },
+        {
+          "name": "Вкус",
+          "value": "С клюквой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "dry",
+      "displayWeight": "1,5 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "55211",
+      "available": true,
+      "vendorCode": "4630147173655",
+      "barcodes": [
+        "4630147173655"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-urinary-suhoj-korm-dlya-koshek-dlya-profilaktiki-mochekamennoj-bolezni-s-kuricej-klyukvoj-cikoriem-i-rybim-zhirom-10-kg.htm?yandfeed=1",
+      "price": "5253.06",
+      "oldPrice": "6038.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-urinary-suhoj-korm-dlya-koshek-dlya-profilaktiki-mochekamennoj-bolezni-s-kuricej-klyukvoj-cikoriem-i-rybim-zhirom-10-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "10.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Urinary Adult Chicken Urinary сухой корм для кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, клюквой, цикорием и рыбьим жиром - 10 кг",
+      "description": "Купить в Москве Award Urinary Adult Chicken Urinary сухой корм для кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, клюквой, цикорием и рыбьим жиром - 10 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "При МКБ"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С курицей"
+        },
+        {
+          "name": "Вкус",
+          "value": "С клюквой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "dry",
+      "displayWeight": "10 кг",
+      "discountPercent": 13
+    },
+    {
+      "id": "55212",
+      "available": true,
+      "vendorCode": "7173631",
+      "barcodes": [
+        "4630147173631"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-urinary-suhoj-korm-dlya-koshek-dlya-profilaktiki-mochekamennoj-bolezni-s-kuricej-klyukvoj-cikoriem-i-rybim-zhirom-400-g.htm?yandfeed=1",
+      "price": "429.40",
+      "oldPrice": "452.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-urinary-suhoj-korm-dlya-koshek-dlya-profilaktiki-mochekamennoj-bolezni-s-kuricej-klyukvoj-cikoriem-i-rybim-zhirom-400-g.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "0.400",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Urinary Adult Chicken Urinary сухой корм для кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, клюквой, цикорием и рыбьим жиром - 400 г",
+      "description": "Купить в Москве Award Urinary Adult Chicken Urinary сухой корм для кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, клюквой, цикорием и рыбьим жиром - 400 г по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "При МКБ"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С курицей"
+        },
+        {
+          "name": "Вкус",
+          "value": "С клюквой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "dry",
+      "displayWeight": "400 г",
+      "discountPercent": 5
+    },
+    {
+      "id": "55224",
+      "available": true,
+      "vendorCode": "2540355",
+      "barcodes": [
+        "4620202540546"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-vlazhnyj-korm-dlya-shchenkov-ot-1-mesyaca-s-telyatinoj-i-ovoshchami-v-konservah-400-g.htm?yandfeed=1",
+      "price": "3944.40",
+      "oldPrice": "4152.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-vlazhnyj-korm-dlya-shchenkov-ot-1-mesyaca-s-telyatinoj-i-ovoshchami-v-konservah-400-g.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "4.800",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Pate Puppy Veal & Vegetables влажный корм для щенков от 1 месяца, с ТЕЛЯТИНОЙ и овощами, в консервах - 400 г",
+      "description": "Купить в Москве Award Pate Puppy Veal & Vegetables влажный корм для щенков от 1 месяца, с ТЕЛЯТИНОЙ и овощами, в консервах - 400 г по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Консервы (в железной банке)"
+        },
+        {
+          "name": "Особенности состава",
+          "value": "Безглютеновые"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С овощами"
+        },
+        {
+          "name": "Вкус",
+          "value": "С телятиной"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Влажный"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для щенков"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "wet",
+      "displayWeight": "4,8 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "55226",
+      "available": true,
+      "vendorCode": "7175819",
+      "barcodes": [
+        "4630147175819"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-hypo-suhoj-korm-dlya-sobak-vsekh-porod-s-beloj-ryboj-brokkoli-seldereem-i-semyan-lna-12-kg.htm?yandfeed=1",
+      "price": "7697.60",
+      "oldPrice": "9056.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-hypo-suhoj-korm-dlya-sobak-vsekh-porod-s-beloj-ryboj-brokkoli-seldereem-i-semyan-lna-12-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "12.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Hipo Adult White Fish Hypo сухой корм для собак всех пород, с белой РЫБОЙ, брокколи, сельдереем и семенами льна - 12 кг",
+      "description": "Купить в Москве Award Hipo Adult White Fish Hypo сухой корм для собак всех пород, с белой РЫБОЙ, брокколи, сельдереем и семенами льна - 12 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Проблемы пищеварения"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С брокколи"
+        },
+        {
+          "name": "Вкус",
+          "value": "С белой рыбой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "12 кг",
+      "discountPercent": 15
+    },
+    {
+      "id": "55227",
+      "available": true,
+      "vendorCode": "7173488",
+      "barcodes": [
+        "4630147173488"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-hypo-suhoj-korm-dlya-sobak-vsekh-porod-s-beloj-ryboj-brokkoli-seldereem-i-semyan-lna-2-kg.htm?yandfeed=1",
+      "price": "1823.05",
+      "oldPrice": "1919.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-hypo-suhoj-korm-dlya-sobak-vsekh-porod-s-beloj-ryboj-brokkoli-seldereem-i-semyan-lna-2-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "2.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Hypo Adult White Fish сухой корм для собак всех пород, с белой РЫБОЙ, брокколи, сельдереем и семенами льна - 2 кг",
+      "description": "Купить в Москве Award Hypo Adult White Fish сухой корм для собак всех пород, с белой РЫБОЙ, брокколи, сельдереем и семенами льна - 2 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Проблемы пищеварения"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С брокколи"
+        },
+        {
+          "name": "Вкус",
+          "value": "С белой рыбой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "2 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "55230",
+      "available": true,
+      "vendorCode": "7175833",
+      "barcodes": [
+        "4630147175833"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-suhoj-korm-dlya-sobak-vsekh-porod-s-yagnenkom-indejkoj-yablokami-i-chernikoj-12-kg.htm?yandfeed=1",
+      "price": "6221.37",
+      "oldPrice": "7151.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-vsekh-porod-s-yagnenkom-indejkoj-yablokami-i-chernikoj-12-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "12.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award All Breed Adult Lamb сухой корм для собак всех пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, яблоками и черникой - 12 кг",
+      "description": "Купить в Москве Award All Breed Adult Lamb сухой корм для собак всех пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, яблоками и черникой - 12 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С ягненком"
+        },
+        {
+          "name": "Вкус",
+          "value": "С черникой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "12 кг",
+      "discountPercent": 13
+    },
+    {
+      "id": "55232",
+      "available": true,
+      "vendorCode": "7175796",
+      "barcodes": [
+        "4630147175796"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-suhoj-korm-dlya-sobak-krupnyh-porod-s-kuricej-indejkoj-tykvoj-i-shipovnikom-12-kg.htm?yandfeed=1",
+      "price": "5528.85",
+      "oldPrice": "6355.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-krupnyh-porod-s-kuricej-indejkoj-tykvoj-i-shipovnikom-12-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "12.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Large Adult Chicken сухой корм для собак крупных пород, с КУРИЦЕЙ, ИНДЕЙКОЙ, тыквой и шиповником - 12 кг",
+      "description": "Купить в Москве Award Large Adult Chicken сухой корм для собак крупных пород, с КУРИЦЕЙ, ИНДЕЙКОЙ, тыквой и шиповником - 12 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Породы крупного размера"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С шиповником"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С курицей"
+        },
+        {
+          "name": "Вкус",
+          "value": "С тыквой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "12 кг",
+      "discountPercent": 13
+    },
+    {
+      "id": "55234",
+      "available": true,
+      "vendorCode": "7173402",
+      "barcodes": [
+        "4630147173402"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-suhoj-korm-dlya-sobak-melkih-i-miniatyurnyh-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-1-5-kg.htm?yandfeed=1",
+      "price": "1100.10",
+      "oldPrice": "1158.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-melkih-i-miniatyurnyh-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-1-5-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "1.500",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Small Adult Lamb сухой корм для собак мелких и миниатюрных пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 1,5 кг",
+      "description": "Купить в Москве Award Small Adult Lamb сухой корм для собак мелких и миниатюрных пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 1,5 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Породы мелкого размера"
+        },
+        {
+          "name": "Размер",
+          "value": "Миниатюрные породы"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С брусникой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С ягненком"
+        },
+        {
+          "name": "Вкус",
+          "value": "С брокколи"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "1,5 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "55235",
+      "available": true,
+      "vendorCode": "7173419",
+      "barcodes": [
+        "4630147173419"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-suhoj-korm-dlya-sobak-melkih-i-miniatyurnyh-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-10-kg.htm?yandfeed=1",
+      "price": "5528.85",
+      "oldPrice": "6355.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-melkih-i-miniatyurnyh-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-10-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "10.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Small Adult Lamb сухой корм для собак мелких и миниатюрных пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 10 кг",
+      "description": "Купить в Москве Award Small Adult Lamb сухой корм для собак мелких и миниатюрных пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 10 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Породы мелкого размера"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С брусникой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С ягненком"
+        },
+        {
+          "name": "Вкус",
+          "value": "С брокколи"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "10 кг",
+      "discountPercent": 13
+    },
+    {
+      "id": "55237",
+      "available": true,
+      "vendorCode": "7175772",
+      "barcodes": [
+        "4630147175772"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-suhoj-korm-dlya-sobak-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-12-kg.htm?yandfeed=1",
+      "price": "5528.85",
+      "oldPrice": "6355.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-12-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "12.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Medium Adult Turkey сухой корм для собак средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 12 кг",
+      "description": "Купить в Москве Award Medium Adult Turkey сухой корм для собак средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 12 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С курицей"
+        },
+        {
+          "name": "Вкус",
+          "value": "С морковью"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "12 кг",
+      "discountPercent": 13
+    },
+    {
+      "id": "55238",
+      "available": true,
+      "vendorCode": "7173440",
+      "barcodes": [
+        "4630147173440"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-suhoj-korm-dlya-sobak-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-2-kg.htm?yandfeed=1",
+      "price": "1384.15",
+      "oldPrice": "1457.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-2-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "2.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Medium Adult Turkey сухой корм для собак средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 2 кг",
+      "description": "Купить в Москве Award Medium Adult Turkey сухой корм для собак средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 2 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Породы среднего размера"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С курицей"
+        },
+        {
+          "name": "Вкус",
+          "value": "С морковью"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "2 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "55240",
+      "available": true,
+      "vendorCode": "7173310",
+      "barcodes": [
+        "4630147173310"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-melkih-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-10-kg.htm?yandfeed=1",
+      "price": "5668.05",
+      "oldPrice": "6515.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-melkih-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-10-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "10.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук, мелких пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 10 кг",
+      "description": "Купить в Москве Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук, мелких пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 10 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Породы мелкого размера"
+        },
+        {
+          "name": "Размер",
+          "value": "Миниатюрные породы"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Беременность и лактация"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С брусникой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С ягненком"
+        },
+        {
+          "name": "Вкус",
+          "value": "С брокколи"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для щенков"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "10 кг",
+      "discountPercent": 13
+    },
+    {
+      "id": "55241",
+      "available": true,
+      "vendorCode": "7173297",
+      "barcodes": [
+        "4630147173297"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-melkih-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-800-g.htm?yandfeed=1",
+      "price": "723.90",
+      "oldPrice": "762.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-melkih-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-800-g.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "0.800",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук, мелких пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 800 г",
+      "description": "Купить в Москве Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук, мелких пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 800 г по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Породы мелкого размера"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Беременность и лактация"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С брусникой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С ягненком"
+        },
+        {
+          "name": "Вкус",
+          "value": "С брокколи"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для щенков"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "800 г",
+      "discountPercent": 5
+    },
+    {
+      "id": "55242",
+      "available": true,
+      "vendorCode": "7175673",
+      "barcodes": [
+        "4630147175673"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-12-kg.htm?yandfeed=1",
+      "price": "6501.63",
+      "oldPrice": "6991.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-12-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "12.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 12 кг",
+      "description": "Купить в Москве Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 12 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Беременность и лактация"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С курицей"
+        },
+        {
+          "name": "Вкус",
+          "value": "С морковью"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для щенков"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "12 кг",
+      "discountPercent": 7
+    },
+    {
+      "id": "55243",
+      "available": true,
+      "vendorCode": "7173327",
+      "barcodes": [
+        "4630147173327"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-2-kg.htm?yandfeed=1",
+      "price": "1471.55",
+      "oldPrice": "1549.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-2-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "2.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 2 кг",
+      "description": "Купить в Москве Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 2 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Породы среднего размера"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Беременность и лактация"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С курицей"
+        },
+        {
+          "name": "Вкус",
+          "value": "С морковью"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для щенков"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "2 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "55244",
+      "available": true,
+      "vendorCode": "7175697",
+      "barcodes": [
+        "4630147175697"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-krupnyh-porod-s-kuricej-indejkoj-tykvoj-i-shipovnikom-12-kg.htm?yandfeed=1",
+      "price": "5668.05",
+      "oldPrice": "6515.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-krupnyh-porod-s-kuricej-indejkoj-tykvoj-i-shipovnikom-12-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "12.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Large Puppy Chicken сухой корм для щенков от 1 месяца крупных пород, с КУРИЦЕЙ, ИНДЕЙКОЙ, тыквой и шиповником - 12 кг",
+      "description": "Купить в Москве Award Large Puppy Chicken сухой корм для щенков от 1 месяца крупных пород, с КУРИЦЕЙ, ИНДЕЙКОЙ, тыквой и шиповником - 12 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Породы крупного размера"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С курицей"
+        },
+        {
+          "name": "Вкус",
+          "value": "С тыквой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для щенков"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "12 кг",
+      "discountPercent": 13
+    },
+    {
+      "id": "55246",
+      "available": true,
+      "vendorCode": "7175727",
+      "barcodes": [
+        "4630147175727"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-beremennyh-i-suhoj-kormyashchih-suk-vsekh-porod-s-yagnenkom-indejkoj-yablokom-i-chernikoj-12-kg.htm?yandfeed=1",
+      "price": "6498.03",
+      "oldPrice": "7469.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-beremennyh-i-suhoj-kormyashchih-suk-vsekh-porod-s-yagnenkom-indejkoj-yablokom-i-chernikoj-12-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "12.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award All Breed Puppy Lamb сухой корм для щенков от 1 месяца, беременных и кормящих сук всех пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, яблоком и черникой - 12 кг",
+      "description": "Купить в Москве Award All Breed Puppy Lamb сухой корм для щенков от 1 месяца, беременных и кормящих сук всех пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, яблоком и черникой - 12 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Беременность и лактация"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С ягненком"
+        },
+        {
+          "name": "Вкус",
+          "value": "С черникой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С яблоком"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для щенков"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "12 кг",
+      "discountPercent": 13
+    },
+    {
+      "id": "55248",
+      "available": true,
+      "vendorCode": "7173365",
+      "barcodes": [
+        "4630147173365"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-beremennyh-i-suhoj-kormyashchih-suk-vsekh-porod-s-yagnenkom-indejkoj-yablokom-i-chernikoj-800-g.htm?yandfeed=1",
+      "price": "723.90",
+      "oldPrice": "762.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-beremennyh-i-suhoj-kormyashchih-suk-vsekh-porod-s-yagnenkom-indejkoj-yablokom-i-chernikoj-800-g.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "0.800",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award All Breed Puppy Lamb сухой корм для щенков от 1 месяца, беременных и кормящих сук всех пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, яблоком и черникой - 800 г",
+      "description": "Купить в Москве Award All Breed Puppy Lamb сухой корм для щенков от 1 месяца, беременных и кормящих сук всех пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, яблоком и черникой - 800 г по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Беременность и лактация"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С ягненком"
+        },
+        {
+          "name": "Вкус",
+          "value": "С черникой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С яблоком"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для щенков"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "800 г",
+      "discountPercent": 5
+    },
+    {
+      "id": "55190U12",
+      "available": true,
+      "vendorCode": "2540478",
+      "barcodes": [
+        "4680846201258"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-vlazhnyj-korm-dlya-koshek-s-govyadinoj-i-shpinatom-v-konservah-100-g-12-pack.htm?yandfeed=1",
+      "price": "1744.20",
+      "oldPrice": "1836.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-vlazhnyj-korm-dlya-koshek-s-govyadinoj-i-shpinatom-v-konservah-100-g.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "1.200",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Pate Adult Beef & Spinach влажный корм для кошек, с ГОВЯДИНОЙ и шпинатом, в консервах - 100 г (12 шт)",
+      "description": "Купить в Москве Award Pate Adult Beef & Spinach влажный корм для кошек, с ГОВЯДИНОЙ и шпинатом, в консервах - 100 г по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Консервы (в железной банке)"
+        },
+        {
+          "name": "Особенности состава",
+          "value": "Безглютеновые"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С говядиной"
+        },
+        {
+          "name": "Вкус",
+          "value": "Со шпинатом"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Влажный"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "wet",
+      "displayWeight": "1,2 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "55191U12",
+      "available": true,
+      "vendorCode": "2540454",
+      "barcodes": [
+        "90000000000583"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-vlazhnyj-korm-dlya-koshek-s-indejkoj-i-ovoshchami-v-konservah-100-g-12-pack.htm?yandfeed=1",
+      "price": "1744.20",
+      "oldPrice": "1836.00",
+      "currencyId": "RUR",
+      "categoryId": "16",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-vlazhnyj-korm-dlya-koshek-s-indejkoj-i-ovoshchami-v-konservah-100-g.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "1.200",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Pate Adult Turkey & Vegetables влажный корм для кошек, с ИНДЕЙКОЙ и овощами, в консервах - 100 г (12 шт)",
+      "description": "Купить в Москве Award Pate Adult Turkey & Vegetables влажный корм для кошек, с ИНДЕЙКОЙ и овощами, в консервах - 100 г по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Для всех пород"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Консервы (в железной банке)"
+        },
+        {
+          "name": "Особенности состава",
+          "value": "Безглютеновые"
+        },
+        {
+          "name": "Назначение",
+          "value": "Повседневный"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Российский корм"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для кошек"
+        },
+        {
+          "name": "Вкус",
+          "value": "С индейкой"
+        },
+        {
+          "name": "Вкус",
+          "value": "С овощами"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Влажный"
+        },
+        {
+          "name": "Класс",
+          "value": "Супер премиум"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "wet",
+      "displayWeight": "1,2 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "65405",
+      "available": true,
+      "vendorCode": "2548955",
+      "barcodes": [
+        "4620202548955"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-special-care-sensitive-digestion-suhoj-korm-dlya-koshek-s-chuvstvitelnym-pishchevareniem-s-utkoj-1-5kg.htm?yandfeed=1",
+      "price": "1423.10",
+      "oldPrice": "1498.00",
+      "currencyId": "RUR",
+      "categoryId": null,
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-special-care-sensitive-digestion-suhoj-korm-dlya-koshek-s-chuvstvitelnym-pishchevareniem-s-utkoj-1-5kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "1.500",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Special Care Sensitive Digestion сухой корм для кошек с чувствительным пищеварением, с уткой - 1,5кг",
+      "description": "Купить в Москве Award Special Care Sensitive Digestion сухой корм для кошек с чувствительным пищеварением, с уткой - 1,5кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Вкус",
+          "value": "С уткой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        }
+      ],
+      "animal": "cats",
+      "foodType": "dry",
+      "displayWeight": "1,5 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "65412",
+      "available": true,
+      "vendorCode": "2548924",
+      "barcodes": [
+        "4620202548924"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-special-care-hypo-puppy-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-beremennyh-i-kormyashchih-sobak-vsekh-porod-pri-allergii-s-ryboj-2-kg.htm?yandfeed=1",
+      "price": "2028.25",
+      "oldPrice": "2135.00",
+      "currencyId": "RUR",
+      "categoryId": null,
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-special-care-hypo-puppy-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-beremennyh-i-kormyashchih-sobak-vsekh-porod-pri-allergii-s-ryboj-2-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "2.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Special Care Hypo Puppy сухой корм для щенков от 1 месяца, беременных и кормящих собак всех пород, при аллергии, с рыбой - 2 кг",
+      "description": "Купить в Москве Award Special Care Hypo Puppy сухой корм для щенков от 1 месяца, беременных и кормящих собак всех пород, при аллергии, с рыбой - 2 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Вкус",
+          "value": "С рыбой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "2 кг",
+      "discountPercent": 5
+    },
+    {
+      "id": "66131",
+      "available": true,
+      "vendorCode": "2549228",
+      "barcodes": [
+        "4620202549228"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-special-care-hypo-puppy-suhoj-korm-dlya-beremennyh-i-kormyashchih-sobak-vsekh-porod-i-shchenkov-ot-1-mesyaca-sklonnyh-k-allergii-s-beloj-ryboj-12-kg.htm?yandfeed=1",
+      "price": "8993.70",
+      "oldPrice": "9993.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-special-care-hypo-puppy-suhoj-korm-dlya-beremennyh-i-kormyashchih-sobak-vsekh-porod-i-shchenkov-ot-1-mesyaca-sklonnyh-k-allergii-s-beloj-ryboj-12-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "12.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Special Care Hypo Puppy сухой корм для беременных и кормящих собак всех пород и щенков от 1 месяца склонных к аллергии, с белой РЫБОЙ - 12 кг",
+      "description": "Купить в Москве Award Special Care Hypo Puppy сухой корм для беременных и кормящих собак всех пород и щенков от 1 месяца склонных к аллергии, с белой РЫБОЙ - 12 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С белой рыбой"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "12 кг",
+      "discountPercent": 10
+    },
+    {
+      "id": "66133",
+      "available": true,
+      "vendorCode": "2549211",
+      "barcodes": [
+        "4620202549211"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-cpecial-care-toy-breed-support-suhoj-korm-dlya-sobak-melkih-i-miniatyurnyh-porod-s-yagnenkom-10-kg.htm?yandfeed=1",
+      "price": "6764.76",
+      "oldPrice": "7353.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-cpecial-care-toy-breed-support-suhoj-korm-dlya-sobak-melkih-i-miniatyurnyh-porod-s-yagnenkom-10-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "10.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Special Care Toy Breed Support сухой корм для собак мелких и миниатюрных пород, с ЯГНЕНКОМ - 10 кг",
+      "description": "Купить в Москве Award Special Care Toy Breed Support сухой корм для собак мелких и миниатюрных пород, с ЯГНЕНКОМ - 10 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Размер",
+          "value": "Породы мелкого размера"
+        },
+        {
+          "name": "Размер",
+          "value": "Миниатюрные породы"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С ягненком"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "10 кг",
+      "discountPercent": 8
+    },
+    {
+      "id": "66143",
+      "available": true,
+      "vendorCode": "2549204",
+      "barcodes": [
+        "4620202549204"
+      ],
+      "url": "https://www.dogeat.ru/catalog/award-special-care-sensitive-digestion-suhoj-korm-dlya-sobak-vsekh-porod-s-chuvstvitelnym-pishchevareniem-s-yagnenkom-12-kg.htm?yandfeed=1",
+      "price": "7806.89",
+      "oldPrice": "8579.00",
+      "currencyId": "RUR",
+      "categoryId": "12",
+      "pictures": [
+        "https://www.dogeat.ru/storage/products/0/800x800/award-special-care-sensitive-digestion-suhoj-korm-dlya-sobak-vsekh-porod-s-chuvstvitelnym-pishchevareniem-s-yagnenkom-12-kg.jpg"
+      ],
+      "delivery": true,
+      "feedWeightKg": "12.000",
+      "salesNotes": "Скидка 15% на 1-й заказ по промокоду: СФ15.",
+      "enableAutoDiscounts": true,
+      "vendor": "AWARD",
+      "name": "Award Special Care Sensitive Digestion сухой корм для собак всех пород с чувствительным пищеварением, с ягненком - 12 кг",
+      "description": "Купить в Москве Award Special Care Sensitive Digestion сухой корм для собак всех пород с чувствительным пищеварением, с ягненком - 12 кг по выгодным ценам с доставкой по городу. Телефон +7 495 790-70-73",
+      "parameters": [
+        {
+          "name": "Новинка",
+          "value": "true"
+        },
+        {
+          "name": "Бренд",
+          "value": "AWARD"
+        },
+        {
+          "name": "Категория товара",
+          "value": "Корм"
+        },
+        {
+          "name": "Упаковка",
+          "value": "Мешок"
+        },
+        {
+          "name": "Показания",
+          "value": "Проблемы пищеварения"
+        },
+        {
+          "name": "Страна производитель",
+          "value": "Россия"
+        },
+        {
+          "name": "Животное",
+          "value": "Для собак"
+        },
+        {
+          "name": "Вкус",
+          "value": "С ягненком"
+        },
+        {
+          "name": "Тип корма",
+          "value": "Сухой"
+        },
+        {
+          "name": "Возраст",
+          "value": "Для взрослых"
+        }
+      ],
+      "animal": "dogs",
+      "foodType": "dry",
+      "displayWeight": "12 кг",
+      "discountPercent": 9
+    }
+  ]
+}

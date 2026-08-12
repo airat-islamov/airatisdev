@@ -3,12 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
     <meta
       name="description"
       content="AWARD — суперпремиальные корма для кошек и собак."
     />
     <title>AWARD — корма для кошек и собак</title>
-    <link rel="icon" href="data:," />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/img/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/img/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Award" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="manifest" href="/img/favicon/site.webmanifest" />
     <link rel="stylesheet" href="css/style.min.css" />
     <script src="js/main.js" defer></script>
   </head>
@@ -16,45 +36,66 @@
     <div class="AW">
       <header class="AW-header">
         <div class="AW-container AW-header__container">
-          <a class="AW-header__logo" href="#" aria-label="AWARD — на главную">
+          <a class="AW-header__logo" href="/" aria-label="AWARD — на главную">
             <picture class="AW-header__logo-picture">
               <source
                 media="(max-width: 700px)"
                 srcset="
-                  img/header/logo-mobile-1x.avif 1x,
-                  img/header/logo-mobile-2x.avif 2x
+                  img/header/award-logo-mobile-1x.avif 1x,
+                  img/header/award-logo-mobile-2x.avif 2x
                 "
-                width="97"
-                height="23"
+                width="32"
+                height="28"
               />
               <img
                 class="AW-header__logo-image"
-                src="img/header/logo-1x.avif"
-                srcset="img/header/logo-1x.avif 1x, img/header/logo-2x.avif 2x"
-                width="144"
-                height="34"
-                alt="AWARD"
+                src="img/header/award-logo-1x.avif"
+                srcset="
+                  img/header/award-logo-1x.avif 1x,
+                  img/header/award-logo-2x.avif 2x
+                "
+                width="52"
+                height="46"
+                alt=""
                 fetchpriority="high"
               />
             </picture>
+            <span class="AW-header__logo-text">
+              <strong class="AW-header__logo-title">Корма Award</strong>
+              <span class="AW-header__logo-subtitle">для кошек и собак</span>
+            </span>
           </a>
 
           <nav class="AW-header__nav" aria-label="Основная навигация">
             <ul class="AW-header__nav-list">
               <li class="AW-header__nav-item">
-                <a class="AW-header__nav-link" href="/catalog">Каталог</a>
+                <a class="AW-header__nav-link" href="/catalog/">Каталог</a>
               </li>
               <li class="AW-header__nav-item">
-                <a class="AW-header__nav-link" href="/catalog"> Для кошек </a>
+                <a
+                  class="AW-header__nav-link"
+                  href="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D0%BA%D0%BE%D1%88%D0%B5%D0%BA"
+                >
+                  Для кошек
+                </a>
               </li>
               <li class="AW-header__nav-item">
-                <a class="AW-header__nav-link" href="/catalog"> Для собак </a>
+                <a
+                  class="AW-header__nav-link"
+                  href="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D1%81%D0%BE%D0%B1%D0%B0%D0%BA"
+                >
+                  Для собак
+                </a>
               </li>
             </ul>
           </nav>
 
           <div class="AW-header__actions">
-            <button class="AW-btn AW-header__contact" type="button">
+            <button
+              class="AW-btn AW-header__contact"
+              type="button"
+              data-js-order-open="contact"
+            >
               Связаться с нами
             </button>
 
@@ -87,21 +128,39 @@
           <div class="AW-header__mobile-main">
             <div class="AW-header__mobile-top">
               <a
-                class="AW-header__mobile-logo"
-                href="#"
+                class="AW-header__logo AW-header__mobile-logo"
+                href="/"
                 aria-label="AWARD — на главную"
                 data-js-mobile-link
               >
-                <img
-                  src="img/header/logo-mobile-1x.avif"
-                  srcset="
-                    img/header/logo-mobile-1x.avif 1x,
-                    img/header/logo-mobile-2x.avif 2x
-                  "
-                  width="97"
-                  height="23"
-                  alt="AWARD"
-                />
+                <picture class="AW-header__logo-picture">
+                  <source
+                    media="(max-width: 700px)"
+                    srcset="
+                      img/header/award-logo-mobile-1x.avif 1x,
+                      img/header/award-logo-mobile-2x.avif 2x
+                    "
+                    width="32"
+                    height="28"
+                  />
+                  <img
+                    class="AW-header__logo-image"
+                    src="img/header/award-logo-1x.avif"
+                    srcset="
+                      img/header/award-logo-1x.avif 1x,
+                      img/header/award-logo-2x.avif 2x
+                    "
+                    width="52"
+                    height="46"
+                    alt=""
+                  />
+                </picture>
+                <span class="AW-header__logo-text">
+                  <strong class="AW-header__logo-title">Корма Award</strong>
+                  <span class="AW-header__logo-subtitle">
+                    для кошек и собак
+                  </span>
+                </span>
               </a>
 
               <button
@@ -116,12 +175,22 @@
 
             <nav class="AW-header__mobile-nav" aria-label="Мобильная навигация">
               <ul class="AW-header__mobile-list">
-                <li><a href="/catalog" data-js-mobile-link>Каталог</a></li>
+                <li><a href="/catalog/" data-js-mobile-link>Каталог</a></li>
                 <li>
-                  <a href="/catalog" data-js-mobile-link> Для кошек </a>
+                  <a
+                    href="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D0%BA%D0%BE%D1%88%D0%B5%D0%BA"
+                    data-js-mobile-link
+                  >
+                    Для кошек
+                  </a>
                 </li>
                 <li>
-                  <a href="/catalog" data-js-mobile-link> Для собак </a>
+                  <a
+                    href="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D1%81%D0%BE%D0%B1%D0%B0%D0%BA"
+                    data-js-mobile-link
+                  >
+                    Для собак
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -131,6 +200,7 @@
             class="AW-btn AW-header__mobile-contact"
             type="button"
             data-js-mobile-link
+            data-js-order-open="contact"
           >
             Связаться с нами
           </button>
@@ -184,7 +254,10 @@
                 </h1>
 
                 <div class="AW-hero__actions">
-                  <a class="AW-btn AW-hero__link" href="/catalog">
+                  <a
+                    class="AW-btn AW-hero__link"
+                    href="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D0%BA%D0%BE%D1%88%D0%B5%D0%BA"
+                  >
                     <img
                       class="AW-hero__link-icon"
                       src="img/hero/icon-cat-1x.avif"
@@ -200,7 +273,10 @@
                     <span>Для кошек</span>
                   </a>
 
-                  <a class="AW-btn AW-hero__link" href="/catalog">
+                  <a
+                    class="AW-btn AW-hero__link"
+                    href="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D1%81%D0%BE%D0%B1%D0%B0%D0%BA"
+                  >
                     <img
                       class="AW-hero__link-icon"
                       src="img/hero/icon-dog-1x.avif"
@@ -288,7 +364,11 @@
                   <span>товаров</span>
                 </h2>
 
-                <a class="AW-catalog__all" href="/catalog/">
+                <a
+                  class="AW-catalog__all"
+                  href="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D0%BA%D0%BE%D1%88%D0%B5%D0%BA"
+                  data-js-catalog-all
+                >
                   <span>Смотреть все</span>
                   <span class="AW-catalog__all-icon" aria-hidden="true"></span>
                 </a>
@@ -304,8 +384,10 @@
                   type="button"
                   id="cats"
                   role="tab"
+                  tabindex="0"
                   aria-selected="true"
                   aria-controls="AW-catalog-panel-cats"
+                  data-catalog-url="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D0%BA%D0%BE%D1%88%D0%B5%D0%BA"
                   data-js-catalog-tab
                 >
                   <span class="AW-catalog__species-icon" aria-hidden="true">
@@ -364,8 +446,10 @@
                   type="button"
                   id="dogs"
                   role="tab"
+                  tabindex="-1"
                   aria-selected="false"
                   aria-controls="AW-catalog-panel-dogs"
+                  data-catalog-url="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D1%81%D0%BE%D0%B1%D0%B0%D0%BA"
                   data-js-catalog-tab
                 >
                   <span class="AW-catalog__species-icon" aria-hidden="true">
@@ -428,33 +512,28 @@
                   aria-labelledby="cats"
                   data-js-catalog-panel
                 >
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Hairball & Indoor Adult Duck"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-healthy-growth-vlazhnyj-korm-dlya-kotyat-ot-1-mesyaca-s-indejkoj-kusochki-v-souse-v-pauchah-85-g.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Healthy Growth Chunks in Gravy Kitten Turkey Healthy Growth влажный корм для котят от 1 месяца, с ИНДЕЙКОЙ, кусочки в соусе, в паучах - 85 г"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">1 846,80 р.</span>
+                        <span class="AW-catalog-product__old">1 944 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-5%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">2,04 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                      сухой...
+                      Award Healthy Growth Chunks in Gravy Kitten Turkey Healthy Growth влажный корм для котят от 1 месяца, с ИНДЕЙКОЙ, кусочки в соусе, в паучах - 85 г
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -463,41 +542,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55185-award-healthy-growth-vlazhnyj-korm-dlya-kotyat-ot-1-mesyaca-s-indejkoj-kusochki-v-souse-v-pauchah-85-g/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Hairball & Indoor Adult Duck"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-urinary-vlazhnyj-korm-dlya-profilaktiki-mochekamennoj-bolezni-u-vzroslyh-koshek-s-kuricej-kusochki-v-souse-v-pauchah-85-g.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Urinary Chunks in Gravy Adult Chicken Urinary влажный корм для взрослых кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, кусочки в соусе, в паучах - 85 г"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">1 846,80 р.</span>
+                        <span class="AW-catalog-product__old">1 944 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-5%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">2,04 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                      сухой...
+                      Award Urinary Chunks in Gravy Adult Chicken Urinary влажный корм для взрослых кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, кусочки в соусе, в паучах - 85 г
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -506,41 +580,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55189-award-urinary-vlazhnyj-korm-dlya-profilaktiki-mochekamennoj-bolezni-u-vzroslyh-koshek-s-kuricej-kusochki-v-souse-v-pauchah-85-g/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Hairball & Indoor Adult Duck"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-vlazhnyj-korm-dlya-koshek-s-indejkoj-i-ovoshchami-v-konservah-100-g.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Pate Adult Turkey &amp; Vegetables влажный корм для кошек, с ИНДЕЙКОЙ и овощами, в консервах - 100 г (16 шт)"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">2 325,60 р.</span>
+                        <span class="AW-catalog-product__old">2 448 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-5%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">1,6 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                      сухой...
+                      Award Pate Adult Turkey &amp; Vegetables влажный корм для кошек, с ИНДЕЙКОЙ и овощами, в консервах - 100 г (16 шт)
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -549,41 +618,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55191-award-vlazhnyj-korm-dlya-koshek-s-indejkoj-i-ovoshchami-v-konservah-100-g/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Hairball & Indoor Adult Duck"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-hairball-indoor-suhoj-korm-dlya-vzroslyh-koshek-dlya-vyvedeniya-shersti-s-utkoj-indejkoj-chechevicej-i-yukki-shidigera-1-5-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Hairball &amp; Indoor Adult Duck Hairball Indoor сухой корм для взрослых кошек, для выведения шерсти, с УТКОЙ, ИНДЕЙКОЙ, чечевицей и Юккой - 1,5 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">1 174,20 р.</span>
+                        <span class="AW-catalog-product__old">1 236 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-5%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">1,5 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                      сухой...
+                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor сухой корм для взрослых кошек, для выведения шерсти, с УТКОЙ, ИНДЕЙКОЙ, чечевицей и Юккой - 1,5 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -592,41 +656,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55195-award-hairball-indoor-suhoj-korm-dlya-vzroslyh-koshek-dlya-vyvedeniya-shersti-s-utkoj-indejkoj-chechevicej-i-yukki-shidigera-1-5-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Hairball & Indoor Adult Duck"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-hairball-indoor-suhoj-korm-dlya-vzroslyh-koshek-dlya-vyvedeniya-shersti-s-utkoj-s-indejkoj-s-chechevicy-i-yukki-shidigera-10-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Hairball &amp; Indoor Adult Duck Hairball Indoor сухой корм для взрослых кошек, для выведения шерсти, с УТКОЙ, ИНДЕЙКОЙ, чечевицей и Юккой"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">5 253,06 р.</span>
+                        <span class="AW-catalog-product__old">6 038 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-13%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">10 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                      сухой...
+                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor сухой корм для взрослых кошек, для выведения шерсти, с УТКОЙ, ИНДЕЙКОЙ, чечевицей и Юккой
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -635,41 +694,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55196-award-hairball-indoor-suhoj-korm-dlya-vzroslyh-koshek-dlya-vyvedeniya-shersti-s-utkoj-s-indejkoj-s-chechevicy-i-yukki-shidigera-10-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Hairball & Indoor Adult Duck"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-healthy-growth-suhoj-korm-dlya-kotyat-ot-1-mesyaca-beremennyh-i-suhoj-kormyashchih-koshek-s-indejkoj-i-kuricej-1-5-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Healthy Growth Kitten Turkey Healthy Growth сухой корм для котят от 1 месяца, беременных и кормящих кошек, с ИНДЕЙКОЙ и КУРИЦЕЙ - 1,5 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">1 195,10 р.</span>
+                        <span class="AW-catalog-product__old">1 258 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-5%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">1,5 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                      сухой...
+                      Award Healthy Growth Kitten Turkey Healthy Growth сухой корм для котят от 1 месяца, беременных и кормящих кошек, с ИНДЕЙКОЙ и КУРИЦЕЙ - 1,5 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -678,41 +732,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55198-award-healthy-growth-suhoj-korm-dlya-kotyat-ot-1-mesyaca-beremennyh-i-suhoj-kormyashchih-koshek-s-indejkoj-i-kuricej-1-5-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Hairball & Indoor Adult Duck"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-indoor-big-cats-suhoj-korm-dlya-koshek-krupnyh-porod-s-govyadinoj-kuricej-brokkoli-i-yukki-shidigera-10-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Indoor Big Cats Adult Beef Indoor Big Cats сухой корм для кошек крупных пород, с ГОВЯДИНОЙ, КУРИЦЕЙ, брокколи и юкки Шидигера"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">5 253,06 р.</span>
+                        <span class="AW-catalog-product__old">6 038 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-13%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">10 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                      сухой...
+                      Award Indoor Big Cats Adult Beef Indoor Big Cats сухой корм для кошек крупных пород, с ГОВЯДИНОЙ, КУРИЦЕЙ, брокколи и юкки Шидигера
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -721,41 +770,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55202-award-indoor-big-cats-suhoj-korm-dlya-koshek-krupnyh-porod-s-govyadinoj-kuricej-brokkoli-i-yukki-shidigera-10-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Hairball & Indoor Adult Duck"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-beloj-ryboj-klyukvoj-i-cikoriem-1-5-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Sterilized Adult White Fish Sterilized сухой корм для стерилизованных кошек, с белой РЫБОЙ, клюквой и цикорием - 1,5 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">1 351,85 р.</span>
+                        <span class="AW-catalog-product__old">1 423 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-5%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">1,5 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                      сухой...
+                      Award Sterilized Adult White Fish Sterilized сухой корм для стерилизованных кошек, с белой РЫБОЙ, клюквой и цикорием - 1,5 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -764,41 +808,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55204-award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-beloj-ryboj-klyukvoj-i-cikoriem-1-5-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Hairball & Indoor Adult Duck"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-beloj-ryboj-klyukvoj-i-cikoriem-10-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Sterilized Adult White Fish Sterilized сухой корм для стерилизованных кошек, с белой РЫБОЙ, клюквой и цикорием - 10 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">6 221,37 р.</span>
+                        <span class="AW-catalog-product__old">7 151 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-13%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">10 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                      сухой...
+                      Award Sterilized Adult White Fish Sterilized сухой корм для стерилизованных кошек, с белой РЫБОЙ, клюквой и цикорием - 10 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -807,41 +846,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55205-award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-beloj-ryboj-klyukvoj-i-cikoriem-10-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Hairball & Indoor Adult Duck"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-beloj-ryboj-klyukvoj-i-cikoriem-400-g.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Sterilized Adult White Fish Sterilized сухой корм для стерилизованных кошек, с белой РЫБОЙ, клюквой и цикорием - 400 г"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">473,10 р.</span>
+                        <span class="AW-catalog-product__old">498 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-5%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">400 г</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                      сухой...
+                      Award Sterilized Adult White Fish Sterilized сухой корм для стерилизованных кошек, с белой РЫБОЙ, клюквой и цикорием - 400 г
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -850,41 +884,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55206-award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-beloj-ryboj-klyukvoj-i-cikoriem-400-g/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Hairball & Indoor Adult Duck"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-indejkoj-kuricej-klyukvoj-i-cikoriem-1-5-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Sterilized Adult Turkey Sterilized сухой корм для стерилизованных кошек, с ИНДЕЙКОЙ, КУРИЦЕЙ, клюквой и цикорием - 1,5 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">1 174,20 р.</span>
+                        <span class="AW-catalog-product__old">1 236 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-5%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">1,5 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                      сухой...
+                      Award Sterilized Adult Turkey Sterilized сухой корм для стерилизованных кошек, с ИНДЕЙКОЙ, КУРИЦЕЙ, клюквой и цикорием - 1,5 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -893,41 +922,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55207-award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-indejkoj-kuricej-klyukvoj-i-cikoriem-1-5-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Hairball & Indoor Adult Duck"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-indejkoj-kuricej-klyukvoj-i-cikoriem-10-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Sterilized Adult Turkey Sterilized сухой корм для стерилизованных кошек, с ИНДЕЙКОЙ, КУРИЦЕЙ, клюквой и цикорием - 10 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">5 253,06 р.</span>
+                        <span class="AW-catalog-product__old">6 038 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-13%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">10 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                      сухой...
+                      Award Sterilized Adult Turkey Sterilized сухой корм для стерилизованных кошек, с ИНДЕЙКОЙ, КУРИЦЕЙ, клюквой и цикорием - 10 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -936,49 +960,273 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55208-award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-indejkoj-kuricej-klyukvoj-i-cikoriem-10-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
-                </div>
+
+                  <article class="AW-catalog-product" data-js-catalog-product>
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-urinary-suhoj-korm-dlya-koshek-dlya-profilaktiki-mochekamennoj-bolezni-s-kuricej-klyukvoj-cikoriem-i-rybim-zhirom-1-5-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Urinary Adult Chicken Urinary сухой корм для кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, клюквой, цикорием и рыбьим жиром - 1,5 кг"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1 174,20 р.</span>
+                        <span class="AW-catalog-product__old">1 236 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-5%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1,5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Urinary Adult Chicken Urinary сухой корм для кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, клюквой, цикорием и рыбьим жиром - 1,5 кг
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <a
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      href="/catalog/product/55210-award-urinary-suhoj-korm-dlya-koshek-dlya-profilaktiki-mochekamennoj-bolezni-s-kuricej-klyukvoj-cikoriem-i-rybim-zhirom-1-5-kg/" data-js-product-open
+                    >
+                      Подробнее
+                    </a>
+                  </article>
+
+                  <article class="AW-catalog-product" data-js-catalog-product>
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-urinary-suhoj-korm-dlya-koshek-dlya-profilaktiki-mochekamennoj-bolezni-s-kuricej-klyukvoj-cikoriem-i-rybim-zhirom-10-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Urinary Adult Chicken Urinary сухой корм для кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, клюквой, цикорием и рыбьим жиром - 10 кг"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">5 253,06 р.</span>
+                        <span class="AW-catalog-product__old">6 038 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-13%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">10 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Urinary Adult Chicken Urinary сухой корм для кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, клюквой, цикорием и рыбьим жиром - 10 кг
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <a
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      href="/catalog/product/55211-award-urinary-suhoj-korm-dlya-koshek-dlya-profilaktiki-mochekamennoj-bolezni-s-kuricej-klyukvoj-cikoriem-i-rybim-zhirom-10-kg/" data-js-product-open
+                    >
+                      Подробнее
+                    </a>
+                  </article>
+
+                  <article class="AW-catalog-product" data-js-catalog-product>
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-urinary-suhoj-korm-dlya-koshek-dlya-profilaktiki-mochekamennoj-bolezni-s-kuricej-klyukvoj-cikoriem-i-rybim-zhirom-400-g.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Urinary Adult Chicken Urinary сухой корм для кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, клюквой, цикорием и рыбьим жиром - 400 г"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">429,40 р.</span>
+                        <span class="AW-catalog-product__old">452 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-5%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">400 г</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Urinary Adult Chicken Urinary сухой корм для кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, клюквой, цикорием и рыбьим жиром - 400 г
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <a
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      href="/catalog/product/55212-award-urinary-suhoj-korm-dlya-koshek-dlya-profilaktiki-mochekamennoj-bolezni-s-kuricej-klyukvoj-cikoriem-i-rybim-zhirom-400-g/" data-js-product-open
+                    >
+                      Подробнее
+                    </a>
+                  </article>
+
+                  <article class="AW-catalog-product" data-js-catalog-product>
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-vlazhnyj-korm-dlya-koshek-s-govyadinoj-i-shpinatom-v-konservah-100-g.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Pate Adult Beef &amp; Spinach влажный корм для кошек, с ГОВЯДИНОЙ и шпинатом, в консервах - 100 г (12 шт)"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1 744,20 р.</span>
+                        <span class="AW-catalog-product__old">1 836 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-5%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1,2 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Pate Adult Beef &amp; Spinach влажный корм для кошек, с ГОВЯДИНОЙ и шпинатом, в консервах - 100 г (12 шт)
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <a
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      href="/catalog/product/55190U12-award-vlazhnyj-korm-dlya-koshek-s-govyadinoj-i-shpinatom-v-konservah-100-g-12-pack/" data-js-product-open
+                    >
+                      Подробнее
+                    </a>
+                  </article>
+
+                  <article class="AW-catalog-product" data-js-catalog-product>
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-vlazhnyj-korm-dlya-koshek-s-indejkoj-i-ovoshchami-v-konservah-100-g.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Pate Adult Turkey &amp; Vegetables влажный корм для кошек, с ИНДЕЙКОЙ и овощами, в консервах - 100 г (12 шт)"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1 744,20 р.</span>
+                        <span class="AW-catalog-product__old">1 836 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-5%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1,2 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Pate Adult Turkey &amp; Vegetables влажный корм для кошек, с ИНДЕЙКОЙ и овощами, в консервах - 100 г (12 шт)
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <a
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      href="/catalog/product/55191U12-award-vlazhnyj-korm-dlya-koshek-s-indejkoj-i-ovoshchami-v-konservah-100-g-12-pack/" data-js-product-open
+                    >
+                      Подробнее
+                    </a>
+                  </article>
+
+                  <article class="AW-catalog-product" data-js-catalog-product>
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-special-care-sensitive-digestion-suhoj-korm-dlya-koshek-s-chuvstvitelnym-pishchevareniem-s-utkoj-1-5kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Special Care Sensitive Digestion сухой корм для кошек с чувствительным пищеварением, с уткой - 1,5кг"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1 423,10 р.</span>
+                        <span class="AW-catalog-product__old">1 498 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-5%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">1,5 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Special Care Sensitive Digestion сухой корм для кошек с чувствительным пищеварением, с уткой - 1,5кг
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <a
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      href="/catalog/product/65405-award-special-care-sensitive-digestion-suhoj-korm-dlya-koshek-s-chuvstvitelnym-pishchevareniem-s-utkoj-1-5kg/" data-js-product-open
+                    >
+                      Подробнее
+                    </a>
+                  </article>
+</div>
 
                 <div
-                  class="AW-catalog__track"
+                  class="AW-catalog__track AW-catalog__track--dogs"
                   id="AW-catalog-panel-dogs"
                   role="tabpanel"
                   aria-labelledby="dogs"
                   data-js-catalog-panel
                   hidden
                 >
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Adult Dog"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-vlazhnyj-korm-dlya-shchenkov-ot-1-mesyaca-s-telyatinoj-i-ovoshchami-v-konservah-400-g.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Pate Puppy Veal &amp; Vegetables влажный корм для щенков от 1 месяца, с ТЕЛЯТИНОЙ и овощами, в консервах - 400 г"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">3 944,40 р.</span>
+                        <span class="AW-catalog-product__old">4 152 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-5%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">4,8 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Adult Dog Duck сухой корм для взрослых собак...
+                      Award Pate Puppy Veal &amp; Vegetables влажный корм для щенков от 1 месяца, с ТЕЛЯТИНОЙ и овощами, в консервах - 400 г
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -987,40 +1235,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55224-award-vlazhnyj-korm-dlya-shchenkov-ot-1-mesyaca-s-telyatinoj-i-ovoshchami-v-konservah-400-g/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Adult Dog"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-hypo-suhoj-korm-dlya-sobak-vsekh-porod-s-beloj-ryboj-brokkoli-seldereem-i-semyan-lna-12-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Hipo Adult White Fish Hypo сухой корм для собак всех пород, с белой РЫБОЙ, брокколи, сельдереем и семенами льна - 12 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">7 697,60 р.</span>
+                        <span class="AW-catalog-product__old">9 056 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-15%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">12 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Adult Dog Duck сухой корм для взрослых собак...
+                      Award Hipo Adult White Fish Hypo сухой корм для собак всех пород, с белой РЫБОЙ, брокколи, сельдереем и семенами льна - 12 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1029,40 +1273,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55226-award-hypo-suhoj-korm-dlya-sobak-vsekh-porod-s-beloj-ryboj-brokkoli-seldereem-i-semyan-lna-12-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Adult Dog"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-hypo-suhoj-korm-dlya-sobak-vsekh-porod-s-beloj-ryboj-brokkoli-seldereem-i-semyan-lna-2-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Hypo Adult White Fish сухой корм для собак всех пород, с белой РЫБОЙ, брокколи, сельдереем и семенами льна - 2 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">1 823,05 р.</span>
+                        <span class="AW-catalog-product__old">1 919 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-5%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">2 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Adult Dog Duck сухой корм для взрослых собак...
+                      Award Hypo Adult White Fish сухой корм для собак всех пород, с белой РЫБОЙ, брокколи, сельдереем и семенами льна - 2 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1071,40 +1311,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55227-award-hypo-suhoj-korm-dlya-sobak-vsekh-porod-s-beloj-ryboj-brokkoli-seldereem-i-semyan-lna-2-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Adult Dog"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-vsekh-porod-s-yagnenkom-indejkoj-yablokami-i-chernikoj-12-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award All Breed Adult Lamb сухой корм для собак всех пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, яблоками и черникой - 12 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">6 221,37 р.</span>
+                        <span class="AW-catalog-product__old">7 151 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-13%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">12 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Adult Dog Duck сухой корм для взрослых собак...
+                      Award All Breed Adult Lamb сухой корм для собак всех пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, яблоками и черникой - 12 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1113,40 +1349,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55230-award-suhoj-korm-dlya-sobak-vsekh-porod-s-yagnenkom-indejkoj-yablokami-i-chernikoj-12-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Adult Dog"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-krupnyh-porod-s-kuricej-indejkoj-tykvoj-i-shipovnikom-12-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Large Adult Chicken сухой корм для собак крупных пород, с КУРИЦЕЙ, ИНДЕЙКОЙ, тыквой и шиповником - 12 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">5 528,85 р.</span>
+                        <span class="AW-catalog-product__old">6 355 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-13%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">12 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Adult Dog Duck сухой корм для взрослых собак...
+                      Award Large Adult Chicken сухой корм для собак крупных пород, с КУРИЦЕЙ, ИНДЕЙКОЙ, тыквой и шиповником - 12 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1155,40 +1387,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55232-award-suhoj-korm-dlya-sobak-krupnyh-porod-s-kuricej-indejkoj-tykvoj-i-shipovnikom-12-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Adult Dog"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-melkih-i-miniatyurnyh-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-1-5-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Small Adult Lamb сухой корм для собак мелких и миниатюрных пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 1,5 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">1 100,10 р.</span>
+                        <span class="AW-catalog-product__old">1 158 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-5%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">1,5 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Adult Dog Duck сухой корм для взрослых собак...
+                      Award Small Adult Lamb сухой корм для собак мелких и миниатюрных пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 1,5 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1197,40 +1425,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55234-award-suhoj-korm-dlya-sobak-melkih-i-miniatyurnyh-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-1-5-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Adult Dog"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-melkih-i-miniatyurnyh-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-10-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Small Adult Lamb сухой корм для собак мелких и миниатюрных пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 10 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">5 528,85 р.</span>
+                        <span class="AW-catalog-product__old">6 355 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-13%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">10 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Adult Dog Duck сухой корм для взрослых собак...
+                      Award Small Adult Lamb сухой корм для собак мелких и миниатюрных пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 10 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1239,40 +1463,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55235-award-suhoj-korm-dlya-sobak-melkih-i-miniatyurnyh-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-10-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Adult Dog"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-12-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Medium Adult Turkey сухой корм для собак средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 12 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">5 528,85 р.</span>
+                        <span class="AW-catalog-product__old">6 355 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-13%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">12 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Adult Dog Duck сухой корм для взрослых собак...
+                      Award Medium Adult Turkey сухой корм для собак средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 12 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1281,40 +1501,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55237-award-suhoj-korm-dlya-sobak-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-12-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Adult Dog"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-2-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Medium Adult Turkey сухой корм для собак средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 2 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">1 384,15 р.</span>
+                        <span class="AW-catalog-product__old">1 457 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-5%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">2 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Adult Dog Duck сухой корм для взрослых собак...
+                      Award Medium Adult Turkey сухой корм для собак средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 2 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1323,40 +1539,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55238-award-suhoj-korm-dlya-sobak-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-2-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Adult Dog"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-melkih-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-10-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук, мелких пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 10 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">5 668,05 р.</span>
+                        <span class="AW-catalog-product__old">6 515 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-13%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">10 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Adult Dog Duck сухой корм для взрослых собак...
+                      Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук, мелких пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 10 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1365,40 +1577,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55240-award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-melkih-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-10-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Adult Dog"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-melkih-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-800-g.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук, мелких пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 800 г"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">723,90 р.</span>
+                        <span class="AW-catalog-product__old">762 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-5%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">800 г</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Adult Dog Duck сухой корм для взрослых собак...
+                      Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук, мелких пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 800 г
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1407,40 +1615,36 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55241-award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-melkih-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-800-g/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
 
-                  <article class="AW-catalog-product">
+                  <article class="AW-catalog-product" data-js-catalog-product>
                     <div class="AW-catalog-product__media">
                       <img
                         class="AW-catalog-product__image"
-                        src="img/catalog/product-1x.avif"
-                        srcset="
-                          img/catalog/product-1x.avif 1x,
-                          img/catalog/product-2x.avif 2x
-                        "
-                        width="76"
-                        height="122"
-                        alt="AWARD Adult Dog"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-12-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 12 кг"
                         loading="lazy"
                         decoding="async"
                       />
                     </div>
                     <div class="AW-catalog-product__price-row">
                       <div class="AW-catalog-product__price">
-                        <span class="AW-catalog-product__current">1062 р.</span>
-                        <span class="AW-catalog-product__old">1236 р.</span>
+                        <span class="AW-catalog-product__current">6 501,63 р.</span>
+                        <span class="AW-catalog-product__old">6 991 р.</span>
                       </div>
-                      <span class="AW-catalog-product__discount">-14%</span>
+                      <span class="AW-catalog-product__discount">-7%</span>
                     </div>
-                    <p class="AW-catalog-product__weight">1.5 кг</p>
+                    <p class="AW-catalog-product__weight">12 кг</p>
                     <h3 class="AW-catalog-product__name">
-                      Award Adult Dog Duck сухой корм для взрослых собак...
+                      Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 12 кг
                     </h3>
                     <button
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1449,46 +1653,326 @@
                     >
                       Купить в 1 клик
                     </button>
-                    <button
+                    <a
                       class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                      type="button"
+                      href="/catalog/product/55242-award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-12-kg/" data-js-product-open
                     >
                       Подробнее
-                    </button>
+                    </a>
                   </article>
-                </div>
+
+                  <article class="AW-catalog-product" data-js-catalog-product>
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-2-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 2 кг"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">1 471,55 р.</span>
+                        <span class="AW-catalog-product__old">1 549 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-5%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">2 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Medium Puppy Turkey сухой корм для щенков от 1 мес, беременных и кормящих сук средних пород, с ИНДЕЙКОЙ, КУРИЦЕЙ, морковью и черной смородиной - 2 кг
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <a
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      href="/catalog/product/55243-award-suhoj-korm-dlya-shchenkov-ot-1-mes-beremennyh-i-suhoj-kormyashchih-suk-srednih-porod-s-indejkoj-kuricej-morkovyu-i-chernoj-smorodinoj-2-kg/" data-js-product-open
+                    >
+                      Подробнее
+                    </a>
+                  </article>
+
+                  <article class="AW-catalog-product" data-js-catalog-product>
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-krupnyh-porod-s-kuricej-indejkoj-tykvoj-i-shipovnikom-12-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Large Puppy Chicken сухой корм для щенков от 1 месяца крупных пород, с КУРИЦЕЙ, ИНДЕЙКОЙ, тыквой и шиповником - 12 кг"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">5 668,05 р.</span>
+                        <span class="AW-catalog-product__old">6 515 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-13%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">12 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Large Puppy Chicken сухой корм для щенков от 1 месяца крупных пород, с КУРИЦЕЙ, ИНДЕЙКОЙ, тыквой и шиповником - 12 кг
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <a
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      href="/catalog/product/55244-award-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-krupnyh-porod-s-kuricej-indejkoj-tykvoj-i-shipovnikom-12-kg/" data-js-product-open
+                    >
+                      Подробнее
+                    </a>
+                  </article>
+
+                  <article class="AW-catalog-product" data-js-catalog-product>
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-beremennyh-i-suhoj-kormyashchih-suk-vsekh-porod-s-yagnenkom-indejkoj-yablokom-i-chernikoj-12-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award All Breed Puppy Lamb сухой корм для щенков от 1 месяца, беременных и кормящих сук всех пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, яблоком и черникой - 12 кг"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">6 498,03 р.</span>
+                        <span class="AW-catalog-product__old">7 469 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-13%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">12 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award All Breed Puppy Lamb сухой корм для щенков от 1 месяца, беременных и кормящих сук всех пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, яблоком и черникой - 12 кг
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <a
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      href="/catalog/product/55246-award-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-beremennyh-i-suhoj-kormyashchih-suk-vsekh-porod-s-yagnenkom-indejkoj-yablokom-i-chernikoj-12-kg/" data-js-product-open
+                    >
+                      Подробнее
+                    </a>
+                  </article>
+
+                  <article class="AW-catalog-product" data-js-catalog-product>
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-beremennyh-i-suhoj-kormyashchih-suk-vsekh-porod-s-yagnenkom-indejkoj-yablokom-i-chernikoj-800-g.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award All Breed Puppy Lamb сухой корм для щенков от 1 месяца, беременных и кормящих сук всех пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, яблоком и черникой - 800 г"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">723,90 р.</span>
+                        <span class="AW-catalog-product__old">762 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-5%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">800 г</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award All Breed Puppy Lamb сухой корм для щенков от 1 месяца, беременных и кормящих сук всех пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, яблоком и черникой - 800 г
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <a
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      href="/catalog/product/55248-award-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-beremennyh-i-suhoj-kormyashchih-suk-vsekh-porod-s-yagnenkom-indejkoj-yablokom-i-chernikoj-800-g/" data-js-product-open
+                    >
+                      Подробнее
+                    </a>
+                  </article>
+
+                  <article class="AW-catalog-product" data-js-catalog-product>
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-special-care-hypo-puppy-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-beremennyh-i-kormyashchih-sobak-vsekh-porod-pri-allergii-s-ryboj-2-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Special Care Hypo Puppy сухой корм для щенков от 1 месяца, беременных и кормящих собак всех пород, при аллергии, с рыбой - 2 кг"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">2 028,25 р.</span>
+                        <span class="AW-catalog-product__old">2 135 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-5%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">2 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Special Care Hypo Puppy сухой корм для щенков от 1 месяца, беременных и кормящих собак всех пород, при аллергии, с рыбой - 2 кг
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <a
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      href="/catalog/product/65412-award-special-care-hypo-puppy-suhoj-korm-dlya-shchenkov-ot-1-mesyaca-beremennyh-i-kormyashchih-sobak-vsekh-porod-pri-allergii-s-ryboj-2-kg/" data-js-product-open
+                    >
+                      Подробнее
+                    </a>
+                  </article>
+
+                  <article class="AW-catalog-product" data-js-catalog-product>
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-special-care-hypo-puppy-suhoj-korm-dlya-beremennyh-i-kormyashchih-sobak-vsekh-porod-i-shchenkov-ot-1-mesyaca-sklonnyh-k-allergii-s-beloj-ryboj-12-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Special Care Hypo Puppy сухой корм для беременных и кормящих собак всех пород и щенков от 1 месяца склонных к аллергии, с белой РЫБОЙ - 12 кг"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">8 993,70 р.</span>
+                        <span class="AW-catalog-product__old">9 993 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-10%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">12 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Special Care Hypo Puppy сухой корм для беременных и кормящих собак всех пород и щенков от 1 месяца склонных к аллергии, с белой РЫБОЙ - 12 кг
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <a
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      href="/catalog/product/66131-award-special-care-hypo-puppy-suhoj-korm-dlya-beremennyh-i-kormyashchih-sobak-vsekh-porod-i-shchenkov-ot-1-mesyaca-sklonnyh-k-allergii-s-beloj-ryboj-12-kg/" data-js-product-open
+                    >
+                      Подробнее
+                    </a>
+                  </article>
+
+                  <article class="AW-catalog-product" data-js-catalog-product>
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-cpecial-care-toy-breed-support-suhoj-korm-dlya-sobak-melkih-i-miniatyurnyh-porod-s-yagnenkom-10-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Special Care Toy Breed Support сухой корм для собак мелких и миниатюрных пород, с ЯГНЕНКОМ - 10 кг"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">6 764,76 р.</span>
+                        <span class="AW-catalog-product__old">7 353 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-8%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">10 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Special Care Toy Breed Support сухой корм для собак мелких и миниатюрных пород, с ЯГНЕНКОМ - 10 кг
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <a
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      href="/catalog/product/66133-award-cpecial-care-toy-breed-support-suhoj-korm-dlya-sobak-melkih-i-miniatyurnyh-porod-s-yagnenkom-10-kg/" data-js-product-open
+                    >
+                      Подробнее
+                    </a>
+                  </article>
+
+                  <article class="AW-catalog-product" data-js-catalog-product>
+                    <div class="AW-catalog-product__media">
+                      <img
+                        class="AW-catalog-product__image"
+                        src="https://www.dogeat.ru/storage/products/0/800x800/award-special-care-sensitive-digestion-suhoj-korm-dlya-sobak-vsekh-porod-s-chuvstvitelnym-pishchevareniem-s-yagnenkom-12-kg.jpg"
+                        width="800"
+                        height="800"
+                        alt="Award Special Care Sensitive Digestion сухой корм для собак всех пород с чувствительным пищеварением, с ягненком - 12 кг"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="AW-catalog-product__price-row">
+                      <div class="AW-catalog-product__price">
+                        <span class="AW-catalog-product__current">7 806,89 р.</span>
+                        <span class="AW-catalog-product__old">8 579 р.</span>
+                      </div>
+                      <span class="AW-catalog-product__discount">-9%</span>
+                    </div>
+                    <p class="AW-catalog-product__weight">12 кг</p>
+                    <h3 class="AW-catalog-product__name">
+                      Award Special Care Sensitive Digestion сухой корм для собак всех пород с чувствительным пищеварением, с ягненком - 12 кг
+                    </h3>
+                    <button
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                      type="button"
+                      data-js-catalog-buy-primary
+                    >
+                      Купить в 1 клик
+                    </button>
+                    <a
+                      class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                      href="/catalog/product/66143-award-special-care-sensitive-digestion-suhoj-korm-dlya-sobak-vsekh-porod-s-chuvstvitelnym-pishchevareniem-s-yagnenkom-12-kg/" data-js-product-open
+                    >
+                      Подробнее
+                    </a>
+                  </article>
+</div>
               </div>
 
               <div
                 class="AW-catalog__pagination"
                 aria-label="Прокрутка каталога"
-                data-js-catalog-pagination
-              >
-                <button
-                  class="AW-catalog__pagination-dot is-active"
-                  type="button"
-                  aria-label="Показать страницу 1"
-                  data-js-catalog-dot
-                ></button>
-                <button
-                  class="AW-catalog__pagination-dot"
-                  type="button"
-                  aria-label="Показать страницу 2"
-                  data-js-catalog-dot
-                ></button>
-                <button
-                  class="AW-catalog__pagination-dot"
-                  type="button"
-                  aria-label="Показать страницу 3"
-                  data-js-catalog-dot
-                ></button>
-                <button
-                  class="AW-catalog__pagination-dot"
-                  type="button"
-                  aria-label="Показать страницу 4"
-                  data-js-catalog-dot
-                ></button>
-              </div>
+                data-js-catalog-pagination="pages"
+                hidden
+              ></div>
             </div>
           </div>
         </section>
@@ -1702,10 +2186,10 @@
                 <picture class="AW-hits__products" aria-hidden="true">
                   <img
                     class="AW-hits__products-image"
-                    src="img/hits/products-1x.avif"
+                    src="img/hits/cat-products-1x.avif"
                     srcset="
-                      img/hits/products-1x.avif 1x,
-                      img/hits/products-2x.avif 2x
+                      img/hits/cat-products-1x.avif 1x,
+                      img/hits/cat-products-2x.avif 2x
                     "
                     width="136"
                     height="144"
@@ -1722,7 +2206,11 @@
                   </h2>
                 </div>
 
-                <a class="AW-btn AW-hits__all" href="/catalog/">
+                <a
+                  class="AW-btn AW-hits__all"
+                  href="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D0%BA%D0%BE%D1%88%D0%B5%D0%BA&amp;food_type=%D0%A1%D1%83%D1%85%D0%BE%D0%B9"
+                  data-js-catalog-all
+                >
                   <span>Смотреть все</span>
                   <span class="AW-hits__all-icon" aria-hidden="true"></span>
                 </a>
@@ -1739,9 +2227,11 @@
                     type="button"
                     id="AW-hits-tab-dry"
                     role="tab"
-                    aria-selected="true"
-                    aria-controls="AW-hits-panel-dry"
-                    data-js-catalog-tab
+                    tabindex="0"
+                  aria-selected="true"
+                  aria-controls="AW-hits-panel-dry"
+                  data-catalog-url="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D0%BA%D0%BE%D1%88%D0%B5%D0%BA&amp;food_type=%D0%A1%D1%83%D1%85%D0%BE%D0%B9"
+                  data-js-catalog-tab
                   >
                     Сухой корм
                   </button>
@@ -1750,9 +2240,11 @@
                     type="button"
                     id="AW-hits-tab-wet"
                     role="tab"
-                    aria-selected="false"
-                    aria-controls="AW-hits-panel-wet"
-                    data-js-catalog-tab
+                    tabindex="-1"
+                  aria-selected="false"
+                  aria-controls="AW-hits-panel-wet"
+                  data-catalog-url="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D0%BA%D0%BE%D1%88%D0%B5%D0%BA&amp;food_type=%D0%92%D0%BB%D0%B0%D0%B6%D0%BD%D1%8B%D0%B9"
+                  data-js-catalog-tab
                   >
                     Влажный корм
                   </button>
@@ -1766,35 +2258,28 @@
                     aria-labelledby="AW-hits-tab-dry"
                     data-js-catalog-panel
                   >
-                    <article class="AW-catalog-product">
+                    <article class="AW-catalog-product" data-js-catalog-product>
                       <div class="AW-catalog-product__media">
                         <img
                           class="AW-catalog-product__image"
-                          src="img/catalog/product-1x.avif"
-                          srcset="
-                            img/catalog/product-1x.avif 1x,
-                            img/catalog/product-2x.avif 2x
-                          "
-                          width="76"
-                          height="122"
-                          alt="AWARD Hairball & Indoor Adult Duck"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-hairball-indoor-suhoj-korm-dlya-vzroslyh-koshek-dlya-vyvedeniya-shersti-s-utkoj-indejkoj-chechevicej-i-yukki-shidigera-1-5-kg.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Hairball &amp; Indoor Adult Duck Hairball Indoor сухой корм для взрослых кошек, для выведения шерсти, с УТКОЙ, ИНДЕЙКОЙ, чечевицей и Юккой - 1,5 кг"
                           loading="lazy"
                           decoding="async"
                         />
                       </div>
                       <div class="AW-catalog-product__price-row">
                         <div class="AW-catalog-product__price">
-                          <span class="AW-catalog-product__current"
-                            >1062 р.</span
-                          >
-                          <span class="AW-catalog-product__old">1236 р.</span>
+                          <span class="AW-catalog-product__current">1 174,20 р.</span>
+                          <span class="AW-catalog-product__old">1 236 р.</span>
                         </div>
-                        <span class="AW-catalog-product__discount">-14%</span>
+                        <span class="AW-catalog-product__discount">-5%</span>
                       </div>
-                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <p class="AW-catalog-product__weight">1,5 кг</p>
                       <h3 class="AW-catalog-product__name">
-                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                        сухой...
+                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor сухой корм для взрослых кошек, для выведения шерсти, с УТКОЙ, ИНДЕЙКОЙ, чечевицей и Юккой - 1,5 кг
                       </h3>
                       <button
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1803,43 +2288,36 @@
                       >
                         Купить в 1 клик
                       </button>
-                      <button
+                      <a
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                        type="button"
+                        href="/catalog/product/55195-award-hairball-indoor-suhoj-korm-dlya-vzroslyh-koshek-dlya-vyvedeniya-shersti-s-utkoj-indejkoj-chechevicej-i-yukki-shidigera-1-5-kg/" data-js-product-open
                       >
                         Подробнее
-                      </button>
+                      </a>
                     </article>
 
-                    <article class="AW-catalog-product">
+                    <article class="AW-catalog-product" data-js-catalog-product>
                       <div class="AW-catalog-product__media">
                         <img
                           class="AW-catalog-product__image"
-                          src="img/catalog/product-1x.avif"
-                          srcset="
-                            img/catalog/product-1x.avif 1x,
-                            img/catalog/product-2x.avif 2x
-                          "
-                          width="76"
-                          height="122"
-                          alt="AWARD Hairball & Indoor Adult Duck"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-hairball-indoor-suhoj-korm-dlya-vzroslyh-koshek-dlya-vyvedeniya-shersti-s-utkoj-s-indejkoj-s-chechevicy-i-yukki-shidigera-10-kg.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Hairball &amp; Indoor Adult Duck Hairball Indoor сухой корм для взрослых кошек, для выведения шерсти, с УТКОЙ, ИНДЕЙКОЙ, чечевицей и Юккой"
                           loading="lazy"
                           decoding="async"
                         />
                       </div>
                       <div class="AW-catalog-product__price-row">
                         <div class="AW-catalog-product__price">
-                          <span class="AW-catalog-product__current"
-                            >1062 р.</span
-                          >
-                          <span class="AW-catalog-product__old">1236 р.</span>
+                          <span class="AW-catalog-product__current">5 253,06 р.</span>
+                          <span class="AW-catalog-product__old">6 038 р.</span>
                         </div>
-                        <span class="AW-catalog-product__discount">-14%</span>
+                        <span class="AW-catalog-product__discount">-13%</span>
                       </div>
-                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <p class="AW-catalog-product__weight">10 кг</p>
                       <h3 class="AW-catalog-product__name">
-                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                        сухой...
+                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor сухой корм для взрослых кошек, для выведения шерсти, с УТКОЙ, ИНДЕЙКОЙ, чечевицей и Юккой
                       </h3>
                       <button
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1848,43 +2326,36 @@
                       >
                         Купить в 1 клик
                       </button>
-                      <button
+                      <a
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                        type="button"
+                        href="/catalog/product/55196-award-hairball-indoor-suhoj-korm-dlya-vzroslyh-koshek-dlya-vyvedeniya-shersti-s-utkoj-s-indejkoj-s-chechevicy-i-yukki-shidigera-10-kg/" data-js-product-open
                       >
                         Подробнее
-                      </button>
+                      </a>
                     </article>
 
-                    <article class="AW-catalog-product">
+                    <article class="AW-catalog-product" data-js-catalog-product>
                       <div class="AW-catalog-product__media">
                         <img
                           class="AW-catalog-product__image"
-                          src="img/catalog/product-1x.avif"
-                          srcset="
-                            img/catalog/product-1x.avif 1x,
-                            img/catalog/product-2x.avif 2x
-                          "
-                          width="76"
-                          height="122"
-                          alt="AWARD Hairball & Indoor Adult Duck"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-healthy-growth-suhoj-korm-dlya-kotyat-ot-1-mesyaca-beremennyh-i-suhoj-kormyashchih-koshek-s-indejkoj-i-kuricej-1-5-kg.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Healthy Growth Kitten Turkey Healthy Growth сухой корм для котят от 1 месяца, беременных и кормящих кошек, с ИНДЕЙКОЙ и КУРИЦЕЙ - 1,5 кг"
                           loading="lazy"
                           decoding="async"
                         />
                       </div>
                       <div class="AW-catalog-product__price-row">
                         <div class="AW-catalog-product__price">
-                          <span class="AW-catalog-product__current"
-                            >1062 р.</span
-                          >
-                          <span class="AW-catalog-product__old">1236 р.</span>
+                          <span class="AW-catalog-product__current">1 195,10 р.</span>
+                          <span class="AW-catalog-product__old">1 258 р.</span>
                         </div>
-                        <span class="AW-catalog-product__discount">-14%</span>
+                        <span class="AW-catalog-product__discount">-5%</span>
                       </div>
-                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <p class="AW-catalog-product__weight">1,5 кг</p>
                       <h3 class="AW-catalog-product__name">
-                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                        сухой...
+                        Award Healthy Growth Kitten Turkey Healthy Growth сухой корм для котят от 1 месяца, беременных и кормящих кошек, с ИНДЕЙКОЙ и КУРИЦЕЙ - 1,5 кг
                       </h3>
                       <button
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1893,43 +2364,36 @@
                       >
                         Купить в 1 клик
                       </button>
-                      <button
+                      <a
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                        type="button"
+                        href="/catalog/product/55198-award-healthy-growth-suhoj-korm-dlya-kotyat-ot-1-mesyaca-beremennyh-i-suhoj-kormyashchih-koshek-s-indejkoj-i-kuricej-1-5-kg/" data-js-product-open
                       >
                         Подробнее
-                      </button>
+                      </a>
                     </article>
 
-                    <article class="AW-catalog-product">
+                    <article class="AW-catalog-product" data-js-catalog-product>
                       <div class="AW-catalog-product__media">
                         <img
                           class="AW-catalog-product__image"
-                          src="img/catalog/product-1x.avif"
-                          srcset="
-                            img/catalog/product-1x.avif 1x,
-                            img/catalog/product-2x.avif 2x
-                          "
-                          width="76"
-                          height="122"
-                          alt="AWARD Hairball & Indoor Adult Duck"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-indoor-big-cats-suhoj-korm-dlya-koshek-krupnyh-porod-s-govyadinoj-kuricej-brokkoli-i-yukki-shidigera-10-kg.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Indoor Big Cats Adult Beef Indoor Big Cats сухой корм для кошек крупных пород, с ГОВЯДИНОЙ, КУРИЦЕЙ, брокколи и юкки Шидигера"
                           loading="lazy"
                           decoding="async"
                         />
                       </div>
                       <div class="AW-catalog-product__price-row">
                         <div class="AW-catalog-product__price">
-                          <span class="AW-catalog-product__current"
-                            >1062 р.</span
-                          >
-                          <span class="AW-catalog-product__old">1236 р.</span>
+                          <span class="AW-catalog-product__current">5 253,06 р.</span>
+                          <span class="AW-catalog-product__old">6 038 р.</span>
                         </div>
-                        <span class="AW-catalog-product__discount">-14%</span>
+                        <span class="AW-catalog-product__discount">-13%</span>
                       </div>
-                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <p class="AW-catalog-product__weight">10 кг</p>
                       <h3 class="AW-catalog-product__name">
-                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                        сухой...
+                        Award Indoor Big Cats Adult Beef Indoor Big Cats сухой корм для кошек крупных пород, с ГОВЯДИНОЙ, КУРИЦЕЙ, брокколи и юкки Шидигера
                       </h3>
                       <button
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1938,43 +2402,36 @@
                       >
                         Купить в 1 клик
                       </button>
-                      <button
+                      <a
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                        type="button"
+                        href="/catalog/product/55202-award-indoor-big-cats-suhoj-korm-dlya-koshek-krupnyh-porod-s-govyadinoj-kuricej-brokkoli-i-yukki-shidigera-10-kg/" data-js-product-open
                       >
                         Подробнее
-                      </button>
+                      </a>
                     </article>
 
-                    <article class="AW-catalog-product">
+                    <article class="AW-catalog-product" data-js-catalog-product>
                       <div class="AW-catalog-product__media">
                         <img
                           class="AW-catalog-product__image"
-                          src="img/catalog/product-1x.avif"
-                          srcset="
-                            img/catalog/product-1x.avif 1x,
-                            img/catalog/product-2x.avif 2x
-                          "
-                          width="76"
-                          height="122"
-                          alt="AWARD Hairball & Indoor Adult Duck"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-beloj-ryboj-klyukvoj-i-cikoriem-1-5-kg.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Sterilized Adult White Fish Sterilized сухой корм для стерилизованных кошек, с белой РЫБОЙ, клюквой и цикорием - 1,5 кг"
                           loading="lazy"
                           decoding="async"
                         />
                       </div>
                       <div class="AW-catalog-product__price-row">
                         <div class="AW-catalog-product__price">
-                          <span class="AW-catalog-product__current"
-                            >1062 р.</span
-                          >
-                          <span class="AW-catalog-product__old">1236 р.</span>
+                          <span class="AW-catalog-product__current">1 351,85 р.</span>
+                          <span class="AW-catalog-product__old">1 423 р.</span>
                         </div>
-                        <span class="AW-catalog-product__discount">-14%</span>
+                        <span class="AW-catalog-product__discount">-5%</span>
                       </div>
-                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <p class="AW-catalog-product__weight">1,5 кг</p>
                       <h3 class="AW-catalog-product__name">
-                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                        сухой...
+                        Award Sterilized Adult White Fish Sterilized сухой корм для стерилизованных кошек, с белой РЫБОЙ, клюквой и цикорием - 1,5 кг
                       </h3>
                       <button
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -1983,104 +2440,14 @@
                       >
                         Купить в 1 клик
                       </button>
-                      <button
+                      <a
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                        type="button"
+                        href="/catalog/product/55204-award-sterilized-suhoj-korm-dlya-sterilizovannyh-koshek-s-beloj-ryboj-klyukvoj-i-cikoriem-1-5-kg/" data-js-product-open
                       >
                         Подробнее
-                      </button>
+                      </a>
                     </article>
-
-                    <article class="AW-catalog-product">
-                      <div class="AW-catalog-product__media">
-                        <img
-                          class="AW-catalog-product__image"
-                          src="img/catalog/product-1x.avif"
-                          srcset="
-                            img/catalog/product-1x.avif 1x,
-                            img/catalog/product-2x.avif 2x
-                          "
-                          width="76"
-                          height="122"
-                          alt="AWARD Hairball & Indoor Adult Duck"
-                          loading="lazy"
-                          decoding="async"
-                        />
-                      </div>
-                      <div class="AW-catalog-product__price-row">
-                        <div class="AW-catalog-product__price">
-                          <span class="AW-catalog-product__current"
-                            >1062 р.</span
-                          >
-                          <span class="AW-catalog-product__old">1236 р.</span>
-                        </div>
-                        <span class="AW-catalog-product__discount">-14%</span>
-                      </div>
-                      <p class="AW-catalog-product__weight">1.5 кг</p>
-                      <h3 class="AW-catalog-product__name">
-                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                        сухой...
-                      </h3>
-                      <button
-                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
-                        type="button"
-                        data-js-catalog-buy-primary
-                      >
-                        Купить в 1 клик
-                      </button>
-                      <button
-                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                        type="button"
-                      >
-                        Подробнее
-                      </button>
-                    </article>
-
-                    <article class="AW-catalog-product">
-                      <div class="AW-catalog-product__media">
-                        <img
-                          class="AW-catalog-product__image"
-                          src="img/catalog/product-1x.avif"
-                          srcset="
-                            img/catalog/product-1x.avif 1x,
-                            img/catalog/product-2x.avif 2x
-                          "
-                          width="76"
-                          height="122"
-                          alt="AWARD Hairball & Indoor Adult Duck"
-                          loading="lazy"
-                          decoding="async"
-                        />
-                      </div>
-                      <div class="AW-catalog-product__price-row">
-                        <div class="AW-catalog-product__price">
-                          <span class="AW-catalog-product__current"
-                            >1062 р.</span
-                          >
-                          <span class="AW-catalog-product__old">1236 р.</span>
-                        </div>
-                        <span class="AW-catalog-product__discount">-14%</span>
-                      </div>
-                      <p class="AW-catalog-product__weight">1.5 кг</p>
-                      <h3 class="AW-catalog-product__name">
-                        Award Hairball &amp; Indoor Adult Duck Hairball Indoor
-                        сухой...
-                      </h3>
-                      <button
-                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
-                        type="button"
-                        data-js-catalog-buy-primary
-                      >
-                        Купить в 1 клик
-                      </button>
-                      <button
-                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                        type="button"
-                      >
-                        Подробнее
-                      </button>
-                    </article>
-                  </div>
+</div>
 
                   <div
                     class="AW-hits__track"
@@ -2090,34 +2457,28 @@
                     data-js-catalog-panel
                     hidden
                   >
-                    <article class="AW-catalog-product">
+                    <article class="AW-catalog-product" data-js-catalog-product>
                       <div class="AW-catalog-product__media">
                         <img
                           class="AW-catalog-product__image"
-                          src="img/catalog/product-1x.avif"
-                          srcset="
-                            img/catalog/product-1x.avif 1x,
-                            img/catalog/product-2x.avif 2x
-                          "
-                          width="76"
-                          height="122"
-                          alt="AWARD влажный корм для кошек"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-healthy-growth-vlazhnyj-korm-dlya-kotyat-ot-1-mesyaca-s-indejkoj-kusochki-v-souse-v-pauchah-85-g.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Healthy Growth Chunks in Gravy Kitten Turkey Healthy Growth влажный корм для котят от 1 месяца, с ИНДЕЙКОЙ, кусочки в соусе, в паучах - 85 г"
                           loading="lazy"
                           decoding="async"
                         />
                       </div>
                       <div class="AW-catalog-product__price-row">
                         <div class="AW-catalog-product__price">
-                          <span class="AW-catalog-product__current"
-                            >1062 р.</span
-                          >
-                          <span class="AW-catalog-product__old">1236 р.</span>
+                          <span class="AW-catalog-product__current">1 846,80 р.</span>
+                          <span class="AW-catalog-product__old">1 944 р.</span>
                         </div>
-                        <span class="AW-catalog-product__discount">-14%</span>
+                        <span class="AW-catalog-product__discount">-5%</span>
                       </div>
-                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <p class="AW-catalog-product__weight">2,04 кг</p>
                       <h3 class="AW-catalog-product__name">
-                        Award влажный корм для кошек с индейкой и овощами...
+                        Award Healthy Growth Chunks in Gravy Kitten Turkey Healthy Growth влажный корм для котят от 1 месяца, с ИНДЕЙКОЙ, кусочки в соусе, в паучах - 85 г
                       </h3>
                       <button
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -2126,42 +2487,36 @@
                       >
                         Купить в 1 клик
                       </button>
-                      <button
+                      <a
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                        type="button"
+                        href="/catalog/product/55185-award-healthy-growth-vlazhnyj-korm-dlya-kotyat-ot-1-mesyaca-s-indejkoj-kusochki-v-souse-v-pauchah-85-g/" data-js-product-open
                       >
                         Подробнее
-                      </button>
+                      </a>
                     </article>
 
-                    <article class="AW-catalog-product">
+                    <article class="AW-catalog-product" data-js-catalog-product>
                       <div class="AW-catalog-product__media">
                         <img
                           class="AW-catalog-product__image"
-                          src="img/catalog/product-1x.avif"
-                          srcset="
-                            img/catalog/product-1x.avif 1x,
-                            img/catalog/product-2x.avif 2x
-                          "
-                          width="76"
-                          height="122"
-                          alt="AWARD влажный корм для кошек"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-urinary-vlazhnyj-korm-dlya-profilaktiki-mochekamennoj-bolezni-u-vzroslyh-koshek-s-kuricej-kusochki-v-souse-v-pauchah-85-g.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Urinary Chunks in Gravy Adult Chicken Urinary влажный корм для взрослых кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, кусочки в соусе, в паучах - 85 г"
                           loading="lazy"
                           decoding="async"
                         />
                       </div>
                       <div class="AW-catalog-product__price-row">
                         <div class="AW-catalog-product__price">
-                          <span class="AW-catalog-product__current"
-                            >1062 р.</span
-                          >
-                          <span class="AW-catalog-product__old">1236 р.</span>
+                          <span class="AW-catalog-product__current">1 846,80 р.</span>
+                          <span class="AW-catalog-product__old">1 944 р.</span>
                         </div>
-                        <span class="AW-catalog-product__discount">-14%</span>
+                        <span class="AW-catalog-product__discount">-5%</span>
                       </div>
-                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <p class="AW-catalog-product__weight">2,04 кг</p>
                       <h3 class="AW-catalog-product__name">
-                        Award влажный корм для кошек с индейкой и овощами...
+                        Award Urinary Chunks in Gravy Adult Chicken Urinary влажный корм для взрослых кошек, для профилактики мочекаменной болезни, с КУРИЦЕЙ, кусочки в соусе, в паучах - 85 г
                       </h3>
                       <button
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -2170,42 +2525,36 @@
                       >
                         Купить в 1 клик
                       </button>
-                      <button
+                      <a
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                        type="button"
+                        href="/catalog/product/55189-award-urinary-vlazhnyj-korm-dlya-profilaktiki-mochekamennoj-bolezni-u-vzroslyh-koshek-s-kuricej-kusochki-v-souse-v-pauchah-85-g/" data-js-product-open
                       >
                         Подробнее
-                      </button>
+                      </a>
                     </article>
 
-                    <article class="AW-catalog-product">
+                    <article class="AW-catalog-product" data-js-catalog-product>
                       <div class="AW-catalog-product__media">
                         <img
                           class="AW-catalog-product__image"
-                          src="img/catalog/product-1x.avif"
-                          srcset="
-                            img/catalog/product-1x.avif 1x,
-                            img/catalog/product-2x.avif 2x
-                          "
-                          width="76"
-                          height="122"
-                          alt="AWARD влажный корм для кошек"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-vlazhnyj-korm-dlya-koshek-s-indejkoj-i-ovoshchami-v-konservah-100-g.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Pate Adult Turkey &amp; Vegetables влажный корм для кошек, с ИНДЕЙКОЙ и овощами, в консервах - 100 г (16 шт)"
                           loading="lazy"
                           decoding="async"
                         />
                       </div>
                       <div class="AW-catalog-product__price-row">
                         <div class="AW-catalog-product__price">
-                          <span class="AW-catalog-product__current"
-                            >1062 р.</span
-                          >
-                          <span class="AW-catalog-product__old">1236 р.</span>
+                          <span class="AW-catalog-product__current">2 325,60 р.</span>
+                          <span class="AW-catalog-product__old">2 448 р.</span>
                         </div>
-                        <span class="AW-catalog-product__discount">-14%</span>
+                        <span class="AW-catalog-product__discount">-5%</span>
                       </div>
-                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <p class="AW-catalog-product__weight">1,6 кг</p>
                       <h3 class="AW-catalog-product__name">
-                        Award влажный корм для кошек с индейкой и овощами...
+                        Award Pate Adult Turkey &amp; Vegetables влажный корм для кошек, с ИНДЕЙКОЙ и овощами, в консервах - 100 г (16 шт)
                       </h3>
                       <button
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -2214,42 +2563,36 @@
                       >
                         Купить в 1 клик
                       </button>
-                      <button
+                      <a
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                        type="button"
+                        href="/catalog/product/55191-award-vlazhnyj-korm-dlya-koshek-s-indejkoj-i-ovoshchami-v-konservah-100-g/" data-js-product-open
                       >
                         Подробнее
-                      </button>
+                      </a>
                     </article>
 
-                    <article class="AW-catalog-product">
+                    <article class="AW-catalog-product" data-js-catalog-product>
                       <div class="AW-catalog-product__media">
                         <img
                           class="AW-catalog-product__image"
-                          src="img/catalog/product-1x.avif"
-                          srcset="
-                            img/catalog/product-1x.avif 1x,
-                            img/catalog/product-2x.avif 2x
-                          "
-                          width="76"
-                          height="122"
-                          alt="AWARD влажный корм для кошек"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-vlazhnyj-korm-dlya-koshek-s-govyadinoj-i-shpinatom-v-konservah-100-g.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Pate Adult Beef &amp; Spinach влажный корм для кошек, с ГОВЯДИНОЙ и шпинатом, в консервах - 100 г (12 шт)"
                           loading="lazy"
                           decoding="async"
                         />
                       </div>
                       <div class="AW-catalog-product__price-row">
                         <div class="AW-catalog-product__price">
-                          <span class="AW-catalog-product__current"
-                            >1062 р.</span
-                          >
-                          <span class="AW-catalog-product__old">1236 р.</span>
+                          <span class="AW-catalog-product__current">1 744,20 р.</span>
+                          <span class="AW-catalog-product__old">1 836 р.</span>
                         </div>
-                        <span class="AW-catalog-product__discount">-14%</span>
+                        <span class="AW-catalog-product__discount">-5%</span>
                       </div>
-                      <p class="AW-catalog-product__weight">1.5 кг</p>
+                      <p class="AW-catalog-product__weight">1,2 кг</p>
                       <h3 class="AW-catalog-product__name">
-                        Award влажный корм для кошек с индейкой и овощами...
+                        Award Pate Adult Beef &amp; Spinach влажный корм для кошек, с ГОВЯДИНОЙ и шпинатом, в консервах - 100 г (12 шт)
                       </h3>
                       <button
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
@@ -2258,52 +2601,60 @@
                       >
                         Купить в 1 клик
                       </button>
-                      <button
+                      <a
                         class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
-                        type="button"
+                        href="/catalog/product/55190U12-award-vlazhnyj-korm-dlya-koshek-s-govyadinoj-i-shpinatom-v-konservah-100-g-12-pack/" data-js-product-open
                       >
                         Подробнее
-                      </button>
+                      </a>
                     </article>
-                  </div>
+
+                    <article class="AW-catalog-product" data-js-catalog-product>
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-vlazhnyj-korm-dlya-koshek-s-indejkoj-i-ovoshchami-v-konservah-100-g.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Pate Adult Turkey &amp; Vegetables влажный корм для кошек, с ИНДЕЙКОЙ и овощами, в консервах - 100 г (12 шт)"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current">1 744,20 р.</span>
+                          <span class="AW-catalog-product__old">1 836 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-5%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">1,2 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award Pate Adult Turkey &amp; Vegetables влажный корм для кошек, с ИНДЕЙКОЙ и овощами, в консервах - 100 г (12 шт)
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <a
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        href="/catalog/product/55191U12-award-vlazhnyj-korm-dlya-koshek-s-indejkoj-i-ovoshchami-v-konservah-100-g-12-pack/" data-js-product-open
+                      >
+                        Подробнее
+                      </a>
+                    </article>
+</div>
                 </div>
 
                 <div
                   class="AW-hits__pagination AW-catalog__pagination"
                   aria-label="Прокрутка хитов продаж"
-                  data-js-catalog-pagination
-                >
-                  <button
-                    class="AW-catalog__pagination-dot is-active"
-                    type="button"
-                    aria-label="Показать страницу 1"
-                    data-js-catalog-dot
-                  ></button>
-                  <button
-                    class="AW-catalog__pagination-dot"
-                    type="button"
-                    aria-label="Показать страницу 2"
-                    data-js-catalog-dot
-                  ></button>
-                  <button
-                    class="AW-catalog__pagination-dot"
-                    type="button"
-                    aria-label="Показать страницу 3"
-                    data-js-catalog-dot
-                  ></button>
-                  <button
-                    class="AW-catalog__pagination-dot"
-                    type="button"
-                    aria-label="Показать страницу 4"
-                    data-js-catalog-dot
-                  ></button>
-                  <button
-                    class="AW-catalog__pagination-dot"
-                    type="button"
-                    aria-label="Показать страницу 5"
-                    data-js-catalog-dot
-                  ></button>
-                </div>
+                  data-js-catalog-pagination="products"
+                  hidden
+                ></div>
               </div>
             </div>
           </div>
@@ -2390,7 +2741,915 @@
             </div>
           </div>
         </section>
+
+        <section
+          class="AW-hits AW-hits--dogs"
+          aria-labelledby="AW-hits-dogs-title"
+          data-js-catalog
+        >
+          <div class="AW-container AW-hits__container">
+            <div class="AW-hits__panel">
+              <div class="AW-hits__top">
+                <picture class="AW-hits__products" aria-hidden="true">
+                  <img
+                    class="AW-hits__products-image"
+                    src="img/hits/dog-products-1x.avif"
+                    srcset="
+                      img/hits/dog-products-1x.avif 1x,
+                      img/hits/dog-products-2x.avif 2x
+                    "
+                    width="110"
+                    height="207"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+
+                <div class="AW-hits__title-wrap">
+                  <h2 class="AW-hits__title" id="AW-hits-dogs-title">
+                    <strong>Хиты продаж</strong>
+                    <span> для собак</span>
+                  </h2>
+                </div>
+
+                <a
+                  class="AW-btn AW-hits__all"
+                  href="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D1%81%D0%BE%D0%B1%D0%B0%D0%BA&amp;food_type=%D0%A1%D1%83%D1%85%D0%BE%D0%B9"
+                  data-js-catalog-all
+                >
+                  <span>Смотреть все</span>
+                  <span class="AW-hits__all-icon" aria-hidden="true"></span>
+                </a>
+              </div>
+
+              <div class="AW-hits__body">
+                <div
+                  class="AW-hits__tabs"
+                  role="tablist"
+                  aria-label="Тип корма в хитах продаж"
+                >
+                  <button
+                    class="AW-btn AW-hits__tab is-active"
+                    type="button"
+                    id="AW-hits-dogs-tab-dry"
+                    role="tab"
+                    tabindex="0"
+                  aria-selected="true"
+                  aria-controls="AW-hits-dogs-panel-dry"
+                  data-catalog-url="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D1%81%D0%BE%D0%B1%D0%B0%D0%BA&amp;food_type=%D0%A1%D1%83%D1%85%D0%BE%D0%B9"
+                  data-js-catalog-tab
+                  >
+                    Сухой корм
+                  </button>
+                  <button
+                    class="AW-btn AW-hits__tab"
+                    type="button"
+                    id="AW-hits-dogs-tab-wet"
+                    role="tab"
+                    tabindex="-1"
+                  aria-selected="false"
+                  aria-controls="AW-hits-dogs-panel-wet"
+                  data-catalog-url="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D1%81%D0%BE%D0%B1%D0%B0%D0%BA&amp;food_type=%D0%92%D0%BB%D0%B0%D0%B6%D0%BD%D1%8B%D0%B9"
+                  data-js-catalog-tab
+                  >
+                    Влажный корм
+                  </button>
+                </div>
+
+                <div class="AW-hits__viewport" data-js-catalog-viewport>
+                  <div
+                    class="AW-hits__track is-active"
+                    id="AW-hits-dogs-panel-dry"
+                    role="tabpanel"
+                    aria-labelledby="AW-hits-dogs-tab-dry"
+                    data-js-catalog-panel
+                  >
+                    <article class="AW-catalog-product" data-js-catalog-product>
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-hypo-suhoj-korm-dlya-sobak-vsekh-porod-s-beloj-ryboj-brokkoli-seldereem-i-semyan-lna-12-kg.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Hipo Adult White Fish Hypo сухой корм для собак всех пород, с белой РЫБОЙ, брокколи, сельдереем и семенами льна - 12 кг"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current">7 697,60 р.</span>
+                          <span class="AW-catalog-product__old">9 056 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-15%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">12 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award Hipo Adult White Fish Hypo сухой корм для собак всех пород, с белой РЫБОЙ, брокколи, сельдереем и семенами льна - 12 кг
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <a
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        href="/catalog/product/55226-award-hypo-suhoj-korm-dlya-sobak-vsekh-porod-s-beloj-ryboj-brokkoli-seldereem-i-semyan-lna-12-kg/" data-js-product-open
+                      >
+                        Подробнее
+                      </a>
+                    </article>
+
+                    <article class="AW-catalog-product" data-js-catalog-product>
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-hypo-suhoj-korm-dlya-sobak-vsekh-porod-s-beloj-ryboj-brokkoli-seldereem-i-semyan-lna-2-kg.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Hypo Adult White Fish сухой корм для собак всех пород, с белой РЫБОЙ, брокколи, сельдереем и семенами льна - 2 кг"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current">1 823,05 р.</span>
+                          <span class="AW-catalog-product__old">1 919 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-5%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">2 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award Hypo Adult White Fish сухой корм для собак всех пород, с белой РЫБОЙ, брокколи, сельдереем и семенами льна - 2 кг
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <a
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        href="/catalog/product/55227-award-hypo-suhoj-korm-dlya-sobak-vsekh-porod-s-beloj-ryboj-brokkoli-seldereem-i-semyan-lna-2-kg/" data-js-product-open
+                      >
+                        Подробнее
+                      </a>
+                    </article>
+
+                    <article class="AW-catalog-product" data-js-catalog-product>
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-vsekh-porod-s-yagnenkom-indejkoj-yablokami-i-chernikoj-12-kg.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award All Breed Adult Lamb сухой корм для собак всех пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, яблоками и черникой - 12 кг"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current">6 221,37 р.</span>
+                          <span class="AW-catalog-product__old">7 151 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-13%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">12 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award All Breed Adult Lamb сухой корм для собак всех пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, яблоками и черникой - 12 кг
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <a
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        href="/catalog/product/55230-award-suhoj-korm-dlya-sobak-vsekh-porod-s-yagnenkom-indejkoj-yablokami-i-chernikoj-12-kg/" data-js-product-open
+                      >
+                        Подробнее
+                      </a>
+                    </article>
+
+                    <article class="AW-catalog-product" data-js-catalog-product>
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-krupnyh-porod-s-kuricej-indejkoj-tykvoj-i-shipovnikom-12-kg.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Large Adult Chicken сухой корм для собак крупных пород, с КУРИЦЕЙ, ИНДЕЙКОЙ, тыквой и шиповником - 12 кг"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current">5 528,85 р.</span>
+                          <span class="AW-catalog-product__old">6 355 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-13%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">12 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award Large Adult Chicken сухой корм для собак крупных пород, с КУРИЦЕЙ, ИНДЕЙКОЙ, тыквой и шиповником - 12 кг
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <a
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        href="/catalog/product/55232-award-suhoj-korm-dlya-sobak-krupnyh-porod-s-kuricej-indejkoj-tykvoj-i-shipovnikom-12-kg/" data-js-product-open
+                      >
+                        Подробнее
+                      </a>
+                    </article>
+
+                    <article class="AW-catalog-product" data-js-catalog-product>
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-suhoj-korm-dlya-sobak-melkih-i-miniatyurnyh-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-1-5-kg.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Small Adult Lamb сухой корм для собак мелких и миниатюрных пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 1,5 кг"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current">1 100,10 р.</span>
+                          <span class="AW-catalog-product__old">1 158 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-5%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">1,5 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award Small Adult Lamb сухой корм для собак мелких и миниатюрных пород, с ЯГНЕНКОМ, ИНДЕЙКОЙ, брокколи и брусникой - 1,5 кг
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <a
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        href="/catalog/product/55234-award-suhoj-korm-dlya-sobak-melkih-i-miniatyurnyh-porod-s-yagnenkom-indejkoj-brokkoli-i-brusnikoj-1-5-kg/" data-js-product-open
+                      >
+                        Подробнее
+                      </a>
+                    </article>
+</div>
+
+                  <div
+                    class="AW-hits__track"
+                    id="AW-hits-dogs-panel-wet"
+                    role="tabpanel"
+                    aria-labelledby="AW-hits-dogs-tab-wet"
+                    data-js-catalog-panel
+                    hidden
+                  >
+                    <article class="AW-catalog-product" data-js-catalog-product>
+                      <div class="AW-catalog-product__media">
+                        <img
+                          class="AW-catalog-product__image"
+                          src="https://www.dogeat.ru/storage/products/0/800x800/award-vlazhnyj-korm-dlya-shchenkov-ot-1-mesyaca-s-telyatinoj-i-ovoshchami-v-konservah-400-g.jpg"
+                          width="800"
+                          height="800"
+                          alt="Award Pate Puppy Veal &amp; Vegetables влажный корм для щенков от 1 месяца, с ТЕЛЯТИНОЙ и овощами, в консервах - 400 г"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div class="AW-catalog-product__price-row">
+                        <div class="AW-catalog-product__price">
+                          <span class="AW-catalog-product__current">3 944,40 р.</span>
+                          <span class="AW-catalog-product__old">4 152 р.</span>
+                        </div>
+                        <span class="AW-catalog-product__discount">-5%</span>
+                      </div>
+                      <p class="AW-catalog-product__weight">4,8 кг</p>
+                      <h3 class="AW-catalog-product__name">
+                        Award Pate Puppy Veal &amp; Vegetables влажный корм для щенков от 1 месяца, с ТЕЛЯТИНОЙ и овощами, в консервах - 400 г
+                      </h3>
+                      <button
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--primary"
+                        type="button"
+                        data-js-catalog-buy-primary
+                      >
+                        Купить в 1 клик
+                      </button>
+                      <a
+                        class="AW-btn AW-catalog-product__button AW-catalog-product__button--secondary"
+                        href="/catalog/product/55224-award-vlazhnyj-korm-dlya-shchenkov-ot-1-mesyaca-s-telyatinoj-i-ovoshchami-v-konservah-400-g/" data-js-product-open
+                      >
+                        Подробнее
+                      </a>
+                    </article>
+</div>
+                </div>
+
+                <div
+                  class="AW-hits__pagination AW-catalog__pagination"
+                  aria-label="Прокрутка хитов продаж для собак"
+                  data-js-catalog-pagination="products"
+                  hidden
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="AW-expertise" aria-labelledby="AW-expertise-title">
+          <div class="AW-container AW-expertise__container">
+            <div class="AW-expertise__card">
+              <div class="AW-expertise__content">
+                <div class="AW-expertise__text">
+                  <h2 class="AW-expertise__title" id="AW-expertise-title">
+                    <span>Создано теми,</span>
+                    <strong>кто знает питание животных</strong>
+                  </h2>
+
+                  <p class="AW-expertise__description">
+                    <span>За брендом</span>
+                    <strong> AWARD </strong>
+                    <span>стоит многолетняя экспертиза компании</span>
+                    <strong> «Валта Пет Продактс» </strong>
+                    <span
+                      >и опыт российских ветеринарных врачей, нутрициологов
+                      и&nbsp;специалистов по кормлению домашних животных</span
+                    >
+                  </p>
+                </div>
+
+                <a class="AW-btn AW-expertise__link" href="/catalog/">
+                  <span>Выберите корма для вашего любимца</span>
+                </a>
+              </div>
+
+              <div
+                class="AW-expertise__facts"
+                aria-label="Экспертиза и преимущества AWARD"
+              >
+                <ul class="AW-expertise__list">
+                  <li class="AW-expertise__item">
+                    <picture class="AW-expertise__item-icon" aria-hidden="true">
+                      <source
+                        media="(max-width: 991px)"
+                        srcset="
+                          img/expertise/experience-mobile-1x.avif 1x,
+                          img/expertise/experience-mobile-2x.avif 2x
+                        "
+                        width="70"
+                        height="64"
+                      />
+                      <img
+                        class="AW-expertise__item-image"
+                        src="img/expertise/experience-1x.avif"
+                        srcset="
+                          img/expertise/experience-1x.avif 1x,
+                          img/expertise/experience-2x.avif 2x
+                        "
+                        width="92"
+                        height="84"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
+                    <h3 class="AW-expertise__item-title">
+                      27&nbsp;лет<br />
+                      экспертизы
+                    </h3>
+                    <p class="AW-expertise__item-text">
+                      Квинтэссенция<br />опыта и&nbsp;накопленных знаний
+                    </p>
+                  </li>
+
+                  <li class="AW-expertise__item">
+                    <picture class="AW-expertise__item-icon" aria-hidden="true">
+                      <source
+                        media="(max-width: 991px)"
+                        srcset="
+                          img/expertise/local-mobile-1x.avif 1x,
+                          img/expertise/local-mobile-2x.avif 2x
+                        "
+                        width="70"
+                        height="64"
+                      />
+                      <img
+                        class="AW-expertise__item-image"
+                        src="img/expertise/local-1x.avif"
+                        srcset="
+                          img/expertise/local-1x.avif 1x,
+                          img/expertise/local-2x.avif 2x
+                        "
+                        width="93"
+                        height="85"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
+                    <h3 class="AW-expertise__item-title">
+                      Локальное<br />
+                      производство
+                    </h3>
+                    <p class="AW-expertise__item-text">
+                      Гарантия высокого качества и&nbsp;надёжность поставок
+                    </p>
+                  </li>
+
+                  <li class="AW-expertise__item">
+                    <picture class="AW-expertise__item-icon" aria-hidden="true">
+                      <source
+                        media="(max-width: 991px)"
+                        srcset="
+                          img/expertise/energy-mobile-1x.avif 1x,
+                          img/expertise/energy-mobile-2x.avif 2x
+                        "
+                        width="70"
+                        height="64"
+                      />
+                      <img
+                        class="AW-expertise__item-image"
+                        src="img/expertise/energy-1x.avif"
+                        srcset="
+                          img/expertise/energy-1x.avif 1x,
+                          img/expertise/energy-2x.avif 2x
+                        "
+                        width="93"
+                        height="85"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
+                    <h3 class="AW-expertise__item-title">Технология 3NRGY</h3>
+                    <p class="AW-expertise__item-text">
+                      Технология сочетания полезных углеводов с&nbsp;разным
+                      гликемическим индексом
+                    </p>
+                  </li>
+
+                  <li class="AW-expertise__item">
+                    <picture class="AW-expertise__item-icon" aria-hidden="true">
+                      <source
+                        media="(max-width: 991px)"
+                        srcset="
+                          img/expertise/bio-mobile-1x.avif 1x,
+                          img/expertise/bio-mobile-2x.avif 2x
+                        "
+                        width="70"
+                        height="64"
+                      />
+                      <img
+                        class="AW-expertise__item-image"
+                        src="img/expertise/bio-1x.avif"
+                        srcset="
+                          img/expertise/bio-1x.avif 1x,
+                          img/expertise/bio-2x.avif 2x
+                        "
+                        width="92"
+                        height="85"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
+                    <h3 class="AW-expertise__item-title">100% BIO</h3>
+                    <p class="AW-expertise__item-text">
+                      Только качественные<br />и&nbsp;натуральные ингредиенты
+                      в&nbsp;составе
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="AW-closing" aria-labelledby="AW-closing-title">
+          <div class="AW-container AW-closing__container">
+            <div class="AW-closing__frame">
+              <div class="AW-closing__backdrop" aria-hidden="true">
+                <picture class="AW-closing__shadow">
+                  <source
+                    media="(max-width: 991px)"
+                    srcset="img/closing/shadow-mobile-1x.avif"
+                    width="375"
+                    height="439"
+                  />
+                  <img
+                    class="AW-closing__shadow-image"
+                    src="img/closing/shadow-1x.avif"
+                    width="1089"
+                    height="392"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+
+              <div class="AW-closing__content">
+                <div class="AW-closing__text">
+                  <h2 class="AW-closing__title" id="AW-closing-title">
+                    <strong>Больше</strong>
+                    <span> чем просто корм</span>
+                  </h2>
+                  <p class="AW-closing__description">
+                    Больше чем просто корм:<br
+                      class="AW-closing__description-break"
+                    />
+                    это умные формулы, которые действительно работают
+                  </p>
+                </div>
+
+                <div class="AW-closing__actions">
+                  <a
+                    class="AW-btn AW-closing__link"
+                    href="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D0%BA%D0%BE%D1%88%D0%B5%D0%BA"
+                  >
+                    <img
+                      class="AW-closing__link-icon"
+                      src="img/hero/icon-cat-1x.avif"
+                      srcset="
+                        img/hero/icon-cat-1x.avif 1x,
+                        img/hero/icon-cat-2x.avif 2x
+                      "
+                      width="18"
+                      height="18"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span>Для кошек</span>
+                  </a>
+
+                  <a
+                    class="AW-btn AW-closing__link"
+                    href="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D1%81%D0%BE%D0%B1%D0%B0%D0%BA"
+                  >
+                    <img
+                      class="AW-closing__link-icon"
+                      src="img/hero/icon-dog-1x.avif"
+                      srcset="
+                        img/hero/icon-dog-1x.avif 1x,
+                        img/hero/icon-dog-2x.avif 2x
+                      "
+                      width="22"
+                      height="23"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span>Для собак</span>
+                  </a>
+                </div>
+              </div>
+
+              <picture class="AW-closing__products">
+                <source
+                  media="(max-width: 991px)"
+                  srcset="
+                    img/closing/products-mobile-1x.avif 1x,
+                    img/closing/products-mobile-2x.avif 2x
+                  "
+                  width="305"
+                  height="204"
+                />
+                <img
+                  class="AW-closing__products-image"
+                  src="img/closing/products-1x.avif"
+                  srcset="
+                    img/closing/products-1x.avif 1x,
+                    img/closing/products-2x.avif 2x
+                  "
+                  width="607"
+                  height="408"
+                  alt="Линейка кормов AWARD для кошек и собак"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
+        </section>
       </main>
+
+      <footer class="AW-footer">
+        <img
+          class="AW-footer__shadow AW-footer__shadow--left"
+          src="img/footer/shadow-left-1x.avif"
+          width="490"
+          height="273"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        />
+        <img
+          class="AW-footer__shadow AW-footer__shadow--right"
+          src="img/footer/shadow-right-1x.avif"
+          width="343"
+          height="529"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        />
+        <img
+          class="AW-footer__shadow AW-footer__shadow--mobile"
+          src="img/footer/shadow-mobile-1x.avif"
+          width="375"
+          height="184"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        />
+
+        <div class="AW-container AW-footer__container">
+          <a class="AW-footer__logo" href="/" aria-label="AWARD — на главную">
+            <picture class="AW-footer__logo-picture">
+              <source
+                media="(max-width: 991px)"
+                srcset="
+                  img/header/award-logo-white-mobile-1x.avif 1x,
+                  img/header/award-logo-white-mobile-2x.avif 2x
+                "
+                width="32"
+                height="28"
+              />
+              <img
+                class="AW-footer__logo-image"
+                src="img/header/award-logo-white-1x.avif"
+                srcset="
+                  img/header/award-logo-white-1x.avif 1x,
+                  img/header/award-logo-white-2x.avif 2x
+                "
+                width="52"
+                height="46"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <span class="AW-footer__logo-text">
+              <strong class="AW-footer__logo-title">Корма Award</strong>
+              <span class="AW-footer__logo-subtitle">для кошек и собак</span>
+            </span>
+          </a>
+
+          <nav class="AW-footer__nav" aria-label="Навигация в подвале">
+            <ul class="AW-footer__nav-list">
+              <li class="AW-footer__nav-item">
+                <a class="AW-footer__nav-link" href="/catalog/">
+                  Каталог
+                </a>
+              </li>
+              <li class="AW-footer__nav-item">
+                <a
+                  class="AW-footer__nav-link"
+                  href="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D0%BA%D0%BE%D1%88%D0%B5%D0%BA"
+                >
+                  Для кошек
+                </a>
+              </li>
+              <li class="AW-footer__nav-item">
+                <a
+                  class="AW-footer__nav-link"
+                  href="/catalog/?animal=%D0%94%D0%BB%D1%8F+%D1%81%D0%BE%D0%B1%D0%B0%D0%BA"
+                >
+                  Для собак
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <button
+            class="AW-btn AW-footer__contact"
+            type="button"
+            data-js-order-open="contact"
+          >
+            Связаться с нами
+          </button>
+        </div>
+      </footer>
+
+      <button
+        class="AW-btn AW-mini-cart"
+        type="button"
+        aria-controls="AW-order-modal"
+        aria-expanded="false"
+        data-js-mini-cart
+        hidden
+      >
+        <span
+          class="AW-mini-cart__icon"
+          aria-hidden="true"
+          data-js-mini-cart-target
+        >
+          <img
+            class="AW-mini-cart__preview"
+            width="26"
+            height="26"
+            alt=""
+            data-js-mini-cart-preview
+            hidden
+          />
+        </span>
+        <span class="AW-mini-cart__copy">
+          <strong class="AW-mini-cart__title">Корзина</strong>
+          <span class="AW-mini-cart__summary" data-js-mini-cart-summary>
+            0 товаров
+          </span>
+        </span>
+        <span class="AW-mini-cart__count" data-js-mini-cart-count>0</span>
+        <span class="AW-mini-cart__notice" aria-hidden="true">
+          Товар добавлен
+        </span>
+      </button>
+
+      <div
+        class="AW-order"
+        id="AW-order-modal"
+        aria-hidden="true"
+        data-js-order-modal
+        hidden
+      >
+        <div class="AW-order__backdrop" data-js-order-close></div>
+
+        <div
+          class="AW-order__dialog"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="AW-order-title"
+          tabindex="-1"
+          data-js-order-dialog
+        >
+          <button
+            class="AW-btn AW-order__close"
+            type="button"
+            aria-label="Закрыть форму"
+            data-js-order-close
+          >
+            <span aria-hidden="true"></span>
+          </button>
+
+          <form class="AW-order__form" data-js-order-form>
+            <div class="AW-order__fields">
+              <div class="AW-order__heading">
+                <h2
+                  class="AW-order__title"
+                  id="AW-order-title"
+                  data-js-order-title
+                >
+                  Купить товар в 1 клик
+                </h2>
+                <p class="AW-order__subtitle">
+                  Менеджер с Вами свяжется
+                  <strong>в течение 15 минут</strong>
+                </p>
+              </div>
+
+              <label class="AW-order__field">
+                <span class="AW-order__field-label">Ваше имя</span>
+                <input
+                  class="AW-order__input"
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  autocomplete="name"
+                  required
+                />
+              </label>
+
+              <label class="AW-order__field">
+                <span class="AW-order__field-label">Ваш телефон</span>
+                <input
+                  class="AW-order__input"
+                  type="tel"
+                  name="phone"
+                  placeholder="Ваш телефон"
+                  autocomplete="tel"
+                  required
+                />
+              </label>
+
+              <label class="AW-order__field">
+                <span class="AW-order__field-label">Ваш email</span>
+                <input
+                  class="AW-order__input"
+                  type="email"
+                  name="email"
+                  placeholder="Ваш email"
+                  autocomplete="email"
+                  required
+                />
+              </label>
+
+              <label class="AW-order__agreement">
+                <input
+                  class="AW-order__agreement-input"
+                  type="checkbox"
+                  name="personalDataConsent"
+                  value="accepted"
+                  required
+                />
+                <span
+                  class="AW-order__agreement-control"
+                  aria-hidden="true"
+                ></span>
+                <span class="AW-order__agreement-text">
+                  Я даю согласие на
+                  <a
+                    href="/personal-data-consent.html"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    обработку персональных данных
+                  </a>
+                </span>
+              </label>
+
+              <button
+                class="AW-btn AW-order__submit"
+                type="submit"
+                data-js-order-submit
+              >
+                Оставить заявку
+              </button>
+
+              <span
+                class="AW-order__live"
+                role="status"
+                aria-live="polite"
+                data-js-order-live
+              ></span>
+            </div>
+
+            <section
+              class="AW-order__products"
+              aria-labelledby="AW-order-products-title"
+              data-js-order-products
+              hidden
+            >
+              <h3 class="AW-order__products-title" id="AW-order-products-title">
+                Товары (<span data-js-order-count>0</span>)
+              </h3>
+              <div class="AW-order__list" data-js-order-list></div>
+              <div
+                class="AW-order__pagination"
+                aria-label="Навигация по товарам в корзине"
+                data-js-order-pagination
+              ></div>
+            </section>
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="AW-product-overlay"
+        aria-hidden="true"
+        data-js-product-overlay
+        hidden
+      >
+        <div
+          class="AW-product-overlay__dialog"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Карточка товара"
+          tabindex="-1"
+          data-js-product-overlay-dialog
+        >
+          <p class="AW-product-overlay__status" data-js-product-overlay-status>
+            Загружаем товар…
+          </p>
+          <div data-js-product-overlay-content></div>
+        </div>
+      </div>
+
+      <span
+        class="AW-cart-live"
+        role="status"
+        aria-live="polite"
+        data-js-cart-live
+      ></span>
     </div>
   </body>
 </html>
