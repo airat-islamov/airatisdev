@@ -44,30 +44,6 @@ if (ticker && tickerTrack && tickerTemplate) {
   reducedMotion.addEventListener?.('change', fillTicker);
 }
 
-const menuButton = document.querySelector('.menu-button');
-const nav = document.querySelector('.nav');
-
-if (menuButton && nav) {
-  const setMenuOpen = open => {
-    menuButton.setAttribute('aria-expanded', String(open));
-    menuButton.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
-    nav.classList.toggle('is-open', open);
-  };
-
-  menuButton.addEventListener('click', () => {
-    setMenuOpen(menuButton.getAttribute('aria-expanded') !== 'true');
-  });
-
-  nav.querySelectorAll('a, .placeholder-link').forEach(link => link.addEventListener('click', () => setMenuOpen(false)));
-
-  document.addEventListener('keydown', event => {
-    if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
-      setMenuOpen(false);
-      menuButton.focus();
-    }
-  });
-}
-
 const packageSelect = document.getElementById('event-package');
 const requestSection = document.getElementById('request');
 const packages = {
@@ -118,14 +94,14 @@ form.addEventListener('submit', event => {
   const comment = document.getElementById('event-comment').value.trim();
 
   if (!name || !contact || !date) {
-    error.textContent = 'Укажите имя, контакт и дату мероприятия.';
+    error.textContent = 'Заполните имя, контакт для связи и дату события.';
     error.hidden = false;
     (!name ? document.getElementById('client-name') : !contact ? document.getElementById('client-contact') : dateInput).focus();
     result.hidden = true;
     return;
   }
   if (date < localToday) {
-    error.textContent = 'Выберите дату не раньше сегодняшней.';
+    error.textContent = 'Укажите сегодняшнюю или будущую дату.';
     error.hidden = false;
     dateInput.focus();
     result.hidden = true;
@@ -136,12 +112,12 @@ form.addEventListener('submit', event => {
   const price = new Intl.NumberFormat('ru-RU').format(selected.price);
   resultPrice.textContent = `${price} ₽`;
   requestText.value = [
-    'Здравствуйте! Интересует аренда Agibot X2.',
-    `Пакет: ${selected.name} (${selected.duration}), предварительная стоимость ${price} ₽.`,
-    `Дата мероприятия: ${readableDate}.`,
-    `Имя: ${name}.`,
-    `Контакт: ${contact}.`,
-    comment ? `Комментарий: ${comment}` : ''
+    'Здравствуйте! Хочу узнать об аренде робота Agibot X2.',
+    `Тариф: ${selected.name} (${selected.duration}), ориентировочная стоимость ${price} ₽.`,
+    `Дата события: ${readableDate}.`,
+    `Заказчик: ${name}.`,
+    `Для связи: ${contact}.`,
+    comment ? `Детали события: ${comment}` : ''
   ].filter(Boolean).join('\n');
   result.hidden = false;
   result.scrollIntoView({ behavior: reducedMotion.matches ? 'auto' : 'smooth', block: 'nearest' });
@@ -155,9 +131,9 @@ copyButton.addEventListener('click', async () => {
     requestText.select();
     const copied = document.execCommand('copy');
     if (!copied) {
-      copyFeedback.textContent = 'Не удалось скопировать автоматически. Выделите текст и скопируйте его вручную.';
+      copyFeedback.textContent = 'Автоматическое копирование недоступно. Выделите заявку и скопируйте текст вручную.';
       return;
     }
   }
-  copyFeedback.textContent = 'Текст заявки скопирован. Отправьте его удобным способом.';
+  copyFeedback.textContent = 'Заявка скопирована. Её можно отправить удобным для вас способом.';
 });
