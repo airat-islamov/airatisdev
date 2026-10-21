@@ -98,9 +98,9 @@ h1, h2, h3, p { margin-top: 0px; }
 .price-button:hover { background: var(--ink); color: rgb(255, 255, 255); }
 .price-featured .price-button { background: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: var(--pink); }
 .price-featured .price-button:hover { background: rgb(35, 29, 32); border-color: rgb(35, 29, 32); color: rgb(255, 255, 255); }
-.included { display: grid; grid-template-columns: 1fr 1fr; gap: 45px; background: rgb(33, 30, 31); color: rgb(255, 255, 255); border-radius: 13px; padding: 50px; margin-top: 18px; }
+.included { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 45px; background: rgb(33, 30, 31); color: rgb(255, 255, 255); border-radius: 13px; padding: 50px; margin-top: 18px; }
 .included h3 { font-size: 38px; line-height: 1.1; letter-spacing: -0.055em; margin: 0px; }
-.included ul { margin: 0px; padding: 0px; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 24px 25px; }
+.included ul { margin: 0px; padding: 0px; list-style: none; display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
 .included li { display: flex; align-items: flex-start; gap: 12px; font-size: 16px; line-height: 1.35; }
 .included-item-icon { width: 22px; height: 22px; flex: 0 0 auto; margin-top: 1px; color: var(--pink); stroke: currentcolor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .pricing-note { font-size: 13px; color: rgb(139, 133, 135); }
@@ -134,22 +134,12 @@ h1, h2, h3, p { margin-top: 0px; }
 .form-row { display: flex; flex-direction: column; gap: 9px; margin-bottom: 20px; }
 .form-row label { font-size: 13px; color: rgb(214, 210, 211); font-weight: 700; }
 .form-row label span { color: rgb(255, 104, 128); }
-.form-row input, .form-row select, .form-row textarea { width: 100%; min-height: 49px; border: 1px solid rgb(81, 75, 77); border-radius: 5px; background: rgb(44, 41, 42); color: rgb(255, 255, 255); padding: 13px 14px; outline: none; }
+.form-row input, .form-row textarea { width: 100%; min-height: 49px; border: 1px solid rgb(81, 75, 77); border-radius: 5px; background: rgb(44, 41, 42); color: rgb(255, 255, 255); padding: 13px 14px; outline: none; }
 .form-row textarea { resize: vertical; min-height: 84px; }
 .form-row input::placeholder, .form-row textarea::placeholder { color: rgb(132, 125, 128); }
-.form-row input:focus, .form-row select:focus, .form-row textarea:focus { border-color: rgb(255, 111, 131); }
+.form-row input:focus, .form-row textarea:focus { border-color: rgb(255, 111, 131); }
 .form-row input[type="date"] { color-scheme: dark; }
-.form-two { display: grid; grid-template-columns: 1fr 1fr; gap: 17px; }
 .form-submit { width: 100%; margin-top: 4px; }
-.form-error { color: rgb(255, 155, 168); font-size: 13px; margin: 13px 0px 0px; }
-.estimate-result { border-top: 1px solid rgb(96, 89, 91); margin-top: 25px; padding-top: 25px; }
-.estimate-label { font-size: 11px; font-weight: 800; letter-spacing: 0.15em; color: rgb(255, 131, 145); margin-bottom: 8px; }
-.estimate-result > strong { display: block; font-size: 42px; letter-spacing: -0.06em; }
-.estimate-result > p:not(.estimate-label):not(.copy-feedback) { font-size: 13px; color: rgb(191, 185, 187); line-height: 1.4; }
-.estimate-result textarea { width: 100%; height: 155px; resize: vertical; background: rgb(23, 21, 22); color: rgb(229, 224, 226); border: 1px solid rgb(81, 75, 77); border-radius: 5px; padding: 13px; font-size: 13px; line-height: 1.4; }
-.copy-button { width: 100%; margin-top: 12px; min-height: 48px; border: 1px solid rgb(255, 116, 144); border-radius: 100px; color: rgb(255, 255, 255); background: transparent; padding: 0px 18px; display: flex; align-items: center; justify-content: space-between; font-weight: 700; }
-.copy-button:hover { background: rgb(255, 10, 93); }
-.copy-feedback { color: rgb(255, 156, 173); font-size: 13px; margin: 10px 0px 0px; }
 @media (max-width: 1180px) {
   .hero-grid { min-height: 650px; }
   .hero-art { min-height: 650px; }
@@ -226,7 +216,6 @@ h1, h2, h3, p { margin-top: 0px; }
   .faq details p { font-size: 15px; }
   .request-grid { padding: 75px 0px; gap: 30px; }
   .request-panel { padding: 23px; margin: 0px -4px; }
-  .form-two { grid-template-columns: 1fr; gap: 0px; }
 }
 @media (max-width: 390px) {
   .hero h1 { font-size: 46px; }
@@ -260,19 +249,18 @@ h1, h2, h3, p { margin-top: 0px; }
   .mobile-hero-art img { position: absolute; width: calc(100% - 24px); height: calc(100% - 24px); left: 12px; top: 12px; object-fit: contain; }
   .hero-art { display: none; }
 }
-.price-button, .copy-button { transition: color 0.18s, border-color 0.18s, background-color 0.18s, opacity 0.18s, transform 0.18s, gap 0.18s, box-shadow 0.18s; }
-.form-row input, .form-row select, .form-row textarea { transition: border-color 0.18s, box-shadow 0.18s; }
+.price-button { transition: color 0.18s, border-color 0.18s, background-color 0.18s, opacity 0.18s, transform 0.18s, gap 0.18s, box-shadow 0.18s; }
+.form-row input, .form-row textarea { transition: border-color 0.18s, box-shadow 0.18s; }
 .form-row label { cursor: pointer; }
-.form-row select { cursor: pointer; }
 @media (hover: hover) {
   .benefit-card:hover { transform: translateY(-3px); box-shadow: rgba(32, 29, 30, 0.07) 0px 12px 28px; }
   .faq summary:hover { color: var(--pink); }
   .faq summary:hover > .faq-toggle { border-color: var(--pink); color: var(--pink); transform: scale(1.08); }
-  .form-row input:hover, .form-row select:hover, .form-row textarea:hover { border-color: rgb(139, 129, 132); }
+  .form-row input:hover, .form-row textarea:hover { border-color: rgb(139, 129, 132); }
 }
-.button:active, .price-button:active, .copy-button:active { transform: translateY(1px) scale(0.98); box-shadow: none; }
+.button:active, .price-button:active { transform: translateY(1px) scale(0.98); box-shadow: none; }
 @media (prefers-reduced-motion: reduce) {
-  .price-button, .copy-button, .form-row input, .form-row select, .form-row textarea { transition: none; }
+  .price-button, .form-row input, .form-row textarea { transition: none; }
 }
 .price-star { color: var(--pink); font-size: 0.42em; vertical-align: super; margin-left: 4px; }
 .price-featured .price-star { color: currentcolor; }
@@ -314,7 +302,7 @@ h1, h2, h3, p { margin-top: 0px; }
 }
 @media (min-width: 651px) and (max-width: 900px) {
   .included { grid-template-columns: 1fr; gap: 28px; padding: 30px; }
-  .included ul { grid-template-columns: 1fr 1fr; gap: 18px 22px; }
+  .included ul { grid-template-columns: 1fr; gap: 18px; }
   .included h3 { font-size: 34px; }
 }
 @media (max-width: 900px) {
