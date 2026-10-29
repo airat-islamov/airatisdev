@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Локальный макет страниц ошибок и плановых технических работ Aspire Store.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="color-scheme" content="light">
+  <title>404 — Страница не найдена · Aspire Store</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="assets/fonts/acer-foco-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/acer-foco-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#preview">Перейти к странице</a>
+
+
+  <main class="page-shell" id="preview" tabindex="-1">
+    <div class="page-brand" id="page-brand" hidden>
+      <img src="assets/aspirestore-logo.svg" alt="Aspire Store" width="180" height="32">
+    </div>
+    <section class="error-scene" aria-labelledby="error-title">
+      <div class="error-copy">
+        <p class="error-code" id="error-code" aria-label="Ошибка 404">404</p>
+        <h1 id="error-title">Страница не найдена</h1>
+        <p class="error-description" id="error-description">По этому адресу страница не найдена. Похоже, даже наш поисковый робот потерял её след. Проверьте ссылку или перейдите на главную.</p>
+        <a class="primary-action" id="home-action" href="https://aspirestore.ru/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v11h5v-7h4v7h5V9"/></svg>
+          <span>На главную</span>
+        </a>
+        <button class="primary-action" id="retry-action" type="button" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36L21 9"/><path d="M21 3v6h-6"/></svg>
+          <span id="retry-label">Обновить страницу</span>
+        </button>
+        <section class="contact-section" id="contacts" aria-label="Контактная информация" hidden>
+          <div class="contact-block contact-block--phone">
+            <h2>Нужна помощь?</h2>
+            <div class="contact-value contact-value--phone">
+              <a class="phone-link" id="contact-phone" href="tel:88003512981">8 800 351-29-81</a>
+              <button class="copy-button" type="button" data-copy="contact-phone" aria-label="Скопировать телефон" title="Скопировать телефон">
+                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg>
+                <svg class="copied-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+                <span class="copy-feedback" aria-hidden="true">Скопировано</span>
+              </button>
+            </div>
+            <p>Ежедневно с 9:00 до 21:00 мск</p>
+          </div>
+        </section>
+      </div>
+      <div class="error-art" id="error-art">
+        <img id="error-image" src="assets/404.png" alt="" width="1536" height="1024" fetchpriority="high" decoding="async">
+      </div>
+    </section>
+
+
+  </main>
+
+  <header class="demo-header">
+    <div class="demo-header__inner">
+      <nav class="error-navigation" aria-label="Выбор страницы для просмотра">
+        <button class="error-tab" type="button" data-page="404" aria-pressed="true" aria-controls="preview">404</button>
+        <button class="error-tab" type="button" data-page="403" aria-pressed="false" aria-controls="preview">403</button>
+        <button class="error-tab" type="button" data-page="429" aria-pressed="false" aria-controls="preview">429</button>
+        <button class="error-tab" type="button" data-page="500" aria-pressed="false" aria-controls="preview">500</button>
+        <button class="error-tab" type="button" data-page="502" aria-pressed="false" aria-controls="preview">502</button>
+        <button class="error-tab" type="button" data-page="503" aria-pressed="false" aria-controls="preview">503</button>
+        <button class="error-tab" type="button" data-page="504" aria-pressed="false" aria-controls="preview">504</button>
+        <button class="error-tab error-tab--maintenance" type="button" data-page="maintenance" aria-pressed="false" aria-controls="preview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m14.5 6 3.5 3.5 3-3a6 6 0 0 1-7.7 7.7L6 21a2.1 2.1 0 0 1-3-3l6.8-7.3A6 6 0 0 1 17.5 3z"/></svg>
+          Технические работы
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <p class="sr-only" id="page-announcement" role="status" aria-live="polite" aria-atomic="true"></p>
+  <noscript><p class="noscript-notice">Для переключения вариантов включите JavaScript. Сейчас показан вариант 404.</p></noscript>
+</body>
+</html>
